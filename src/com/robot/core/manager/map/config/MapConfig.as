@@ -107,7 +107,7 @@ package com.robot.core.manager.map.config
                throw new Error(mapID + "号地图配置有误,comp name:" + name + " hit name:" + hit);
             }
             mc["hitMC"] = hitMC;
-            mc["des"] = i.@des;
+            mc["des"] = i.@des.toString();
             mc["isStop"] = uint(i.@isStop);
             mc["isOnce"] = uint(i.@isOnce);
             hitMC.dir = dir;
