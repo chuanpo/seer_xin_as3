@@ -15,33 +15,33 @@ package com.robot.app.superParty
       
       public static function makeInfo() : void
       {
-         var xml:XML = null;
+         var xmlItem:XML = null;
          var info:SuperPartyInfo = null;
          _infoA = new Array();
          var xmlList:XMLList = xml.elements("SP");
-         for each(xml in xmlList)
+         for each(xmlItem in xmlList)
          {
             info = new SuperPartyInfo();
-            if(xml.@games == "")
+            if(xmlItem.@games == "")
             {
                info.games = new Array();
             }
             else
             {
-               info.games = String(xml.@games).split("|");
+               info.games = String(xmlItem.@games).split("|");
             }
-            info.mapID = uint(xml.@mapID);
-            if(xml.@oreIDs == "")
+            info.mapID = uint(xmlItem.@mapID);
+            if(xmlItem.@oreIDs == "")
             {
                info.oreIDs = new Array();
             }
             else
             {
-               info.oreIDs = String(xml.@oreIDs).split("|");
+               info.oreIDs = String(xmlItem.@oreIDs).split("|");
             }
-            if(xml.@petIDs != "")
+            if(xmlItem.@petIDs != "")
             {
-               info.petIDs = String(xml.@petIDs).split("|");
+               info.petIDs = String(xmlItem.@petIDs).split("|");
             }
             else
             {
@@ -62,12 +62,12 @@ package com.robot.app.superParty
       
       public static function get title() : String
       {
-         var xml:XML = null;
+         var xmlItem:XML = null;
          var xmlList:XMLList = xml.elements("title");
          var str:String = "";
-         for each(xml in xmlList)
+         for each(xmlItem in xmlList)
          {
-            str += xml.@msg;
+            str += xmlItem.@msg;
          }
          return str;
       }
