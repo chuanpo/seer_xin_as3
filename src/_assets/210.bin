@@ -1236,9 +1236,11 @@ des 鼠标移上去的提示
 		<Entries>
 		</Entries>
 		<changeMapComp>
+			<component name="door_0" hit="comp_0" targetID="326" />
 		</changeMapComp>
 		<funComp>
-
+			<component name="oreMC" hit="funComp_0" fun="exploitOre"
+				des="黄晶矿" />
 		</funComp>
 	</map>
 
