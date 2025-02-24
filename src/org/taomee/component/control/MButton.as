@@ -25,7 +25,7 @@ package org.taomee.component.control
       
       protected var isDown:Boolean = false;
       
-     // [Embed(source="../resource/componentUI.swf",symbol="button_bg")]
+      //[Embed(source="../resource/componentUI.swf",symbol="button_bg")]
       private var bgClass:Class = MButton_bgClass;
       
       protected var _label:MLabel;
