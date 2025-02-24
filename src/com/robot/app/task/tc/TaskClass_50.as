@@ -1,0 +1,17 @@
+package com.robot.app.task.tc
+{
+   import com.robot.core.info.task.novice.NoviceFinishInfo;
+   import com.robot.core.manager.TasksManager;
+   import com.robot.core.ui.alert.ItemInBagAlert;
+   
+   public class TaskClass_50
+   {
+      public function TaskClass_50(info:NoviceFinishInfo)
+      {
+         super();
+         TasksManager.setTaskStatus(50,TasksManager.COMPLETE);
+         ItemInBagAlert.show(400109,"1个卡特斯的精元已经放入你的储存箱");
+      }
+   }
+}
+

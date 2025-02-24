@@ -1,0 +1,7 @@
+<!-- 星系配置表 -->
+<root>
+	<galaxy id="1" name="帕诺星系">
+	</galaxy>
+	<galaxy id="2" name="卡兰星系">
+	</galaxy>
+</root>

@@ -1,0 +1,17 @@
+package com.robot.core.info.skillEffectInfo
+{
+   public class Effect_2 extends AbstractEffectInfo
+   {
+      public function Effect_2()
+      {
+         super();
+         _argsNum = 0;
+      }
+      
+      override public function getInfo(array:Array = null) : String
+      {
+         return "对方体力小于1/2时威力加倍";
+      }
+   }
+}
+

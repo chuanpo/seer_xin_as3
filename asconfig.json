@@ -1,0 +1,27 @@
+{
+    "config": "air",
+    "type": "lib",
+    "compilerOptions": {
+        "source-path": [
+            "src"
+        ],
+        "library-path": [
+            "libs"
+        ],
+        "output": "bin/RobotAppDLL.swc",
+        "default-background-color": "#ffffff",
+        "default-frame-rate": 24,
+        "default-size": {
+            "width": 500,
+            "height": 500
+        },
+        "swf-version": 14,
+        "strict": false,
+        "include-sources": ["src"]
+    },
+    "application": "src/appdll-app.xml",
+    "mainClass": "RobotAppDLL",
+    "files": [
+        "src/RobotAppDLL.as"
+    ]
+}

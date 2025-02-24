@@ -1,0 +1,40 @@
+<!--spt boss列表-->
+<spts>
+	<spt id="301" title="蘑菇怪" online="1" lel="1" seatID="12" enterID="12" fightCondition="破除防护罩" description="生活在克洛斯星，被艾里逊的液氮冻伤而发狂，使用火焰喷射器可以使它安静下来。制服它可以获得草系精灵小蘑菇。">
+	</spt>
+	
+	<spt id="302" title="钢牙鲨" online="1" lel="1" seatID="22" enterID="21" fightCondition="" description="海洋星海底的危险怪兽，据说它躲藏的洞穴中有制作黑武士装的黑晶矿石。记住，到海底一定要穿上耐压的潜水套装。">
+	</spt>
+	
+	
+	<spt id="303" title="里奥斯" online="1" lel="2" seatID="17" enterID="17" fightCondition="扑灭火焰屏障" description="海盗艾里逊在火山被它困住，战胜它有机会获得火系精灵“胡里亚”。在火山，你会用到喷水装的。">
+	</spt>
+	
+	<spt id="304" title="阿克希亚" online="1" lel="4"  seatID="40" enterID="40" fightCondition="" description="塞西利亚星的守护者，正义的精灵圣兽，它是不可战胜的，千年来一直等待着宿命的对手。">
+	</spt>
+	
+	<spt id="305" title="提亚斯" online="1" lel="3" seatID="27" enterID="27" fightCondition="" description="云霄星出现了一只极具攻击性的变异精灵，拥有很多蛋的它虽然想要努力呵护自己的孩子却力不从心，看来需要大家帮帮忙啊。">
+	</spt>
+	
+	<spt id="306" title="雷伊" online="1" lel="3" seatID="32" enterID="32" fightCondition="雷雨天" description="赫尔卡星天空中划过一道闪电，映出了一个酷似精灵的黑影，它全身被电流包围，从它的神态中可以看出它正等待来自各方的挑战。">
+	</spt>
+	
+	<spt id="307" title="纳多雷" online="1" lel="3" seatID="106" enterID="106" fightCondition="" description="在双子阿尔法星上，特派队遇见了一只巨大的精灵，经过多次挑战后，它仍然丝毫无损，赛尔们是否有办法战胜这只精灵呢？">
+	</spt>
+	
+	<spt id="308" title="雷纳多" online="1" lel="3" seatID="49" enterID="49" fightCondition="" description="彪悍的雷纳多盘踞在双子贝塔星上，和双子阿尔法星的纳多雷遥相对应，守护着星球上所有精灵的。">
+	</spt>
+	
+	<spt id="309" title="尤纳斯" online="1" lel="4" seatID="314" enterID="314" fightCondition="" description="黑暗之门的制造者，拥有能够抵御一切的暗影屏障和所有能量来源的黑暗之核。">
+	</spt>
+	
+	<spt id="310" title="魔狮迪露" online="1" lel="4" seatID="53" enterID="53" fightCondition="" description="魔狮迪露具有神秘的力量，能使自己的体力突破界限，但同时也会受到未知的惩罚。">
+	</spt>
+	
+	<spt id="311" title="哈莫雷特" online="1" lel="5" seatID="60" enterID="60" fightCondition="" description="拥有无比巨大的身躯，集水火草三种原能为一身，龙系的神秘力量使它所向无敌。失忆的它，似乎还有很多谜团……">
+	</spt>
+	
+	<spt id="312" title="奈尼芬多" online="1" lel="4" seatID="325"  enterID="325" fightCondition="" description="奈尼芬多是爱迪星的守护者，凄美的歌声连月亮都为之倾倒，据说只有音乐的力量才能够唤醒它。">
+	</spt>
+
+</spts>

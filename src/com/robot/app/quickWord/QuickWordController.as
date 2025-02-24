@@ -1,0 +1,29 @@
+package com.robot.app.quickWord
+{
+   import flash.display.DisplayObject;
+   
+   public class QuickWordController
+   {
+      private static var _quickWord:QuickWord;
+      
+      public function QuickWordController()
+      {
+         super();
+      }
+      
+      public static function get quickWord() : QuickWord
+      {
+         if(_quickWord == null)
+         {
+            _quickWord = new QuickWord();
+         }
+         return _quickWord;
+      }
+      
+      public static function show(dis:DisplayObject) : void
+      {
+         quickWord.show(dis);
+      }
+   }
+}
+

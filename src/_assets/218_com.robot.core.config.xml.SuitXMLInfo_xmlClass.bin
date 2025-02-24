@@ -1,0 +1,110 @@
+<!--
+套装配置表
+	transform:该套装是否可变形	
+	tranSpeed:变形后的移动速度
+精品套装:
+	elite:是否是精品套装
+	elite="0"
+-->
+<root>
+	<item id="1" cloths="100027 100028" name="新手装"/>
+	<item id="2" cloths="100005 100008" name="警备装" />
+	<item id="3" cloths="100033 100034 100035" name="卫兵装" />
+	<item id="4" cloths="100007 100020 100021 100022 100023" name="机械师" />
+	<item id="5" cloths="100024 100025 100026" name="潜水装" />
+	<item id="6" cloths="100036 100037 100038 100039" name="训练师" />
+	<item id="7" cloths="100048 100049 100050 100051" name="飞行装" />
+	<item id="8" cloths="100052 100053 100054" name="喷水装" />
+	<item id="9" cloths="100056 100057 100058" name="电击装" />
+	<item id="10" cloths="100016 100017 100018 100019" name="黑武士" />
+	<item id="11" cloths="100063 100064 100065 100066" name="蓝骑士" />
+	<item id="12" cloths="100006 100060 100061" name="科考员" />
+	<item id="13" cloths="100062 100068 100069 100070 100071 100072" name="教官装" />
+	<item id="14" cloths="100073 100074 100075" name="联络官" />
+	<item id="15" cloths="100076 100077 100078 100079" name="红莲战士" />
+	<item id="16" cloths="100080 100081 100082 100083" name="公鸡装" />
+	<item id="17" cloths="100087 100088 100089 100090 100091" name="防寒装" />
+	<item id="18" cloths="100092 100093 100094 100095" name="巨蟹座" />
+	<item id="19" cloths="100096 100097 100098 100099" name="闪光勇士" />
+	<item id="20" cloths="100100 100101 100102 100103" name="电击兔装" />
+	<item id="21" cloths="100104 100105 100106 100107" name="狮子座" />
+	<item id="22" cloths="100108 100109 100110" name="加农炮装" />
+	<item id="23" cloths="100111 100112 100113 100120" name="绿光队" />
+	<item id="24" cloths="100114 100115 100116 100121" name="海啸队" />
+	<item id="25" cloths="100117 100118 100119 100122" name="烈焰队" />
+	<item id="26" cloths="100125 100126 100127 100128" name="冠军纪念服" />
+	<item id="27" cloths="100129 100130 100131 100132" name="亚军纪念服" />
+	<item id="28" cloths="100133 100134 100135 100136" name="季军纪念服" />
+	<item id="29" cloths="100138 100139 100140 100141" name="布布装" />
+	<item id="30" VipOnly="1" cloths="100780 100781 100782 100783 100784" name="擎天柱装" transform="1" tranSpeed="5"/>
+	<item id="31" cloths="100147 100148 100149 100150" name="飞轮勇士" />
+	<item id="32" cloths="100151 100152 100153 100154" name="光能骑士" />
+	<item id="33" cloths="100155 100156 100157 100158" name="室女座" />
+	<item id="34" VipOnly="1" cloths="100701 100702 100703 100704" name="战神装" />
+	<item id="35" cloths="100164 100165 100166 100167" name="毛毛装" />
+	<item id="36" cloths="100168 100169 100170 100171" name="海盗服" />
+	<item id="37" cloths="100173 100174 100175 100176" name="召集大使" />
+	<item id="38" cloths="100177 100219 100220 100221 100222" name="特攻队服" />
+	<item id="39" VipOnly="1" cloths="100705 100706 100707 100708" name="将军铠甲" />
+	<item id="40" VipOnly="1" cloths="100709 100710 100711 100712" name="武士铠甲" />
+	<item id="41" VipOnly="1" cloths="100718 100719 100720 100721" name="RX-78" />
+	<item id="42" VipOnly="1" cloths="100722 100723 100724 100725" name="MS-06A" />
+	<item id="43" cloths="100194 100195 100196 100197" name="四驱装" />
+	<item id="44" cloths="100198 100199 100200 100201" name="红龙装" />
+	<item id="45" cloths="100202 100203 100204 100205" name="罗马铠甲" />
+	<item id="46" cloths="100206 100207 100208 100209" name="蜘蛛装" />
+	<item id="47" cloths="100210 100211 100212 100213 100214" name="集训装" />
+	<item id="48" VipOnly="1" cloths="100713 100714 100715 100716" name="炫蓝寒冰" />
+	<item id="49" cloths="100159 100160 100161" name="天枰装" />
+	<item id="50" cloths="100178 100179 100180 100181" name="勘察装" />
+	<item id="51" cloths="100182 100183 100184 100185" name="南瓜铠甲" />
+	<item id="52" cloths="100186 100187 100188 100189" name="野战装" />
+	<item id="53" cloths="100190 100191 100192 100193" name="天蝎装" />
+	<item id="54" cloths="100215 100216 100217 100218" name="骷髅战甲" />
+	<item id="55" cloths="100225 100226 100227 100228" name="士官装" />
+	<item id="56" cloths="100229 100230 100231 100232" name="小恶魔" />
+	<item id="57" VipOnly="1" cloths="100727 100728 100729 100730" name="暗金铠甲" />
+	<item id="58" VipOnly="1" cloths="100731 100732 100733 100734" name="冰掌装甲" />
+	<item id="59" VipOnly="1" cloths="100735 100736 100737 100738" name="火蜂焰甲" />
+	<item id="60" VipOnly="1" cloths="100739 100740 100741 100742" name="魔刀铠" />
+	<item id="61" VipOnly="1" cloths="100743 100744 100745 100746" name="陀螺装" />
+	<item id="62" cloths="100233 100234 100235 100236" name="蓝宝石" />
+	<item id="63" cloths="100237 100238 100239 100240" name="幽境兰甲" />		
+	<item id="64" VipOnly="1" cloths="100747 100748 100749 100750" name="红宝石" />
+	<item id="65" cloths="100241 100242 100243 100244" name="圣堂武士" />
+	<item id="66" cloths="100246 100247 100248 100249" name="阳光海胆" />
+	<item id="67" cloths="100250 100251 100252 100253" name="凌光铠" />
+	<item id="68" VipOnly="1" cloths="100751 100752 100753 100754" name="冰晶雪域" />
+	<item id="69" VipOnly="1" cloths="100755 100756 100757 100758" name="托尼武装" />
+	<item id="70" VipOnly="1" cloths="100759 100760 100761 100762" name="迦玛磁暴" />
+	<item id="71" elite="1" cloths="100255 100256 100257 100258 100259" name="黑焰使徒" />
+	<item id="72" elite="1" cloths="100261 100262 100263 100264 100265" name="利爪机甲" />
+	<item id="73" cloths="100269 100270 100271 100272" name="米鲁套装" />
+	<item id="74" cloths="100273 100763" name="圣诞赛尔" />
+	<item id="75" cloths="100274 100275 100276 100277" name="血色烂漫" />
+	<item id="76" cloths="100278 100279 100280 100281" name="赫金武装" />
+	<item id="77" VipOnly="1" cloths="100764 100765 100766 100767" name="紫荆铠" />
+	<item id="78" VipOnly="1" cloths="100768 100769 100770 100771" name="法澜青衣" />
+	<item id="79" VipOnly="1" cloths="100772 100773 100774 100775" name="翔云甲" />
+	<item id="80" cloths="100282 100283 100284 100285" name="聚能套装" />
+	<item id="81" cloths="100286 100287 100288 100289" name="利刃钢爪" />
+	<item id="82" VipOnly="1" cloths="100776 100777 100778 100779" name="熔火之心" />
+	<item id="83" cloths="100290 100291 100292 100293" name="冰之至尊" />
+	<item id="84" cloths="100294 100295 100296 100297" name="冰之王者" />
+	<item id="85" cloths="100298 100299 100300 100301" name="冰之勇士" />
+	<item id="86" cloths="100302 100303 100304 100305" name="SR-02" transform="1" tranSpeed="5"/>
+	<item id="87" elite="1" cloths="100306 100307 100308 100309 100310" name="钢特拉" transform="1" tranSpeed="4"/>
+	<item id="88" elite="1" cloths="100311 100312 100313 100314 100315" name="奥金之锤" transform="1" tranSpeed="3"/>
+	<item id="89" VipOnly="1" cloths="100785 100786 100787 100788" name="猛禽战机" transform="1" tranSpeed="5.5"/>
+	<item id="90" cloths="100316 100317 100318 100319" name="射手装" />
+	<item id="91" VipOnly="1" cloths="100789 100790 100791 100792" name="赛虎威甲" />
+	<item id="92" cloths="100320 100321 100322 100323" name="雷神护甲" />
+	<item id="93" VipOnly="1" cloths="100793 100794 100795 100796" name="龙鳞" />
+	<item id="94" cloths="100325 100326 100327 100328" name="裂震铠甲" />
+	<item id="95" elite="1" cloths="100329 100330 100331 100332" name="光束战轮" />
+	<item id="96" elite="1" cloths="100334 100335 100336 100337" name="疾电" transform="1" tranSpeed="7.5"/>
+	<item id="97" elite="1" cloths="100338 100339 100340 100341" name="银翼猎手" />
+	<item id="98" cloths="100342 100343 100344 100345" name="爱丽丝" />
+	<item id="99" cloths="100346 100347 100348 100349" name="刺蜂" />
+	<item id="100" cloths="100350 100351 100352 100353" name="锡蝶" />
+</root>

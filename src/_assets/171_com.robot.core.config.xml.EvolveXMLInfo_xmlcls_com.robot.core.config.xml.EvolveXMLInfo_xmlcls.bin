@@ -1,0 +1,68 @@
+<CondEvolves>
+	<Evolve ID="1">
+		<Branch MonTo="60" />
+	</Evolve>
+
+	<Evolve ID="2">
+		<Branch MonTo="61" />
+	</Evolve>
+
+	<Evolve ID="3">
+		<Branch MonTo="72" />
+	</Evolve>
+
+	<Evolve ID="4">
+		<Branch MonTo="73" />
+	</Evolve>
+
+	<Evolve ID="5">
+		<Branch MonTo="81" />
+	</Evolve>
+
+	<Evolve ID="6">
+		<Branch MonTo="82" />
+	</Evolve>
+
+	<Evolve ID="7">
+		<Branch MonTo="92" EvolvItem="400004" EvolvItemCount="20" />
+		<Branch MonTo="93" EvolvItem="400008" EvolvItemCount="20" />
+		<Branch MonTo="94" EvolvItem="400003" EvolvItemCount="20" />
+	</Evolve>
+
+	<Evolve ID="8">
+		<Branch MonTo="101" />
+	</Evolve>
+
+	<Evolve ID="9">
+		<Branch MonTo="103" />
+	</Evolve>
+
+	<Evolve ID="10">
+		<Branch MonTo="104" />
+	</Evolve>
+
+	<Evolve ID="11">
+		<Branch MonTo="112" />
+	</Evolve>
+
+	<Evolve ID="12">
+		<Branch MonTo="113" />
+	</Evolve>
+	
+		<Evolve ID="13">
+		<Branch MonTo="144" />
+	</Evolve>
+	
+	<Evolve ID="14">
+		<Branch MonTo="202" />
+	</Evolve>
+	
+	<Evolve ID="16">
+		<Branch MonTo="214" />
+	</Evolve>
+	
+	<Evolve ID="17">
+		<Branch MonTo="224" />
+	</Evolve>
+</CondEvolves>
+
