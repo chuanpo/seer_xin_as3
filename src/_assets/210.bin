@@ -714,7 +714,7 @@ des 鼠标移上去的提示
 		<changeMapComp>
 		</changeMapComp>
 		<funComp>
-			<component name="door_0" hit="comp_0" fun="onLevelHandler" des="传送仓"/>
+			<component name="door_0" hit="comp_0" fun="onLevelHandler" des="斯诺星"/>
 		</funComp>
 	</map>
 	<map id="53" name="斯诺岩洞" x="77" y="480" super="20">
@@ -1166,7 +1166,7 @@ des 鼠标移上去的提示
 	<!-- -->
 	<map id="314" name="拜伦号" x="512" y="330">
 		<changeMapComp>
-			<component name="door_0" hit="comp_0" targetID="315"/>
+			<component name="door_0" hit="comp_0" targetID="302"/>
 			<component name="door_1" hit="comp_1" targetID="315"/>
 		</changeMapComp>
 	</map>

@@ -98,7 +98,7 @@ package com.robot.app.mapProcess
       {
          Alert.show("你确定要离开这里吗?",function():void
          {
-            MapManager.changeMap(1);
+            MapManager.changeMap(51);
          });
       }
       

@@ -43,7 +43,7 @@ package com.robot.app.mapProcess
          this.bossMC.gotoAndStop(1);
          this.doorMC = this.conLevel["door_mc"];
          this.door0 = this.conLevel["door_0"];
-         ToolTipManager.add(this.door0,"神秘空间");
+         ToolTipManager.add(this.door0,"闭锁空间");
          this.door0.buttonMode = true;
          this.door0.visible = false;
          this.door1 = this.conLevel["door_1"];

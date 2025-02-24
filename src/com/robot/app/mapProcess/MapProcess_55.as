@@ -11,6 +11,7 @@ package com.robot.app.mapProcess
    import flash.events.MouseEvent;
    import flash.utils.Timer;
    import org.taomee.manager.ToolTipManager;
+   import com.robot.core.manager.MapManager;
    
    public class MapProcess_55 extends BaseMapProcess
    {
@@ -43,7 +44,8 @@ package com.robot.app.mapProcess
       
       public function onLineClickHandler() : void
       {
-         Alert.show("露希欧之洋出现了涨潮,小赛尔们暂时无法进入。");
+         this.onMarkClickHandler();
+         //Alert.show("露希欧之洋出现了涨潮,小赛尔们暂时无法进入。");
       }
       
       public function url() : void
@@ -55,13 +57,15 @@ package com.robot.app.mapProcess
          r.getSession();
       }
       
-      private function onMarkClickHandler(e:MouseEvent) : void
+      private function onMarkClickHandler() : void
       {
          NpcTipDialog.showAnswer("嗨嗨，小赛尔请留步，听我说说" + TextFormatUtil.getRedTxt("露希欧之洋") + "的秘密吧！",function():void
          {
             NpcTipDialog.show("赛尔历40年1月，侠客开始了新的探险路程，露希欧星真是一颗神奇的星球呀，好多好多的矿产资源丰富得让我眼花缭乱！",function():void
             {
-               NpcTipDialog.show("这里是露希欧之洋的入口，我只悄悄告诉你哦，快去看看神奇的大洋之底吧！",null,NpcTipDialog.NONO);
+               NpcTipDialog.show("这里是露希欧之洋的入口，我只悄悄告诉你哦，快去看看神奇的大洋之底吧！",function():void{
+                  MapManager.changeMap(56);
+               },NpcTipDialog.NONO);
             },NpcTipDialog.NONO);
          },null,NpcTipDialog.NONO);
       }

@@ -29,7 +29,7 @@ package com.robot.app.mapProcess
    import org.taomee.events.DynamicEvent;
    import org.taomee.events.SocketEvent;
    import org.taomee.manager.EventManager;
-   import org.taomee.manager.ToolTipManager;
+   import org.taomee.manager.ToolTipManager;   
    
    public class MapProcess_51 extends BaseMapProcess
    {
@@ -102,8 +102,10 @@ package com.robot.app.mapProcess
          this.listCon = new PetListController(conLevel["manlist"],conLevel["monsterlist"]);
          conLevel["cici_btn"].addEventListener(MouseEvent.CLICK,function(e:MouseEvent):void
          {
-            Alarm.show("每年的这几天是斯诺星最寒冷的时间，入口已经被冰雪堵住了！");
+            MapManager.changeMap(52);
+            //Alarm.show("每年的这几天是斯诺星最寒冷的时间，入口已经被冰雪堵住了！");
          });
+         ToolTipManager.add(conLevel["cici_btn"],"斯诺星密林");
          this.snow_mc = conLevel["snow_mc"];
          this.snow_mc.buttonMode = true;
          this.snow_mc.addEventListener(MouseEvent.CLICK,this.clickSnowMcHandler);
