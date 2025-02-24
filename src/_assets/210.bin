@@ -761,7 +761,7 @@ des 鼠标移上去的提示
 			<component name="door_1" hit="hit_1" targetID="58"/>
 		</changeMapComp>
 		<funComp>
-			<!--component name="door_2" hit="hit_2" fun="onLineClickHandler"/-->
+			<component name="door_2" hit="hit_2" fun="onLineClickHandler"/>
 		</funComp>
 		<funComp>
 			
