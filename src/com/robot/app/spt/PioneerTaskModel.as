@@ -31,15 +31,15 @@ package com.robot.app.spt
          for each(xmlItem in xmlList)
          {
             info = new SptInfo();
-            info.id = uint(xml.@id);
-            info.description = xml.@description;
-            info.enterID = uint(xml.@enterID);
-            info.level = uint(xml.@lel);
-            info.onLine = Boolean(xml.@online);
-            info.seatID = uint(xml.@seatID);
+            info.id = uint(xmlItem.@id);
+            info.description = xmlItem.@description;
+            info.enterID = uint(xmlItem.@enterID);
+            info.level = uint(xmlItem.@lel);
+            info.onLine = Boolean(xmlItem.@online);
+            info.seatID = uint(xmlItem.@seatID);
             info.status = uint(TasksManager.taskList[info.id - 1]);
-            info.title = xml.@title;
-            info.fightCondition = xml.@fightCondition;
+            info.title = xmlItem.@title;
+            info.fightCondition = xmlItem.@fightCondition;
             _infoA.push(info);
          }
       }
