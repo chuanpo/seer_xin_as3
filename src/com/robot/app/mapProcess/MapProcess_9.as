@@ -45,6 +45,8 @@ package com.robot.app.mapProcess
       private var _superApp:AppModel;
       
       private var timePanel:AppModel;
+
+      private var oldPaperPanel:AppModel;
       
       public function MapProcess_9()
       {
@@ -309,7 +311,12 @@ package com.robot.app.mapProcess
       
       private function clickNewsPaper(event:MouseEvent) : void
       {
-         Alarm.show("此功能暂不开放！");
+         if(this.oldPaperPanel == null)
+         {
+            this.oldPaperPanel = ModuleManager.getModule(ClientConfig.getAppModule("OldNewsPaper"),"正在打开往期日志");
+            this.oldPaperPanel.setup();
+         }
+         this.oldPaperPanel.show();
       }
       
       public function starGame() : void

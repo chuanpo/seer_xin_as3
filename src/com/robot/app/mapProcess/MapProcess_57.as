@@ -27,6 +27,8 @@ package com.robot.app.mapProcess
 
       private var pet_btn:SimpleButton;
 
+      private var _door_2:MovieClip;
+
       public function MapProcess_57()
       {
          super();
@@ -36,7 +38,11 @@ package com.robot.app.mapProcess
          ToolTipManager.add(this._hua_btn, "花蕊");
          this._dh_mc = depthLevel["dh_mc"];
          this._dh_mc.gotoAndStop(1);
-         this._markMc.visible = false;
+         this._markMc.visible = true;
+         this._markMc.buttonMode = true;
+         this._door_2 = this.conLevel["door_2"];
+         this._door_2.addEventListener(MouseEvent.CLICK, this.onMarkClickHandler);
+         this._markMc.addEventListener(MouseEvent.CLICK, this.onMarkClickHandler);
          this._long_mc = btnLevel["longNpc"];
          this._long_mc.buttonMode = true;
          this._long_mc.addEventListener(MouseEvent.CLICK, this.clickLongHandler);
@@ -140,7 +146,10 @@ package com.robot.app.mapProcess
             FightInviteManager.fightWithBoss("哈莫雷特");
          }
       }
-
+      public function onLineClickHandler() : void
+      {
+         this.onMarkClickHandler();
+      }
       private function onMarkClickHandler(e:MouseEvent):void
       {
          NpcTipDialog.showAnswer("咦？你这是想进入尼古尔水帘吗？这里……这里可大有名堂啊！你想知道吗？", function():void
@@ -149,7 +158,7 @@ package com.robot.app.mapProcess
                   {
                      NpcTipDialog.show("那个什么什么的原始物质应该存在着剧毒哦！肖恩老师说了，只有在我们<font color=\'#ff0000\'>超能NoNo</font>的保护下才可以安全进入！那个帘洞里还有……还有什么呢？你自己去看吧！", function():void
                         {
-                           MapManager.changeMap(58);
+                           MapManager.changeMap(59);
                         }, NpcTipDialog.NONO);
                   }, NpcTipDialog.NONO);
             }, null, NpcTipDialog.NONO);

@@ -17,7 +17,9 @@ package com.robot.app.mapProcess
    import flash.events.MouseEvent;
    import flash.media.Sound;
    import flash.media.SoundChannel;
-   
+   import com.robot.core.manager.MapManager;
+   import com.robot.app.task.taskUtils.taskDialog.NpcTipDialog;
+
    public class MapProcess_325 extends BaseMapProcess
    {
       public static var oneString:String = "unclick";
@@ -66,15 +68,23 @@ package com.robot.app.mapProcess
       
       private var musicIdArr:Array = [3,2,6,7,5,4,1];
       
+      private var musicIDArr:Array = [5,6,7];
+      
       private var tempMusicId:Array = [];
       
       private var boss_mc:MovieClip;
       
       private var boss_btn:SimpleButton;
       
+      private var _markMc:MovieClip;
+      
+      private var musicNum:uint = 0;
+      
       private var isBoss:Boolean;
       
       private var musicId:uint = 0;
+      
+      private var isInTask:Boolean;
       
       public function MapProcess_325()
       {
@@ -84,8 +94,10 @@ package com.robot.app.mapProcess
       override protected function init() : void
       {
          var i:uint;
-         WeeklyGif.setup(btnLevel["btn"]);
+         var m:BaseMapProcess;
+         this.musicNum = 0;
          this.isBoss = false;
+         this.isInTask = false;
          this.boss_mc = conLevel["boss_mc"];
          this.boss_btn = conLevel["boss_btn"];
          this.boss_btn.visible = false;
@@ -159,6 +171,18 @@ package com.robot.app.mapProcess
          this.waterBig.gotoAndStop(1);
          this.taskOver.gotoAndStop(1);
          this.npcPet.addEventListener(MouseEvent.CLICK,this.speak);
+         m = this;
+         depthLevel["jellyseer_mc"].buttonMode = true;
+         depthLevel["jellyseer_mc"].addEventListener(MouseEvent.CLICK,function():void{
+            NpcTipDialog.showAnswer("咦？你是想让我带你去月影花园吗？", function():void
+            {
+               MapManager.changeMap(63);
+            }, null, NpcTipDialog.SEER);
+         });
+         conLevel["npcMC"].buttonMode = true;
+         conLevel["npcMC"].addEventListener(MouseEvent.CLICK,function():void{
+            NpcDialog.show(NPC.PENNYHIGH,["艾迪星是全宇宙最有情调的地方！美妙的音乐无处不在。"],["嗯嗯！这里的音乐真美。"]);
+         });
       }
       
       private function screenPlay(e:MouseEvent) : void
@@ -347,7 +371,7 @@ package com.robot.app.mapProcess
          FightInviteManager.fightWithBoss("奈尼芬多");
       }
       
-      private function musicPlay(e:MouseEvent) : void
+private function musicPlay(e:MouseEvent) : void
       {
          var soud:Sound;
          var k:uint = 0;
@@ -454,8 +478,8 @@ package com.robot.app.mapProcess
                {
                   TasksManager.accept(97,function():void
                   {
-                     TasksManager.complete(97,0,null,true);
-                     LevelManager.openMouseEvent();
+                        TasksManager.complete(97,0,null,true);
+                        LevelManager.openMouseEvent();
                   });
                }]);
             }
@@ -484,10 +508,55 @@ package com.robot.app.mapProcess
             this.godChannel.removeEventListener(Event.SOUND_COMPLETE,this.godOver);
          }
          this.npcPet.removeEventListener(Event.ENTER_FRAME,this.overSleep);
-      }
-      
-      public function changeMap() : void
+      }    
+
+      public function exploitOre() : void
       {
+         NpcDialog.show(NPC.SEER,["暂时不可开采哟~"],["可恶...."],[function():void{}])
+         //EnergyController.exploit(29);
+      }
+
+      private function isPlayMusic(param1:uint) : void
+      {
+         var n:uint = param1;
+         if(this.musicIDArr[this.musicNum] == n)
+         {
+            ++this.musicNum;
+            if(this.musicNum == 3)
+            {
+               if(this.isInTask)
+               {
+                  this.musicNum = 0;
+                  AnimateManager.playMcAnimate(depthLevel["jellyseer_mc"],2,"mc2",function():void
+                  {
+                     NpcDialog.show(NPC.SEER,["什么！！什么！！赛尔飞起来了？我真的眼花了吗？#7"],["我刚刚明明有看到史空飞起来啊……"],[function():void
+                     {
+                        NpcDialog.show(NPC.JELLYSEER,["带我去月影花园看看吧……那里也跟这里一样奇妙吗？也有音乐吗？"],["哎呀！哎呀！你别着急啊……"],[function():void
+                        {
+                           TasksManager.complete(TaskController_133.TASK_ID,1,function(param1:Boolean):void
+                           {
+                              MapManager.changeMap(63);
+                           });
+                        }]);
+                     }]);
+                  });
+               }
+            }
+         }
+         else
+         {
+            ++this.musicNum;
+            if(this.musicNum >= 3)
+            {
+               if(this.isInTask)
+               {
+                  NpcDialog.show(NPC.JELLYSEER,["我想你弹奏错了……再认真看下琴谱吧！#1（★★△△**△）"],["我再去试试看！"],[function():void
+                  {
+                     musicNum = 0;
+                  }]);
+               }
+            }
+         }
       }
    }
 }
