@@ -3,7 +3,7 @@ package
    import flash.display.MovieClip;
    import flash.display.SimpleButton;
    
-   [Embed(source="/_assets/assets.swf", symbol="symbol248")]
+   [Embed(source="/_assets/assets3.swf", symbol="symbol248")]
    public dynamic class lib_newer_mc extends MovieClip
    {
       public var closeBtn:SimpleButton;

@@ -4,7 +4,7 @@ package
    import flash.display.SimpleButton;
    import flash.text.TextField;
    
-   [Embed(source="/_assets/assets.swf", symbol="symbol71")]
+   [Embed(source="/_assets/assets3.swf", symbol="symbol71")]
    public dynamic class ui_findTeamAlarm extends MovieClip
    {
       public var txt:TextField;

@@ -3,7 +3,7 @@ package
    import flash.display.MovieClip;
    import flash.display.SimpleButton;
    
-   [Embed(source="/_assets/assets.swf", symbol="symbol93")]
+   [Embed(source="/_assets/assets3.swf", symbol="symbol93")]
    public dynamic class lib_transform_menu extends MovieClip
    {
       public var tranBtn:SimpleButton;

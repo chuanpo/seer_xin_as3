@@ -3,7 +3,7 @@ package
    import flash.display.MovieClip;
    import flash.text.TextField;
    
-   [Embed(source="/_assets/assets.swf", symbol="symbol16")]
+   [Embed(source="/_assets/assets3.swf", symbol="symbol16")]
    public dynamic class NPC_MC extends MovieClip
    {
       public var txt:TextField;

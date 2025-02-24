@@ -2,7 +2,7 @@ package
 {
    import flash.display.MovieClip;
    
-   [Embed(source="/_assets/assets.swf", symbol="symbol51")]
+   [Embed(source="/_assets/assets3.swf", symbol="symbol51")]
    public dynamic class HelpUI_Arrow extends MovieClip
    {
       public function HelpUI_Arrow()
