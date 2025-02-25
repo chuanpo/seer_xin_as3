@@ -62,17 +62,17 @@ package com.robot.app.mapProcess
       {
          this.boxMC = conLevel["box"];
          ToolTipManager.add(this.boxMC,"赛尔金豆");
-         this.boxMC.visible = false;
+         this.boxMC.visible = true;
          this.bookMC = conLevel["bookbox"];
-         this.bookMC.visible = false;
+         this.bookMC.visible = true;
          this.bookMC.addEventListener(MouseEvent.CLICK,this.onBookBoxClickHandler);
          ToolTipManager.add(this.bookMC,"宇宙购物指南");
          this._elietCoinBtn = conLevel["elietCoinBtn"];
-         this._elietCoinBtn.visible = false;
+         this._elietCoinBtn.visible = true;
          ToolTipManager.add(this._elietCoinBtn,"米币精品手册 ");
          this._elietCoinBtn.addEventListener(MouseEvent.CLICK,this.clickElietCoinHandler);
          this.bookBtn = btnLevel["book"];
-         this.bookBtn.visible = false;
+         this.bookBtn.visible = true;
          this.bookBtn.addEventListener(MouseEvent.CLICK,this.showBookHandler);
          ToolTipManager.add(btnLevel["book"],"宇宙购物指南");
          this._so = SOManager.getUserSO(SOManager.READEDSHOPINGBOOK);
