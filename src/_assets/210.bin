@@ -1358,13 +1358,23 @@ des 鼠标移上去的提示
 		<changeMapComp>
 		</changeMapComp>
 		<funComp>
-			<component name="door_0" hit="comp_0" fun="onLeaveHandler"/>
+		<funComp>
+			<component name="door_0" hit="comp_0" fun="onLeaveHandler" />
 			<component name="cachetMc_0" hit="cachetHit_0" fun="onCachetMc0Handler"
-				isStop="1" des="第一封印-虚无"/>
+				isStop="1" des="第一封印-虚无" />
 			<component name="cachetMc_1" hit="cachetHit_1" fun="onCachetMc0Handler"
-				isStop="1" des="第二封印-元素"/>
+				isStop="1" des="第二封印-元素" />
 			<component name="cachetMc_2" hit="cachetHit_2" fun="onCachetMc0Handler"
-				isStop="1" des="第三封印-能量"/>
+				isStop="1" des="第三封印-能量" />
+			<component name="cachetMc_3" hit="cachetHit_3" fun="onCachetMc0Handler"
+				isStop="1" des="第四封印-生命" />
+			<component name="cachetMc_4" hit="cachetHit_4" fun="onCachetMc0Handler"
+				isStop="1" des="第五封印-轮回" />
+			<component name="cachetMc_5" hit="cachetHit_5" fun="onCachetMc0Handler"
+				isStop="1" des="第六封印-永恒" />
+			<component name="cachetMc_6" hit="cachetHit_6" fun="onCachetMc0Handler"
+				isStop="1" des="第七封印-圣洁" />
+		</funComp>
 		</funComp>
 	</map>
 	<!--要塞保卫站-->

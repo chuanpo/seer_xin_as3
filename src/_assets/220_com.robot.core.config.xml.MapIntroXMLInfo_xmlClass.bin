@@ -35,7 +35,7 @@
 	<map id="101" des="教官办公室">
 	</map>
 	<map id="102" des="精灵太空站">
-		<sprite petIDs="谱尼第三封印"/>	
+		<sprite petIDs="谱尼封印"/>	
 	</map>
 	<map id="107" des="发明室">
 		<nono names="时空穿梭芯片"/>

@@ -109,13 +109,28 @@ package com.robot.app.mapProcess
          switch(mc.name)
          {
             case "cachetMc_0":
-               Alert.show(" 谱尼的第一封印：虚无 已经开启，只有战胜谱尼内心的封印化身才能解除这个封印，你准备好去挑战了吗？",this.sureHandler);
+               Alert.show("谱尼的第一封印：虚无 已经开启，只有战胜谱尼内心的封印化身才能解除这个封印，你准备好去挑战了吗？",this.sureHandler);
                break;
             case "cachetMc_1":
-               Alert.show(" 谱尼的第二封印：元素 已经开启，只有战胜谱尼内心的封印化身才能解除这个封印，你准备好去挑战了吗？",this.sureHandler);
+               Alert.show("谱尼的第二封印：元素 已经开启，只有战胜谱尼内心的封印化身才能解除这个封印，你准备好去挑战了吗？",this.sureHandler);
                break;
             case "cachetMc_2":
-               Alert.show(" 谱尼的第三封印：能量 已经开启，只有战胜谱尼内心的封印化身才能解除这个封印，你准备好去挑战了吗？",this.sureHandler);
+               Alert.show("谱尼的第三封印：能量 已经开启，只有战胜谱尼内心的封印化身才能解除这个封印，你准备好去挑战了吗？",this.sureHandler);
+               break;
+            case "cachetMc_3":
+               Alert.show("谱尼的第四封印：生命 已经开启，只有战胜谱尼内心的封印化身才能解除这个封印，你准备好去挑战了吗？",this.sureHandler);
+               break;
+            case "cachetMc_4":
+               break;
+               Alert.show("谱尼的第五封印：轮回 已经开启，只有战胜谱尼内心的封印化身才能解除这个封印，你准备好去挑战了吗？",this.sureHandler);
+               break;
+            case "cachetMc_5":
+               break;
+               Alert.show("谱尼的第六封印：永恒 已经开启，只有战胜谱尼内心的封印化身才能解除这个封印，你准备好去挑战了吗？",this.sureHandler);
+               break;
+            case "cachetMc_6":
+               break;
+               Alert.show("谱尼的第七封印：圣洁 已经开启，只有战胜谱尼内心的封印化身才能解除这个封印，你准备好去挑战了吗？",this.sureHandler);
          }
       }
       

@@ -47,7 +47,7 @@ package com.robot.app.toolBar
    import org.taomee.manager.ToolTipManager;
    import org.taomee.utils.AlignType;
    import org.taomee.utils.DisplayUtil;
-
+   import com.robot.app.team.TeamController;
    public class ToolBarPanel extends Sprite
    {
       private var _chatPanel:ChatPanel;
@@ -434,7 +434,7 @@ package com.robot.app.toolBar
          }
          else
          {
-            MapManager.changeMap(MainManager.actorInfo.teamInfo.id);
+            TeamController.enter(MainManager.actorInfo.teamInfo.id);
          }
       }
 
