@@ -428,13 +428,13 @@ package com.robot.app.toolBar
 
       private function onTeam(event:MouseEvent):void
       {
-         if (MainManager.actorModel.teamID == 0)
+         if (MainManager.actorInfo.teamInfo.id == 0)
          {
             Alarm.show("您还没有加入战队");
          }
          else
          {
-            MapManager.changeMap(MainManager.actorModel.teamID);
+            MapManager.changeMap(MainManager.actorInfo.teamInfo.id);
          }
       }
 
