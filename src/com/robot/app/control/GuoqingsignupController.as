@@ -23,8 +23,8 @@ package com.robot.app.control
       
       public static function createIcon() : void
       {
-         iconMc = TaskIconManager.getIcon("ui_guoqing") as MovieClip;
-         ToolTipManager.add(iconMc,"国庆");
+         //iconMc = TaskIconManager.getIcon("ui_guoqing") as MovieClip;
+         //ToolTipManager.add(iconMc,"国庆");
          var date:Date = new Date();
          if(date.fullYear == 2018 && date.month == 9 && date.date >= 1 && date.date <= 7)
          {
