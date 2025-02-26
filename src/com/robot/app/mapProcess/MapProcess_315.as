@@ -15,7 +15,8 @@ package com.robot.app.mapProcess
    import flash.utils.Timer;
    import org.taomee.manager.EventManager;
    import org.taomee.utils.DisplayUtil;
-   
+   import flash.utils.setTimeout;
+
    public class MapProcess_315 extends BaseMapProcess
    {
       private var clothesArr:Array = [];
@@ -73,12 +74,14 @@ package com.robot.app.mapProcess
          this.timer.addEventListener(TimerEvent.TIMER,this.onTimer);
          this.timer.start();
          this.carver = new Carver(this);
-         conLevel["door_2"].visible = false;
          this.door_switch = conLevel["door_switch_mc"];
          this.door_switch.buttonMode = true;
          this.door_switch.gotoAndStop(1);
          this.door_effect = conLevel["door_effect"];
          this.door_effect.visible = false;
+         door_effect.gotoAndStop(1) 
+         conLevel["door_2"].gotoAndStop(1);
+         conLevel["door_2"].visible = false;
       }
       
       private function addPet() : void
@@ -338,7 +341,30 @@ package com.robot.app.mapProcess
       
       public function onStand(mc:MovieClip) : void
       {
-         NpcTipDialog.show("时空之门已经关闭！",null,NpcTipDialog.IRIS);
+         NpcTipDialog.show("时空之门已经开启！\r\n点击时空之门穿越回千年前的赫尔卡星吧！",function():void{
+            conLevel["door_2"].visible = true;
+            conLevel["door_2"].gotoAndPlay(1);
+            conLevel["door_2"].buttonMode = true;
+            door_effect.visible = true;
+            door_effect.gotoAndStop(1);
+         },NpcTipDialog.IRIS);
+      }
+      public function onChangeMap(mc:MovieClip) : void
+      {
+         door_effect.gotoAndStop(2);
+         door_effect.addEventListener(Event.ENTER_FRAME,function(evt:Event):void
+            {
+               if(door_effect.currentFrame == door_effect.totalFrames)
+               {
+                  door_effect.removeEventListener(Event.ENTER_FRAME,arguments.callee);
+                  setTimeout(function():void{
+                  door_effect.gotoAndStop(1);
+                     setTimeout(function():void{
+                        MapManager.changeMap(320);
+                     },200)
+                  },500)
+               }
+         })
       }
    }
 }
@@ -364,6 +390,8 @@ class Carver
    
    private var door_1:MovieClip;
    
+   private var isOpeingDoor:Boolean = false;
+
    public function Carver(m:BaseMapProcess)
    {
       super();
@@ -374,12 +402,15 @@ class Carver
       this.supNonoOpenDoor = this.map.conLevel["supNonoOpenDoor"];
       this.supNonoOpenDoor.gotoAndStop(1);
       this.supNonoOpenDoor.visible = false;
+      this.openDoorMC = this.map.conLevel["openDoorMC"];
       this.door_1 = this.map.conLevel["door_1"];
       this.door_1.mouseEnabled = false;
    }
    
    public function onClickOpenDoor() : void
    {
+      if(isOpeingDoor)return;
+      isOpeingDoor = true;
       var info:NonoInfo = null;
       var supNonoColorMC:MovieClip = null;
       var nonoColorMC:MovieClip = null;
@@ -395,7 +426,7 @@ class Carver
             this.openDoorMC.buttonMode = false;
             this.openDoorMC.mouseEnabled = false;
             supNonoColorMC = this.supNonoOpenDoor["supNonoColorMC"];
-            DisplayUtil.FillColor(supNonoColorMC,info.color);
+            DisplayUtil.FillColor(supNonoColorMC,MainManager.actorInfo.nonoColor);
             supNonoColorMC.addEventListener(Event.ENTER_FRAME,function(evt:Event):void
             {
                if(supNonoColorMC.currentFrame == supNonoColorMC.totalFrames)
@@ -410,6 +441,8 @@ class Carver
                      {
                         openDoorMC.removeEventListener(Event.ENTER_FRAME,arguments.callee);
                         door_1.mouseEnabled = true;
+                        door_1.buttonMode = true;
+                        isOpeingDoor = false;
                      }
                   });
                }
@@ -423,7 +456,7 @@ class Carver
             this.openDoorMC.buttonMode = false;
             this.openDoorMC.mouseEnabled = false;
             nonoColorMC = this.nonoOpenDoor["nonoColorMC"];
-            DisplayUtil.FillColor(nonoColorMC,info.color);
+            //DisplayUtil.FillColor(nonoColorMC,MainManager.actorInfo.nonoColor);
             nonoColorMC.addEventListener(Event.ENTER_FRAME,function(evt:Event):void
             {
                if(nonoColorMC.currentFrame == nonoColorMC.totalFrames)
@@ -438,6 +471,8 @@ class Carver
                      {
                         openDoorMC.removeEventListener(Event.ENTER_FRAME,arguments.callee);
                         door_1.mouseEnabled = true;
+                        door_1.buttonMode = true;
+                        isOpeingDoor = false;
                      }
                   });
                }
@@ -452,6 +487,7 @@ class Carver
       {
          str = "这扇门需要NoNo帮忙才能开启啊，带上你的NoNo再来试试看吧！";
          NpcTipDialog.show(str,null,NpcTipDialog.IRIS);
+         isOpeingDoor = false;
       }
    }
 }
