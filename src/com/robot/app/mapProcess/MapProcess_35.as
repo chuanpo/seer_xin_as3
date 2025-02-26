@@ -30,7 +30,7 @@ package com.robot.app.mapProcess
       override protected function init() : void
       {
          this.gameTrig = conLevel["game_trig"];
-         this.gameTrig.visible = false;
+         this.gameTrig.visible = true;
          this.gameTrig.buttonMode = true;
          this.gameTrig.addEventListener(MouseEvent.CLICK,this.onGameTrigClickHand);
          conLevel["btn1"].addEventListener(MouseEvent.CLICK,this.onBtn1ClickHandler);
