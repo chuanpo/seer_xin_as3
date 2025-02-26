@@ -146,7 +146,7 @@ package com.robot.core.manager
          var rel:UserInfo = null;
          var rel2:UserInfo = null;
          _friendList = new HashMap();
-         var length:int = 0;
+         var length:int = data.readUnsignedInt();
          for(var i:int = 0; i < length; i++)
          {
             rel = new UserInfo();
