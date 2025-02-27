@@ -89,7 +89,27 @@ package com.robot.core.config.xml
          };
          dict["key_" + 16] = {
             "cn":"圣灵",
-            "en":"god"
+            "en":"saint"
+         };
+         dict["key_" + 17] = {
+            "cn":"次元",
+            "en":"dimension"
+         };
+         dict["key_" + 18] = {
+            "cn":"远古",
+            "en":"ancient"
+         };
+         dict["key_" + 19] = {
+            "cn":"邪灵",
+            "en":"demon"
+         };
+         dict["key_" + 20] = {
+            "cn":"自然",
+            "en":"nature"
+         };
+         dict["key_" + 21] = {
+            "cn":"草 超能",
+            "en":"grass_psychic"
          };
          categoryNames["key_" + 1] = "物理攻击";
          categoryNames["key_" + 2] = "特殊攻击";
