@@ -8,6 +8,23 @@
 			"group": "build",
 			"problemMatcher": [],
 			"label": "ActionScript: compile release - asconfig.json"
+		},
+		{
+			"type": "shell",
+			"label": "Run Python Unzip Script",
+			"command": "python",
+			"args": [
+				"${workspaceFolder}/.vscode/unzip.py"
+			],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"dependsOn": [
+				"ActionScript: compile release - asconfig.json"
+			]
 		}
+	
 	]
 }
