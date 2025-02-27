@@ -143,7 +143,7 @@ package com.robot.app.toolBar
          this._soundController_mc["mc1"].visible = true;
          ProtectSystem.start(this._mainUI["BatteryMC"]);
          addChild(this._mainUI);
-         this._inputTxt.restrict = "";
+         this._inputTxt.restrict = "^妈";
          this._inputTxt.maxChars = 30;
          this._mainUI.mouseEnabled = false;
          mouseEnabled = false;
