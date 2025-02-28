@@ -143,7 +143,7 @@ package com.robot.app.petbag.ui
          this._petInfo = info;
          this._numTxt.htmlText = "序号:" + this.des1 + StringUtil.renewZero(info.id.toString(),3) + this.des2;
          this._nameTxt.htmlText = "名字:" + this.des1 + PetXMLInfo.getName(info.id) + this.des2;
-         this._levelTxt.htmlText = "等级:" + this.des1 + info.level.toString() + this.des2 + ("    个体:" + this.des1) + info.dv.toString() + this.des2;
+         this._levelTxt.htmlText = "等级:" + this.des1 + info.level.toString() + this.des2 + ("   个体:" + this.des1) + info.dv.toString() + this.des2;
          this._upExpTxt.htmlText = "升级所需经验值:" + this.des1 + (info.nextLvExp - info.exp).toString() + this.des2;
          var effectInfo:PetEffectInfo = info.effectList[0];
          this._charaTxt.htmlText = "性格:" + this.des1 + NatureXMLInfo.getName(info.nature) + this.des2;
