@@ -1,36 +1,36 @@
 package com.robot.core.config.xml
 {
    import flash.utils.Dictionary;
-   
+
    public class SkillXMLInfo
    {
       private static var xmllist:XMLList;
-      
+
       private static var sideEffectXMLList:XMLList;
-      
+
       private static var xmlClass:Class = SkillXMLInfo_xmlClass;
-      
+
       private static var SKILL_XML:XML = XML(new xmlClass());
-      
+
       private static var categoryNames:Dictionary = new Dictionary();
-      
+
       public static var dict:Dictionary = new Dictionary();
-      
+
       parseInfo();
-      
+
       public function SkillXMLInfo()
       {
          super();
       }
-      
-      private static function parseInfo() : void
+
+      private static function parseInfo():void
       {
          xmllist = SKILL_XML.descendants("Move");
          sideEffectXMLList = SKILL_XML.descendants("SideEffect");
          dict["key_1"] = {"cn": "草", "en": "grass"};
          dict["key_2"] = {"cn": "水", "en": "water"};
          dict["key_3"] = {"cn": "火", "en": "fire"};
-         dict["key_4"] = {"cn": "飞行", "en": "flying"};
+         dict["key_4"] = {"cn": "飞行", "en": "fly"};
          dict["key_5"] = {"cn": "电", "en": "electric"};
          dict["key_6"] = {"cn": "机械", "en": "steel"};
          dict["key_7"] = {"cn": "地面", "en": "ground"};
@@ -164,36 +164,36 @@ package com.robot.core.config.xml
          categoryNames["key_" + 2] = "特殊攻击";
          categoryNames["key_" + 4] = "属性攻击";
       }
-      
-      public static function getName(id:uint) : String
+
+      public static function getName(id:uint):String
       {
          var xml:XML = null;
          xml = xmllist.(@ID == id)[0];
          return xml.@Name;
       }
-      
-      public static function getDamage(id:uint) : uint
+
+      public static function getDamage(id:uint):uint
       {
          var xml:XML = null;
          xml = xmllist.(@ID == id)[0];
          return xml.@Power;
       }
-      
-      public static function getPP(id:uint) : uint
+
+      public static function getPP(id:uint):uint
       {
          var xml:XML = null;
          xml = xmllist.(@ID == id)[0];
          return xml.@MaxPP;
       }
-      
-      public static function hitP(id:uint) : Number
+
+      public static function hitP(id:uint):Number
       {
          var xml:XML = null;
          xml = xmllist.(@ID == id)[0];
          return xml.@Accuracy;
       }
-      
-      public static function getSideEffects(id:uint) : Array
+
+      public static function getSideEffects(id:uint):Array
       {
          var xml:XML = null;
          var _add:Array = null;
@@ -201,8 +201,8 @@ package com.robot.core.config.xml
          _add = String(xml.@SideEffect).split(" ");
          return _add;
       }
-      
-      public static function getSideEffectArgs(id:uint) : Array
+
+      public static function getSideEffectArgs(id:uint):Array
       {
          var xml:XML = null;
          var _add:Array = null;
@@ -210,28 +210,28 @@ package com.robot.core.config.xml
          _add = String(xml.@SideEffectArg).split(" ");
          return _add;
       }
-      
-      public static function getCategory(id:uint) : int
+
+      public static function getCategory(id:uint):int
       {
          var xml:XML = null;
          xml = xmllist.(@ID == id)[0];
-         if(!xml)
+         if (!xml)
          {
             return 0;
          }
          return xml.@Category;
       }
-      
-      public static function getCategoryName(id:uint) : String
+
+      public static function getCategoryName(id:uint):String
       {
          return categoryNames["key_" + getCategory(id)];
       }
-      
-      public static function getTypeCN(id:uint) : String
+
+      public static function getTypeCN(id:uint):String
       {
          var xml:XML = null;
          var type:String = null;
-         if(getCategory(id) == 4)
+         if (getCategory(id) == 4)
          {
             return "属性";
          }
@@ -239,17 +239,17 @@ package com.robot.core.config.xml
          type = xml.@Type;
          return dict["key_" + type]["cn"];
       }
-      
-      public static function getTypeCNBytTypeID(typeid:uint) : String
+
+      public static function getTypeCNBytTypeID(typeid:uint):String
       {
          return dict["key_" + typeid]["cn"];
       }
-      
-      public static function getTypeEN(id:uint) : String
+
+      public static function getTypeEN(id:uint):String
       {
          var xml:XML = null;
          var type:String = null;
-         if(getCategory(id) == 4)
+         if (getCategory(id) == 4)
          {
             return "prop";
          }
@@ -257,26 +257,45 @@ package com.robot.core.config.xml
          type = xml.@Type;
          return dict["key_" + type]["en"];
       }
-      
-      public static function getInfo(id:uint) : String
+
+      public static function getInfo(id:uint):String
       {
          var xml:XML = null;
          xml = xmllist.(@ID == id)[0];
          return xml.@info;
       }
-      
-      public static function getDes(id:uint) : String
+
+      public static function getDes(id:uint):String
       {
          var xml:XML = null;
          xml = sideEffectXMLList.(@ID == id)[0];
          return xml.@des;
       }
-      
-      public static function petTypeName(id:uint) : String
+
+      public static function petTypeName(id:uint):String
       {
          var cc:String = dict["key_" + id]["cn"];
          return dict["key_" + id]["cn"];
       }
+      public static function getPriority(id:uint):int
+      {
+         var xml:XML = null;
+         xml = xmllist.(@ID == id)[0];
+         return xml.@Priority ? int(xml.@Priority) : 0;
+      }
+
+      public static function getUrl(id:uint):String
+      {
+         var xml:XML = null;
+         xml = xmllist.(@ID == id)[0];
+         return xml.@Url;
+      }
+
+      public static function getCritRate(id:uint):int
+      {
+         var xml:XML = null;
+         xml = xmllist.(@ID == id)[0];
+         return xml.@CritRate? int(xml.@CritRate) : 1;;
+      }
    }
 }
-

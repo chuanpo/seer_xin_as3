@@ -11,27 +11,27 @@ package com.robot.core.ui.skillBtn
    import flash.text.TextFieldAutoSize;
    import flash.utils.Timer;
    import org.taomee.utils.DisplayUtil;
-   
+
    public class SkillInfoTip
    {
       private static var tipMC:MovieClip;
-      
+
       private static var timer:Timer;
-      
+
       setup();
-      
+
       public function SkillInfoTip()
       {
          super();
       }
-      
-      private static function setup() : void
+
+      private static function setup():void
       {
-         timer = new Timer(5000,1);
-         timer.addEventListener(TimerEvent.TIMER,timerHandler);
+         timer = new Timer(5000, 1);
+         timer.addEventListener(TimerEvent.TIMER, timerHandler);
       }
-      
-      public static function show(_id:uint) : void
+
+      public static function show(_id:uint):void
       {
          var color:String = null;
          var i:String = null;
@@ -39,7 +39,7 @@ package com.robot.core.ui.skillBtn
          var num:uint = 0;
          var tempNum:uint = 0;
          var des:String = null;
-         if(!tipMC)
+         if (!tipMC)
          {
             tipMC = UIManager.getMovieClip("ui_SkillTipPanel");
             tipMC.mouseChildren = false;
@@ -51,11 +51,11 @@ package com.robot.core.ui.skillBtn
          var category:uint = uint(SkillXMLInfo.getCategory(_id));
          var sideEffects:Array = SkillXMLInfo.getSideEffects(_id);
          var sideEffectsArgs:Array = SkillXMLInfo.getSideEffectArgs(_id);
-         if(category == 1)
+         if (category == 1)
          {
             color = "#FF0000";
          }
-         else if(category == 2)
+         else if (category == 2)
          {
             color = "#FF99FF";
          }
@@ -65,17 +65,46 @@ package com.robot.core.ui.skillBtn
          }
          var str:String = "<font color=\'#ffff00\'>" + name + "</font>  " + "<font color=\'" + color + "\'>(" + SkillXMLInfo.getCategoryName(_id) + ")</font>\r";
          var argsNum:uint = 0;
-         for each(i in sideEffects)
+         str += "\r";
+         var priority:int = SkillXMLInfo.getPriority(_id);
+         if (priority > 0)
          {
-            if(i != "")
+            str += "先制: " + priority;
+         }
+
+         // 获取并检查命中率（Accuracy）
+         var accuracy:Number = SkillXMLInfo.hitP(_id);
+         if (accuracy > 0)
+         {
+            str += " 命中: " + accuracy + "%";
+         }
+
+         // 获取并检查暴击率（CritRate）
+         var critRate:int = SkillXMLInfo.getCritRate(_id);
+         if (critRate > 0)
+         {
+            str += " 暴击: " + critRate + "/16";
+         }
+         str += "\r";
+
+         try
+         {
+            for each (i in sideEffects)
             {
-               num = uint(1000000 + uint(i));
-               tempNum = EffectInfoManager.getArgsNum(uint(i));
-               des = EffectInfoManager.getInfo(uint(i),sideEffectsArgs.slice(argsNum,argsNum + tempNum));
-               argsNum += tempNum;
-               str += "\r" + des;
+               if (i != "")
+               {
+                  num = uint(1000000 + uint(i));
+                  tempNum = EffectInfoManager.getArgsNum(uint(i));
+                  des = EffectInfoManager.getInfo(uint(i), sideEffectsArgs.slice(argsNum, argsNum + tempNum));
+                  argsNum += tempNum;
+                  str += "\r" + des;
+               }
             }
          }
+         catch (e:Error)
+         {
+         }
+
          txt = tipMC["info_txt"];
          txt.autoSize = TextFieldAutoSize.LEFT;
          txt.wordWrap = true;
@@ -83,27 +112,27 @@ package com.robot.core.ui.skillBtn
          tipMC["bgMC"].height = txt.height + 20;
          tipMC["bgMC"].width = txt.width + 20;
          MainManager.getStage().addChild(tipMC);
-         tipMC.addEventListener(Event.ENTER_FRAME,enterFrameHandler);
+         tipMC.addEventListener(Event.ENTER_FRAME, enterFrameHandler);
          timer.start();
       }
-      
-      private static function timerHandler(event:TimerEvent) : void
+
+      private static function timerHandler(event:TimerEvent):void
       {
          hide();
       }
-      
-      public static function hide() : void
+
+      public static function hide():void
       {
-         if(Boolean(tipMC))
+         if (Boolean(tipMC))
          {
-            tipMC.removeEventListener(Event.ENTER_FRAME,enterFrameHandler);
+            tipMC.removeEventListener(Event.ENTER_FRAME, enterFrameHandler);
             DisplayUtil.removeForParent(tipMC);
          }
       }
-      
-      private static function enterFrameHandler(event:Event) : void
+
+      private static function enterFrameHandler(event:Event):void
       {
-         if(MainManager.getStage().mouseX + tipMC.width + 20 >= MainManager.getStageWidth())
+         if (MainManager.getStage().mouseX + tipMC.width + 20 >= MainManager.getStageWidth())
          {
             tipMC.x = MainManager.getStageWidth() - tipMC.width - 10;
          }
@@ -111,7 +140,7 @@ package com.robot.core.ui.skillBtn
          {
             tipMC.x = MainManager.getStage().mouseX + 10;
          }
-         if(MainManager.getStage().mouseY + tipMC.height + 20 >= MainManager.getStageHeight())
+         if (MainManager.getStage().mouseY + tipMC.height + 20 >= MainManager.getStageHeight())
          {
             tipMC.y = MainManager.getStageHeight() - tipMC.height - 10;
          }
@@ -122,4 +151,3 @@ package com.robot.core.ui.skillBtn
       }
    }
 }
-
