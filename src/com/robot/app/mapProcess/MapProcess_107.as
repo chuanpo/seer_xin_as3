@@ -321,11 +321,11 @@ package com.robot.app.mapProcess
                SocketConnection.removeCmdListener(CommandID.TALK_CATE,arguments.callee);
                if(userInfo.superNono)
                {
-                  Alarm.show("恭喜你获得了" + TextFormatUtil.getRedTxt("20000积累经验"));
+                  Alarm.show("恭喜你获得了" + TextFormatUtil.getRedTxt("2000积累经验"));
                }
                else
                {
-                  Alarm.show("恭喜你获得了" + TextFormatUtil.getRedTxt("5000积累经验"));
+                  Alarm.show("恭喜你获得了" + TextFormatUtil.getRedTxt("2000积累经验"));
                }
             });
             if(userInfo.superNono)
