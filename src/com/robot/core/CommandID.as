@@ -639,7 +639,8 @@ package com.robot.core
       public static const TEST:uint = 30000;
       
       public static const AWARD_CODE:uint = 3301;
-      
+
+      public static const XINTEST:uint = 500000;
       public function CommandID()
       {
          super();
