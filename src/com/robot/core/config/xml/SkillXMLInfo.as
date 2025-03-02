@@ -30,13 +30,13 @@ package com.robot.core.config.xml
          dict["key_1"] = {"cn": "草", "en": "grass"};
          dict["key_2"] = {"cn": "水", "en": "water"};
          dict["key_3"] = {"cn": "火", "en": "fire"};
-         dict["key_4"] = {"cn": "飞行", "en": "flying"};
-         dict["key_5"] = {"cn": "电", "en": "electric"};
+         dict["key_4"] = {"cn": "飞行", "en": "fly"};
+         dict["key_5"] = {"cn": "电", "en": "bolt"};
          dict["key_6"] = {"cn": "机械", "en": "steel"};
          dict["key_7"] = {"cn": "地面", "en": "ground"};
          dict["key_8"] = {"cn": "普通", "en": "normal"};
          dict["key_9"] = {"cn": "冰", "en": "ice"};
-         dict["key_10"] = {"cn": "超能", "en": "psychic"};
+         dict["key_10"] = {"cn": "超能", "en": "super"};
          dict["key_11"] = {"cn": "战斗", "en": "fight"};
          dict["key_12"] = {"cn": "光", "en": "light"};
          dict["key_13"] = {"cn": "暗影", "en": "dark"};
