@@ -45,7 +45,7 @@ package com.robot.core.ui.skillBtn
          this._mc["nameTxt"].text = SkillXMLInfo.getName(id);
          var str:String = SkillXMLInfo.getTypeEN(id);
          this._mc["iconMC"].gotoAndStop(str);
-         this._mc["migTxt"].text = "威力:" + SkillXMLInfo.getDamage(id).toString();
+         this._mc["migTxt"].text ="威力:" + SkillXMLInfo.getDamage(id).toString();
          var maxPP:String = SkillXMLInfo.getPP(id).toString();
          if(pp == -1)
          {
