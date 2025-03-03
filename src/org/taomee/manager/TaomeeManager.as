@@ -13,6 +13,8 @@ package org.taomee.manager
       
       private static var _stage:Stage;
       
+      public static var fightSpeed:Number = 1;
+      
       public function TaomeeManager()
       {
          super();
