@@ -776,7 +776,7 @@ des 鼠标移上去的提示
 		<funComp>
 		</funComp>
 	</map>
-	<!--map id="59" name="尼古尔水帘" x="379" y="438" super="21">
+	<map id="59" name="尼古尔水帘" x="379" y="438" super="21">
 	<Entries>
 	</Entries>
 	<changeMapComp>
@@ -784,7 +784,7 @@ des 鼠标移上去的提示
 	</changeMapComp>
 	<funComp>
 	</funComp>
-	</map-->
+	</map>
 	<map id="60" name="塔克星" x="533" y="388" super="22">
 		<Entries>
 			<Entry FromMap="61" PosX="850" PosY="185"/>
@@ -1265,7 +1265,7 @@ des 鼠标移上去的提示
 		</changeMapComp>
 		<funComp>
 		</funComp>
-	</map>	
+	</map>		
 	<!-- 500以下是副本 -->
 	
 	<map id="500" name="勇者之塔" x="466" y="166" super="19" isLocal="1">
