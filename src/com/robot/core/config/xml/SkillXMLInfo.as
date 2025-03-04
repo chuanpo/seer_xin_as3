@@ -40,7 +40,7 @@ package com.robot.core.config.xml
          dict["key_11"] = {"cn": "战斗", "en": "fight"};
          dict["key_12"] = {"cn": "光", "en": "light"};
          dict["key_13"] = {"cn": "暗影", "en": "dark"};
-         dict["key_14"] = {"cn": "神秘", "en": "myth"};
+         dict["key_14"] = {"cn": "神秘", "en": "secrect"};
          dict["key_15"] = {"cn": "龙", "en": "dragon"};
          dict["key_16"] = {"cn": "圣灵", "en": "saint"};
          dict["key_17"] = {"cn": "次元", "en": "dimension"};
