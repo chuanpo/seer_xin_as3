@@ -13,6 +13,7 @@ package com.robot.core.cmd
    import flash.geom.Point;
    import flash.utils.ByteArray;
    import org.taomee.events.SocketEvent;
+   import com.robot.core.manager.MainManager;
    
    public class AimatCmdListener extends BaseBeanController
    {
@@ -32,6 +33,7 @@ package com.robot.core.cmd
       {
          var data:ByteArray = event.data as ByteArray;
          var id:uint = data.readUnsignedInt();
+         if(UserManager._hideOtherUserModelFlag && id != MainManager.actorID)return;
          var obj:Object = new Object();
          obj.itemID = data.readUnsignedInt();
          obj.type = data.readUnsignedInt();

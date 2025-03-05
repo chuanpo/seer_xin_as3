@@ -176,6 +176,10 @@ package com.robot.core.mode
          if(!UserManager.contains(id))
          {
             UserManager.addUser(id,us);
+            if(us.pet)
+            {
+               us.pet.visible = !UserManager._hideOtherUserModelFlag;
+            }
             if(!UserManager._hideOtherUserModelFlag)this._depthLevel.addChild(us);
          }
       }
@@ -196,6 +200,10 @@ package com.robot.core.mode
       {
          if(us.info.userID != MainManager.actorID)
          {
+            if(us.pet)
+            {
+               us.pet.visible = false;
+            }
             DisplayUtil.removeForParent(us,false);            
          } 
 
@@ -205,6 +213,10 @@ package com.robot.core.mode
       {
          if(us.info.userID != MainManager.actorID)
          {
+            if(us.pet)
+            {
+               us.pet.visible = true;
+            }
             this._depthLevel.addChild(us);
          }  
       }
