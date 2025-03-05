@@ -14,6 +14,8 @@ package com.robot.core.mode
    import org.taomee.manager.ResourceManager;
    import org.taomee.utils.DisplayUtil;
    import org.taomee.utils.MovieClipUtil;
+   import com.robot.core.manager.MainManager;
+   import com.robot.core.manager.UserManager;
    
    public class PetModel extends ActionSpriteModel
    {
@@ -78,6 +80,7 @@ package com.robot.core.mode
             return;
          }
          ResourceManager.getResource(ClientConfig.getPetSwfPath(this._info.petID),this.onLoad,"pet");
+         if(info.userID != MainManager.actorID && UserManager._hideOtherUserModelFlag) this.visible = false;
       }
       
       public function hide() : void
