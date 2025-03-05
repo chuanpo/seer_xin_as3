@@ -7,7 +7,7 @@ package com.robot.core.info.fightInfo
    import com.robot.core.pet.petWar.PetWarController;
    import flash.utils.IDataInput;
    import org.taomee.manager.EventManager;
-   
+
    public class NoteReadyToFightInfo
    {
       private var _userInfoArray:Array;
@@ -53,59 +53,87 @@ package com.robot.core.info.fightInfo
             petNum = uint(data.readUnsignedInt());
             for(j1 = 0; j1 < petNum; j1++)
             {
-               if(petMode == 14)
+               info = new PetInfo(data);
+               this._petInfoMap.push(info);
+               var skinId:int = int(info.name);
+               if(this._petArray.indexOf(skinId) == -1 && skinId!= 0)
                {
-                  info = new PetInfo(data);
-                  this._petInfoMap.push(info);
-                  if(this._petArray.indexOf(info.id) == -1)
-                  {
-                     this._petArray.push(info.id);
-                  }
-                  if(fUserInfo.id == MainManager.actorID)
-                  {
-                     this._obj.myPetA.push(info.id);
-                     trace("分配给我的精灵ID====" + info.id + "捕获时间:" + info.catchTime);
-                     this._myCapA.push(info.catchTime);
-                     this._myPetInfoA.push(info);
-                  }
-                  else
-                  {
-                     this._obj.otherPetA.push(info.id);
-                     trace("分配给别人的精灵ID====" + info.id + "捕获时间:" + info.catchTime);
-                  }
-                  for(k2 = 0; k2 < info.skillArray.length; k2++)
-                  {
-                     if(this._skillArray.indexOf((info.skillArray[k2] as PetSkillInfo).id) == -1)
-                     {
-                        this._skillArray.push((info.skillArray[k2] as PetSkillInfo).id);
-                     }
-                  }
+                  this._petArray.push(skinId);
+               }
+               if(this._petArray.indexOf(info.id) == -1)
+               {
+                  this._petArray.push(info.id);
+               }
+               if(fUserInfo.id == MainManager.actorID)
+               {
+                  this._obj.myPetA.push(info.id);
+                  trace("分配给我的精灵ID====" + info.id + "捕获时间:" + info.catchTime);
+                  this._myCapA.push(info.catchTime);
+                  this._myPetInfoA.push(info);
                }
                else
                {
-                  petID = uint(data.readUnsignedInt());
-                  if(this._petArray.indexOf(petID) == -1)
+                  this._obj.otherPetA.push(info.id);
+                  trace("分配给别人的精灵ID====" + info.id + "捕获时间:" + info.catchTime);
+               }
+               for(k2 = 0; k2 < info.skillArray.length; k2++)
+               {
+                  if(this._skillArray.indexOf((info.skillArray[k2] as PetSkillInfo).id) == -1)
                   {
-                     this._petArray.push(petID);
-                  }
-                  if(fUserInfo.id == MainManager.actorID)
-                  {
-                     this._obj.myPetA.push(petID);
-                  }
-                  else
-                  {
-                     this._obj.otherPetA.push(petID);
-                  }
-                  skillNum = uint(data.readUnsignedInt());
-                  for(k1 = 0; k1 < skillNum; k1++)
-                  {
-                     skillID = uint(data.readUnsignedInt());
-                     if(this._skillArray.indexOf(skillID) == -1)
-                     {
-                        this._skillArray.push(skillID);
-                     }
+                     this._skillArray.push((info.skillArray[k2] as PetSkillInfo).id);
                   }
                }
+               // if(petMode == 14)
+               // {
+               //    info = new PetInfo(data);
+               //    this._petInfoMap.push(info);
+               //    if(this._petArray.indexOf(info.id) == -1)
+               //    {
+               //       this._petArray.push(info.id);
+               //    }
+               //    if(fUserInfo.id == MainManager.actorID)
+               //    {
+               //       this._obj.myPetA.push(info.id);
+               //       trace("分配给我的精灵ID====" + info.id + "捕获时间:" + info.catchTime);
+               //       this._myCapA.push(info.catchTime);
+               //       this._myPetInfoA.push(info);
+               //    }
+               //    else
+               //    {
+               //       this._obj.otherPetA.push(info.id);
+               //       trace("分配给别人的精灵ID====" + info.id + "捕获时间:" + info.catchTime);
+               //    }
+               //    for(k2 = 0; k2 < info.skillArray.length; k2++)
+               //    {
+               //       if(this._skillArray.indexOf((info.skillArray[k2] as PetSkillInfo).id) == -1)
+               //       {
+               //          this._skillArray.push((info.skillArray[k2] as PetSkillInfo).id);
+               //       }
+               //    }
+               // }
+               // else
+               // {
+               //    petID = uint(data.readUnsignedInt());
+               //    if(this._petArray.indexOf(petID) == -1)
+               //    {
+               //       this._petArray.push(petID);
+               //    }
+               //    if(fUserInfo.id == MainManager.actorID)
+               //    {
+               //       this._obj.myPetA.push(petID);
+               //    }
+               //    else
+               //    {
+               //       this._obj.otherPetA.push(petID);
+               //    }
+               //    skillNum = uint(data.readUnsignedInt());
+               //    for(k1 = 0; k1 < skillNum; k1++)
+               //    {
+               //       skillID = uint(data.readUnsignedInt());
+               //       if(this._skillArray.indexOf(skillID) == -1)
+               //       {
+               //          this._skillArray.push(skillID);
+               //       }
             }
          }
          PetWarController.myPetInfoA = this._myPetInfoA;
