@@ -13,6 +13,8 @@ package com.robot.core.manager
       private static var instance:EventDispatcher;
       
       private static var _listDic:HashMap = new HashMap();
+
+      public static var _hideOtherUserModelFlag:Boolean = false;
       
       public function UserManager()
       {
