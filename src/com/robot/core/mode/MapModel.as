@@ -24,6 +24,7 @@ package com.robot.core.mode
    import flash.utils.setTimeout;
    import org.taomee.algo.IMapModel;
    import org.taomee.utils.DisplayUtil;
+   import com.robot.core.ui.alert.Alarm;
    
    public class MapModel implements IMapModel
    {
@@ -68,6 +69,8 @@ package com.robot.core.mode
       private var _isCanClose:Boolean = true;
       
       private var _allowData:Array = new Array();
+
+      private var isSwitching:Boolean = false;
       
       public function MapModel(mapID:uint, isCanClose:Boolean = true, isShowLoading:Boolean = true)
       {
@@ -173,10 +176,39 @@ package com.robot.core.mode
          if(!UserManager.contains(id))
          {
             UserManager.addUser(id,us);
-            this._depthLevel.addChild(us);
+            if(!UserManager._hideOtherUserModelFlag)this._depthLevel.addChild(us);
          }
       }
-      
+
+      public function switchOtherUserVisible():void
+      {
+         if(isSwitching)return;
+         isSwitching = true;
+         UserManager._hideOtherUserModelFlag = !UserManager._hideOtherUserModelFlag;
+         for each(var us:BasePeoleModel in UserManager.getUserModelList())
+         {
+            UserManager._hideOtherUserModelFlag ? hideUser(us) : showUser(us);
+         }
+         isSwitching = false;
+      }
+
+      public function hideUser(us:BasePeoleModel):void
+      {
+         if(us.info.userID != MainManager.actorID)
+         {
+            DisplayUtil.removeForParent(us,false);            
+         } 
+
+      }
+
+      public function showUser(us:BasePeoleModel):void
+      {
+         if(us.info.userID != MainManager.actorID)
+         {
+            this._depthLevel.addChild(us);
+         }  
+      }
+
       public function removeUser(userID:uint) : void
       {
          var us:BasePeoleModel = UserManager.removeUser(userID);

@@ -48,6 +48,7 @@ package com.robot.app.toolBar
    import org.taomee.utils.AlignType;
    import org.taomee.utils.DisplayUtil;
    import com.robot.app.team.TeamController;
+   import com.robot.core.manager.UserManager;
    public class ToolBarPanel extends Sprite
    {
       private var _chatPanel:ChatPanel;
@@ -94,6 +95,8 @@ package com.robot.app.toolBar
 
       private var _soundController_mc:MovieClip;
 
+      private var _user_mc:MovieClip;
+
       private var date:Date;
 
       private var _isSend:Boolean = true;
@@ -139,8 +142,15 @@ package com.robot.app.toolBar
          this._soundController_mc = this._mainUI["soundController_mc"];
          this._soundController_mc.useHandCursor = true;
          this._soundController_mc.buttonMode = true;
-         this._soundController_mc["mc2"].visible = false;
-         this._soundController_mc["mc1"].visible = true;
+         this._soundController_mc.gotoAndStop(1);
+         // this._soundController_mc["mc2"].visible = false;
+         // this._soundController_mc["mc1"].visible = true;
+
+         this._user_mc = this._mainUI["userMc"];
+         this._user_mc.useHandCursor = true;
+         this._user_mc.buttonMode = true;
+         this._user_mc.gotoAndStop(1);
+
          ProtectSystem.start(this._mainUI["BatteryMC"]);
          addChild(this._mainUI);
          this._inputTxt.restrict = "^妈";
@@ -253,8 +263,9 @@ package com.robot.app.toolBar
       {
          if (SoundManager.getIsPlay == true)
          {
-            this._soundController_mc["mc2"].visible = true;
-            this._soundController_mc["mc1"].visible = false;
+            // this._soundController_mc["mc2"].visible = true;
+            // this._soundController_mc["mc1"].visible = false;
+            this._soundController_mc.gotoAndStop(2);
             ToolTipManager.remove(this._soundController_mc);
             ToolTipManager.add(this._soundController_mc, "声音");
             SoundManager.setIsPlay = false;
@@ -262,13 +273,22 @@ package com.robot.app.toolBar
          }
          else
          {
-            this._soundController_mc["mc2"].visible = false;
-            this._soundController_mc["mc1"].visible = true;
+            // this._soundController_mc["mc2"].visible = false;
+            // this._soundController_mc["mc1"].visible = true;
+            this._soundController_mc.gotoAndStop(1);
             ToolTipManager.remove(this._soundController_mc);
             ToolTipManager.add(this._soundController_mc, "静音");
             SoundManager.setIsPlay = true;
             SoundManager.playSound();
          }
+      }
+
+      private function onUserMcClickHandler(event:MouseEvent):void
+      {
+         MapManager.currentMap.switchOtherUserVisible();
+         ToolTipManager.remove(this._user_mc);
+         ToolTipManager.add(this._user_mc,UserManager._hideOtherUserModelFlag ?  "显示其他玩家" : "屏蔽其他玩家");
+         this._user_mc.gotoAndStop(UserManager._hideOtherUserModelFlag ? 2 : 1);
       }
 
       public function show():void
@@ -304,9 +324,11 @@ package com.robot.app.toolBar
          this._teamBtn.addEventListener(MouseEvent.CLICK, this.onTeam);
          this._nonoBtn.addEventListener(MouseEvent.CLICK, this.onNonoList);
          this._soundController_mc.addEventListener(MouseEvent.CLICK, this.onMusicMcClickHandler);
+         this._user_mc.addEventListener(MouseEvent.CLICK, this.onUserMcClickHandler);
          MessageManager.addEventListener(RobotEvent.ADD_FRIEND_MSG, this.onAddFriend);
          MessageManager.addEventListener(RobotEvent.ADD_TEAM_MSG, this.onInviteJoinTeam);
          ToolTipManager.add(this._soundController_mc, "声音");
+         ToolTipManager.add(this._user_mc, "屏蔽其他玩家");
          ToolTipManager.add(this._mapBtn, "地图");
          ToolTipManager.add(this._quickWordBtn, "快捷语言");
          ToolTipManager.add(this._emotionBtn, "表情");
