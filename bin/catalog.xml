@@ -34,9 +34,12 @@
                 <dep id="flash.display:MovieClip" type="i"/>
                 <dep id="flash.text:TextField" type="s"/>
             </script>
-            <script name="RobotAppDLL" mod="1740313494479">
+            <script name="RobotAppDLL" mod="1740971798590">
                 <def id="RobotAppDLL"/>
+                <dep id="SecurityError" type="s"/>
                 <dep id="flash.display:Sprite" type="i"/>
+                <dep id="flash.system:Security" type="e"/>
+                <dep id="trace" type="e"/>
             </script>
             <script name="YX_Sound" mod="1740310162741">
                 <def id="YX_Sound"/>
@@ -11992,7 +11995,7 @@
                 <dep id="com.robot.core.manager.bean:BaseBeanController" type="i"/>
                 <dep id="com.robot.core.teamPK:TeamPKManager" type="e"/>
             </script>
-            <script name="com/robot/app/toolBar/ToolBarPanel" mod="1740654947130">
+            <script name="com/robot/app/toolBar/ToolBarPanel" mod="1741187898835">
                 <def id="com.robot.app.toolBar:ToolBarPanel"/>
                 <dep id="Array" type="e"/>
                 <dep id="Boolean" type="s"/>
@@ -12027,6 +12030,7 @@
                 <dep id="com.robot.core.manager:SOManager" type="e"/>
                 <dep id="com.robot.core.manager:TaskIconManager" type="e"/>
                 <dep id="com.robot.core.manager:UIManager" type="e"/>
+                <dep id="com.robot.core.manager:UserManager" type="e"/>
                 <dep id="com.robot.core.net:SocketConnection" type="e"/>
                 <dep id="com.robot.core.ui:DialogBox" type="e"/>
                 <dep id="com.robot.core.ui.alert:Alarm" type="e"/>
@@ -12685,7 +12689,7 @@
                 <dep id="com.robot.core.skeleton:TransformSkeleton" type="e"/>
                 <dep id="flash.utils:ByteArray" type="e"/>
                 <dep id="org.taomee.manager:EventManager" type="e"/>
-                <dep id="uint" type="e"/>
+                <dep id="uint" type="s"/>
             </script>
             <script name="com/robot/core/aticon/FlyAction" mod="1740310163993">
                 <def id="com.robot.core.aticon:FlyAction"/>
@@ -12765,7 +12769,7 @@
                 <dep id="org.taomee.utils:GeomUtil" type="e"/>
                 <dep id="uint" type="s"/>
             </script>
-            <script name="com/robot/core/cmd/AimatCmdListener" mod="1740310162951">
+            <script name="com/robot/core/cmd/AimatCmdListener" mod="1741187898838">
                 <def id="com.robot.core.cmd:AimatCmdListener"/>
                 <dep id="Array" type="e"/>
                 <dep id="Function" type="s"/>
@@ -12776,6 +12780,7 @@
                 <dep id="com.robot.core.event:AimatEvent" type="e"/>
                 <dep id="com.robot.core.event:PeopleActionEvent" type="e"/>
                 <dep id="com.robot.core.info:AimatInfo" type="e"/>
+                <dep id="com.robot.core.manager:MainManager" type="e"/>
                 <dep id="com.robot.core.manager:UserManager" type="e"/>
                 <dep id="com.robot.core.manager.bean:BaseBeanController" type="i"/>
                 <dep id="com.robot.core.mode:BasePeoleModel" type="e"/>
@@ -13142,7 +13147,7 @@
                 <dep id="flash.utils:ByteArray" type="e"/>
                 <dep id="org.taomee.events:SocketEvent" type="s"/>
             </script>
-            <script name="com/robot/core/config/ClientConfig" mod="1740310162820">
+            <script name="com/robot/core/config/ClientConfig" mod="1740928033042">
                 <def id="com.robot.core.config:ClientConfig"/>
                 <dep id="Object" type="i"/>
                 <dep id="String" type="s"/>
@@ -13434,7 +13439,7 @@
                 <dep id="com.robot.core.config.xml:MapXMLInfo_xmlClass" type="e"/>
                 <dep id="com.robot.core.manager:MainManager" type="e"/>
                 <dep id="com.robot.core.manager:MapManager" type="e"/>
-                <dep id="flash.geom:Point" type="s"/>
+                <dep id="flash.geom:Point" type="e"/>
                 <dep id="int" type="e"/>
                 <dep id="org.taomee.ds:HashMap" type="s"/>
                 <dep id="uint" type="s"/>
@@ -13519,7 +13524,7 @@
             </script>
             <script name="com/robot/core/config/xml/OgreXMLInfo" mod="1740310162935">
                 <def id="com.robot.core.config.xml:OgreXMLInfo"/>
-                <dep id="Array" type="e"/>
+                <dep id="Array" type="s"/>
                 <dep id="Boolean" type="e"/>
                 <dep id="Class" type="s"/>
                 <dep id="Object" type="i"/>
@@ -13608,7 +13613,7 @@
                 <def id="com.robot.core.config.xml:ShotDisXMLInfo_xmlClass"/>
                 <dep id="mx.core:ByteArrayAsset" type="i"/>
             </script>
-            <script name="com/robot/core/config/xml/SkillXMLInfo" mod="1740840329494">
+            <script name="com/robot/core/config/xml/SkillXMLInfo" mod="1740997512423">
                 <def id="com.robot.core.config.xml:SkillXMLInfo"/>
                 <dep id="Array" type="s"/>
                 <dep id="Class" type="s"/>
@@ -13648,7 +13653,7 @@
                 <dep id="Array" type="s"/>
                 <dep id="Boolean" type="e"/>
                 <dep id="Class" type="s"/>
-                <dep id="Number" type="s"/>
+                <dep id="Number" type="e"/>
                 <dep id="Object" type="i"/>
                 <dep id="String" type="e"/>
                 <dep id="XML" type="e"/>
@@ -13716,7 +13721,7 @@
                 <dep id="XMLList" type="e"/>
                 <dep id="com.robot.core.config.xml:TasksXMLInfo_xmlClass" type="e"/>
                 <dep id="com.robot.core.manager:MainManager" type="e"/>
-                <dep id="int" type="e"/>
+                <dep id="int" type="s"/>
                 <dep id="org.taomee.ds:HashMap" type="s"/>
                 <dep id="uint" type="s"/>
             </script>
@@ -14446,7 +14451,7 @@
                 <dep id="Boolean" type="s"/>
                 <dep id="Object" type="i"/>
                 <dep id="com.robot.core.utils:SolidType" type="e"/>
-                <dep id="flash.geom:Point" type="s"/>
+                <dep id="flash.geom:Point" type="e"/>
                 <dep id="flash.utils:IDataInput" type="s"/>
                 <dep id="uint" type="s"/>
             </script>
@@ -14648,7 +14653,7 @@
                 <dep id="com.robot.core.manager:MainManager" type="e"/>
                 <dep id="flash.utils:IDataInput" type="s"/>
             </script>
-            <script name="com/robot/core/info/fightInfo/NoteReadyToFightInfo" mod="1740310163724">
+            <script name="com/robot/core/info/fightInfo/NoteReadyToFightInfo" mod="1741191419126">
                 <def id="com.robot.core.info.fightInfo:NoteReadyToFightInfo"/>
                 <dep id="Array" type="s"/>
                 <dep id="Object" type="i"/>
@@ -15325,7 +15330,7 @@
             <script name="com/robot/core/info/task/TaskBufInfo" mod="1740310163827">
                 <def id="com.robot.core.info.task:TaskBufInfo"/>
                 <dep id="Object" type="i"/>
-                <dep id="flash.utils:ByteArray" type="e"/>
+                <dep id="flash.utils:ByteArray" type="s"/>
                 <dep id="flash.utils:IDataInput" type="s"/>
                 <dep id="uint" type="s"/>
             </script>
@@ -16204,7 +16209,7 @@
                 <dep id="org.taomee.events:SocketEvent" type="s"/>
                 <dep id="uint" type="s"/>
             </script>
-            <script name="com/robot/core/manager/UserManager" mod="1740310163468">
+            <script name="com/robot/core/manager/UserManager" mod="1741187898839">
                 <def id="com.robot.core.manager:UserManager"/>
                 <dep id="Array" type="s"/>
                 <dep id="Boolean" type="s"/>
@@ -16726,7 +16731,7 @@
                 <dep id="flash.geom:Point" type="s"/>
                 <dep id="flash.geom:Rectangle" type="s"/>
             </script>
-            <script name="com/robot/core/mode/MapModel" mod="1740310162938">
+            <script name="com/robot/core/mode/MapModel" mod="1741187898840">
                 <def id="com.robot.core.mode:MapModel"/>
                 <dep id="Array" type="s"/>
                 <dep id="Boolean" type="s"/>
@@ -17154,7 +17159,7 @@
                 <dep id="org.taomee.manager:ToolTipManager" type="e"/>
                 <dep id="org.taomee.utils:DisplayUtil" type="e"/>
             </script>
-            <script name="com/robot/core/net/BefLoad" mod="1740310163592">
+            <script name="com/robot/core/net/BefLoad" mod="1740928035505">
                 <def id="com.robot.core.net:BefLoad"/>
                 <dep id="Array" type="e"/>
                 <dep id="String" type="s"/>
@@ -17198,7 +17203,7 @@
                 <dep id="org.taomee.events:SocketEvent" type="s"/>
                 <dep id="uint" type="s"/>
             </script>
-            <script name="com/robot/core/newloader/MCLoader" mod="1740310163783">
+            <script name="com/robot/core/newloader/MCLoader" mod="1740928038627">
                 <def id="com.robot.core.newloader:MCLoader"/>
                 <dep id="Boolean" type="s"/>
                 <dep id="Error" type="e"/>
@@ -18249,7 +18254,7 @@
                 <dep id="org.taomee.utils:DisplayUtil" type="e"/>
                 <dep id="uint" type="s"/>
             </script>
-            <script name="com/robot/core/ui/skillBtn/SkillInfoTip" mod="1740840838015">
+            <script name="com/robot/core/ui/skillBtn/SkillInfoTip" mod="1740841101390">
                 <def id="com.robot.core.ui.skillBtn:SkillInfoTip"/>
                 <dep id="Array" type="e"/>
                 <dep id="Boolean" type="e"/>
@@ -19957,7 +19962,7 @@
                 <dep id="org.taomee.manager:TaomeeManager" type="e"/>
                 <dep id="org.taomee.utils:DisplayUtil" type="e"/>
             </script>
-            <script name="org/taomee/manager/ResourceManager" mod="1740395991425">
+            <script name="org/taomee/manager/ResourceManager" mod="1740997662061">
                 <def id="org.taomee.manager:ResourceManager"/>
                 <dep id="Array" type="s"/>
                 <dep id="Boolean" type="s"/>
@@ -19981,8 +19986,9 @@
                 <dep id="uint" type="s"/>
                 <dep id="undefined" type="e"/>
             </script>
-            <script name="org/taomee/manager/TaomeeManager" mod="1740395991278">
+            <script name="org/taomee/manager/TaomeeManager" mod="1741088466685">
                 <def id="org.taomee.manager:TaomeeManager"/>
+                <dep id="Number" type="s"/>
                 <dep id="Object" type="i"/>
                 <dep id="flash.display:DisplayObjectContainer" type="s"/>
                 <dep id="flash.display:Stage" type="s"/>
@@ -20103,7 +20109,7 @@
                 <dep id="String" type="s"/>
                 <dep id="int" type="s"/>
             </script>
-            <script name="org/taomee/resource/ResLoader" mod="1740395991369">
+            <script name="org/taomee/resource/ResLoader" mod="1740928045925">
                 <def id="org.taomee.resource:ResLoader"/>
                 <dep id="Boolean" type="s"/>
                 <dep id="Error" type="e"/>
@@ -20365,7 +20371,7 @@
                 <dep id="flash.text:TextField" type="s"/>
             </script>
             <digests>
-                <digest type="SHA-256" signed="false" value="5fc8131db5e843a95ba640b84e2bc166d9722d869e70b116444cb64b266cf914"/>
+                <digest type="SHA-256" signed="false" value="b73a4c511663f22f175115f6990b95aada71610d78679941cc7cb8a88122d26c"/>
             </digests>
         </library>
     </libraries>
