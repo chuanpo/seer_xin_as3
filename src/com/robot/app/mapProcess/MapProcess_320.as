@@ -31,6 +31,10 @@ package com.robot.app.mapProcess
    import org.taomee.events.SocketEvent;
    import org.taomee.manager.EventManager;
    import org.taomee.utils.DisplayUtil;
+   import com.robot.core.npc.NpcDialog;
+   import com.robot.core.npc.NPC;
+   import com.robot.app.task.taskUtils.taskDialog.NpcTipDialog;
+   import org.taomee.manager.ToolTipManager;
    
    public class MapProcess_320 extends BaseMapProcess
    {
@@ -105,11 +109,16 @@ package com.robot.app.mapProcess
          this.missileMC.buttonMode = true;
          this.electricHead = topLevel["machine_head"];
          this.electricHead.addEventListener(Event.ENTER_FRAME,this.onFrameHandler1);
+         this.electricHead.addEventListener(MouseEvent.CLICK,this.onHeadClickHandler);
+         this.electricHead.buttonMode = true;
+         ToolTipManager.add(this.electricHead,"赫尔卡巨人");
          this.machineHand = animatorLevel["hand_mc"];
          this.randomTime = 4000 * Math.random() + 1000;
          this.timer = new Timer(this.randomTime,1);
          this.timer.addEventListener(TimerEvent.TIMER,this.onTimer);
          this.timer.start();
+         this.depthLevel["war2"].visible = false;
+         this.depthLevel["war3"].visible = false;
       }
       
       private function setWarState() : void
@@ -123,6 +132,13 @@ package com.robot.app.mapProcess
          this.leiYiMC.mouseEnabled = false;
       }
       
+      private function onHeadClickHandler(e:MouseEvent):void{
+         NpcDialog.show(4714,["小家伙，你想挑战我吗?!"],["看我揍死你！","装傻"],[function():void{
+            //NpcTipDialog.show("啊!!! 赛...赛尔，手...手下留情！别...别揍我T_T\n赫尔卡巨人目前还在检修中，请过一段时间再来挑战他吧！",null,NpcTipDialog.XITA)
+            FightInviteManager.fightWithBoss("赫尔卡巨人",0);
+         },null])
+      }
+
       private function sceneState(state:String) : void
       {
          switch(state)
@@ -418,6 +434,8 @@ package com.robot.app.mapProcess
          if(Boolean(this.electricHead))
          {
             this.electricHead.removeEventListener(Event.ENTER_FRAME,this.onFrameHandler1);
+            this.electricHead.removeEventListener(MouseEvent.CLICK,this.onHeadClickHandler);
+            ToolTipManager.remove(this.electricHead);
          }
       }
       
