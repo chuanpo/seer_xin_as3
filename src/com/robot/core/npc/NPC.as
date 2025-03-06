@@ -82,7 +82,7 @@ package com.robot.core.npc
       
       public static function getDialogNpcPathById(id:uint) : String
       {
-         return "resource/newNpc/oneSide/" + id + ".swf";
+         return "resource/newNpc/" + (id > 2891 ? "dialog/" : "oneSide/")+ id + ".swf";
       }
    }
 }
