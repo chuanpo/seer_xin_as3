@@ -63,6 +63,23 @@ package com.robot.core.config.xml
          }
          return "";
       }
+
+      public static function getDes2(eid:uint, arg:String) : String
+      {
+         var xmllist:XMLList = null;
+         var xml:XML = null;
+         xmllist = _statXML.(@Eid == eid);
+         if(xmllist.length() > 0)
+         {
+            xml = xmllist.(@Args == arg)[0];
+            if(Boolean(xml))
+            {
+               return xml.@Desc2;
+            }
+            return "";
+         }
+         return "";
+      }
    }
 }
 

@@ -85,6 +85,16 @@ package com.robot.core.config.xml
          }
          return -1;
       }
+
+      public static function getDesc(nature:uint) : String
+      {
+         var item:XML = _dataMap.getValue(nature);
+         if(Boolean(item))
+         {
+            return String(item.@desc);
+         }
+         return "";
+      }
    }
 }
 
