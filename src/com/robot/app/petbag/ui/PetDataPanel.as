@@ -39,6 +39,8 @@ package com.robot.app.petbag.ui
       private var _upExpTxt:TextField;
       
       private var _charaTxt:TextField;
+
+      private var _effectTxt:TextField;
       
       private var _getTimeTxt:TextField;
       
@@ -77,6 +79,10 @@ package com.robot.app.petbag.ui
       private var des1:String = "<font color=\'#ffff00\'>";
       
       private var des2:String = "</font>";
+
+      private var des3:String = "<font color=\'#ffffff\' size=\'14\'>";
+
+      private var des4:String = "<font color=\'#ffff00\' size=\'13.9\'>";
       
       public function PetDataPanel(ui:Sprite)
       {
@@ -87,6 +93,13 @@ package com.robot.app.petbag.ui
          this._levelTxt = this._mainUI["levelTxt"];
          this._upExpTxt = this._mainUI["upExpTxt"];
          this._charaTxt = this._mainUI["charaTxt"];
+         this._effectTxt = new TextField();
+         this._effectTxt.x = this._charaTxt.x + (this._charaTxt.width / 2); 
+         this._effectTxt.y = this._charaTxt.y; 
+         this._charaTxt.width /= 2;
+         this._effectTxt.height = this._charaTxt.height;
+         this._effectTxt.width = this._charaTxt.width;
+         this._mainUI.addChild(this._effectTxt);
          this._getTimeTxt = this._mainUI["getTimeTxt"];
          this._attackTxt = this._mainUI["attackTxt"];
          this._defenceTxt = this._mainUI["defenceTxt"];
@@ -122,6 +135,9 @@ package com.robot.app.petbag.ui
          this._sdTxt.text = "";
          this._speedTxt.text = "";
          this._hpTxt.text = "";
+         ToolTipManager.remove(this._charaTxt);
+         this._effectTxt.text = "";
+         ToolTipManager.remove(this._effectTxt);
          if(this._id != 0)
          {
             ResourceManager.cancel(ClientConfig.getPetSwfPath(this._id),this.onShowComplete);
@@ -147,9 +163,15 @@ package com.robot.app.petbag.ui
          this._upExpTxt.htmlText = "升级所需经验值:" + this.des1 + (info.nextLvExp - info.exp).toString() + this.des2;
          var effectInfo:PetEffectInfo = info.effectList[0];
          this._charaTxt.htmlText = "性格:" + this.des1 + NatureXMLInfo.getName(info.nature) + this.des2;
+         ToolTipManager.remove(this._charaTxt);
+         ToolTipManager.add(this._charaTxt,NatureXMLInfo.getDesc(info.nature));
+         ToolTipManager.remove(this._effectTxt);
          if(Boolean(effectInfo))
          {
-            this._charaTxt.htmlText += " 特性:" + this.des1 + PetEffectXMLInfo.getEffect(effectInfo.effectID,effectInfo.args) + this.des2;
+            ToolTipManager.add(this._effectTxt,PetEffectXMLInfo.getDes2(effectInfo.effectID,effectInfo.args));
+            this._effectTxt.htmlText = this.des3 + "特性："+ this.des2 + this.des4 + PetEffectXMLInfo.getEffect(effectInfo.effectID,effectInfo.args) + this.des2;
+         }else{
+            this._effectTxt.htmlText = "";
          }
          this._getTimeTxt.htmlText = "获得时间:" + this.des1 + StringUtil.timeFormat(info.catchTime) + this.des2;
          this.showIcon(info.effectList);
@@ -168,7 +190,7 @@ package com.robot.app.petbag.ui
          }
          if(this._id != 0)
          {
-            ResourceManager.cancel(ClientConfig.getPetSwfPath(this._id),this.onShowComplete);
+             ResourceManager.cancel(ClientConfig.getPetSwfPath(this._id),this.onShowComplete);
          }
          if(Boolean(this._showMc))
          {
