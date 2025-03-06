@@ -131,8 +131,8 @@ package com.robot.app.mapProcess
       private function onTalk(event:SocketEvent) : void
       {
          SocketConnection.removeCmdListener(CommandID.TALK_CATE,this.onTalk);
-         Alarm.show("恭喜你获得" + TextFormatUtil.getRedTxt("5000赛尔豆"));
-         MainManager.actorInfo.coins += 5000;
+         Alarm.show("恭喜你获得" + TextFormatUtil.getRedTxt("1000赛尔豆"));
+         MainManager.actorInfo.coins += 1000;
       }
       
       private function onTaskComplete(e:Event) : void

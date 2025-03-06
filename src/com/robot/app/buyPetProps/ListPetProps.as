@@ -42,7 +42,7 @@ package com.robot.app.buyPetProps
          var itemName:String = ItemXMLInfo.getName(this._itemID);
          if(Boolean(sigInfo))
          {
-            if(sigInfo.itemNum == 99)
+            if(sigInfo.itemNum > 999999)
             {
                Alarm.show("你已经拥有了99个" + itemName);
                return;
