@@ -66,6 +66,10 @@ package com.robot.core.info.pet
       public var effectCount:uint;
       
       public var effectList:Array;
+
+            public var skinID:uint;
+      
+      public var shiny:Array;
       
       public function PetInfo(data:IDataInput)
       {
@@ -114,6 +118,12 @@ package com.robot.core.info.pet
          for(var j:uint = 0; j < this.effectCount; j++)
          {
             this.effectList.push(new PetEffectInfo(data));
+         }
+         
+         this.skinID = data.readUnsignedInt();
+         this.shiny = data.readUnsignedInt();
+         for(var k:uint = 0; k < 8; k++){
+             data.readUnsignedInt();
          }
       }
       
