@@ -7,6 +7,7 @@ package com.robot.core.info.fightInfo
    import com.robot.core.pet.petWar.PetWarController;
    import flash.utils.IDataInput;
    import org.taomee.manager.EventManager;
+   import org.taomee.ds.HashMap;
 
    public class NoteReadyToFightInfo
    {
@@ -24,6 +25,8 @@ package com.robot.core.info.fightInfo
       
       private var _myPetInfoA:Array;
       
+      private var _petInfoArray:HashMap;
+
       public function NoteReadyToFightInfo(data:IDataInput)
       {
          var fUserInfo:FighetUserInfo = null;
@@ -41,6 +44,7 @@ package com.robot.core.info.fightInfo
          this._petInfoMap = new Array();
          this._myCapA = new Array();
          this._myPetInfoA = new Array();
+         this._petInfoArray = new HashMap();
          super();
          this._obj = new PetWarInfo();
          this._obj.myPetA = new Array();
@@ -54,8 +58,9 @@ package com.robot.core.info.fightInfo
             for(j1 = 0; j1 < petNum; j1++)
             {
                info = new PetInfo(data);
+               this._petInfoArray.add(info.catchTime,info);
                this._petInfoMap.push(info);
-               var skinId:int = int(info.name);
+               var skinId:int = int(info.skinID);
                if(this._petArray.indexOf(skinId) == -1 && skinId!= 0)
                {
                   this._petArray.push(skinId);
@@ -155,6 +160,11 @@ package com.robot.core.info.fightInfo
       public function get userInfoArray() : Array
       {
          return this._userInfoArray;
+      }
+
+      public function get petInfoArray() : HashMap
+      {
+         return this._petInfoArray;
       }
    }
 }

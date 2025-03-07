@@ -87,7 +87,7 @@ package com.robot.app.fightNote
          try
          {
             cls = getDefinitionByName(this.DLL_PATH);
-            cls.setup(this.readyData.userInfoArray,this.readyData.petArray,this.readyData.skillArray);
+            cls.setup(this.readyData.userInfoArray,this.readyData.petArray,this.readyData.skillArray,this.readyData.petInfoArray);
          }
          catch(e:Error)
          {
@@ -102,7 +102,7 @@ package com.robot.app.fightNote
       private function onLoadDLL(event:MCLoadEvent) : void
       {
          var cls:* = getDefinitionByName(this.DLL_PATH);
-         cls.setup(this.readyData.userInfoArray,this.readyData.petArray,this.readyData.skillArray);
+         cls.setup(this.readyData.userInfoArray,this.readyData.petArray,this.readyData.skillArray,this.readyData.petInfoArray);
       }
       
       private function startFight(event:SocketEvent) : void
