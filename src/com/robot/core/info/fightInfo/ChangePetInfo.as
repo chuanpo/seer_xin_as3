@@ -15,6 +15,8 @@ package com.robot.core.info.fightInfo
       private var _hp:uint;
       
       private var _maxHp:uint;
+
+      private var _catchTime:uint;
       
       public function ChangePetInfo(data:IDataInput)
       {
@@ -25,6 +27,7 @@ package com.robot.core.info.fightInfo
          this._level = data.readUnsignedInt();
          this._hp = data.readUnsignedInt();
          this._maxHp = data.readUnsignedInt();
+         this._catchTime = data.readUnsignedInt();
       }
       
       public function get userID() : uint
@@ -55,6 +58,11 @@ package com.robot.core.info.fightInfo
       public function get maxHp() : uint
       {
          return this._maxHp;
+      }
+
+      public function get catchTime() : uint
+      {
+         return this._catchTime;
       }
    }
 }
