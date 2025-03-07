@@ -41,6 +41,7 @@ package com.robot.app.nono.featureApp
          NonoShortcut.onNonoPanelClose(null);
          SocketConnection.removeCmdListener(CommandID.ON_OR_OFF_FLYING,this.onFlyHandler);
          var by:ByteArray = e.data as ByteArray;
+         var id:uint = by.readUnsignedInt();
          var ty:uint = by.readUnsignedInt();
          MainManager.actorInfo.actionType = ty;
          MainManager.actorModel.hideNono();

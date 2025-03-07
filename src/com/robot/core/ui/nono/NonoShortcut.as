@@ -65,9 +65,9 @@ package com.robot.core.ui.nono
       
       private static const _length:uint = 8;
       
-      private static var _newShowA:Array = ["700011","700015"];
+      private static var _newShowA:Array = ["700011","700015","700017"];
       
-      private static var _newTipA:Array = ["精灵仓库","精灵追踪"];
+      private static var _newTipA:Array = ["精灵仓库","精灵追踪","飞行模式"];
       
       public function NonoShortcut()
       {
@@ -76,19 +76,7 @@ package com.robot.core.ui.nono
       
       private static function makeAry() : void
       {
-         if(_newShowA.indexOf("700017") != -1)
-         {
-            _newShowA.splice(_newShowA.indexOf("700017"),1);
-         }
-         if(_newTipA.indexOf("飞行模式") != -1)
-         {
-            _newTipA.splice(_newTipA.indexOf("飞行模式"),1);
-         }
-         if(MainManager.actorInfo.actionType == 0 && MapManager.currentMap.id == MainManager.actorID)
-         {
-            _newShowA.push("700017");
-            _newTipA.push("飞行模式");
-         }
+         MainManager.actorInfo.actionType == 0 ? (_newTipA[2] = "飞行模式" ): (_newTipA[2] = "取消飞行模式" );
          _canShowA = ["1","2","3","4"];
          _tipA = ["精灵治疗","跟随主人","经验分配","给NoNo充电"];
          _handlerFunA = [onCure,onFollow,onjn,onPower,hide,hide];
