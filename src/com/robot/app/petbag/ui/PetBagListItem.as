@@ -14,7 +14,8 @@ package com.robot.app.petbag.ui
    import flash.text.TextField;
    import org.taomee.manager.ResourceManager;
    import org.taomee.utils.DisplayUtil;
-   
+   import flash.filters.ColorMatrixFilter;
+   import com.robot.core.config.xml.ShinyXMLInfo;
    public class PetBagListItem extends Sprite
    {
       private var _info:PetInfo;
@@ -42,7 +43,9 @@ package com.robot.app.petbag.ui
       private var _bgB:MovieClip;
       
       private var isDefault:Boolean = false;
-      
+
+      protected var filte:GlowFilter = new GlowFilter(3355443,0.9,3,3,3.1);
+
       public function PetBagListItem()
       {
          super();
@@ -134,7 +137,7 @@ package com.robot.app.petbag.ui
             DisplayUtil.removeForParent(this._showMc);
             this._showMc = null;
          }
-         ResourceManager.getResource(ClientConfig.getPetSwfPath(this._info.id),this.onShowComplete,"pet");
+         ResourceManager.getResource(ClientConfig.getPetSwfPath((this._info.skinID != 0 && this._info.shiny != 1) ? this._info.skinID : this._info.id),this.onShowComplete,"pet");
          this.addEvent();
       }
       
@@ -215,6 +218,15 @@ package com.robot.app.petbag.ui
             this._showMc.scaleY = 0.8;
             this._showMc.x = 30;
             this._showMc.y = 50;
+            if(_info.shiny == 1){
+               var matrix:ColorMatrixFilter = null;
+               var argArray:Array = ShinyXMLInfo.getShinyArray(_info.id);
+               matrix = new ColorMatrixFilter(argArray);
+               var glow:GlowFilter = null;
+               var glowArray:Array = ShinyXMLInfo.getGlowArray(_info.id);
+               glow = new GlowFilter(uint(glowArray[0]),int(glowArray[1]),int(glowArray[2]),int(glowArray[3]),int(glowArray[4]));
+               this._showMc.filters = [ filte,glow,matrix ]
+            }
             addChild(this._showMc);
          }
       }

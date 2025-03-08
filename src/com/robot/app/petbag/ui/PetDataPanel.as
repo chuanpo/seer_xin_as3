@@ -21,7 +21,10 @@ package com.robot.app.petbag.ui
    import org.taomee.manager.ToolTipManager;
    import org.taomee.utils.DisplayUtil;
    import org.taomee.utils.StringUtil;
-   
+   import flash.filters.ColorMatrixFilter;
+   import com.robot.core.config.xml.ShinyXMLInfo;
+   import flash.filters.GlowFilter;
+
    public class PetDataPanel
    {
       private static const MAX:int = 4;
@@ -84,6 +87,9 @@ package com.robot.app.petbag.ui
 
       private var des4:String = "<font color=\'#ffff00\' size=\'13.9\'>";
       
+      protected var filte:GlowFilter = new GlowFilter(3355443,0.9,3,3,3.1);
+      // protected var glow:GlowFilter = new GlowFilter(0xFFFFFF, 1, 10, 10, 10, 1, false, false);
+
       public function PetDataPanel(ui:Sprite)
       {
          super();
@@ -140,7 +146,7 @@ package com.robot.app.petbag.ui
          ToolTipManager.remove(this._effectTxt);
          if(this._id != 0)
          {
-            ResourceManager.cancel(ClientConfig.getPetSwfPath(this._id),this.onShowComplete);
+            ResourceManager.cancel(ClientConfig.getPetSwfPath((_petInfo.skinID != 0 && _petInfo.shiny != 1) ? _petInfo.skinID : this._id),this.onShowComplete);
          }
          if(Boolean(this._showMc))
          {
@@ -190,7 +196,7 @@ package com.robot.app.petbag.ui
          }
          if(this._id != 0)
          {
-             ResourceManager.cancel(ClientConfig.getPetSwfPath(this._id),this.onShowComplete);
+            ResourceManager.cancel(ClientConfig.getPetSwfPath((_petInfo.skinID != 0 && _petInfo.shiny != 1) ? _petInfo.skinID : this._id),this.onShowComplete);
          }
          if(Boolean(this._showMc))
          {
@@ -198,7 +204,7 @@ package com.robot.app.petbag.ui
             this._showMc = null;
          }
          this._id = info.id;
-         ResourceManager.getResource(ClientConfig.getPetSwfPath(info.id),this.onShowComplete,"pet");
+         ResourceManager.getResource(ClientConfig.getPetSwfPath((_petInfo.skinID != 0 && _petInfo.shiny != 1) ? _petInfo.skinID : this._id),this.onShowComplete,"pet");
          this._attackTxt.htmlText = "攻击:" + this.des1 + info.attack.toString() + this.des2;
          this._defenceTxt.htmlText = "防御:" + this.des1 + info.defence.toString() + this.des2;
          this._saTxt.htmlText = "特攻:" + this.des1 + info.s_a.toString() + this.des2;
@@ -278,11 +284,21 @@ package com.robot.app.petbag.ui
          this._showMc = o as MovieClip;
          if(Boolean(this._showMc))
          {
-            DisplayUtil.stopAllMovieClip(this._showMc);
-            this._showMc.scaleX = 2;
-            this._showMc.scaleY = 2;
+            var scale:Number = this._showMc.width >= 75 ? 1.5 : 2;
+                        this._showMc.scaleX = scale;
+            this._showMc.scaleY = scale;
             this._showMc.x = 70;
             this._showMc.y = 110;
+            if(_petInfo.shiny == 1){
+               var matrix:ColorMatrixFilter = null;
+               var argArray:Array = ShinyXMLInfo.getShinyArray(_petInfo.id);
+               matrix = new ColorMatrixFilter(argArray);
+               var glow:GlowFilter = null;
+               var glowArray:Array = ShinyXMLInfo.getGlowArray(_petInfo.id);
+               glow = new GlowFilter(uint(glowArray[0]),int(glowArray[1]),int(glowArray[2]),int(glowArray[3]),int(glowArray[4]));
+               this._showMc.filters = [ filte,glow,matrix ]
+            }
+            DisplayUtil.stopAllMovieClip(this._showMc);
             this._mainUI.addChild(this._showMc);
          }
       }
