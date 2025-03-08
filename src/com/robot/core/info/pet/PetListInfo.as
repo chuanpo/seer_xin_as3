@@ -9,6 +9,12 @@ package com.robot.core.info.pet
       public var catchTime:uint;
       
       public var course:uint;
+
+      public var level:uint;
+
+      public var skinID:uint;
+
+      public var shiny:uint;
       
       public function PetListInfo(data:IDataInput = null)
       {
@@ -17,6 +23,9 @@ package com.robot.core.info.pet
          {
             this.id = data.readUnsignedInt();
             this.catchTime = data.readUnsignedInt();
+            this.level = data.readUnsignedInt();
+            this.skinID = data.readUnsignedInt();
+            this.shiny = data.readUnsignedInt();
          }
       }
    }

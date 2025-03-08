@@ -51,7 +51,25 @@ package com.robot.core.config.xml
          }
          return shinyArray;
       }
-      
+      public static function getGlowArray(petId:uint) : Array
+      {
+         var glowArray:Array = [0xFFC125,1,20,20,1.6]
+         var xml:XML = _dataMap.getValue(petId.toString());
+         if(Boolean(xml))
+         {
+            try
+            {
+               var glow:String = xml.@glow;
+               var strArray:Array = glow.split(",");
+               return strArray;
+            }
+            catch(e:Error)
+            {
+               return glowArray;
+            }
+         }
+         return glowArray;
+      }
    }
 }
 
