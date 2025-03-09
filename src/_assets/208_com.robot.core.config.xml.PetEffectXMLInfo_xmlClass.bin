@@ -296,7 +296,7 @@
 
 	<NewSeIdx Idx="1023" Stat= "1" Eid="30" Args="1" Desc="会心" Desc2="所有技能的致命一击率增加1/16" />
 
-	<NewSeIdx Idx="1024" Stat= "1" Eid="3" Args="3 5" Desc="坚硬" Desc2="受到的伤害减少5%" />
+	<NewSeIdx Idx="1024" Stat= "1" Eid="3" Args="5" Desc="坚硬" Desc2="受到的伤害减少5%" />
 
 	<NewSeIdx Idx="1025" Stat= "1" Eid="7" Args="5" Desc="回避" Desc2="被技能命中的几率减少5%" />
 

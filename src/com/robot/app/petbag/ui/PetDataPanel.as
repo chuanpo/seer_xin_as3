@@ -174,8 +174,8 @@ package com.robot.app.petbag.ui
          ToolTipManager.remove(this._effectTxt);
          if(Boolean(effectInfo))
          {
-            ToolTipManager.add(this._effectTxt,PetEffectXMLInfo.getDes2(effectInfo.effectID,effectInfo.args));
-            this._effectTxt.htmlText = this.des3 + "特性："+ this.des2 + this.des4 + PetEffectXMLInfo.getEffect(effectInfo.effectID,effectInfo.args) + this.des2;
+            ToolTipManager.add(this._effectTxt,PetEffectXMLInfo.getDes2(effectInfo.effectID,effectInfo.args,effectInfo.itemId));
+            this._effectTxt.htmlText = this.des3 + "特性："+ this.des2 + this.des4 + PetEffectXMLInfo.getEffect(effectInfo.effectID,effectInfo.args,effectInfo.itemId) + this.des2;
          }else{
             this._effectTxt.htmlText = "";
          }
@@ -285,7 +285,7 @@ package com.robot.app.petbag.ui
          if(Boolean(this._showMc))
          {
             var scale:Number = this._showMc.width >= 75 ? 1.5 : 2;
-                        this._showMc.scaleX = scale;
+            this._showMc.scaleX = scale;
             this._showMc.scaleY = scale;
             this._showMc.x = 70;
             this._showMc.y = 110;

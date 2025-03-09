@@ -47,11 +47,11 @@ package com.robot.core.config.xml
          return xml.@Des;
       }
       
-      public static function getEffect(eid:uint, arg:String) : String
+      public static function getEffect(eid:uint, arg:String,idx:Number=-1) : String
       {
          var xmllist:XMLList = null;
          var xml:XML = null;
-         xmllist = _statXML.(@Eid == eid);
+         xmllist = idx > -1 ?  _statXML.(@Eid == eid && @Idx == idx) : _statXML.(@Eid == eid);
          if(xmllist.length() > 0)
          {
             xml = xmllist.(@Args == arg)[0];
@@ -64,11 +64,11 @@ package com.robot.core.config.xml
          return "";
       }
 
-      public static function getDes2(eid:uint, arg:String) : String
+      public static function getDes2(eid:uint, arg:String,idx:Number=-1) : String
       {
          var xmllist:XMLList = null;
          var xml:XML = null;
-         xmllist = _statXML.(@Eid == eid);
+         xmllist = idx > -1 ?  _statXML.(@Eid == eid && @Idx == idx) : _statXML.(@Eid == eid);
          if(xmllist.length() > 0)
          {
             xml = xmllist.(@Args == arg)[0];
