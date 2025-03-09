@@ -41,7 +41,7 @@
 		<nono names="时空穿梭芯片"/>
 	</map>
 	<map id="10" difficulty="1" level="1-5" des="克洛斯星">
-		<sprite petIDs="皮皮|仙人球|依依"/>
+		<sprite petIDs="皮皮|仙人球|依依|"/>
 		<minerals IDs="黄晶矿"/>
 	</map>
 	<map id="25" difficulty="1" level="5-10" des="云霄星">
@@ -96,4 +96,13 @@
 		<task taskIDs="#我是音乐小麦霸"/>
 		<sprite petIDs="帕尼"/>
 	</map>
+		<map id="328" difficulty="3" level="53—56" des="斯科尔星">
+			<sprites>
+				<sprite name="里昂" type="" target="" />
+				<sprite name="艾米" type="" target="" />
+				<sprite name="幼镰鸟" type="" target="" />
+				<sprite name="弗曼" type="" target="" />
+				<sprite name="迷你芽" type="" target="" />
+			</sprites>
+		</map>
 </map>

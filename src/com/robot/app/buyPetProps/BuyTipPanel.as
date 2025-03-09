@@ -97,12 +97,6 @@ package com.robot.app.buyPetProps
       private static function onChangeTxt(e:Event) : void
       {
          var count:uint = uint(numTxt.text);
-         if(count > 99 - curPropsCount)
-         {
-            Alarm.show("你输入物品个数不正确",okFun);
-            numTxt.text = "1";
-            return;
-         }
          if(count > Math.floor(MainManager.actorInfo.coins / itemPrice))
          {
             Alarm.show("你的赛尔豆不足",okFun);
@@ -154,7 +148,7 @@ package com.robot.app.buyPetProps
          {
             count -= 1;
          }
-         else if(str == "1" && count < uint(MainManager.actorInfo.coins / itemPrice) && count >= 1 && count < 99 - curPropsCount)
+         else if(str == "1" && count < uint(MainManager.actorInfo.coins / itemPrice) && count >= 1)
          {
             count += 1;
          }
