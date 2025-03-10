@@ -15,13 +15,20 @@ package com.robot.app.mapProcess
    import flash.events.Event;
    import flash.events.MouseEvent;
    import org.taomee.events.SocketEvent;
+   import com.robot.core.manager.TasksManager;
+   import com.robot.app.task.taskUtils.taskDialog.NpcTipDialog;
+   import com.robot.app.task.control.TaskController_42;
    
    public class MapProcess_35 extends BaseMapProcess
    {
       private var gameTrig:MovieClip;
       
       private var panel:AppModel;
+
+      private var inTask42Flag:Boolean = false;
       
+      private var makePetPassFlag:Boolean = false;
+
       public function MapProcess_35()
       {
          super();
@@ -30,13 +37,33 @@ package com.robot.app.mapProcess
       override protected function init() : void
       {
          this.gameTrig = conLevel["game_trig"];
-         this.gameTrig.visible = true;
+         this.gameTrig.visible = false;
          this.gameTrig.buttonMode = true;
-         this.gameTrig.addEventListener(MouseEvent.CLICK,this.onGameTrigClickHand);
+         if(TasksManager.getTaskStatus(42) == TasksManager.ALR_ACCEPT)
+         {
+            TasksManager.getProStatusList(42,function(arr:Array):void{
+               if((arr[3] && !arr[4])){
+                  inTask42Flag = true;
+                  gameInit();
+               }
+            })
+         }else if(TasksManager.getTaskStatus(42) == TasksManager.complete())
+         {
+            gameInit();
+         }else
+         {
+
+         }
          conLevel["btn1"].addEventListener(MouseEvent.CLICK,this.onBtn1ClickHandler);
          conLevel["btn2"].addEventListener(MouseEvent.CLICK,this.onBtn2ClickHandler);
       }
       
+      private function gameInit():void
+      {
+         this.gameTrig.visible = true;
+         this.gameTrig.addEventListener(MouseEvent.CLICK,this.onGameTrigClickHand);
+      }
+
       private function onGameTrigClickHand(e:MouseEvent) : void
       {
          if(!this.panel)
@@ -66,6 +93,22 @@ package com.robot.app.mapProcess
       private function onGameOverHandler(e:SocketEvent) : void
       {
          SocketConnection.removeCmdListener(CommandID.GAME_OVER,this.onGameOverHandler);
+         if(inTask42Flag){
+            if(makePetPassFlag){
+               NpcTipDialog.show("天！太棒了！你为什么可以制造出这样完美的机械精灵？你究竟是谁？",function():void{
+                  NpcTipDialog.show("我只是一个星球旅行者",function():void{
+                     NpcTipDialog.show("太棒了！赛尔！这下赫尔卡星就有救了！我们快回去告诉爱丽丝这个好消息吧！",function():void{
+                        TasksManager.complete(TaskController_42.TASK_ID,4,function():void{
+                        TaskController_42.showPanel();
+                     })
+                     },NpcTipDialog.NONO)
+                  },NpcTipDialog.SEER)
+               },NpcTipDialog.ELDER)
+            }else
+            {
+               NpcTipDialog.show("别着急，一定能成功制造出比卡塔精灵更厉害的机械精灵的！",null,NpcTipDialog.NONO)
+            }
+         }
       }
       
       private function onGameCloseHandler(e:Event) : void
@@ -74,6 +117,7 @@ package com.robot.app.mapProcess
          this.panel.destroy();
          this.panel = null;
          this.gameOverHandler();
+         this.makePetPassFlag = false;
       }
       
       private function onGameFailHandler(e:Event) : void
@@ -82,6 +126,7 @@ package com.robot.app.mapProcess
          this.panel.destroy();
          this.panel = null;
          this.gameOverHandler();
+         this.makePetPassFlag = false;
          Alarm.show("哦噢！很抱歉，制造机械精灵任务失败！");
       }
       
@@ -90,6 +135,7 @@ package com.robot.app.mapProcess
          this.panel.sharedEvents.removeEventListener("GamePass",this.onGamePassHandler);
          this.panel.destroy();
          this.panel = null;
+         this.makePetPassFlag = true;
          this.gameOverHandler(100,100);
       }
       

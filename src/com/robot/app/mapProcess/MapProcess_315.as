@@ -16,6 +16,8 @@ package com.robot.app.mapProcess
    import org.taomee.manager.EventManager;
    import org.taomee.utils.DisplayUtil;
    import flash.utils.setTimeout;
+   import com.robot.core.manager.TasksManager;
+   import com.robot.app.task.control.TaskController_42;
 
    public class MapProcess_315 extends BaseMapProcess
    {
@@ -341,22 +343,24 @@ package com.robot.app.mapProcess
       
       public function onStand(mc:MovieClip) : void
       {
-         NpcTipDialog.show("时空之门已经开启！\r\n点击时空之门穿越回千年前的赫尔卡星吧！",function():void{
-            conLevel["door_2"].visible = true;
-            conLevel["door_2"].gotoAndPlay(1);
-            conLevel["door_2"].buttonMode = true;
-            door_effect.visible = true;
-            door_effect.gotoAndStop(1);
-         },NpcTipDialog.IRIS);
+         conLevel["door_2"].visible = true;
+         conLevel["door_2"].gotoAndPlay(4);
+         conLevel["door_2"].buttonMode = true;
+         door_effect.visible = true;
+         door_effect.gotoAndStop(1);
+         NpcTipDialog.show("时空之门已经开启！\r\n点击时空之门穿越回千年前的赫尔卡星吧！",null,NpcTipDialog.IRIS);
       }
       public function onChangeMap(mc:MovieClip) : void
       {
-         door_effect.gotoAndStop(2);
+         door_effect.gotoAndPlay(2);
          door_effect.addEventListener(Event.ENTER_FRAME,function(evt:Event):void
             {
                if(door_effect.currentFrame == door_effect.totalFrames)
                {
                   door_effect.removeEventListener(Event.ENTER_FRAME,arguments.callee);
+                  if(TasksManager.getTaskStatus(42) == TasksManager.ALR_ACCEPT){
+                     TasksManager.complete(TaskController_42.TASK_ID,0,null)
+                  }
                   setTimeout(function():void{
                   door_effect.gotoAndStop(1);
                      setTimeout(function():void{

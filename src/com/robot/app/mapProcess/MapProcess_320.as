@@ -35,6 +35,8 @@ package com.robot.app.mapProcess
    import com.robot.core.npc.NPC;
    import com.robot.app.task.taskUtils.taskDialog.NpcTipDialog;
    import org.taomee.manager.ToolTipManager;
+   import com.robot.core.manager.TasksManager;
+   import com.robot.app.task.control.TaskController_42;
    
    public class MapProcess_320 extends BaseMapProcess
    {
@@ -78,7 +80,7 @@ package com.robot.app.mapProcess
       
       private var isLive:Boolean = false;
       
-      private var state:String = "";
+      private var state:String = "firststate";
       
       private var aimatCount:uint = 0;
       
@@ -87,6 +89,8 @@ package com.robot.app.mapProcess
       private var oldSpeed:Number = 0;
       
       private var _panel:MissileFirePanel;
+
+      private var inTask42Flag:Boolean = false;
       
       public function MapProcess_320()
       {
@@ -109,16 +113,43 @@ package com.robot.app.mapProcess
          this.missileMC.buttonMode = true;
          this.electricHead = topLevel["machine_head"];
          this.electricHead.addEventListener(Event.ENTER_FRAME,this.onFrameHandler1);
-         this.electricHead.addEventListener(MouseEvent.CLICK,this.onHeadClickHandler);
-         this.electricHead.buttonMode = true;
-         ToolTipManager.add(this.electricHead,"赫尔卡巨人");
          this.machineHand = animatorLevel["hand_mc"];
+         this.machineHand.gotoAndStop(1);
          this.randomTime = 4000 * Math.random() + 1000;
          this.timer = new Timer(this.randomTime,1);
          this.timer.addEventListener(TimerEvent.TIMER,this.onTimer);
          this.timer.start();
          this.depthLevel["war2"].visible = false;
          this.depthLevel["war3"].visible = false;
+         // sceneState(this.state);
+         machineHand1 = machineHand["machine_hand"];
+         if(TasksManager.getTaskStatus(42) == TasksManager.ALR_ACCEPT)
+         {
+            TasksManager.getProStatusList(42,function(arr:Array):void{
+               if((arr[0] && !arr[1])){
+                  machineHand1.gotoAndStop(1);
+                  TaskController_42.showPanel();
+               }else if(arr[1] && !arr[2]){
+                  state = "";
+                  //machineHand1.gotoAndStop(machineHand1.totalFrames);
+                  electricHead.addEventListener(MouseEvent.CLICK,onHeadClickHandler);
+                  electricHead.buttonMode = true;
+                  inTask42Flag = true;
+                  ToolTipManager.add(electricHead,"赫尔卡巨人");
+               }else
+               {
+                  state = "";
+                  //machineHand1.gotoAndStop(machineHand1.totalFrames);
+               }
+            })
+         }else if(TasksManager.getTaskStatus(42) == TasksManager.COMPLETE)
+         {
+            this.state = "";
+            //machineHand1.gotoAndStop(machineHand1.totalFrames);
+            this.electricHead.addEventListener(MouseEvent.CLICK,this.onHeadClickHandler);
+            this.electricHead.buttonMode = true;
+            ToolTipManager.add(this.electricHead,"赫尔卡巨人");
+         }
       }
       
       private function setWarState() : void
@@ -135,10 +166,51 @@ package com.robot.app.mapProcess
       private function onHeadClickHandler(e:MouseEvent):void{
          NpcDialog.show(4714,["小家伙，你想挑战我吗?!"],["看我揍死你！","装傻"],[function():void{
             //NpcTipDialog.show("啊!!! 赛...赛尔，手...手下留情！别...别揍我T_T\n赫尔卡巨人目前还在检修中，请过一段时间再来挑战他吧！",null,NpcTipDialog.XITA)
+            if(inTask42Flag){
+               EventManager.addEventListener(PetFightEvent.FIGHT_CLOSE,onCloseFightBOSS);
+            }
             FightInviteManager.fightWithBoss("赫尔卡巨人",0);
          },null])
       }
 
+      private function onCloseFightBOSS(e:PetFightEvent) : void
+      {
+         NpcTipDialog.show("你究竟是谁?!",function():void{
+            NpcTipDialog.show("我只是一个星球旅行者。\r(侠客应该已经成功将卡塔精灵护送到博士那里了，我们快赶回赛尔号吧！)",function():void{
+               TasksManager.complete(TaskController_42.TASK_ID,2,function():void{TaskController_42.showPanel()})
+            },NpcTipDialog.SEER)
+         },NpcTipDialog.HELPMACH)
+         EventManager.removeEventListener(PetFightEvent.FIGHT_CLOSE,arguments.callee);
+         // fightData = e.dataObj as FightOverInfo;
+         // try
+         // {  
+         //    if(fightData.winnerID == MainManager.actorInfo.userID)
+         //    {
+         //       NpcDialog.show(
+         //          4714,
+         //          ["你究竟是谁?!"],
+         //          ["我只是一个星球旅行者。(侠客应该已经成功将卡塔精灵护送到博士那里了，我们快赶回赛尔号吧！)"],
+         //          [function():void{
+         //             TasksManager.complete(TaskController_42.TASK_ID,2,completeTaskStep3)
+         //          }]
+         //       )
+         //    }else
+         //    {
+         //       NpcDialog.show(
+         //          4714,
+         //          ["手下败将！你是拯救不了赫尔卡星人的！"],
+         //          ["……(侠客应该已经成功将卡塔精灵护送到博士那里了，我们快赶回赛尔号吧！)"]
+         //           [function():void{
+         //             TasksManager.complete(TaskController_42.TASK_ID,2,completeTaskStep3)
+         //          }]
+         //       )
+         //    }
+         // }
+         // catch (error:Error)
+         // {
+         //    Alarm.show(error)
+         // }
+      }
       private function sceneState(state:String) : void
       {
          switch(state)

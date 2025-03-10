@@ -246,7 +246,22 @@
 		doc="双子星" alert="" >
 		<pro name="赛尔打工" parent="" isMat="0" doc="" alert="" />
 	</task>
-	
+	<task ID="42" name="赫尔卡星千年之谜" parent="" isMat="0" type="0" isDir="0" doc="" isEnd="0"
+		alert="">
+		<taskDes> 
+			<![CDATA[尘封的时空之门终于开启了……赫尔卡星的千年之谜是否能解开他的神秘面纱？不知道为什么我既激动又紧张，总感觉有什么事情要发生了……@继续$$]]> 
+			<![CDATA[勇敢的小赛尔#nick，快去拜伦号的0xff0000神秘空间0xffffff触发机关，穿越时空之门回到千年前的赫尔卡星吧！你一定要加倍小心！我会在这里等着你的好消息……@确定]]>
+		</taskDes>
+		<proDes> 
+			<![CDATA[勇敢的小赛尔#nick，快去拜伦号的0xff0000神秘空间0xffffff触发机关，穿越时空之门回到千年前的赫尔卡星吧！你一定要加倍小心！我会在这里等着你的好消息……@确定]]>
+		</proDes>					
+		<pro name="神秘空间开启时空之门" parent="" isMat="0" doc="" alert="" />					
+		<pro name="寻找赫尔卡长老" parent="" isMat="0" doc="" alert="" />		
+		<pro name="护送卡塔" parent="" isMat="0" doc="" alert="" />	
+		<pro name="咨询博士" parent="" isMat="0" doc="" alert="" />	
+		<pro name="拼组游戏" parent="" isMat="0" doc="" alert="" />		
+		<pro name="交任务" parent="" isMat="0" doc="" alert="" />				
+	</task>	
 	<task ID="79" name="寻访哈莫雷特的族人" parent="" isMat="0" type="0" isDir="0" doc="" isEnd="0"
 		alert="">
 		<taskDes> 

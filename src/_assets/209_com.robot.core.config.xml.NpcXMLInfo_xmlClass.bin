@@ -41,8 +41,8 @@ endTask:NPC身上绑定的可以完成任务的ID
 	</npc>
 	
 	<npc id="4" mapID="325" name="探险家爱丽丝" cloths="100342|100343|100344|100345"
-		color="0xF0378A" point="280|291" type="iris" startTask="" endTask=""
-		proTask="">
+		color="0xF0378A" point="280|291" type="iris" startTask="42" endTask=""
+		proTask="42">
 		<des>
 			<![CDATA[右边的那根木柱上似乎刻画着什么东西！琴谱？铃铛草？如果能够弹奏出正确的节奏会发生什么呢？#7]]></des>
 		<question><![CDATA[我这就去看看吧！]]></question>
@@ -72,7 +72,7 @@ endTask:NPC身上绑定的可以完成任务的ID
 		</dialog>
 	</npc>
 	<npc id="7" mapID="35" name="赫尔卡星长老" point="720|165" type="elder" startTask=""
-		endTask="" proTask="">
+		endTask="" proTask="42">
 		<des> <![CDATA[我是赫尔卡星长老！]]></des>
 		<question><![CDATA[哈哈..原来赫尔卡星长老是这个样子...]]></question>
 	</npc>
