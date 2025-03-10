@@ -14,6 +14,8 @@ package com.robot.app.npc.npcClass
    import com.robot.core.npc.NpcInfo;
    import flash.display.DisplayObject;
    import flash.display.Sprite;
+   import com.robot.app.task.taskUtils.taskDialog.NpcTipDialog;
+   import com.robot.app.task.control.TaskController_42;
    
    public class NpcClass_3 implements INpc
    {
@@ -77,6 +79,21 @@ package com.robot.app.npc.npcClass
                   panel.show();
                }
             });
+         }else if(e.taskID == 42)
+         {
+            TasksManager.getProStatusList(42,function(arr:Array):void{
+               if(Boolean(arr[2]) && !arr[3]){
+                  NpcTipDialog.show("赛尔，多亏你拖住巨型机器人！我已经成功将卡塔精灵送到博士这里了",function():void{
+                     NpcTipDialog.show("什么？！你是说你们回到了千年前的赫尔卡星？还遇到了赫尔卡星长老！",function():void{
+                        NpcTipDialog.show("是的，博士！情况紧急！千年前的赫尔卡星现在机械巨人和叛变的机械精灵已经完全失去控制……你能研究出比卡塔精灵更厉害的机械精灵吗？",function():void{
+                           NpcTipDialog.show("我只能提供给你一个我最新发明CC-0118机械精灵分析制造装置，能否制造出比卡塔更加厉害的家伙还要看你自己了！",function():void{
+                              TasksManager.complete(TaskController_42.TASK_ID,3,function():void{TaskController_42.showPanel()})
+                           },NpcTipDialog.DOCTOR)
+                        },NpcTipDialog.SEER_SAD)
+                     },NpcTipDialog.DOCTOR)
+                  },NpcTipDialog.NONO)
+               }
+            })
          }
       }
       

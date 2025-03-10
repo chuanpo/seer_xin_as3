@@ -187,11 +187,11 @@
 				outPut="精灵“迪卢卡”">
 			</task>
 
-			<task starlevel="3" spanlevel="" itemtype="4" id="42" type="0" name="赫尔卡星千年之谜" parentId="40"
-				newOnline="0" onlineData="20091102" offline="1" mapId="7" npc="iris"
-				tip="我正在赛尔号的瞭望舱" startDes="尘封的时空之门终于开启了……赫尔卡星的千年之谜是否能揭开它的神秘面纱？"
+			<task starlevel="3" spanlevel="" itemtype="4" id="42"  name="赫尔卡星千年之谜" parentId=""
+				newOnline="1" onlineData="20091102" offline="0" mapId="325" npc="iris"
+				tip="我正在艾迪星" startDes="尘封的时空之门终于开启了……赫尔卡星的千年之谜是否能揭开它的神秘面纱？"
 				stopDes="回到了千年前的赫尔卡星，帮助赫尔卡长老制造出了“西塔”和“奇塔”，机械精灵大战即将开幕！#（你曾帮助赫尔卡长老制作出了机械精灵“西塔”和“奇塔”)）"
-				outPut="基地家具“时空之门”|3000 赛尔豆">
+				outPut="精灵“卡塔”|“时空之门”|3000 赛尔豆">
 			</task>
 			<task starlevel="4" spanlevel="" itemtype="4" id="44" type="0" name="巨型机械精灵大战" parentId="42"
 				newOnline="0" onlineData="20091103" offline="1" mapId="7" npc="iris"

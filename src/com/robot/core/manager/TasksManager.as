@@ -112,6 +112,27 @@ package com.robot.core.manager
                });
                return;
             case ALR_ACCEPT:
+            case 2:
+               isParentAccept(id,function(b:Boolean):void
+               {
+                  var cmd:uint = 0;
+                  var sl:SocketLoader = null;
+                  if(b)
+                  {
+                     cmd = getTypeCmd(id,[CommandID.ACCEPT_TASK,CommandID.ACCEPT_DAILY_TASK]);
+                     sl = new SocketLoader(cmd);
+                     sl.extData = new TaskInfo(id,0,event);
+                     sl.addEventListener(SocketEvent.COMPLETE,onAcceptServer);
+                     sl.load(id);
+                     return;
+                  }
+                  if(event != null)
+                  {
+                     event(false);
+                  }
+                  dispatchEvent(TaskEvent.ACCEPT,id,0,false);
+               });
+               return;
             case COMPLETE:
                if(event != null)
                {
