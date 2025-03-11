@@ -44,7 +44,7 @@ package com.robot.core.config.xml
                var args:String = xml.@args;
                var strArray:Array = args.split(",");
                return strArray;
-            }catch(e)
+            }catch(e:Error)
             {
                return shinyArray;
             }

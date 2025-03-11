@@ -135,7 +135,7 @@ package com.robot.core.manager.map.config
                      str = mc["des"].replace(/\$/g, "\r");
                      ToolTipManager.add(mc, str);
                   }
-                  catch (e)
+                  catch (e:Error)
                   {
                   }
                }

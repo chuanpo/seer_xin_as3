@@ -19,6 +19,7 @@ package com.robot.app.mapProcess
    import flash.media.SoundChannel;
    import com.robot.core.manager.MapManager;
    import com.robot.app.task.taskUtils.taskDialog.NpcTipDialog;
+   import com.robot.app.energy.utils.EnergyController;
 
    public class MapProcess_325 extends BaseMapProcess
    {
@@ -512,8 +513,8 @@ private function musicPlay(e:MouseEvent) : void
 
       public function exploitOre() : void
       {
-         NpcDialog.show(NPC.SEER,["暂时不可开采哟~"],["可恶...."],[function():void{}])
-         //EnergyController.exploit(29);
+         // NpcDialog.show(NPC.SEER,["暂时不可开采哟~"],["可恶...."],[function():void{}])
+         EnergyController.exploit();
       }
 
       private function isPlayMusic(param1:uint) : void
