@@ -509,9 +509,6 @@ package com.robot.app.mapProcess
             this.electricHead.removeEventListener(MouseEvent.CLICK,this.onHeadClickHandler);
             ToolTipManager.remove(this.electricHead);
          }
-         if(inTask42Flag){
-            EventManager.removeEventListener(PetFightEvent.FIGHT_CLOSE);
-         }
       }
       
       public function changMap() : void
