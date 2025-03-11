@@ -47,7 +47,7 @@ package com.robot.app.mapProcess
                   gameInit();
                }
             })
-         }else if(TasksManager.getTaskStatus(42) == TasksManager.complete())
+         }else if(TasksManager.getTaskStatus(42) == TasksManager.COMPLETE)
          {
             gameInit();
          }else
