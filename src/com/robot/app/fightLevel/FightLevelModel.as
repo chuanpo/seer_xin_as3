@@ -17,7 +17,7 @@ package com.robot.app.fightLevel
       
       private static var xml:XML = XML(new xmlClass());
       
-      private static const _maxLevel:uint = 60;
+      private static const _maxLevel:uint = 800;
       
       private static var b1:Boolean = false;
       

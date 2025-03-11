@@ -74,6 +74,7 @@ package com.robot.app.mapProcess
          {
             max = FightLevelModel.getCurLevel;
          }
+         if(max > 60) max = 60;
          for(var i1:int = 1; i1 <= max; i1++)
          {
             this.conLevel["mc" + i1].alpha = 1;
@@ -264,7 +265,7 @@ package com.robot.app.mapProcess
                MapManager.changeMap(500);
             }
          }
-         else
+         else if(data.reason != 2)
          {
             this.b1 = false;
             this.leaveFight();

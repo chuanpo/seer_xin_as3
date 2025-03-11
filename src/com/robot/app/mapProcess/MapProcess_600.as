@@ -255,7 +255,7 @@ package com.robot.app.mapProcess
                MapManager.changeMap(600);
             }
          }
-         else
+         else if(data.reason != 2)
          {
             this.b1 = false;
             this.leaveFight();

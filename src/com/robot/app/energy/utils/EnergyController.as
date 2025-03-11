@@ -109,6 +109,15 @@ package com.robot.app.energy.utils
                      _type = 16;
                      bMiningStr = "10";
                }
+               break;
+            case 325:
+               _type = 29;
+               bMiningStr = "1";
+               break;
+            case 328:
+               _type = 30;
+               bMiningStr = "2";
+               break;
          }
          init();
       }
