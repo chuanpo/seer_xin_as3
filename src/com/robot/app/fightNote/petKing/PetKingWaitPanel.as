@@ -147,6 +147,7 @@ package com.robot.app.fightNote.petKing
          DisplayUtil.removeForParent(waitPanel,false);
          SocketConnection.send(CommandID.INVITE_FIGHT_CANCEL);
          LevelManager.openMouseEvent();
+         PetFightModel.mode = PetFightModel.FIGHT_WITH_NPC;
       }
       
       private static function onMapSwitch(event:MapEvent) : void

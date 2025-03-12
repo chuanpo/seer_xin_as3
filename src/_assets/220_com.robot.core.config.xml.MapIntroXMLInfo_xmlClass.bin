@@ -57,7 +57,7 @@
 		<minerals IDs="甲烷燃气|黄晶矿"/>
 	</map>
 	<map id="30" difficulty="1" level="9-27" des="赫尔卡星">
-		<sprite petIDs="比比鼠|罗奇|果冻鸭|#利利|#西塔"/>
+		<sprite petIDs="比比鼠|罗奇|果冻鸭|吉斯|#利利|#西塔"/>
 		<minerals IDs="甲烷燃气"/>
 		<game names="拆弹游戏"/>
 	</map>
