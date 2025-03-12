@@ -163,10 +163,10 @@ package com.robot.app.user
          this.panel["time_txt"].text = time.getFullYear().toString() + "年" + (time.getMonth() + 1).toString() + "月" + time.getDate().toString() + "日";
          this.panel["mum_txt"].text = String(this.userInfo.petAllNum);
          this.panel["le_txt"].text = String(this.userInfo.petMaxLev);
-         this.panel["achievement_txt"].text = String(this.userInfo.monKingWin) + "胜";
+         this.panel["achievement_txt"].text = String(this.userInfo.monKingWin)  + "分";
          this.panel["petTxt"].text = String(this.userInfo.messWin) + "胜";
          this.panel["stageTxt"].text = String(this.userInfo.maxStage) + "层";
-         this.panel["arenaTxt"].text = String(this.userInfo.maxArenaWins) + "连胜";
+         this.panel["arenaTxt"].text = String(this.userInfo.maxArenaWins) + "胜";
          this.oTherClothPrev.changeColor(this.userInfo.color);
          this.oTherClothPrev.showCloths(this.userInfo.clothes);
          this.oTherClothPrev.showDoodle(this.userInfo.texture);
