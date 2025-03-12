@@ -82,14 +82,14 @@
 		<game names="套圈大赛|勇闯冰关|雪地疾走|大脚过木桩"/>
 	</map>
 	<map id="54" difficulty="2" level="13-49" des="露希欧星">
-		<sprite petIDs="阿兹|火晶兽|水草蛙"/>
+		<sprite petIDs="阿兹|火晶兽|#晶岩兽|水草蛙"/>
 		<minerals IDs="露尼亚矿石|希罗里矿石|欧古德矿石"/>
 	</map>
 	<map id="57" difficulty="3" level="50-51" des="尼古尔星">
 		<sprite petIDs="米隆|查斯"/>
 	</map>
 	<map id="60" difficulty="3" level="50-51" des="塔克星">
-		<sprite petIDs="伊娃|吉宝|斯内克|埃闻|#眼球"/>
+		<sprite petIDs="伊娃|#吉宝|#斯内克|埃闻|#眼球"/>
 		<game names="植物抗沙暴"/>
 	</map>
 	<map id="325" difficulty="3" level="50" des="艾迪星">
