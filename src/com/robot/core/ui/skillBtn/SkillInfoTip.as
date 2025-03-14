@@ -67,7 +67,7 @@ package com.robot.core.ui.skillBtn
          var argsNum:uint = 0;
          str += "\r";
          var priority:int = SkillXMLInfo.getPriority(_id);
-         if (priority > 0)
+         if (priority != 0)
          {
             str += "先制: " + priority;
          }
