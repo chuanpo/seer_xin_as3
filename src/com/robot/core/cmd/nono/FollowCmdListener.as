@@ -80,7 +80,7 @@ package com.robot.core.cmd.nono
          {
             UserManager.dispatchAction(id,PeopleActionEvent.NONO_HOOM,flag);
             NonoManager.dispatchEvent(new NonoEvent(NonoEvent.HOOM,null));
-            if(MainManager.actorInfo.actionType == 1)
+            if(MainManager.actorInfo.actionType == 1 && MainManager.actorID == id)
             {
                MainManager.actorModel.walk = new WalkAction();
                MainManager.actorInfo.nonoState[1] = false;
