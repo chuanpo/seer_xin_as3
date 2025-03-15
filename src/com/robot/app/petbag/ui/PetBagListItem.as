@@ -137,7 +137,7 @@ package com.robot.app.petbag.ui
             DisplayUtil.removeForParent(this._showMc);
             this._showMc = null;
          }
-         ResourceManager.getResource(ClientConfig.getPetSwfPath((this._info.skinID != 0 && this._info.shiny != 1) ? this._info.skinID : this._info.id),this.onShowComplete,"pet");
+         ResourceManager.getResource(ClientConfig.getPetSwfPath(this._info.skinID != 0 ? this._info.skinID : this._info.id),this.onShowComplete,"pet");
          this.addEvent();
       }
       
@@ -218,7 +218,7 @@ package com.robot.app.petbag.ui
             this._showMc.scaleY = 0.8;
             this._showMc.x = 30;
             this._showMc.y = 50;
-            if(_info.shiny == 1){
+            if(_info.shiny != 0){
                var matrix:ColorMatrixFilter = null;
                var argArray:Array = ShinyXMLInfo.getShinyArray(_info.id);
                matrix = new ColorMatrixFilter(argArray);
