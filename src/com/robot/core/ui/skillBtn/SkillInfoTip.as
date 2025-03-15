@@ -66,6 +66,13 @@ package com.robot.core.ui.skillBtn
          var str:String = "<font color=\'#ffff00\'>" + name + "</font>  " + "<font color=\'" + color + "\'>(" + SkillXMLInfo.getCategoryName(_id) + ")</font>\r";
          var argsNum:uint = 0;
          str += "\r";
+         // 获取并检查命中率（Accuracy）
+         var p:Number = SkillXMLInfo.getDamage(_id);
+         if (p > 0)
+         {
+            str += " 威力: " + accuracy + "/r";
+         }
+
          var priority:int = SkillXMLInfo.getPriority(_id);
          if (priority != 0)
          {

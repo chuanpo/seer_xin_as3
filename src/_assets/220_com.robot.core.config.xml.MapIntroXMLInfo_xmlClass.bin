@@ -78,7 +78,6 @@
 	</map>
 	<map id="51" difficulty="1" level="15" des="斯诺星">
 		<sprite petIDs="达比拉|魔狮迪露|迪度|托尼"/>
-		<minerals IDs="电能石"/>
 		<game names="套圈大赛|勇闯冰关|雪地疾走|大脚过木桩"/>
 	</map>
 	<map id="54" difficulty="2" level="13-49" des="露希欧星">
