@@ -70,7 +70,7 @@ package com.robot.core.ui.skillBtn
          var p:Number = SkillXMLInfo.getDamage(_id);
          if (p > 0)
          {
-            str += " 威力: " + p + "/r";
+            str += " 威力: " + p + "\r";
          }
 
          var priority:int = SkillXMLInfo.getPriority(_id);
