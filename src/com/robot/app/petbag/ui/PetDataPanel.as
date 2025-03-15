@@ -146,7 +146,7 @@ package com.robot.app.petbag.ui
          ToolTipManager.remove(this._effectTxt);
          if(this._id != 0)
          {
-            ResourceManager.cancel(ClientConfig.getPetSwfPath((_petInfo.skinID != 0 && _petInfo.shiny != 1) ? _petInfo.skinID : this._id),this.onShowComplete);
+            ResourceManager.cancel(ClientConfig.getPetSwfPath(_petInfo.skinID != 0 ? _petInfo.skinID : this._id),this.onShowComplete);
          }
          if(Boolean(this._showMc))
          {
@@ -196,7 +196,7 @@ package com.robot.app.petbag.ui
          }
          if(this._id != 0)
          {
-            ResourceManager.cancel(ClientConfig.getPetSwfPath((_petInfo.skinID != 0 && _petInfo.shiny != 1) ? _petInfo.skinID : this._id),this.onShowComplete);
+            ResourceManager.cancel(ClientConfig.getPetSwfPath(_petInfo.skinID != 0 ? _petInfo.skinID : this._id),this.onShowComplete);
          }
          if(Boolean(this._showMc))
          {
@@ -204,7 +204,7 @@ package com.robot.app.petbag.ui
             this._showMc = null;
          }
          this._id = info.id;
-         ResourceManager.getResource(ClientConfig.getPetSwfPath((_petInfo.skinID != 0 && _petInfo.shiny != 1) ? _petInfo.skinID : this._id),this.onShowComplete,"pet");
+         ResourceManager.getResource(ClientConfig.getPetSwfPath(_petInfo.skinID != 0 ? _petInfo.skinID : this._id),this.onShowComplete,"pet");
          this._attackTxt.htmlText = "攻击:" + this.des1 + info.attack.toString() + this.des2;
          this._defenceTxt.htmlText = "防御:" + this.des1 + info.defence.toString() + this.des2;
          this._saTxt.htmlText = "特攻:" + this.des1 + info.s_a.toString() + this.des2;
@@ -289,7 +289,7 @@ package com.robot.app.petbag.ui
             this._showMc.scaleY = scale;
             this._showMc.x = 70;
             this._showMc.y = 110;
-            if(_petInfo.shiny == 1){
+            if(_petInfo.shiny != 0){
                var matrix:ColorMatrixFilter = null;
                var argArray:Array = ShinyXMLInfo.getShinyArray(_petInfo.id);
                matrix = new ColorMatrixFilter(argArray);
