@@ -14,6 +14,7 @@ package com.robot.app.nono.featureApp
    import com.robot.core.utils.TextFormatUtil;
    import flash.utils.ByteArray;
    import org.taomee.events.SocketEvent;
+   import flash.utils.getTimer;
 
    public class App_700002
    {
@@ -64,11 +65,8 @@ package com.robot.app.nono.featureApp
                   }
                   else
                   {
-                     var currentTime:uint = getTimer() / 1000; // 当前时间（秒）
-                     var hatchCompleteTime:uint = currentTime + leftTime; // 孵化完成时间（秒）
-                     var hatchCompleteDate:Date = new Date(hatchCompleteTime * 1000); // 转换为 Date 对象
-                     var formattedTime:String = TextFormatUtil.formatDate(hatchCompleteDate, "yyyy-MM-dd HH:mm:ss"); // 格式化时间
-                     Alarm.show("分子转化仪中有正在转化的精元，预计孵化完成时间: " + formattedTime);
+                     var leftMinutes:uint = Math.ceil(leftTime / 60); // 计算剩余的孵化时间（分钟）
+                     Alarm.show("分子转化仪中有正在转化的精元，预计剩余孵化时间: " + leftMinutes + " 分钟");
                   }
                }
                else
