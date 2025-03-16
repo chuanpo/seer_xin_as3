@@ -722,7 +722,7 @@ des 鼠标移上去的提示
 			<component name="door_0" hit="comp_0" targetID="51"/>
 		</changeMapComp>
 	</map>
-	<map id="54" name="露希欧星" x="850" y="385">
+	<map id="54" name="露希欧星" x="850" y="385" super="26">
 		<Entries>
 			<Entry FromMap="55" PosX="730" PosY="130"/>
 		</Entries>
@@ -735,7 +735,7 @@ des 鼠标移上去的提示
 			<component name="ogdMineralMC" hit="ogdHit" fun="onGatherOgd"/>
 		</funComp>
 	</map>
-	<map id="55" name="露希欧泥潭" x="635" y="480">
+	<map id="55" name="露希欧泥潭" x="635" y="480" super="26">
 		<Entries>
 		</Entries>
 		<changeMapComp>
@@ -745,7 +745,7 @@ des 鼠标移上去的提示
 			<component name="waterMC" hit="lineHitMc" fun="onLineClickHandler"/>
 		</funComp>
 	</map>
-	<map id="56" name="NoNo之洋" x="635" y="480">
+	<map id="56" name="NoNo之洋" x="635" y="480" super="26">
 		<Entries>
 		</Entries>
 		<changeMapComp>
@@ -1080,31 +1080,31 @@ des 鼠标移上去的提示
 		</funComp>
 	</map>
 	<!-- 12个迷宫场景 -->
-	<map id="302" name="闭锁空间" x="300" y="278">
+	<map id="302" name="闭锁空间" x="300" y="278" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="303"/>
 			<component name="door_1" hit="comp_1" targetID="306"/>
 		</changeMapComp>
 	</map>
-	<map id="303" name="闭锁空间" x="286" y="260">
+	<map id="303" name="闭锁空间" x="286" y="260" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="305"/>
 			<component name="door_1" hit="comp_1" targetID="307"/>
 		</changeMapComp>
 	</map>
-	<map id="304" name="闭锁空间" x="480" y="262">
+	<map id="304" name="闭锁空间" x="480" y="262" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="307"/>
 			<component name="door_1" hit="comp_1" targetID="312"/>
 		</changeMapComp>
 	</map>
-	<map id="305" name="闭锁空间" x="286" y="260">
+	<map id="305" name="闭锁空间" x="286" y="260" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="309"/>
 			<component name="door_1" hit="comp_1" targetID="313"/>
 		</changeMapComp>
 	</map>
-	<map id="306" name="闭锁空间" x="300" y="278">
+	<map id="306" name="闭锁空间" x="300" y="278" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="311"/>
 			<component name="door_1" hit="comp_1" targetID="313"/>
@@ -1113,19 +1113,19 @@ des 鼠标移上去的提示
 			<component name="xita" hit="xitaHit" fun="fightWithXita"/>
 		</funComp>
 	</map>
-	<map id="307" name="闭锁空间" x="480" y="262">
+	<map id="307" name="闭锁空间" x="480" y="262" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="308"/>
 			<component name="door_1" hit="comp_1" targetID="310"/>
 		</changeMapComp>
 	</map>
-	<map id="308" name="闭锁空间" x="480" y="262">
+	<map id="308" name="闭锁空间" x="480" y="262" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="310"/>
 			<component name="door_1" hit="comp_1" targetID="313"/>
 		</changeMapComp>
 	</map>
-	<map id="309" name="闭锁空间" x="286" y="260">
+	<map id="309" name="闭锁空间" x="286" y="260" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="306"/>
 			<component name="door_1" hit="comp_1" targetID="307"/>
@@ -1139,38 +1139,38 @@ des 鼠标移上去的提示
 			<component name="plot_5" hit="plot_5" fun="checkWalkPlot"/>
 		</autoComp>
 	</map>
-	<map id="310" name="闭锁空间" x="286" y="260">
+	<map id="310" name="闭锁空间" x="286" y="260" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="302"/>
 			<component name="door_1" hit="comp_1" targetID="304"/>
 		</changeMapComp>
 	</map>
-	<map id="311" name="闭锁空间" x="300" y="278">
+	<map id="311" name="闭锁空间" x="300" y="278" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="303"/>
 			<component name="door_1" hit="comp_1" targetID="304"/>
 		</changeMapComp>
 	</map>
-	<map id="312" name="闭锁空间" x="480" y="262">
+	<map id="312" name="闭锁空间" x="480" y="262" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="302"/>
 			<component name="door_1" hit="comp_1" targetID="305"/>
 		</changeMapComp>
 	</map>
-	<map id="313" name="闭锁空间" x="300" y="278">
+	<map id="313" name="闭锁空间" x="300" y="278" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="308"/>
 			<component name="door_1" hit="comp_1" targetID="309"/>
 		</changeMapComp>
 	</map>
 	<!-- -->
-	<map id="314" name="拜伦号" x="512" y="330">
+	<map id="314" name="拜伦号" x="512" y="330" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="302"/>
 			<component name="door_1" hit="comp_1" targetID="315"/>
 		</changeMapComp>
 	</map>
-	<map id="315" name="神秘空间" x="512" y="330">
+	<map id="315" name="神秘空间" x="512" y="330" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="314"/>
 			<component name="door_1" hit="comp_1" targetID="316"/>
@@ -1182,7 +1182,7 @@ des 鼠标移上去的提示
 			<component name="door_2" hit="door_effect" fun="onChangeMap"/>
 		</funComp>
 	</map>
-	<map id="316" name="精灵舱" x="260" y="300">
+	<map id="316" name="精灵舱" x="260" y="300" super="25">
 		<changeMapComp>
 		</changeMapComp>
 		<funComp>
@@ -1191,7 +1191,7 @@ des 鼠标移上去的提示
 		</funComp>
 	</map>
 	
-	<map id="320" name="千年前赫尔卡星" x="600" y="390">
+	<map id="320" name="千年前赫尔卡星" x="600" y="390" super="25">
 		<changeMapComp>
 			<component name="door_0" hit="comp_0" targetID="35" fun="changMap"/>
 			<component name="door_1" hit="comp_1" targetID="315"/>
@@ -1234,7 +1234,7 @@ des 鼠标移上去的提示
 			<component name="door_0" hit="comp_0" fun="changeMap" des="拉姆世界丛林"/>
 		</funComp>
 	</map>
-	<map id="325" name="艾迪星" x="256" y="440" super="325" sound="BGM_228">
+	<map id="325" name="艾迪星" x="256" y="440" super="23" sound="BGM_228">
 		<Entries>
 		</Entries>
 		<changeMapComp>
@@ -1246,7 +1246,7 @@ des 鼠标移上去的提示
 		</funComp>
 	</map>
 
-	<map id="326" name="暮色之城" x="230" y="435" super="325" sound="BGM_021B">
+	<map id="326" name="暮色之城" x="230" y="435" super="23" sound="BGM_021B">
 		<Entries>
 		</Entries>
 		<changeMapComp>
@@ -1257,7 +1257,7 @@ des 鼠标移上去的提示
 		</funComp>
 	</map>
 
-	<map id="327" name="虚幻的地下城市" x="180" y="335" super="325" sound="BGM_021B">
+	<map id="327" name="虚幻的地下城市" x="180" y="335" super="23" sound="BGM_021B">
 		<Entries>
 		</Entries>
 		<changeMapComp>
@@ -1266,7 +1266,7 @@ des 鼠标移上去的提示
 		<funComp>
 		</funComp>
 	</map>	
-	<map id="328" name="斯科尔星" x="320" y="460" super="328" sound="BGM_197">
+	<map id="328" name="斯科尔星" x="320" y="460" super="24" sound="BGM_197">
 		<Entries>
 		</Entries>
 		<!--<changeMapComp>
