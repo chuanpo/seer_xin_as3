@@ -24,7 +24,14 @@
 	<maps id="17" name="双子阿尔法星" galaxy="1" x="822" y="96" />
 	<maps id="18" name="双子贝塔星" galaxy="1" x="883" y="63" />
 	<maps id="20" name="斯诺星" galaxy="1" x="1290" y="15" />
-	<maps id="21" name="尼古尔星" galaxy="2" x="148" y="50" />
-	<maps id="22" name="塔克星" galaxy="2" x="300" y="44" />
-	<maps id="23" name="艾迪星" galaxy="2" x="430" y="44" />
+	<maps id="21" name="尼古尔星" galaxy="2" x="30" y="50" />
+	<maps id="22" name="塔克星" galaxy="2" x="135" y="44" />
+	<maps id="23" name="艾迪星" galaxy="2" x="250" y="30" />
+	<maps id="24" name="斯科尔星" galaxy="2" x="375" y="40" />
+	<maps id="25" name="拜伦号" galaxy="1" x="1160" y="55" />
+	<maps id="26" name="露希欧星" galaxy="1" x="1405" y="120" />
+	<!--
+	<maps id="27" name="普雷空间站" galaxy="2" x="430" y="44" />
+	<maps id="28" name="哈默星" galaxy="2" x="430" y="44" />
+	-->
 </superMaps>
