@@ -141,7 +141,7 @@ package com.robot.app.im.talk
             this._nonoMe.visible = false;
          }
          this._inputTxt.maxChars = 130;
-         this._inputTxt.restrict = "^0-9";
+         this._inputTxt.restrict = "^妈";
          this._txtBar = new TextScrollBar(_mainUI,this._wordTxt,_mainUI["upBtn"],_mainUI["downBtn"]);
          this._showYou = UIManager.getSprite("ComposeMC");
          this._showMe = UIManager.getSprite("ComposeMC");
