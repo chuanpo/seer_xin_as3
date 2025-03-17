@@ -141,13 +141,13 @@ package com.robot.app.mapProcess.active
          var str:String = null;
          switch(date.day)
          {
-            case 5:
+            case 1,5:
                str = "我的目标是成为精灵战斗大师，我对战斗有着独特的见解，只有力量与智慧都达到一定的境界的对手才会得到我的认同。如果你能以0xff00001对1的形式并在2回合之内战胜我0xffffff，我就做你的伙伴。";
                break;
-            case 6:
+            case 3,6:
                str = "我的目标是成为精灵战斗大师，我对战斗有着独特的见解，只有力量与智慧都达到一定的境界的对手才会得到我的认同。如果你能以0xff00001对1的形式并承受住我10次攻击后再战胜我0xffffff，我就做你的伙伴。";
                break;
-            case 0:
+            case 2,4,0:
                str = "我的目标是成为精灵战斗大师，我对战斗有着独特的见解，只有力量与智慧都达到一定的境界的对手才会得到我的认同。如果你能以0xff00001对1的形式并以致命一击为终结技战胜我0xffffff，我就做你的伙伴。";
          }
          NpcDialog.show(NPC.GAIYA,[str],["我接受，一定要让你成为我的伙伴。","等我把精灵训练的更强后再来找你挑战。"],[function():void

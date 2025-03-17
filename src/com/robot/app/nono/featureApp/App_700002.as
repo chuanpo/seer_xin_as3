@@ -66,7 +66,9 @@ package com.robot.app.nono.featureApp
                   else
                   {
                      var leftMinutes:uint = Math.ceil(leftTime / 60); // 计算剩余的孵化时间（分钟）
-                     Alarm.show("分子转化仪中有正在转化的精元，预计剩余孵化时间: " + leftMinutes + " 分钟");
+                     var leftHours:uint = Math.floor(leftMinutes / 60); // 计算剩余的孵化时间（小时）
+                     leftMinutes = leftMinutes % 60; // 计算剩余的分钟
+                     Alarm.show("分子转化仪中有正在转化的精元，预计剩余孵化时间: " + leftHours + " 小时 " + leftMinutes + " 分钟");
                   }
                }
                else
