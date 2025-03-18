@@ -45,6 +45,9 @@ package com.robot.core.manager
       
       public static const READEDSHOPINGBOOK:String = "readedshopingbook";
       
+      public static const LOCAL_CONFIG:String = "localConfig";
+
+
       public function SOManager()
       {
          super();

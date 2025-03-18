@@ -49,7 +49,7 @@ package com.robot.core.manager
       private static const AIMAT_PATH:String = "resource/aimat/aimatUI.swf";
       
       public static var CHANNEL:uint = 0;
-      
+
       public function MainManager()
       {
          super();
@@ -61,6 +61,7 @@ package com.robot.core.manager
          UserInfo.setForLoginInfo(_actorInfo,data as IDataInput);
          SocketConnection.mainSocket.userID = _actorInfo.userID;
          loaderUILib();
+         TaomeeManager.initFightSpeed();
       }
       
       public static function creatActor() : void

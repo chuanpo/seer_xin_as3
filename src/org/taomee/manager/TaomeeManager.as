@@ -2,6 +2,8 @@ package org.taomee.manager
 {
    import flash.display.DisplayObjectContainer;
    import flash.display.Stage;
+   import com.robot.core.manager.SOManager;
+   import flash.net.SharedObject;
    
    public class TaomeeManager
    {
@@ -44,6 +46,19 @@ package org.taomee.manager
       {
          _root = root;
          _stage = stage;
+      }
+
+      public static function initFightSpeed():void
+      {
+         var so:SharedObject = SOManager.getUserSO(SOManager.LOCAL_CONFIG);
+         if(!so.data["speed"])
+         {
+            so.data["speed"] = 1;
+            SOManager.flush();
+         }else
+         {
+            fightSpeed = so.data["speed"]
+         }
       }
    }
 }
