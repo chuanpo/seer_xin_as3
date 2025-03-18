@@ -641,6 +641,11 @@ package com.robot.core
       public static const AWARD_CODE:uint = 3301;
 
       public static const XINTEST:uint = 500000;
+
+      public static const GET_PET_SKIN_INFO:uint = 50001;
+      
+      public static const XIN_CHAT:uint = 52102;
+
       public function CommandID()
       {
          super();

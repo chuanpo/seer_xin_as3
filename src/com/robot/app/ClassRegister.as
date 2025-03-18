@@ -119,6 +119,7 @@ package com.robot.app
          TMF.registerClass(CommandID.PEOPLE_TRANSFROM,TransformInfo);
          TMF.registerClass(CommandID.EAT_SPECIAL_MEDICINE,EatSpecialMedicineInfo);
          TMF.registerClass(CommandID.CHAT,ChatInfo);
+         TMF.registerClass(CommandID.XIN_CHAT,ChatInfo);
          TMF.registerClass(CommandID.CHANGE_CLOTH,ChangeClothInfo);
          TMF.registerClass(CommandID.INFORM,InformInfo);
          TMF.registerClass(CommandID.COMPLETE_DAILY_TASK,NoviceFinishInfo);
