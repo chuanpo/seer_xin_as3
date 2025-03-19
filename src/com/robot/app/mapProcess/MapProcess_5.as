@@ -283,6 +283,9 @@ package com.robot.app.mapProcess
          {
             this._petSelectPanel = new AppModel(ClientConfig.getAppModule("PetSelectPanel"),"正在打开换技能唤醒面板");
             this._petSelectPanel.setup();
+            SocketConnection.addCmdListener(CommandID.PET_SKILL_SWICTH,function():void{
+               PetManager.upDate();
+            });
          }
          this._petSelectPanel.show();
       }
