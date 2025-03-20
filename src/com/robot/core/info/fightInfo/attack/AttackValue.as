@@ -1,6 +1,7 @@
 package com.robot.core.info.fightInfo.attack
 {
    import flash.utils.IDataInput;
+   import com.robot.core.ui.alert.Alarm;
    
    public class AttackValue
    {
@@ -24,11 +25,14 @@ package com.robot.core.info.fightInfo.attack
       
       private var _state:uint;
       
+      private var _battleLv:Array;
+
       public function AttackValue(data:IDataInput)
       {
          var id:uint = 0;
          var pp:uint = 0;
          this._status = [];
+         this._battleLv = [];
          super();
          this._userID = data.readUnsignedInt();
          this._skillID = data.readUnsignedInt();
@@ -48,6 +52,10 @@ package com.robot.core.info.fightInfo.attack
          for(i = 0; i < 20; i++)
          {
             this._status.push(data.readByte());
+         }
+         for(j = 0; j < 6; j++)
+         {
+            this._battleLv.push(data.readByte());
          }
          trace("\r出招用户：",this._userID,"使用技能：",this._skillID,"对方掉血：",this._lostHP,"自己回血:",this._gainHP,"最后血：",this._remainHp,"\r");
       }
@@ -100,6 +108,11 @@ package com.robot.core.info.fightInfo.attack
       public function get state() : uint
       {
          return this._state;
+      }
+
+      public function get battleLv() : Array
+      {
+         return this._battleLv;
       }
    }
 }

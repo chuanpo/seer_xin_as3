@@ -20,6 +20,8 @@ package com.robot.core.info.fightInfo
       
       private var _catchable:Boolean;
       
+      private var _battleLv:Array;
+
       public function FightPetInfo(data:IDataInput)
       {
          super();
@@ -34,6 +36,11 @@ package com.robot.core.info.fightInfo
          if(this._hp > this._maxHP)
          {
             this._maxHP = this._hp;
+         }
+         _battleLv = [];
+         for(var i:uint = 0; i < 6; i++)
+         {
+            this._battleLv.push(data.readByte());
          }
          trace("\r\rfigher：",this._userID,"pet：",this._petID,"name:",this._petName,"catchTime:",this._catchTime,"catchable",this._catchable,"\r\r");
       }
@@ -76,6 +83,11 @@ package com.robot.core.info.fightInfo
       public function get catchable() : Boolean
       {
          return this._catchable;
+      }
+
+      public function get battleLv() : Array
+      {
+         return this._battleLv;
       }
    }
 }
