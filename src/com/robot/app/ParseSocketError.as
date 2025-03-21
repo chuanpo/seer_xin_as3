@@ -122,7 +122,7 @@ package com.robot.app
                });
                break;
             case 10001:
-               Alarm.show("对不起，你的密码不正确");
+               Alarm.show("对不起，你的密码不正确，请尝试刷新网页获取新链接");
                break;
             case 10002:
                MainManager.getStage().addChild(Alarm.show("系统出错"));
@@ -516,7 +516,7 @@ package com.robot.app
                Alarm.show("由于使用不文明昵称,你的号码被24小时封停");
                break;
             case 100103:
-               Alarm.show("由于使用不文明昵称,你的号码被7天封停");
+               Alarm.show("由于你的账号严重作弊违规，你的号码被永久封停");
                break;
             case 100104:
                Alarm.show("由于使用不文明昵称,你的号码被14天封停");
@@ -1064,6 +1064,10 @@ package com.robot.app
             case 10505:
                Alarm.show("不能注入过多能量珠");
                break;
+            case 500103:
+               Alarm.show("登录服务器错误，请尝试登录上次登录的服务器进入游戏");
+               break;
+
             default:
                if(num > 900)
                {
