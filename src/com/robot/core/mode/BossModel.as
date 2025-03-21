@@ -44,6 +44,10 @@ package com.robot.core.mode
          this._region = region;
          _speed = 2;
          mouseEnabled = false;
+         if(id == 47 && MapManager.currentMap.id == 12)
+         {
+            this.scaleX = this.scaleY = 2;
+         }
       }
       
       override public function get width() : Number
@@ -91,6 +95,15 @@ package com.robot.core.mode
          }
       }
       
+      public function setDirection(dir:String) : void
+      {
+         if(dir == null || dir == "")
+         {
+            return;
+         }
+         this._direction = dir;
+      }
+
       override public function get centerPoint() : Point
       {
          _centerPoint.x = x;

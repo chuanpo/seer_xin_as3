@@ -8,6 +8,8 @@ package com.robot.app.npc.npcClass
    import flash.display.DisplayObject;
    import flash.display.Sprite;
    import flash.events.MouseEvent;
+   import com.robot.core.npc.NpcDialog;
+   import com.robot.app.fightNote.FightInviteManager;
    
    public class NpcClass_10 implements INpc
    {
@@ -27,16 +29,23 @@ package com.robot.app.npc.npcClass
       
       private function onClickHandler(event:MouseEvent = null) : void
       {
-         if(this.green_index == this.greenArray.length)
-         {
-            this.green_index = 0;
-            return;
-         }
-         NpcTipDialog.show(this.greenArray[this.green_index],this.onClickHandler,NpcTipDialog.DINGDING,-60,function():void
-         {
-            green_index = 0;
-         });
-         ++this.green_index;
+         NpcDialog.show(this.npc.npcInfo.npcId,["小赛尔快来救救我！我要被萨格拉斯欺负死了……"],
+            ["我来帮你！","装傻"]
+            ,[function():void
+            {
+               FightInviteManager.fightWithBoss("萨格罗斯")
+            }
+         ,null]);
+         // if(this.green_index == this.greenArray.length)
+         // {
+         //    this.green_index = 0;
+         //    return;
+         // }
+         // NpcTipDialog.show(this.greenArray[this.green_index],this.onClickHandler,NpcTipDialog.DINGDING,-60,function():void
+         // {
+         //    green_index = 0;
+         // });
+         // ++this.green_index;
       }
       
       public function destroy() : void
