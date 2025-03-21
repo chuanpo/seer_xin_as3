@@ -27,6 +27,10 @@ package com.robot.app.mapProcess
    import org.taomee.events.SocketEvent;
    import org.taomee.manager.EventManager;
    import org.taomee.manager.ToolTipManager;
+   import com.robot.core.mode.BossModel;
+   import com.robot.core.utils.Direction;
+   import flash.geom.Point;
+   import com.robot.app.fightNote.FightInviteManager;
    
    public class MapProcess_7 extends BaseMapProcess
    {
@@ -62,6 +66,8 @@ package com.robot.app.mapProcess
       
       private var jiguMovie:MovieClip;
       
+      private var _bossMC:BossModel;
+
       public function MapProcess_7()
       {
          super();
@@ -69,6 +75,7 @@ package com.robot.app.mapProcess
       
       override protected function init() : void
       {
+         this.initBoss();
          var mc:MovieClip = MapManager.currentMap.animatorLevel as MovieClip;
          mc.gotoAndStop(4);
          this.blueArray = UpdateConfig.blueArray.slice();
@@ -115,6 +122,22 @@ package com.robot.app.mapProcess
          this.initTask_95();
       }
       
+      private function initBoss():void{
+         if(!this._bossMC)
+         {
+            this._bossMC = new BossModel(125,7);
+            // this._bossMC.setDirection(Direction.RIGHT);
+            this._bossMC.show(new Point(480,200),0);
+            this._bossMC.scaleX = this._bossMC.scaleY = 1.5;
+         }
+         this._bossMC.mouseEnabled = true;
+         this._bossMC.addEventListener(MouseEvent.CLICK,onBossClick);
+         ToolTipManager.add(this._bossMC,"萨格罗斯");
+      }
+      private function onBossClick(e:MouseEvent):void
+      {
+         FightInviteManager.fightWithBoss("萨格罗斯");
+      }
       private function clickBlue(event:MouseEvent = null) : void
       {
          if(this.blue_index == this.blueArray.length)
@@ -143,6 +166,8 @@ package com.robot.app.mapProcess
          this.timer.stop();
          this.timer.removeEventListener(TimerEvent.TIMER,this.onTimer);
          this.timer = null;
+         ToolTipManager.remove(this._bossMC);
+         this._bossMC.removeEventListener(MouseEvent.CLICK,onBossClick);
       }
       
       private function onTimer(event:TimerEvent = null) : void

@@ -76,9 +76,9 @@ endTask:NPC身上绑定的可以完成任务的ID
 		<des> <![CDATA[我是赫尔卡星长老！]]></des>
 		<question><![CDATA[哈哈..原来赫尔卡星长老是这个样子...]]></question>
 	</npc>
-	<npc id="100" mapID="9" name="迪恩" point="763|692" type="dien" startTask=""
+	<npc id="100" mapID="9" name="迪恩" point="700|274" type="dien" startTask=""
 		endTask="" proTask="48|52">
-		<des> <![CDATA[赛尔号果然名不虚传！这里有很多我未见过的资料数据呢！我可要多加学习……]]></des>
+		<des></des>
 		<question><![CDATA[哈哈...果然有很多数据...]]></question>
 		<dialog>
 		</dialog>
