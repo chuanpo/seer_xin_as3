@@ -84,8 +84,15 @@ package com.robot.core.config.xml
       public static function getPriceByItemID(id:uint) : uint
       {
          var xml:XML = null;
-         xml = _xmllist.(@itemID == id)[0];
-         return xml.@price;
+         try
+         {
+            xml = _xmllist.(@itemID == id)[0];
+            return xml.@price;
+         }
+         catch (error:Error)
+         {
+            return 999999999;
+         }
       }
       
       public static function getVipByProID(proID:uint) : Number
