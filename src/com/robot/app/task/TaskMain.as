@@ -18,9 +18,16 @@ package com.robot.app.task
    import com.robot.core.teamPK.TeamPKManager;
    import org.taomee.events.DynamicEvent;
    import org.taomee.manager.EventManager;
+   import flash.display.MovieClip;
+   import com.robot.core.manager.TaskIconManager;
+   import org.taomee.manager.ToolTipManager;
+   import flash.events.MouseEvent;
+   import com.robot.app.other.filter.FilterPanelController;
    
    public class TaskMain extends BaseBeanController
    {
+      private var iconMc:MovieClip;
+
       public function TaskMain()
       {
          super();
@@ -40,6 +47,7 @@ package com.robot.app.task
             TeamPKManager.showIcon();
          }
          GuoqingsignupController.createIcon();
+         createShinyIcon();
          finish();
          AutomaticFightManager.setup();
          StudyUpManager.setup();
@@ -55,6 +63,17 @@ package com.robot.app.task
          {
             PublicizeEnvoyIconControl.lightIcon();
          }
+      }
+
+      private function createShinyIcon():void
+      {
+         iconMc = TaskIconManager.getIcon("icon_36") as MovieClip;
+         ToolTipManager.add(iconMc,"创建异色精灵");
+         TaskIconManager.addIcon(iconMc);
+         (iconMc["lightMC"] as MovieClip).visible = false;
+         iconMc.addEventListener(MouseEvent.CLICK,function(e:MouseEvent):void{
+            FilterPanelController.show();
+         })
       }
    }
 }
