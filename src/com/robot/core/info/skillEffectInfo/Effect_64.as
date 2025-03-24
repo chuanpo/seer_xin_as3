@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return "自身处于烧伤·冻伤·中毒状态下的场合， 造成的伤害增加100%";
+			return "自身处于烧伤·冻伤·中毒状态的场合，造成的伤害增加100%";
 		}
 
 	}

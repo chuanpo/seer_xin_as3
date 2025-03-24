@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return "命中时， 有" + array[0] + "%的几率减少对方所有技能" + array[1] + "点PP值";
+			return "命中时，有" + array[0] + "%的几率减少对方所有技能" + array[1] + "点PP值";
 		}
 
 	}

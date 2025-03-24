@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return "连续使用时， 每次的[威力]增加" + array[0] + "， 最高[威力]为" + array[1];
+			return "连续使用时，每次的[威力]增加" + array[0] + "，最高[威力]为" + array[1];
 		}
 
 	}

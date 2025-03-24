@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return array[0] + "回合后若自身存活， 则将对方即死";
+			return array[0] + "回合后若自身存活，则将对方秒杀";
 		}
 
 	}

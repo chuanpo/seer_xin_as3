@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return array[0] + "回合内， 自身的[攻击力]和对方相同";
+			return array[0] + "回合内，自身的[攻击力]和对方相同";
 		}
 
 	}

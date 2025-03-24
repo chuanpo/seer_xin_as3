@@ -9,7 +9,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return "对方体力高于自身时才能命中， 给予对方相当于双方体力差值的[固定伤害]";
+			return "对方体力高于自身时才能命中，给予对方相当于双方体力差值的[固定伤害]";
 		}
 
 	}

@@ -9,7 +9,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return "后手使用的场合， [威力]增加100%";
+			return "后手使用的场合，[威力]增加100%";
 		}
 
 	}

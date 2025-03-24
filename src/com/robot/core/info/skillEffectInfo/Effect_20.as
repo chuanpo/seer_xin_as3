@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return array[0] + "%令自身陷入疲惫状态， " + array[1] + "回合无法行动";
+			return array[0] + "%令自身陷入疲惫状态，" + array[1] + "回合无法行动";
 		}
 
 	}

@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return array[0] + "回合内， 令对手每回合受到" + array[1] + "点[固定伤害]";
+			return array[0] + "回合内，令对手每回合受到" + array[1] + "点[固定伤害]";
 		}
 
 	}

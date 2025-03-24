@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return array[0] + "先手使用的场合， 令对方的下1个技能失效";
+			return array[0] + "先手使用的场合，令对方的下1个技能失效";
 		}
 
 	}

@@ -5,7 +5,6 @@ package com.robot.core.info.skillEffectInfo
 	public class AbstractEffectInfo
 	{
 		protected var _argsNum:uint = 0;
-
 		protected var propDict:Dictionary = new Dictionary();
 
 		public function AbstractEffectInfo()

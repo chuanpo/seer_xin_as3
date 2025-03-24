@@ -14,12 +14,12 @@ package com.robot.core.info.skillEffectInfo
 
 			if(array[0] != array[1])
 			{
-				str = array[0] + "~" + array[1] + "回合内， 将自身所受伤害的1/" + array[2] + "反弹给对方";
+				str = array[0] + "~" + array[1] + "回合内，将自身所受伤害的1/" + array[2] + "反弹给对方";
 			}
 
 			else
 			{
-				str = array[0] + "回合内， 将自身所受伤害的1/" + array[2] + "反弹给对方";
+				str = array[0] + "回合内，将自身所受伤害的1/" + array[2] + "反弹给对方";
 			}
 
 			return str;

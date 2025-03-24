@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return array[0] + "回合内， 自身击中目标要害几率提升6.25%";
+			return array[0] + "回合内，自身击中目标要害几率提升6.25%";
 		}
 
 	}

@@ -13,11 +13,11 @@ package com.robot.core.info.skillEffectInfo
 			var str:String = null;
 			if(array[0] != array[1])
 			{
-				str = array[0] + "~" + array[1] + "回合内， 自身的电招式伤害提升100%";
+				str = array[0] + "~" + array[1] + "回合内，自身的电招式伤害提升100%";
 			}
 			else
 			{
-				str = array[0] + "回合内， 自身的电招式伤害提升100%";
+				str = array[0] + "回合内，自身的电招式伤害提升100%";
 			}
 			return str;
 		}

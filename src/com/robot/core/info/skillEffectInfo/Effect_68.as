@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return "1回合内， 自身受到致死攻击时强制保留1点体力";
+			return "1回合内，自身受到致死攻击时强制保留1点体力";
 		}
 
 	}

@@ -9,7 +9,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return "造成致死伤害的场合， 强制为对方保留1点HP";
+			return "造成致死伤害的场合，强制为对方保留1点HP";
 		}
 
 	}

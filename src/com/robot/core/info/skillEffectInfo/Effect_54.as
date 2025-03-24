@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return array[0] + "回合内， 令自身的攻击伤害变为1/" + array[1];
+			return array[0] + "回合内，令自身的攻击伤害变为1/" + array[1];
 		}
 
 	}

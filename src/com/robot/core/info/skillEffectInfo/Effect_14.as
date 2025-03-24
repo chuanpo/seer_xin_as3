@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return "命中时， 有" + array[0] + "%几率令对方陷入冻伤状态";
+			return "命中时，有" + array[0] + "%几率令对方陷入冻伤状态";
 		}
 
 	}

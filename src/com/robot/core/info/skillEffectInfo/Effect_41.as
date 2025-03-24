@@ -13,11 +13,11 @@ package com.robot.core.info.skillEffectInfo
 			var str:String = null;
 			if(array[0] != array[1])
 			{
-				str = array[0] + "~" + array[1] + "回合内， 本方受到的所有火系伤害减少50%";
+				str = array[0] + "~" + array[1] + "回合内，本方受到的所有火系伤害减少50%";
 			}
 			else
 			{
-				str = array[0] + "回合内， 本方受到的所有火系伤害减少50%";
+				str = array[0] + "回合内，本方受到的所有火系伤害减少50%";
 			}
 			return str;
 		}

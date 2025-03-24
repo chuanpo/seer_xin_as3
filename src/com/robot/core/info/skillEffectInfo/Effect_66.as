@@ -10,7 +10,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return "直接击败对方出战精灵时， 回复相当于自身[最大体力]1/" + array[0] + "的HP";
+			return "直接击败对方出战精灵时，回复相当于自身[最大体力]1/" + array[0] + "的HP";
 		}
 
 	}
