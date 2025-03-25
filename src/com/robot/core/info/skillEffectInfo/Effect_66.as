@@ -1,17 +1,17 @@
 package com.robot.core.info.skillEffectInfo
 {
-   public class Effect_66 extends AbstractEffectInfo
-   {
-      public function Effect_66()
-      {
-         super();
-         _argsNum = 1;
-      }
-      
-      override public function getInfo(array:Array = null) : String
-      {
-         return "当次攻击击败对方出战精灵时恢复自身最大体力的1/" + array[0];
-      }
-   }
-}
+	public class Effect_66 extends AbstractEffectInfo
+	{
+		public function Effect_66()
+		{
+			super();
+			_argsNum = 1;
+		}
 
+		override public function getInfo(array:Array = null) : String
+		{
+			return "直接击败对方出战精灵时，回复相当于自身[最大体力]1/" + array[0] + "的HP";
+		}
+
+	}
+}

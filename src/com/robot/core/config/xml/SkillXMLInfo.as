@@ -297,5 +297,12 @@ package com.robot.core.config.xml
          xml = xmllist.(@ID == id)[0];
          return xml.@CritRate? int(xml.@CritRate) : 1;;
       }
+
+      public static function getMustHit(id:uint):Number
+      {
+         var xml:* = 0;
+         xml= xmllist.(@ID == id)[0];
+         return xml.@MustHit;
+      }
    }
 }
