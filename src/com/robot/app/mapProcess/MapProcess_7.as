@@ -136,7 +136,14 @@ package com.robot.app.mapProcess
       }
       private function onBossClick(e:MouseEvent):void
       {
-         FightInviteManager.fightWithBoss("萨格罗斯");
+         NpcDialog.show(10,["小赛尔快来救救我！我要被萨格罗斯欺负死了……"],
+            ["我来帮你！","装傻"]
+            ,[function():void
+            {
+               FightInviteManager.fightWithBoss("萨格罗斯")
+            }
+         ,null]);
+         // FightInviteManager.fightWithBoss("萨格罗斯");
       }
       private function clickBlue(event:MouseEvent = null) : void
       {

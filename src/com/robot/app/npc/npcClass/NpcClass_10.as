@@ -29,7 +29,7 @@ package com.robot.app.npc.npcClass
       
       private function onClickHandler(event:MouseEvent = null) : void
       {
-         NpcDialog.show(this.npc.npcInfo.npcId,["小赛尔快来救救我！我要被萨格拉斯欺负死了……"],
+         NpcDialog.show(this.npc.npcInfo.npcId,["小赛尔快来救救我！我要被萨格罗斯欺负死了……"],
             ["我来帮你！","装傻"]
             ,[function():void
             {
