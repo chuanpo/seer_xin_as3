@@ -288,6 +288,9 @@ package com.robot.core.controller
             pinfo.catchTime = PetManager.showInfo.catchTime;
             pinfo.petID = PetManager.showInfo.id;
             pinfo.userID = MainManager.actorID;
+            pinfo.dv = PetManager.showInfo.dv;
+            pinfo.shiny = PetManager.showInfo.shiny;
+            pinfo.skinID = PetManager.showInfo.skinID;
             MainManager.actorModel.showPet(pinfo);
          }
          DepthManager.swapDepthAll(MapManager.currentMap.depthLevel);
