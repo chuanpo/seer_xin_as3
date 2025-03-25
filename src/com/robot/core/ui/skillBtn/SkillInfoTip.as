@@ -66,34 +66,48 @@ package com.robot.core.ui.skillBtn
          var str:String = "<font color=\'#ffff00\'>" + name + "</font>  " + "<font color=\'" + color + "\'>(" + SkillXMLInfo.getCategoryName(_id) + ")</font>\r";
          var argsNum:uint = 0;
          str += "\r";
-         // 获取并检查命中率（Accuracy）
-         var p:Number = SkillXMLInfo.getDamage(_id);
-         if (p > 0)
+
+         // 威力（Damage）
+         var mig:Number = SkillXMLInfo.getDamage(_id);
+         if (category == 1 | category == 2)
          {
-            str += " 威力: " + p + "\r";
+            str += "威力：" + mig + "\r";
          }
 
-         var priority:int = SkillXMLInfo.getPriority(_id);
-         if (priority != 0)
-         {
-            str += "先制: " + priority;
-         }
-
-         // 获取并检查命中率（Accuracy）
-         var accuracy:Number = SkillXMLInfo.hitP(_id);
-         if (accuracy > 0)
-         {
-            str += " 命中: " + accuracy + "%";
-         }
-
-         // 获取并检查暴击率（CritRate）
+         // 会心率（CritRate）
          var critRate:int = SkillXMLInfo.getCritRate(_id);
          if (critRate > 0)
          {
-            str += " 暴击: " + critRate + "/16";
+            str += "会心率：" + Number(critRate/16*100) + "%\r";
          }
-         str += "\r";
 
+         // 先制（Priority）
+         var priority:int = SkillXMLInfo.getPriority(_id);
+         if (priority != 0)
+         {
+            if (priority > 0)
+            {
+               str += "先制+" + priority + "\r";
+            }
+            else
+            {
+               str += "先制" + priority + "\r";
+            }
+         }
+
+         // 命中率（Accuracy）
+         var accuracy:Number = SkillXMLInfo.hitP(_id);
+         var mustHit:Number = SkillXMLInfo.getMustHit(_id);
+         if (mustHit == 1)
+         {
+            str += "必中";
+         }
+         else
+         {
+            str += "命中率：" + accuracy + "%";
+         }
+
+         str += "\r";
          try
          {
             for each (i in sideEffects)
