@@ -53,7 +53,7 @@
 		<minerals IDs="甲烷燃气|黄晶矿"/>
 	</map>
 	<map id="15" difficulty="1" level="7-21" des="火山星">
-		<sprite petIDs="火焰贝|#小火猴|吉尔|#巴多|里奥斯|赤甲虫"/>
+		<sprite petIDs="火焰贝|#小火猴|吉尔|#巴多|里奥斯|赤甲虫|#格林"/>
 		<minerals IDs="甲烷燃气|黄晶矿"/>
 	</map>
 	<map id="30" difficulty="1" level="9-27" des="赫尔卡星">

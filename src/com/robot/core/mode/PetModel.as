@@ -16,6 +16,10 @@ package com.robot.core.mode
    import org.taomee.utils.MovieClipUtil;
    import com.robot.core.manager.MainManager;
    import com.robot.core.manager.UserManager;
+   import com.robot.core.manager.UIManager;
+   import flash.filters.ColorMatrixFilter;
+   import flash.filters.GlowFilter;
+   import com.robot.core.config.xml.ShinyXMLInfo;
    
    public class PetModel extends ActionSpriteModel
    {
@@ -26,6 +30,10 @@ package com.robot.core.mode
       private var _petMc:MovieClip;
       
       private var _info:PetShowInfo;
+
+      private var _petLight:MovieClip;
+
+      protected var filte:GlowFilter = new GlowFilter(3355443,0.9,3,3,3.1);
       
       public function PetModel(people:ActionSpriteModel)
       {
@@ -77,9 +85,11 @@ package com.robot.core.mode
          this.addEvent();
          if(Boolean(this._petMc))
          {
+            this.bright();
+            if(info.userID != MainManager.actorID && UserManager._hideOtherUserModelFlag) this.visible = false;
             return;
          }
-         ResourceManager.getResource(ClientConfig.getPetSwfPath(this._info.petID),this.onLoad,"pet");
+         ResourceManager.getResource(ClientConfig.getPetSwfPath(this._info.skinID != 0 ? this._info.skinID : this._info.petID),this.onLoad,"pet");
          if(info.userID != MainManager.actorID && UserManager._hideOtherUserModelFlag) this.visible = false;
       }
       
@@ -89,6 +99,26 @@ package com.robot.core.mode
          DisplayUtil.removeForParent(this);
       }
       
+      public function bright() : void
+      {
+         this.removeBright();
+         if(this._info.dv == 31 && Boolean(this._petMc))
+         {
+            this._petLight = UIManager.getMovieClip("PetBright_MC");
+            this._petMc.addChildAt(this._petLight,0);
+         }
+      }
+      
+      public function removeBright() : void
+      {
+         if(this._petLight)
+         {
+            DisplayUtil.removeForParent(this._petLight);
+            this._petLight = null;
+         }
+      }
+      
+
       public function walkAction(data:Object) : void
       {
          if(this._people == null)
@@ -100,7 +130,7 @@ package com.robot.core.mode
       
       override public function destroy() : void
       {
-         ResourceManager.cancel(ClientConfig.getPetSwfPath(this._info.petID),this.onLoad);
+         ResourceManager.cancel(ClientConfig.getPetSwfPath(this._info.skinID != 0 ? this._info.skinID : this._info.petID),this.onLoad);
          super.destroy();
          this.hide();
          this._people = null;
@@ -120,6 +150,17 @@ package com.robot.core.mode
          MovieClipUtil.childStop(this._petMc,1);
          this.direction = this._people.direction;
          addChild(this._petMc);
+         if(this._info.shiny != 0)
+         {
+            var matrix:ColorMatrixFilter = null;
+            var argArray:Array = ShinyXMLInfo.getShinyArray(this._info.petID);
+            matrix = new ColorMatrixFilter(argArray);
+            var glow:GlowFilter = null;
+            var glowArray:Array = ShinyXMLInfo.getGlowArray(this._info.petID);
+            glow = new GlowFilter(uint(glowArray[0]),int(glowArray[1]),int(glowArray[2]),int(glowArray[3]),int(glowArray[4]));
+            this._petMc.filters = [ filte,glow,matrix ]
+         }
+         this.bright();
          if(_walk.isPlaying)
          {
             this.onWalkStart(null);

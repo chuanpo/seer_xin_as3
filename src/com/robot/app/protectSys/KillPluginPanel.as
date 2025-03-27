@@ -69,7 +69,7 @@ package com.robot.app.protectSys
          var num:uint = Math.floor(Math.random() * 4);
          for(var i:uint = 0; i < 4; i++)
          {
-            petIDIndex = Math.floor(Math.random() * PetXMLInfo.getIdList().length);
+            petIDIndex = Math.floor(Math.random() * 500);
             if(i == num)
             {
                singlePet = new SinglePetBox(PetXMLInfo.getIdList()[petIDIndex],this.DIR_TYPE);

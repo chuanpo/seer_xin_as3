@@ -52,6 +52,12 @@ package com.robot.core.info
       public var spiritTime:uint;
       
       public var spiritID:uint;
+
+      public var petDV:uint;
+
+      public var petShiny:uint;
+
+      public var petSkin:uint;
       
       public var clothes:Array = [];
       
@@ -204,6 +210,13 @@ package com.robot.core.info
          info.changeShape = data.readUnsignedInt();
          info.spiritTime = data.readUnsignedInt();
          info.spiritID = data.readUnsignedInt();
+         info.petDV = data.readUnsignedInt();
+         info.petShiny = data.readUnsignedInt();
+         info.petSkin = data.readUnsignedInt();
+         for(var index:int=0;index<3;index++)
+         {
+            data.readUnsignedInt();
+         }
          info.fightFlag = data.readUnsignedInt();
          info.teacherID = data.readUnsignedInt();
          info.studentID = data.readUnsignedInt();
