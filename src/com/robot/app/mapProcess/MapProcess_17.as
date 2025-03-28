@@ -21,6 +21,20 @@ package com.robot.app.mapProcess
    import flash.events.TimerEvent;
    import flash.utils.Timer;
    import org.taomee.utils.DisplayUtil;
+   import com.robot.core.mode.BossModel;
+   import flash.events.MouseEvent;
+   import org.taomee.manager.ToolTipManager;
+   import com.robot.core.npc.NpcDialog;
+   import com.robot.app.fightNote.FightInviteManager;
+   import com.robot.core.net.SocketConnection;
+   import com.robot.core.CommandID;
+   import org.taomee.events.SocketEvent;
+   import com.robot.core.info.pet.PetShowInfo;
+   import flash.geom.Point;
+   import org.taomee.manager.EventManager;
+   import com.robot.core.event.PetFightEvent;
+   import com.robot.core.info.SystemTimeInfo;
+   import com.robot.core.info.task.MiningCountInfo;
    
    public class MapProcess_17 extends BaseMapProcess
    {
@@ -49,7 +63,11 @@ package com.robot.app.mapProcess
       private var catchTimer:Timer;
       
       private var isCacthing:Boolean = false;
+
+      private var gelin_mc:BossModel;
       
+      private var buluIDs:Array = [108,109,110];
+
       public function MapProcess_17()
       {
          super();
@@ -101,8 +119,57 @@ package com.robot.app.mapProcess
          }
          this.catchTimer = new Timer(10 * 1000,1);
          this.catchTimer.addEventListener(TimerEvent.TIMER,this.onCatchTimer);
+         SocketConnection.addCmdListener(CommandID.SYSTEM_TIME, function(evt:SocketEvent) : void{
+            SocketConnection.removeCmdListener(CommandID.SYSTEM_TIME,arguments.callee);
+            var date:Date = (evt.data as SystemTimeInfo).date;
+            if([0,6].indexOf(date.day) == -1)return;
+            if(MainManager.actorModel.pet != null)
+            {
+               initGelin(buluIDs.indexOf(int(MainManager.actorModel.pet.info.petID)) > -1);
+            }
+            SocketConnection.addCmdListener(CommandID.PET_SHOW,petShowHandle);
+         })
+         SocketConnection.send(CommandID.SYSTEM_TIME);
       }
-      
+      public function petShowHandle(event:SocketEvent):void{
+         var data:PetShowInfo = event.data as PetShowInfo;
+         if(data.userID == MainManager.actorInfo.userID)
+         {
+            initGelin(this.buluIDs.indexOf(int(data.petID)) > -1 && data.flag == 1);
+         }
+      };
+      public function initGelin(flag:Boolean):void
+      {
+         SocketConnection.addCmdListener(CommandID.TALK_COUNT,function(e:SocketEvent):void
+         {
+            SocketConnection.removeCmdListener(CommandID.TALK_COUNT,arguments.callee);
+            var oreCountInfo:MiningCountInfo = e.data as MiningCountInfo;
+            var count:uint = oreCountInfo.miningCount;
+            if(!gelin_mc)
+               {
+                  gelin_mc = new BossModel(62,17);
+                  gelin_mc.show(new Point(480,240),0);
+                  gelin_mc.mouseEnabled = true;
+                  gelin_mc.addEventListener(MouseEvent.CLICK,fightGelin);
+                  ToolTipManager.add(gelin_mc,"格林");
+               }
+            gelin_mc.visible = count == 0 ? flag : false;
+         })
+         SocketConnection.send(CommandID.TALK_COUNT,700001 - 500000);
+      }
+      public function fightGelin(e:MouseEvent):void
+      {
+         NpcDialog.show(62,["布鲁，我终于找到你啦！#1"],["(他看起来很高兴呢~[进入捕捉页面])","装傻"],
+            [function():void{
+               FightInviteManager.fightWithBoss("格林",1);
+               EventManager.addEventListener(PetFightEvent.FIGHT_CLOSE,onFightOver);
+            },null])
+      }
+      public function onFightOver(e:PetFightEvent):void
+      {
+         EventManager.removeEventListener(PetFightEvent.FIGHT_CLOSE,arguments.callee);
+         this.initGelin(true);
+      }
       public function clearWaste() : void
       {
          NewInstructorContoller.setWaste();
@@ -139,6 +206,7 @@ package com.robot.app.mapProcess
          this.catchTimer = null;
          var mode:ActorModel = MainManager.actorModel;
          mode.removeEventListener(RobotEvent.WALK_START,this.onWalkStart);
+         SocketConnection.removeCmdListener(CommandID.PET_SHOW,this.petShowHandle);
       }
       
       private function getAward() : void
