@@ -20,47 +20,52 @@ package com.robot.app.buyPetProps
    import org.taomee.events.SocketEvent;
    import org.taomee.utils.AlignType;
    import org.taomee.utils.DisplayUtil;
+   import com.robot.core.config.xml.ItemXMLInfo;
+   import flash.geom.Rectangle;
+   import flash.display.DisplayObject;
+   import flash.text.TextField;
+   import com.robot.core.config.xml.GoldProductXMLInfo;
+   import org.taomee.manager.ResourceManager;
+   import com.robot.core.utils.TextFormatUtil;
+   import com.robot.core.ui.alert.Alert;
+   import com.robot.core.ui.alert.ItemInBagAlert;
+   import com.robot.core.ui.alert.IconAlert;
+   import flash.utils.setTimeout;
    
    public class BuyPetPropsPanel extends Sprite
    {
       private static var propsHashMap:HashMap;
       
-      private var PATH:String = "resource/module/petProps/buyPetProps.swf";
+      private var PATH:String = "resource/module/petProps/buyPetProps.swf?20250323-1";
       
-      private var app:ApplicationDomain;
+      public var app:ApplicationDomain;
       
       private var mc:MovieClip;
       
       private var tipMc:MovieClip;
       
-      private var buyPropsBtn:SimpleButton;
+      private var _pageText:TextField;
+
+      private var _preBtn:SimpleButton;
+
+      private var _nextBtn:SimpleButton;
+
+      public var goldCoinItemID:Number=0;
+
+      private var iconHashMap:HashMap = new HashMap();
+
+      private var itemArray:Array = [300001,300002,300003,300004,300006,300009,300011,300012,300013,300014,300015,300016,300017,300018,300019,
+               300024,300025,300026,300027,300028,300029,300030,300031,300032,300033,300034,300035,300036,300037,300038,
+               300039,300040,300041,300042,300043,300044,300045,300046,300047,300048,300049,300050,100266,100267,100268,400054];
       
-      private var buyPrimaryBtn:SimpleButton;
-      
-      private var buyMidBtn:SimpleButton;
-      
-      private var buyHighBtn:SimpleButton;
-      
-      private var propsMC:MovieClip;
-      
-      private var midPropsMC:MovieClip;
-      
-      private var superMedIcon:MovieClip;
-      
-      private var primaryMC:MovieClip;
-      
-      private var midMC:MovieClip;
-      
-      private var highMC:MovieClip;
-      
-      private var buyPrEnergyBtn:SimpleButton;
-      
-      private var priEnergyMC:MovieClip;
-      
-      private var buyCoverBtn:SimpleButton;
-      
-      private var midPropsBtn:SimpleButton;
-      
+      private var curPage:int = 0;
+
+      private var totalPage:int = 1;
+
+      private var itemMCHashMap:HashMap = new HashMap();
+
+      private var isLoadingItem:Boolean = false;
+
       public function BuyPetPropsPanel()
       {
          super();
@@ -81,6 +86,7 @@ package com.robot.app.buyPetProps
             LevelManager.closeMouseEvent();
             LevelManager.appLevel.addChild(this);
          }
+         SocketConnection.addCmdListener(CommandID.GOLD_CHECK_REMAIN,onCheckGold);
       }
       
       private function onLoad(event:MCLoadEvent) : void
@@ -88,55 +94,72 @@ package com.robot.app.buyPetProps
          this.app = event.getApplicationDomain();
          this.mc = new (this.app.getDefinition("petPropsPanel") as Class)() as MovieClip;
          this.tipMc = new (this.app.getDefinition("buyTipPanel") as Class)() as MovieClip;
-         this.propsMC = new (this.app.getDefinition("propsMC") as Class)() as MovieClip;
-         this.primaryMC = new (this.app.getDefinition("primaryMC") as Class)() as MovieClip;
-         this.midMC = new (this.app.getDefinition("midMC") as Class)() as MovieClip;
-         this.highMC = new (this.app.getDefinition("highMC") as Class)() as MovieClip;
-         this.priEnergyMC = new (this.app.getDefinition("priEnergyMC") as Class)() as MovieClip;
-         this.midPropsMC = new (this.app.getDefinition("midPropsMC") as Class)() as MovieClip;
-         this.superMedIcon = new (this.app.getDefinition("superMedIcon") as Class)() as MovieClip;
-         addChild(this.mc);
+         this._pageText = this.mc["pageText"] as TextField;
+         this._preBtn = this.mc["preBtn"] as SimpleButton;
+         this._nextBtn = this.mc["nextBtn"] as SimpleButton;
+         this.totalPage = (int(this.itemArray.length / 15) + 1)
+         this._pageText.text =  "1/" + totalPage.toString();
+         this._nextBtn.addEventListener(MouseEvent.CLICK,nextPage);
+         this._preBtn.addEventListener(MouseEvent.CLICK,prePage);
          DisplayUtil.align(this,null,AlignType.MIDDLE_CENTER);
          LevelManager.closeMouseEvent();
          LevelManager.appLevel.addChild(this);
          var closeBtn:SimpleButton = this.mc["exitBtn"];
          closeBtn.addEventListener(MouseEvent.CLICK,this.closeHandler);
-         this.initPanel();
-         if(propsHashMap == null)
+         addChild(this.mc);
+         DisplayUtil.align(this,null,AlignType.MIDDLE_CENTER);
+         LevelManager.closeMouseEvent();
+         LevelManager.appLevel.addChild(this);
+         setupItemMC();
+         setTimeout(function():void{
+            showPage(0);
+         },100)
+      }
+
+      private function setupItemMC():void
+      {
+         for(var i:int = 0;i < 15;i++)
          {
-            propsHashMap = new HashMap();
-            propsHashMap.add(300011,20);
-            propsHashMap.add(300012,40);
-            propsHashMap.add(300014,200);
-            propsHashMap.add(300013,80);
-            propsHashMap.add(300001,200);
-            propsHashMap.add(300016,30);
-            propsHashMap.add(300002,400);
+            var itemMC:ItemMC = new ItemMC(this,i);
+            this.itemMCHashMap.add("itemMC_" + i.toString(),itemMC);
+            this.mc.addChild(itemMC.itemMC);
          }
       }
-      
-      private function initPanel() : void
+      private function showPage(pageNum:int):void
       {
-         this.buyPropsBtn = this.mc["buyPropsBtn"] as SimpleButton;
-         this.buyPropsBtn.addEventListener(MouseEvent.CLICK,this.showPropsTip);
-         this.midPropsBtn = this.mc["midPropsBtn"] as SimpleButton;
-         this.midPropsBtn.addEventListener(MouseEvent.CLICK,this.showMidPropsTip);
-         this.buyPrimaryBtn = this.mc["buyPrimaryBtn"] as SimpleButton;
-         this.buyPrimaryBtn.addEventListener(MouseEvent.CLICK,this.showPrimaryTip);
-         this.buyMidBtn = this.mc["buyMidBtn"] as SimpleButton;
-         this.buyMidBtn.addEventListener(MouseEvent.CLICK,this.showMidTip);
-         this.buyHighBtn = this.mc["buyHighBtn"] as SimpleButton;
-         this.buyHighBtn.addEventListener(MouseEvent.CLICK,this.showHighTip);
-         this.buyPrEnergyBtn = this.mc["buyPrEnergyBtn"] as SimpleButton;
-         this.buyPrEnergyBtn.addEventListener(MouseEvent.CLICK,this.showPriEnergyTip);
-         var btn:SimpleButton = this.mc["buySuperBtn"];
-         btn.addEventListener(MouseEvent.CLICK,this.buySuper);
+         var startNum:int = pageNum * 15;
+         var endNum:int = (pageNum + 1) * 15;
+         if(endNum > this.itemArray.length)endNum = this.itemArray.length;
+         var total:int = endNum - startNum;
+         var curNum:int = 0;
+         for each(var item:ItemMC in this.itemMCHashMap.getValues())
+         {
+            item.visible = false;
+         }
+         
+         for(var i:int = startNum ; i <endNum;i++)
+         {
+            (this.itemMCHashMap.getValue("itemMC_" + curNum.toString()) as ItemMC).setup(itemArray[i]);
+            (this.itemMCHashMap.getValue("itemMC_" + curNum.toString()) as ItemMC).visible = true;
+            curNum++
+         }
+      }
+
+      private function nextPage(e:MouseEvent):void
+      {
+         this.curPage += 1;
+         if(this.curPage >= this.totalPage) this.curPage = this.totalPage - 1;
+         this._pageText.text =  (this.curPage + 1) + "/" + totalPage.toString();
+         this.showPage(this.curPage);
+      }
+      private function prePage(e:MouseEvent):void
+      {
+         this.curPage -= 1;
+         if(this.curPage < 0) this.curPage = 0;
+         this._pageText.text = (this.curPage + 1)+ "/" + totalPage.toString();
+         this.showPage(this.curPage);
       }
       
-      private function buySuper(event:MouseEvent) : void
-      {
-         this.showTipPanel(300014,this.superMedIcon,new Point(175,55));
-      }
       
       private function getCover(e:MouseEvent) : void
       {
@@ -158,44 +181,13 @@ package com.robot.app.buyPetProps
          Alarm.show("精灵恢复仓已经放入你的基地仓库");
       }
       
-      private function showMidPropsTip(e:MouseEvent) : void
+      public function showTipPanel(id:uint, icMC:MovieClip, point:Point) : void
       {
-         this.showTipPanel(300002,this.midPropsMC,new Point(173,45));
-      }
-      
-      private function showPropsTip(e:MouseEvent) : void
-      {
-         this.showTipPanel(300001,this.propsMC,new Point(173,45));
-      }
-      
-      private function showPriEnergyTip(e:MouseEvent) : void
-      {
-         this.showTipPanel(300016,this.priEnergyMC,new Point(185,47));
-      }
-      
-      private function showHighTip(e:MouseEvent) : void
-      {
-         this.showTipPanel(300013,this.highMC,new Point(182,45));
-      }
-      
-      private function showMidTip(e:MouseEvent) : void
-      {
-         this.showTipPanel(300012,this.midMC,new Point(167,45));
-      }
-      
-      private function showPrimaryTip(e:MouseEvent) : void
-      {
-         this.showTipPanel(300011,this.primaryMC,new Point(185,45));
-      }
-      
-      private function showTipPanel(id:uint, icMC:MovieClip, point:Point) : void
-      {
-         if(MainManager.actorInfo.coins < propsHashMap.getValue(id))
+         if(MainManager.actorInfo.coins < Number(ItemXMLInfo.getPrice(id)))
          {
             Alarm.show("你的赛尔豆不足");
             return;
          }
-         DisplayUtil.removeForParent(this);
          new ListPetProps(this.tipMc,id,icMC,point);
       }
       
@@ -203,6 +195,46 @@ package com.robot.app.buyPetProps
       {
          DisplayUtil.removeForParent(this);
          LevelManager.openMouseEvent();
+         SocketConnection.removeCmdListener(CommandID.GOLD_CHECK_REMAIN,onCheckGold);
+      }
+
+
+      private function onCheckGold(event:SocketEvent) : void
+      {
+         var num:Number = (event.data as ByteArray).readUnsignedInt() / 100;
+         var name:String = GoldProductXMLInfo.getNameByItemID(goldCoinItemID);
+         var price:Number = Number(GoldProductXMLInfo.getPriceByItemID(goldCoinItemID));
+         if(price > num)
+         {
+            Alarm.show("目前你拥有" + TextFormatUtil.getRedTxt(num.toString()) + "金豆，无法购买"+ TextFormatUtil.getRedTxt(price.toString()) + "金豆的商品！");
+         }else
+         {
+            Alert.show(TextFormatUtil.getRedTxt(name) + "需要花费" + TextFormatUtil.getRedTxt(price.toString()) + "金豆，" + "目前你拥有" + TextFormatUtil.getRedTxt(num.toString()) + "金豆，要确认购买吗？",function():void
+               {
+                  var by1:ByteArray = new ByteArray();
+                  by1.writeShort(1);
+                  var productID:Number = Number(GoldProductXMLInfo.getProductByItemId(goldCoinItemID));
+                  SocketConnection.addCmdListener(CommandID.GOLD_BUY_PRODUCT,onBuyGoldItem);
+                  SocketConnection.send(CommandID.GOLD_BUY_PRODUCT,productID,by1);
+               });
+         }
+         
+      }
+
+      private function onBuyGoldItem(event:SocketEvent) : void
+      {
+         SocketConnection.removeCmdListener(CommandID.GOLD_BUY_PRODUCT,onBuyGoldItem);
+         var name:String = null;
+         // var data:GoldBuyProductInfo = event.data as GoldBuyProductInfo;
+         name = ItemXMLInfo.getName(goldCoinItemID);
+         if(goldCoinItemID > 500000)
+         {
+            IconAlert.show("恭喜你购买成功，" + TextFormatUtil.getRedTxt(name) + "已经放入你的基地仓库中",goldCoinItemID);
+         }
+         else
+         {
+            ItemInBagAlert.show(goldCoinItemID,"恭喜你购买成功，" + TextFormatUtil.getRedTxt(name) + "已经放入你的储存箱中");
+         }
       }
    }
 }

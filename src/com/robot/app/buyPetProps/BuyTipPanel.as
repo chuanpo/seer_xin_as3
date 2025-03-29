@@ -80,8 +80,13 @@ package com.robot.app.buyPetProps
          nextBtn.addEventListener(MouseEvent.CLICK,onNext);
          itemId = _itemId;
          mianMc = mc;
+         if(mianMc.getChildByName("itemIcon"))
+         {
+            mianMc.removeChild(mianMc.getChildByName("itemIcon"));
+         }
          iconMC.x = point.x;
          iconMC.y = point.y;
+         iconMC.name = "itemIcon";
          mianMc.addChild(iconMC);
          LevelManager.closeMouseEvent();
          LevelManager.topLevel.addChild(mianMc);

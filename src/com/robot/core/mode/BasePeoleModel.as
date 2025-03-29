@@ -130,6 +130,9 @@ package com.robot.core.mode
             pinfo.catchTime = this._info.spiritTime;
             pinfo.petID = this._info.spiritID;
             pinfo.userID = this._info.userID;
+            pinfo.dv = this._info.petDV;
+            pinfo.shiny = this._info.petShiny;
+            pinfo.skinID = this._info.petSkin;
             this.showPet(pinfo);
          }
          this.clickBtn = new Sprite();
