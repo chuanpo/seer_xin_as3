@@ -17,6 +17,7 @@ package com.robot.app.petbag.ui
    import org.taomee.manager.ToolTipManager;
    import org.taomee.utils.AlignType;
    import org.taomee.utils.DisplayUtil;
+   import com.robot.core.config.xml.PetBookXMLInfo;
    
    public class PetBagPanel extends UIPanel
    {
@@ -301,7 +302,13 @@ package com.robot.app.petbag.ui
       
       private function onBook(e:MouseEvent) : void
       {
-         PictureBookController.show();
+         if(!PetBookXMLInfo.isSetup)
+         {
+            PetBookXMLInfo.setup(PictureBookController.show);
+         }else
+         {
+            PictureBookController.show();
+         }
       }
       
       private function onItemBag(evt:MouseEvent) : void

@@ -1,7 +1,12 @@
 <xmls>
     <xml>
-        <item path="1" ver="20250328"/>
-        <item path="210" ver="20250328"/>
-        <item path="291" ver="20250328"/>
+        <item path="1" ver="20250328" name="快捷发言表"/>
+        <item path="43" ver="20250330" name="装备信息表"/>
+        <item path="210" ver="20250328" name="地图信息表"/>
+        <item path="214" ver="20250330" name="精灵图鉴信息表"/>
+        <item path="221" ver="20250330" name="道具信息表"/>
+        <item path="226" ver="20250330" name="精灵信息表"/>
+        <item path="227" ver="20250330" name="精灵技能信息表"/>
+        <item path="291" ver="20250328" name="异色精灵信息表"/>
     </xml>
 </xmls>

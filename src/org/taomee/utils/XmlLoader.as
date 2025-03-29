@@ -5,16 +5,25 @@ package org.taomee.utils
     import flash.events.IOErrorEvent;
     import flash.net.URLRequest;
     import com.robot.core.ui.alert.Alarm;
+    import com.robot.core.ui.loading.Loading;
+    import com.robot.core.ui.loading.loadingstyle.ILoadingStyle;
+    import com.robot.core.manager.MainManager;
+    import com.robot.core.config.XmlConfig;
+
     public class XmlLoader
     {
-        public static const XML_PATH:String = "resource/xml/";
+        public const XML_PATH:String = "resource/xml/";
+
+        // public static var loadingView:Loading;
+
+        public var _loadingView:ILoadingStyle;
 
         public function XmlLoader()
         {
             super();
         }
 
-        public static function loadXML(url:String, ver:String, handle:Function):void
+        public function loadXML(url:String, ver:String, handle:Function):void
         {
             try
             {
@@ -25,18 +34,36 @@ package org.taomee.utils
                 {
                     urlloader.removeEventListener(Event.COMPLETE,onComplete);
                     urlloader.removeEventListener(IOErrorEvent.IO_ERROR, errorHandler);
+                    if(_loadingView)
+                    {
+                        _loadingView.destroy();
+                        _loadingView = null;
+                    }
                     var xmlData:XML = new XML(event.target.data);
-                    handle(xmlData)
+                    handle(xmlData);
                 }
                 errorHandler = function(event:IOErrorEvent):void
                 {
-                    urlloader.removeEventListener(Event.COMPLETE,onComplete)
-                    urlloader.removeEventListener(IOErrorEvent.IO_ERROR, errorHandler)
+                    urlloader.removeEventListener(Event.COMPLETE,onComplete);
+                    urlloader.removeEventListener(IOErrorEvent.IO_ERROR, errorHandler);
+                    if(_loadingView)
+                    {
+                        _loadingView.destroy();
+                        _loadingView = null;
+                    }
+                    Alarm.show("xml加载" + XmlConfig.getXmlNameByPath(url) + "失败！")
                     var xmlData:XML = new XML();
-                    handle(xmlData)
+                    handle(xmlData);
                 }
                 urlloader.addEventListener(Event.COMPLETE, onComplete);
                 urlloader.addEventListener(IOErrorEvent.IO_ERROR, errorHandler);
+                if(_loadingView)
+                {
+                    _loadingView.destroy();
+                    _loadingView = null;
+                }
+                _loadingView = Loading.getLoadingStyle(1,MainManager.getStage(),"加载XML_" + XmlConfig.getXmlNameByPath(url) + "中");
+                _loadingView.setIsShowCloseBtn(false);
                 urlloader.load(new URLRequest(XML_PATH + url + ".xml?" + ver));
             }
             catch (error:Error)

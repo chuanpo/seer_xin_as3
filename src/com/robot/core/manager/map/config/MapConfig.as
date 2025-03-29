@@ -49,8 +49,10 @@ package com.robot.core.manager.map.config
          {
             XML_DATA = xml;
             callBack();
+            xmlLoader = null;
          }
-         XmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
          MapManager.addEventListener(MapEvent.MAP_SWITCH_OPEN, onMapChange);
       }
 

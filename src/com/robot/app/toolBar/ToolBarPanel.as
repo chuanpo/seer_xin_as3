@@ -49,6 +49,7 @@ package com.robot.app.toolBar
    import org.taomee.utils.DisplayUtil;
    import com.robot.app.team.TeamController;
    import com.robot.core.manager.UserManager;
+   import com.robot.core.config.xml.ItemTipXMLInfo;
    public class ToolBarPanel extends Sprite
    {
       private var _chatPanel:ChatPanel;
@@ -164,6 +165,7 @@ package com.robot.app.toolBar
          this._addTeamBtn.gotoAndStop(1);
          this._addTeamBtn.visible = false;
          this._chatPanel = new ChatPanel();
+         QuickWordController.setup();
       }
 
       public function closePetBag(b1:Boolean):void
@@ -440,7 +442,14 @@ package com.robot.app.toolBar
 
       private function onBag(event:MouseEvent):void
       {
-         BagController.show();
+         if(!ItemTipXMLInfo.isSetup)
+         {
+            ItemTipXMLInfo.setup(BagController.show)
+         }
+         else
+         {
+            BagController.show();
+         }
       }
 
       private function onGoHome(event:MouseEvent):void

@@ -2,32 +2,43 @@ package com.robot.core.config.xml
 {
    import org.taomee.ds.HashMap;
    import org.taomee.utils.Utils;
+   import org.taomee.utils.XmlLoader;
+   import com.robot.core.config.XmlConfig;
    
    public class PetXMLInfo
    {
       private static var _dataMap:HashMap;
       
       private static var _xml:XML;
+
+      private static var _path:String = "226";
       
-      private static var xmlClass:Class = PetXMLInfo_xmlClass;
+      // private static var xmlClass:Class = PetXMLInfo_xmlClass;
       
-      setup();
+      // setup();
       
       public function PetXMLInfo()
       {
          super();
       }
       
-      private static function setup() : void
+      public static function setup(callBack:Function) : void
       {
          var item:XML = null;
          _dataMap = new HashMap();
-         _xml = XML(new xmlClass());
-         var xl:XMLList = _xml.elements("Monster");
-         for each(item in xl)
+         var onLoad:Function = function(xml:XML):void
          {
-            _dataMap.add(item.@ID.toString(),item);
+            _xml = xml;
+            var xl:XMLList = _xml.elements("Monster");
+            for each(item in xl)
+            {
+               _dataMap.add(item.@ID.toString(),item);
+            }
+            callBack();
+            xmlLoader = null;
          }
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
       }
       
       public static function getIdList() : Array
