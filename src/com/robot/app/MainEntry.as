@@ -98,8 +98,8 @@ package com.robot.app
          SocketConnection.removeCmdListener(CommandID.LOGIN_IN,this.onLogin);
          SocketDispatcher.getInstance().addEventListener(SocketErrorEvent.ERROR,this.onError);
          EventManager.addEventListener(RobotEvent.CREATED_ACTOR,this.onCreatedActor);
-         MapConfig.setup();
          MainManager.setup(e.data);
+         // MapConfig.setup();
       }
       
       private function onCreatedActor(event:RobotEvent) : void
