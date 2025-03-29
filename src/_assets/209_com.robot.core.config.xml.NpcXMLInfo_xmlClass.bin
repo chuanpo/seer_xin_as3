@@ -40,7 +40,7 @@ endTask:NPC身上绑定的可以完成任务的ID
 		</dialog>
 	</npc>
 	
-	<npc id="4" mapID="325" name="探险家爱丽丝" cloths="100342|100343|100344|100345"
+	<npc id="4" mapID="325" name="探险家爱丽丝" cloths="100342|100343|100344|100345" posList="280,291|420,340|611,427|200,500"
 		color="0xF0378A" point="280|291" type="iris" startTask="42" endTask=""
 		proTask="42">
 		<des>
@@ -113,6 +113,28 @@ endTask:NPC身上绑定的可以完成任务的ID
 		<des></des>
 		<question></question>
 		<dialog>
+		</dialog>
+	</npc>
+	<npc id="90001" mapID="6" name="海盗" cloths="100508|100509|100510|100511" posList="280,291|725,227|379,355|584,335"
+		color="0x000000" point="280|291" type="common" startTask="" endTask=""
+		proTask="">
+		<des></des>
+		<question></question>
+		<dialog>
+			<list str="赛尔号？随随便便就能混进来~"/>
+			<list str="欧比组织万岁！"/>
+			<list str="整个宇宙的资源都属于我们宇宙海盗！"/>
+		</dialog>
+	</npc>
+	<npc id="90002" mapID="2" name="海盗" cloths="100168|100169|100170|100171" posList="280,291|252,385|690,240|100,300|600,300|650,385"
+		color="0x000000" point="280|291" type="common" startTask="" endTask=""
+		proTask="">
+		<des></des>
+		<question></question>
+		<dialog>
+			<list str="赛尔号？随随便便就能混进来~"/>
+			<list str="欧比组织万岁！"/>
+			<list str="整个宇宙的资源都属于我们宇宙海盗！"/>
 		</dialog>
 	</npc>
 </NpcConfig>

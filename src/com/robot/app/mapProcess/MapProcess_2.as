@@ -10,6 +10,13 @@ package com.robot.app.mapProcess
    import flash.display.MovieClip;
    import flash.display.Sprite;
    import flash.events.MouseEvent;
+   import com.robot.core.npc.NpcController;
+   import org.taomee.manager.EventManager;
+   import flash.events.Event;
+   import org.taomee.events.SocketEvent;
+   import com.robot.core.CommandID;
+   import com.robot.core.net.SocketConnection;
+   import com.robot.core.info.task.MiningCountInfo;
    
    public class MapProcess_2 extends BaseMapProcess
    {
@@ -79,6 +86,21 @@ package com.robot.app.mapProcess
          this.wbMc = conLevel["hitWbMC"];
          this.wbMc.addEventListener(MouseEvent.MOUSE_OVER,this.wbmcOverHandler);
          this.wbMc.addEventListener(MouseEvent.MOUSE_OUT,this.wbmcOUTHandler);
+         SocketConnection.addCmdListener(CommandID.TALK_COUNT,function(e:SocketEvent):void
+         {
+            SocketConnection.removeCmdListener(CommandID.TALK_COUNT,arguments.callee);
+            var oreCountInfo:MiningCountInfo = e.data as MiningCountInfo;
+            var count:uint = oreCountInfo.miningCount;
+            if(count >= 6 || (count < 6 && Math.random() > 0.2))
+            {
+               EventManager.addEventListener(NpcController.GET_CURNPC,function(evt:Event):void
+               {
+                  EventManager.removeEventListener(NpcController.GET_CURNPC,arguments.callee);
+                  NpcController.curNpc.npc.npc.visible = false;
+               });
+            }
+         })
+         SocketConnection.send(CommandID.TALK_COUNT,600012 - 500000);
       }
       
       public function showTask() : void

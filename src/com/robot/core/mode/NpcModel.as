@@ -63,7 +63,12 @@ package com.robot.core.mode
       {
          var i:uint = 0;
          this.dialogList = [];
-         this.posList = [new Point(280,291),new Point(420,340),new Point(611,427),new Point(200,500)];
+         this.posList = [];
+         for each(var pos:String in info.posList)
+         {
+            this.posList.push(new Point(int(pos.split(",")[0]),int(pos.split(",")[1])))
+         }
+         // this.posList = [new Point(280,291),new Point(420,340),new Point(611,427),new Point(200,500)];
          this._npcInfo = info;
          this._id = this._npcInfo.npcId;
          this._type = this._npcInfo.type;
@@ -309,7 +314,7 @@ package com.robot.core.mode
       
       private function initNpc() : void
       {
-         if(this.id != NPC.IRIS)
+         if(this.id != NPC.IRIS && this.id < 90000)
          {
             return;
          }
