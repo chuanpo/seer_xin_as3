@@ -49,7 +49,7 @@ package com.robot.app.mapProcess
       
       private var nextBossId:Array;
 
-      private var NUM:Number = 0.08;
+      private var NUM:Number = 1/60;
       
       public function MapProcess_500()
       {

@@ -34,7 +34,9 @@ package com.robot.core.npc
       public var offSetPoint:Point;
       
       public var questionA:Array;
-      
+
+      public var posList:Array;
+
       public function NpcInfo(xml:XMLList = null)
       {
          var p:Array = null;
@@ -71,7 +73,7 @@ package com.robot.core.npc
             this.startIDs = NpcXMLInfo.getStartIDs(this.npcId);
             this.endIDs = NpcXMLInfo.getEndIDs(this.npcId);
             this.proIDs = NpcXMLInfo.getNpcProIDs(this.npcId);
-            this.npcPath = NPC.getSceneNpcPathById(this.npcId);
+            this.npcPath = NPC.getSceneNpcPathById(this.npcId > 90000 ? 90000 : this.npcId);
             p = String(xml.@point).split("|");
             this.point = new Point(uint(p[0]),uint(p[1]));
             if(Boolean(xml.hasOwnProperty("@cloths")))
@@ -93,6 +95,13 @@ package com.robot.core.npc
             else
             {
                this.dialogList = [];
+            }
+            if(Boolean(xml.hasOwnProperty("@posList")))
+            {
+               this.posList = String(xml.@posList).split("|");
+            }else
+            {
+               this.posList = [];
             }
          }
       }
