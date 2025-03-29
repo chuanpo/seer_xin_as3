@@ -12,6 +12,8 @@ package com.robot.core.event
       public static const SHOW_TASK_LIST:String = "showTaskList";
       
       public static const COMPLETE_TASK:String = "completeTask";
+
+      public static const ORIGNAL_EVENT:String = "orignalEvent";
       
       private var _model:NpcModel;
       

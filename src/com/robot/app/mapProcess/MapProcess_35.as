@@ -18,6 +18,17 @@ package com.robot.app.mapProcess
    import com.robot.core.manager.TasksManager;
    import com.robot.app.task.taskUtils.taskDialog.NpcTipDialog;
    import com.robot.app.task.control.TaskController_42;
+   import org.taomee.manager.EventManager;
+   import com.robot.core.event.NpcEvent;
+   import com.robot.core.mode.BossModel;
+   import org.taomee.manager.ToolTipManager;
+   import flash.geom.Point;
+   import com.robot.app.fightNote.FightInviteManager;
+   import com.robot.core.npc.NpcDialog;
+   import com.robot.core.manager.MainManager;
+   import com.robot.core.event.RobotEvent;
+   import com.robot.core.manager.MapManager;
+   import com.robot.core.event.MapEvent;
    
    public class MapProcess_35 extends BaseMapProcess
    {
@@ -29,6 +40,7 @@ package com.robot.app.mapProcess
       
       private var makePetPassFlag:Boolean = false;
 
+      private var _bossMC:BossModel;
       public function MapProcess_35()
       {
          super();
@@ -56,8 +68,48 @@ package com.robot.app.mapProcess
          }
          conLevel["btn1"].addEventListener(MouseEvent.CLICK,this.onBtn1ClickHandler);
          conLevel["btn2"].addEventListener(MouseEvent.CLICK,this.onBtn2ClickHandler);
+         EventManager.addEventListener(NpcEvent.ORIGNAL_EVENT,showOphelia);
+         if(!this._bossMC)
+         {
+            this._bossMC = new BossModel(4706,35);
+            // this._bossMC.setDirection(Direction.RIGHT);
+            this._bossMC.show(new Point(342,120),0);
+            this._bossMC.scaleX = this._bossMC.scaleY = 2;
+         }
+         this._bossMC.mouseEnabled = true;
+         this._bossMC.addEventListener(MouseEvent.CLICK,onBossClick);
+         ToolTipManager.add(this._bossMC,"奥菲利娅");
+         this._bossMC.visible = false;
       }
       
+      private function showOphelia(e:NpcEvent):void
+      {
+         EventManager.removeEventListener(NpcEvent.ORIGNAL_EVENT,showOphelia);
+         this._bossMC.visible = true;
+      }
+
+      private function onBossClick(e:MouseEvent):void
+      {
+         var clickPoint:Point = new Point(342 + Math.random() * 10,120 + Math.random() * 10);
+         var onWalkEnter:Function = function():void
+         {
+            MainManager.actorModel.removeEventListener(RobotEvent.WALK_END,onWalkEnter);
+            NpcDialog.show(4706,["一切都已终结。而终结亦是新的开始。"],["我想挑战你","装傻"],
+            [function():void{
+               NpcDialog.show(4706,["小赛尔，以你现在的实力，还不能战胜我。不过，你可以先挑战我的分身~"],["不要小瞧我！"],
+               [function():void{
+                  FightInviteManager.fightWithBoss("奥菲利娅的分身");
+               }])
+            },null])
+         }
+         MapManager.addEventListener(MapEvent.MAP_MOUSE_DOWN,function():void{
+            MapManager.removeEventListener(MapEvent.MAP_MOUSE_DOWN,arguments.callee);
+            MainManager.actorModel.removeEventListener(RobotEvent.WALK_END,onWalkEnter);
+         });
+         MainManager.actorModel.addEventListener(RobotEvent.WALK_END,onWalkEnter);
+         MainManager.actorModel.walkAction(clickPoint);
+      }
+
       private function gameInit():void
       {
          this.gameTrig.visible = true;
