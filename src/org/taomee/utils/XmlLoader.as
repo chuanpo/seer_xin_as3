@@ -9,6 +9,7 @@ package org.taomee.utils
     import com.robot.core.ui.loading.loadingstyle.ILoadingStyle;
     import com.robot.core.manager.MainManager;
     import com.robot.core.config.XmlConfig;
+    import flash.events.ProgressEvent;
 
     public class XmlLoader
     {
@@ -34,6 +35,7 @@ package org.taomee.utils
                 {
                     urlloader.removeEventListener(Event.COMPLETE,onComplete);
                     urlloader.removeEventListener(IOErrorEvent.IO_ERROR, errorHandler);
+                    urlloader.removeEventListener(ProgressEvent.PROGRESS,progressHandler);
                     if(_loadingView)
                     {
                         _loadingView.destroy();
@@ -46,6 +48,7 @@ package org.taomee.utils
                 {
                     urlloader.removeEventListener(Event.COMPLETE,onComplete);
                     urlloader.removeEventListener(IOErrorEvent.IO_ERROR, errorHandler);
+                    urlloader.removeEventListener(ProgressEvent.PROGRESS,progressHandler);
                     if(_loadingView)
                     {
                         _loadingView.destroy();
@@ -57,6 +60,7 @@ package org.taomee.utils
                 }
                 urlloader.addEventListener(Event.COMPLETE, onComplete);
                 urlloader.addEventListener(IOErrorEvent.IO_ERROR, errorHandler);
+                urlloader.addEventListener(ProgressEvent.PROGRESS,this.progressHandler);
                 if(_loadingView)
                 {
                     _loadingView.destroy();
@@ -65,11 +69,19 @@ package org.taomee.utils
                 _loadingView = Loading.getLoadingStyle(1,MainManager.getStage(),"加载XML_" + XmlConfig.getXmlNameByPath(url) + "中");
                 _loadingView.setIsShowCloseBtn(false);
                 urlloader.load(new URLRequest(XML_PATH + url + ".xml?" + ver));
+                
             }
             catch (error:Error)
             {
                 Alarm.show(error)
             }
+        }
+
+        private function progressHandler(event:ProgressEvent) : void
+        {
+            var total:Number = event.bytesTotal;
+            var loaded:Number = event.bytesLoaded;
+            this._loadingView.changePercent(total,loaded);
         }
     }
 }
