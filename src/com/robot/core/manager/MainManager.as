@@ -28,6 +28,7 @@ package com.robot.core.manager
    import com.robot.core.config.xml.SkillXMLInfo;
    import com.robot.core.config.xml.PetXMLInfo;
    import com.robot.core.config.xml.ItemTipXMLInfo;
+   import com.robot.core.config.xml.GoldProductXMLInfo;
    
    public class MainManager
    {
@@ -135,7 +136,12 @@ package com.robot.core.manager
 
       private static function initItemXML():void
       {
-         ItemXMLInfo.parseInfo(initItemTipXml);
+         ItemXMLInfo.parseInfo(initGlodItemXML);
+      }
+
+      private static function initGlodItemXML():void
+      {
+         GoldProductXMLInfo.setup(initItemTipXml);
       }
 
       private static function initItemTipXml():void
