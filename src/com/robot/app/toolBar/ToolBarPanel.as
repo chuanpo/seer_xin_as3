@@ -49,7 +49,6 @@ package com.robot.app.toolBar
    import org.taomee.utils.DisplayUtil;
    import com.robot.app.team.TeamController;
    import com.robot.core.manager.UserManager;
-   import com.robot.core.config.xml.ItemTipXMLInfo;
    public class ToolBarPanel extends Sprite
    {
       private var _chatPanel:ChatPanel;
@@ -442,14 +441,7 @@ package com.robot.app.toolBar
 
       private function onBag(event:MouseEvent):void
       {
-         if(!ItemTipXMLInfo.isSetup)
-         {
-            ItemTipXMLInfo.setup(BagController.show)
-         }
-         else
-         {
-            BagController.show();
-         }
+         BagController.show();
       }
 
       private function onGoHome(event:MouseEvent):void

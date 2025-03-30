@@ -26,8 +26,8 @@ package com.robot.core.manager
    import com.robot.core.manager.map.config.MapConfig;
    import com.robot.core.config.xml.ShinyXMLInfo;
    import com.robot.core.config.xml.SkillXMLInfo;
-   import com.robot.core.config.xml.PetBookXMLInfo;
    import com.robot.core.config.xml.PetXMLInfo;
+   import com.robot.core.config.xml.ItemTipXMLInfo;
    
    public class MainManager
    {
@@ -135,7 +135,12 @@ package com.robot.core.manager
 
       private static function initItemXML():void
       {
-         ItemXMLInfo.parseInfo(initBean);
+         ItemXMLInfo.parseInfo(initItemTipXml);
+      }
+
+      private static function initItemTipXml():void
+      {
+         ItemTipXMLInfo.setup(initBean)
       }
 
       private static function loaderUILib() : void
