@@ -13,15 +13,13 @@ package com.robot.core.config.xml
       private static var _path:String = "291";
 
       // private static var xmlClass:Class = ShinyXMLInfo_xmlClass;
-      
-      setup();
-      
+            
       public function ShinyXMLInfo()
       {
          super();
       }
       
-      private static function setup() : void
+      public static function setup(callBack:Function) : void
       {
          var item:XML = null;
          _dataMap = new HashMap();
@@ -32,8 +30,11 @@ package com.robot.core.config.xml
             {
                _dataMap.add(uint(item.@petId),item);
             }
+            callBack();
+            xmlLoader = null;
          }
-         XmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
          // var xl:XMLList = XML(new xmlClass()).elements("filter");
          // for each(item in xl)
          // {

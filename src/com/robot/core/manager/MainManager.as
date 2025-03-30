@@ -21,8 +21,15 @@ package com.robot.core.manager
    import flash.events.IOErrorEvent;
    import com.robot.core.ui.alert.Alarm;
    import com.robot.core.config.XmlConfig;
+   import com.robot.core.config.xml.ItemXMLInfo;
    import flash.net.URLRequest;
    import com.robot.core.manager.map.config.MapConfig;
+   import com.robot.core.config.xml.ShinyXMLInfo;
+   import com.robot.core.config.xml.SkillXMLInfo;
+   import com.robot.core.config.xml.PetXMLInfo;
+   import com.robot.core.config.xml.ItemTipXMLInfo;
+   import com.robot.core.config.xml.GoldProductXMLInfo;
+   import com.robot.core.config.xml.MapIntroXMLInfo;
    
    public class MainManager
    {
@@ -99,7 +106,7 @@ package com.robot.core.manager
             var xmlData:XML = new XML(event.target.data);
             XmlConfig.setup(xmlData);
             // loaderUILib();
-            MapConfig.setup(initBean);
+            MapConfig.setup(initShinyXML);
             // initBean();
          }
          ioERRORHandler = function(e:IOErrorEvent):void
@@ -111,6 +118,41 @@ package com.robot.core.manager
          urlloader.addEventListener(Event.COMPLETE,xmlCompleteHandler);
          urlloader.addEventListener(IOErrorEvent.IO_ERROR,ioERRORHandler);
          urlloader.load(new URLRequest(XML_PATH + "?" + Math.random()));
+      }
+
+      private static function initShinyXML():void
+      {
+         ShinyXMLInfo.setup(initPetXML);
+      }
+
+      private static function initPetXML():void
+      {
+         PetXMLInfo.setup(initSkillXML);
+      }
+
+      private static function initSkillXML():void
+      {
+         SkillXMLInfo.parseInfo(initItemXML);
+      }
+
+      private static function initItemXML():void
+      {
+         ItemXMLInfo.parseInfo(initGlodItemXML);
+      }
+
+      private static function initGlodItemXML():void
+      {
+         GoldProductXMLInfo.setup(initMapIntroXML);
+      }
+
+      private static function initMapIntroXML():void
+      {
+         MapIntroXMLInfo.setup(initItemTipXml);
+      }
+
+      private static function initItemTipXml():void
+      {
+         ItemTipXMLInfo.setup(initBean)
       }
 
       private static function loaderUILib() : void

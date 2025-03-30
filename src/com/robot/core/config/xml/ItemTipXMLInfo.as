@@ -1,6 +1,8 @@
 package com.robot.core.config.xml
 {
    import org.taomee.ds.HashMap;
+   import org.taomee.utils.XmlLoader;
+   import com.robot.core.config.XmlConfig;
    
    public class ItemTipXMLInfo
    {
@@ -8,26 +10,39 @@ package com.robot.core.config.xml
       
       private static var _map:HashMap;
       
-      private static var xmlClass:Class = ItemTipXMLInfo_xmlClass;
+      // private static var xmlClass:Class = ItemTipXMLInfo_xmlClass;
       
-      private static var xml:XML = XML(new xmlClass());
+      private static var xml:XML;
       
-      setup();
+      private static var _path:String = "43";
+
+      public static var isSetup:Boolean = false;
+
+      // setup();
       
       public function ItemTipXMLInfo()
       {
          super();
       }
       
-      private static function setup() : void
+      public static function setup(callBack:Function) : void
       {
-         var i:XML = null;
-         _map = new HashMap();
-         xmllist = xml.descendants("item");
-         for each(i in xmllist)
+         var onLoad:Function = function(_xml:XML):void
          {
-            _map.add(uint(i.@id),i);
+            var i:XML = null;
+            _map = new HashMap();
+            xml = _xml;
+            xmllist = xml.descendants("item");
+            for each(i in xmllist)
+            {
+               _map.add(uint(i.@id),i);
+            }
+            isSetup = true;
+            callBack();
+            xmlLoader = null;
          }
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
       }
       
       public static function getItemDes(id:uint) : String

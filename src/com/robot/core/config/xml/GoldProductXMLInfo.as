@@ -1,6 +1,8 @@
 package com.robot.core.config.xml
 {
    import org.taomee.ds.HashMap;
+   import org.taomee.utils.XmlLoader;
+   import com.robot.core.config.XmlConfig;
    
    public class GoldProductXMLInfo
    {
@@ -12,27 +14,36 @@ package com.robot.core.config.xml
       
       private static var _xmllist:XMLList;
       
-      private static var xmlClass:Class = GoldProductXMLInfo_xmlClass;
+      private static var _path:String = "225";
+
+      // private static var xmlClass:Class = GoldProductXMLInfo_xmlClass;
       
-      setup();
+      // setup();
       
       public function GoldProductXMLInfo()
       {
          super();
       }
       
-      private static function setup() : void
+      public static function setup(callBack:Function) : void
       {
          var item:XML = null;
          _productMap = new HashMap();
          _itemMap = new HashMap();
-         _xml = XML(new xmlClass());
-         _xmllist = _xml.elements("item");
-         for each(item in _xmllist)
+         var onLoad:Function = function(xml:XML):void
          {
-            _productMap.add(item.@productID.toString(),item);
-            _itemMap.add(item.@itemID.toString(),item);
+            _xml = xml;
+            _xmllist = _xml.elements("item");
+            for each(item in _xmllist)
+            {
+               _productMap.add(item.@productID.toString(),item);
+               _itemMap.add(item.@itemID.toString(),item);
+            }
+            callBack()
+            xmlLoader = null;
          }
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
       }
       
       public static function getProductByItemId(id:uint) : uint

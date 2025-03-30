@@ -7,7 +7,7 @@ package com.robot.app
    import com.robot.core.cmd.ChatCmdListener;
    import com.robot.core.cmd.InformCmdListener;
    import com.robot.core.cmd.team.TeamInformCmdListener;
-   import com.robot.core.config.xml.ItemXMLInfo;
+   // import com.robot.core.config.xml.ItemXMLInfo;
    import com.robot.core.controller.SaveUserInfo;
    import com.robot.core.event.RobotEvent;
    import com.robot.core.manager.LevelManager;
@@ -46,7 +46,7 @@ package com.robot.app
          TaomeeManager.stageWidth = 960;
          TaomeeManager.stageHeight = 560;
          MainManager.actorID = userID;
-         ItemXMLInfo.parseInfo();
+         // ItemXMLInfo.parseInfo();
          LevelManager.setup(sprite);
          ClassRegister.setup();
          TickManager.setup();

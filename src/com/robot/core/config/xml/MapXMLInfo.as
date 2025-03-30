@@ -33,8 +33,10 @@ package com.robot.core.config.xml
             {
                _dataMap.add(uint(item.@id),item);
             }
+            xmlLoader = null;
          }
-         XmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
          // var xl:XMLList = XML(new xmlClass()).elements("map");
          // for each(item in xl)
          // {

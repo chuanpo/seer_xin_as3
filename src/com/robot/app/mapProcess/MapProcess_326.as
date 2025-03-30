@@ -10,6 +10,7 @@ package com.robot.app.mapProcess
    import flash.media.SoundChannel;
    import flash.utils.clearTimeout;
    import flash.utils.setTimeout;
+   import com.robot.core.manager.map.MapLibManager;
 
    public class MapProcess_326 extends BaseMapProcess
    {
@@ -26,14 +27,14 @@ package com.robot.app.mapProcess
 
       override protected function init():void
       {
+         conLevel["npcMC"].visible = false;
+         conLevel["weisikeMC"].visible = false;
+         conLevel["haidaoMC"].visible = false;
          this.initForAll();
       }
 
       private function initForAll():void
       {
-         conLevel["npcMC"].visible = false;
-         conLevel["weisikeMC"].visible = false;
-         conLevel["haidaoMC"].visible = false;
          conLevel["icon" + 0].buttonMode = true;
          conLevel["icon" + 0].addEventListener(MouseEvent.MOUSE_DOWN, this.startDr);
          conLevel["icon" + 0].addEventListener(MouseEvent.MOUSE_UP, this.stopDr);
@@ -73,7 +74,7 @@ package com.robot.app.mapProcess
             {
                if (uint(_loc2_) == _loc3_)
                {
-                  _loc4_ = MapManager.currentMap.libManager.getSound("downStone");
+                  _loc4_ = MapLibManager.getSound("downStone");
                   this.stoneChannel = _loc4_.play();
                   this.stoneChannel.addEventListener(Event.SOUND_COMPLETE, this.otherSound);
                   param1.currentTarget["mc"].gotoAndPlay(2);
@@ -108,7 +109,7 @@ package com.robot.app.mapProcess
                   this.stoneChannel.removeEventListener(Event.SOUND_COMPLETE, this.otherSound);
                   param1.currentTarget.x = 748;
                   param1.currentTarget.y = 326;
-                  _loc5_ = MapManager.currentMap.libManager.getSound("openStone");
+                  _loc5_ = MapLibManager.getSound("openStone");
                   _loc5_.play();
                   conLevel["icon" + 2].mouseEnabled = false;
                   conLevel["icon" + 2].mouseChildren = false;
@@ -126,7 +127,7 @@ package com.robot.app.mapProcess
       private function otherSound(param1:Event):void
       {
          this.stoneChannel.removeEventListener(Event.SOUND_COMPLETE, this.otherSound);
-         var _loc2_:Sound = MapManager.currentMap.libManager.getSound("lightSound");
+         var _loc2_:Sound = MapLibManager.getSound("lightSound");
          _loc2_.play();
       }
 
@@ -151,7 +152,7 @@ package com.robot.app.mapProcess
          _loc2_ = _loc2_.substr(9, _loc2_.length);
          var _loc3_:uint = uint(_loc2_);
          conLevel["soundPlay" + _loc3_].gotoAndPlay(1);
-         var _loc4_:Sound = MapManager.currentMap.libManager.getSound("oneSound" + _loc3_);
+         var _loc4_:Sound = MapLibManager.getSound("oneSound" + _loc3_);
          _loc4_.play();
       }
 

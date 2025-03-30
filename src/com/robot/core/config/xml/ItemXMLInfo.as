@@ -3,6 +3,8 @@ package com.robot.core.config.xml
    import com.robot.core.info.item.ClothInfo;
    import com.robot.core.manager.MainManager;
    import org.taomee.ds.HashMap;
+   import org.taomee.utils.XmlLoader;
+   import com.robot.core.config.XmlConfig;
    
    public class ItemXMLInfo
    {
@@ -10,36 +12,46 @@ package com.robot.core.config.xml
       
       private static var _speedMap:HashMap;
       
-      private static var xmlClass:Class = ItemXMLInfo_xmlClass;
+      // private static var xmlClass:Class = ItemXMLInfo_xmlClass;
       
-      private static var xml:XML = XML(new xmlClass());
+      private static var _path:String = "221";
+
+      private static var xml:XML;
       
       public function ItemXMLInfo()
       {
          super();
       }
       
-      public static function parseInfo() : void
+      public static function parseInfo(callBack:Function) : void
       {
          var item:XML = null;
          _speedMap = new HashMap();
-         xmllist = xml.descendants("Item");
-         for each(item in xmllist)
+         var onLoad:Function = function(_xml:XML):void
          {
-            if(String(item.@type) == "foot")
+            xml = _xml;
+            xmllist = xml.descendants("Item");
+            for each(item in xmllist)
             {
-               if(Boolean(xml.hasOwnProperty("@speed")))
+               if(String(item.@type) == "foot")
                {
-                  _speedMap.add(uint(item.@ID),MainManager.DfSpeed);
-               }
-               else
-               {
-                  _speedMap.add(uint(item.@ID),Number(item.@speed));
+                  if(Boolean(xml.hasOwnProperty("@speed")))
+                  {
+                     _speedMap.add(uint(item.@ID),MainManager.DfSpeed);
+                  }
+                  else
+                  {
+                     _speedMap.add(uint(item.@ID),Number(item.@speed));
+                  }
                }
             }
+            ClothInfo.parseInfo(xml.Cat.(@ID == 1)[0]);
+            DoodleXMLInfo.setup(xml.Cat.(@ID == 2)[0]);
+            callBack();
+            xmlLoader = null;
          }
-         ClothInfo.parseInfo(xml.Cat.(@ID == 1)[0]);
-         DoodleXMLInfo.setup(xml.Cat.(@ID == 2)[0]);
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
       }
       
       public static function getName(id:uint) : String
