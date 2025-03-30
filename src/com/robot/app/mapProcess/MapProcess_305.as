@@ -5,6 +5,12 @@ package com.robot.app.mapProcess
    import com.robot.core.manager.map.config.BaseMapProcess;
    import flash.display.MovieClip;
    import flash.events.MouseEvent;
+   import com.robot.core.net.SocketConnection;
+   import com.robot.core.CommandID;
+   import org.taomee.events.SocketEvent;
+   import com.robot.core.info.task.MiningCountInfo;
+   import com.robot.core.npc.NpcDialog;
+   import com.robot.core.npc.NPC;
    
    public class MapProcess_305 extends BaseMapProcess
    {
@@ -95,7 +101,20 @@ package com.robot.app.mapProcess
       
       private function onFightQita(evt:MouseEvent) : void
       {
-         FightInviteManager.fightWithBoss("奇塔");
+         SocketConnection.addCmdListener(CommandID.TALK_COUNT,function(e:SocketEvent):void
+         {
+            SocketConnection.removeCmdListener(CommandID.TALK_COUNT,arguments.callee);
+            var oreCountInfo:MiningCountInfo = e.data as MiningCountInfo;
+            var count:uint = oreCountInfo.miningCount;
+            if(count == 0)
+            {
+               FightInviteManager.fightWithBoss("奇塔");
+            }else
+            {
+               NpcDialog.show(NPC.SEER,["已经达到捕捉上限了哟~"],["……"],null)
+            }
+         })
+         SocketConnection.send(CommandID.TALK_COUNT,700013 - 500000);
       }
    }
 }

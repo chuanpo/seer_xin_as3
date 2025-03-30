@@ -73,7 +73,7 @@ endTask:NPC身上绑定的可以完成任务的ID
 	</npc>
 	<npc id="7" mapID="35" name="赫尔卡星长老" point="720|165" type="elder" startTask=""
 		endTask="" proTask="42">
-		<des> <![CDATA[我是赫尔卡星长老！]]></des>
+		<des></des>
 		<question><![CDATA[哈哈..原来赫尔卡星长老是这个样子...]]></question>
 	</npc>
 	<npc id="100" mapID="9" name="迪恩" point="700|274" type="dien" startTask=""
