@@ -99,13 +99,7 @@ package com.robot.app.petbag.ui
          this._levelTxt = this._mainUI["levelTxt"];
          this._upExpTxt = this._mainUI["upExpTxt"];
          this._charaTxt = this._mainUI["charaTxt"];
-         this._effectTxt = new TextField();
-         this._effectTxt.x = this._charaTxt.x + (this._charaTxt.width / 2); 
-         this._effectTxt.y = this._charaTxt.y; 
-         this._charaTxt.width /= 2;
-         this._effectTxt.height = this._charaTxt.height;
-         this._effectTxt.width = this._charaTxt.width;
-         this._mainUI.addChild(this._effectTxt);
+         this._effectTxt = this._mainUI["effectTxt"];
          this._getTimeTxt = this._mainUI["getTimeTxt"];
          this._attackTxt = this._mainUI["attackTxt"];
          this._defenceTxt = this._mainUI["defenceTxt"];
@@ -175,7 +169,7 @@ package com.robot.app.petbag.ui
          if(Boolean(effectInfo))
          {
             ToolTipManager.add(this._effectTxt,PetEffectXMLInfo.getDes2(effectInfo.effectID,effectInfo.args,effectInfo.itemId));
-            this._effectTxt.htmlText = this.des3 + "特性："+ this.des2 + this.des4 + PetEffectXMLInfo.getEffect(effectInfo.effectID,effectInfo.args,effectInfo.itemId) + this.des2;
+            this._effectTxt.htmlText = "特性:" + this.des1 + PetEffectXMLInfo.getEffect(effectInfo.effectID,effectInfo.args,effectInfo.itemId) + this.des2;
          }else{
             this._effectTxt.htmlText = "";
          }

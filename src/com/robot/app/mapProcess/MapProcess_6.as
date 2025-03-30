@@ -38,6 +38,8 @@ package com.robot.app.mapProcess
    import org.taomee.manager.EventManager;
    import org.taomee.manager.ToolTipManager;
    import org.taomee.utils.DisplayUtil;
+   import com.robot.core.npc.NpcController;
+   import com.robot.core.info.task.MiningCountInfo;
    
    public class MapProcess_6 extends BaseMapProcess
    {
@@ -116,6 +118,21 @@ package com.robot.app.mapProcess
          this.wbMc.addEventListener(MouseEvent.MOUSE_OVER,this.wbmcOverHandler);
          this.wbMc.addEventListener(MouseEvent.MOUSE_OUT,this.wbmcOUTHandler);
          ToolTipManager.add(conLevel["aeroLiteGameMC"],"突围磁风暴");
+         SocketConnection.addCmdListener(CommandID.TALK_COUNT,function(e:SocketEvent):void
+         {
+            SocketConnection.removeCmdListener(CommandID.TALK_COUNT,arguments.callee);
+            var oreCountInfo:MiningCountInfo = e.data as MiningCountInfo;
+            var count:uint = oreCountInfo.miningCount;
+            if(count >= 6 || (count < 6 && Math.random() > 0.2))
+            {
+               EventManager.addEventListener(NpcController.GET_CURNPC,function(evt:Event):void
+               {
+                  EventManager.removeEventListener(NpcController.GET_CURNPC,arguments.callee);
+                  NpcController.curNpc.npc.npc.visible = false;
+               });
+            }
+         })
+         SocketConnection.send(CommandID.TALK_COUNT,600012 - 500000);
       }
       
       private function showTaskDialog(taskID:uint) : void

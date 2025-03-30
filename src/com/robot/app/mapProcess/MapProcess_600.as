@@ -31,6 +31,8 @@ package com.robot.app.mapProcess
    import org.taomee.manager.ResourceManager;
    import org.taomee.manager.ToolTipManager;
    import org.taomee.utils.DisplayUtil;
+   import com.robot.app.protectSys.KillPluginSys;
+   import com.robot.app.automaticFight.AutomaticFightManager;
    
    public class MapProcess_600 extends BaseMapProcess
    {
@@ -47,6 +49,8 @@ package com.robot.app.mapProcess
       private var tt:uint;
       
       private var nextBossId:Array;
+      
+      private var NUM:Number = 1/60;
       
       public function MapProcess_600()
       {
@@ -190,6 +194,11 @@ package com.robot.app.mapProcess
       
       private function onFightBtnClickHandler(e:MouseEvent) : void
       {
+         if(Math.random() < NUM && !AutomaticFightManager.isStart)
+         {
+            KillPluginSys.start();
+            return;
+         }
          e.currentTarget.buttonMode = false;
          e.currentTarget.removeEventListener(MouseEvent.CLICK,this.onFightBtnClickHandler);
          this.tt = setTimeout(this.timeOutHandler,2000);
