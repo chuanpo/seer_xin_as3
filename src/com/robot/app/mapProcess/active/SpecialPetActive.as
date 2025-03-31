@@ -44,6 +44,8 @@ package com.robot.app.mapProcess.active
       private static var classMap:HashMap = new HashMap();
       
       private static var date:Date = null;
+
+      private static var ruleHashMap:HashMap = new HashMap();
       
       setup();
       
@@ -57,6 +59,13 @@ package com.robot.app.mapProcess.active
          map.add(15,new Point(808,338));
          map.add(105,new Point(126,217));
          map.add(54,new Point(297,157));
+         ruleHashMap.add(0,"以致命一击为终结技");
+         ruleHashMap.add(1,"在2回合之内");
+         ruleHashMap.add(2,"以致命一击为终结技");
+         ruleHashMap.add(3,"承受住我10次攻击后再");
+         ruleHashMap.add(4,"以致命一击为终结技");
+         ruleHashMap.add(5,"在2回合之内");
+         ruleHashMap.add(6,"承受住我10次攻击后再");
       }
       
       private static function onMapSwitch(event:MapEvent) : void
@@ -139,16 +148,13 @@ package com.robot.app.mapProcess.active
       private static function talkWithGaiYa() : void
       {
          var str:String = null;
-         switch(date.day)
+         try
          {
-            case 1,5:
-               str = "我的目标是成为精灵战斗大师，我对战斗有着独特的见解，只有力量与智慧都达到一定的境界的对手才会得到我的认同。如果你能以0xff00001对1的形式并在2回合之内战胜我0xffffff，我就做你的伙伴。";
-               break;
-            case 3,6:
-               str = "我的目标是成为精灵战斗大师，我对战斗有着独特的见解，只有力量与智慧都达到一定的境界的对手才会得到我的认同。如果你能以0xff00001对1的形式并承受住我10次攻击后再战胜我0xffffff，我就做你的伙伴。";
-               break;
-            case 2,4,0:
-               str = "我的目标是成为精灵战斗大师，我对战斗有着独特的见解，只有力量与智慧都达到一定的境界的对手才会得到我的认同。如果你能以0xff00001对1的形式并以致命一击为终结技战胜我0xffffff，我就做你的伙伴。";
+            str="我的目标是成为精灵战斗大师，我对战斗有着独特的见解，只有力量与智慧都达到一定的境界的对手才会得到我的认同。如果你能以0xff00001对1的形式并" + ruleHashMap.getValue(date.day) + "战胜我0xffffff，我就做你的伙伴。";
+         }
+         catch (error:Error)
+         {
+            str="我的目标是成为精灵战斗大师，我对战斗有着独特的见解，只有力量与智慧都达到一定的境界的对手才会得到我的认同。如果你能以0xff00001对1的形式并以今天的规则战胜我0xffffff，我就做你的伙伴。";
          }
          NpcDialog.show(NPC.GAIYA,[str],["我接受，一定要让你成为我的伙伴。","等我把精灵训练的更强后再来找你挑战。"],[function():void
          {
