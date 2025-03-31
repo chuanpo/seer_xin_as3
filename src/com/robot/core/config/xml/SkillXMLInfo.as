@@ -1,6 +1,8 @@
 package com.robot.core.config.xml
 {
    import flash.utils.Dictionary;
+   import org.taomee.utils.XmlLoader;
+   import com.robot.core.config.XmlConfig;
 
    public class SkillXMLInfo
    {
@@ -8,25 +10,35 @@ package com.robot.core.config.xml
 
       private static var sideEffectXMLList:XMLList;
 
-      private static var xmlClass:Class = SkillXMLInfo_xmlClass;
+      // private static var xmlClass:Class = SkillXMLInfo_xmlClass;
 
-      private static var SKILL_XML:XML = XML(new xmlClass());
+      private static var SKILL_XML:XML;
 
       private static var categoryNames:Dictionary = new Dictionary();
 
       public static var dict:Dictionary = new Dictionary();
 
-      parseInfo();
+      private static const _path:String = "227";
+
+      // parseInfo();
 
       public function SkillXMLInfo()
       {
          super();
       }
 
-      private static function parseInfo():void
+      public static function parseInfo(callBack:Function):void
       {
-         xmllist = SKILL_XML.descendants("Move");
-         sideEffectXMLList = SKILL_XML.descendants("SideEffect");
+         var onLoad:Function = function(xml:XML):void
+         {
+            SKILL_XML = xml;
+            xmllist = SKILL_XML.descendants("Move");
+            sideEffectXMLList = SKILL_XML.descendants("SideEffect");
+            callBack();
+            xmlLoader = null;
+         }
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
          dict["key_1"] = {"cn": "草", "en": "grass"};
          dict["key_2"] = {"cn": "水", "en": "water"};
          dict["key_3"] = {"cn": "火", "en": "fire"};

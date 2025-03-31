@@ -93,7 +93,7 @@
 	</map>
 	<map id="325" difficulty="3" level="50" des="艾迪星">
 		<task taskIDs="#我是音乐小麦霸"/>
-		<sprite petIDs="帕尼|乌凯"/>
+		<sprite petIDs="帕尼|乌凯|沙比克"/>
 	</map>
 	<map id="328" difficulty="3" level="53-56" des="斯科尔星">
 		<sprite petIDs="里昂|艾米|幼镰鸟|弗曼|迷你芽"/>

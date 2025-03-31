@@ -164,6 +164,7 @@ package com.robot.app.toolBar
          this._addTeamBtn.gotoAndStop(1);
          this._addTeamBtn.visible = false;
          this._chatPanel = new ChatPanel();
+         QuickWordController.setup();
       }
 
       public function closePetBag(b1:Boolean):void

@@ -10,10 +10,12 @@ package com.robot.app.quickWord
    import flash.geom.Point;
    import flash.utils.Timer;
    import org.taomee.utils.DisplayUtil;
+   import org.taomee.utils.XmlLoader;
+   import com.robot.core.config.XmlConfig;
    
    public class QuickWord
    {
-      private var cls:Class = QuickWord_cls;
+      private var _path:String = "1";
       
       private var xml:XML;
       
@@ -26,11 +28,16 @@ package com.robot.app.quickWord
       public function QuickWord()
       {
          super();
-         this.xml = new XML(new this.cls());
-         this.timer = new Timer(500,1);
-         this.timer.addEventListener(TimerEvent.TIMER,this.addStageListener);
+         var onLoad:Function = function(_xml:XML):void
+         {
+            xml = _xml;
+            timer = new Timer(500,1);
+            timer.addEventListener(TimerEvent.TIMER,addStageListener);
+            xmlLoader = null;
+         }
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
       }
-      
       public function show(dis:DisplayObject) : void
       {
          if(Boolean(this.qw))

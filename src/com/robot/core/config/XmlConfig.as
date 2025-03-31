@@ -9,6 +9,8 @@ package com.robot.core.config
 
         private static var hashMap:HashMap = new HashMap();
 
+        private static var nameHashMap:HashMap = new HashMap();
+
         public function XmlConfig()
         {
             super();
@@ -21,6 +23,7 @@ package com.robot.core.config
             for each (i in xml["xml"].elements())
             {
                 hashMap.add(String(i.@path), String(i.@ver));
+                nameHashMap.add(String(i.@path), String(i.@name));
             }
         }
 
@@ -31,6 +34,14 @@ package com.robot.core.config
                 return "";
             }
             return hashMap.getValue(path);
+        }
+        public static function getXmlNameByPath(path:String):String
+        {
+            if (!nameHashMap.containsKey(path))
+            {
+                return "";
+            }
+            return nameHashMap.getValue(path);
         }
     }
 }
