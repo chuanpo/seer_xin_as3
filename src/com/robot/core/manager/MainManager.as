@@ -17,6 +17,19 @@ package com.robot.core.manager
    import flash.utils.IDataInput;
    import org.taomee.manager.EventManager;
    import org.taomee.manager.TaomeeManager;
+   import flash.net.URLLoader;
+   import flash.events.IOErrorEvent;
+   import com.robot.core.ui.alert.Alarm;
+   import com.robot.core.config.XmlConfig;
+   import com.robot.core.config.xml.ItemXMLInfo;
+   import flash.net.URLRequest;
+   import com.robot.core.manager.map.config.MapConfig;
+   import com.robot.core.config.xml.ShinyXMLInfo;
+   import com.robot.core.config.xml.SkillXMLInfo;
+   import com.robot.core.config.xml.PetXMLInfo;
+   import com.robot.core.config.xml.ItemTipXMLInfo;
+   import com.robot.core.config.xml.GoldProductXMLInfo;
+   import com.robot.core.config.xml.MapIntroXMLInfo;
    
    public class MainManager
    {
@@ -42,6 +55,8 @@ package com.robot.core.manager
       
       public static const DfSpeed:Number = 4.6;
       
+      private static const XML_PATH:String = "config/xmlList.xml";
+
       private static const UI_PATH:String = "resource/ui.swf";
       
       private static const ICON_PATH:String = "resource/taskIcon.swf";
@@ -61,6 +76,7 @@ package com.robot.core.manager
          UserInfo.setForLoginInfo(_actorInfo,data as IDataInput);
          SocketConnection.mainSocket.userID = _actorInfo.userID;
          loaderUILib();
+         // loadXMLList();
          TaomeeManager.initFightSpeed();
       }
       
@@ -78,6 +94,67 @@ package com.robot.core.manager
          EventManager.dispatchEvent(new RobotEvent(RobotEvent.CREATED_ACTOR));
       }
       
+      private static function loadXMLList() : void
+      {
+         var urlloader:URLLoader = new URLLoader();
+         var xmlCompleteHandler:Function = null;
+         var ioERRORHandler:Function = null;
+         xmlCompleteHandler = function(event:Event):void
+         {
+            urlloader.removeEventListener(Event.COMPLETE,xmlCompleteHandler);
+            urlloader.removeEventListener(IOErrorEvent.IO_ERROR,ioERRORHandler);
+            var xmlData:XML = new XML(event.target.data);
+            XmlConfig.setup(xmlData);
+            // loaderUILib();
+            MapConfig.setup(initShinyXML);
+            // initBean();
+         }
+         ioERRORHandler = function(e:IOErrorEvent):void
+         {
+            urlloader.removeEventListener(Event.COMPLETE,xmlCompleteHandler);
+            urlloader.removeEventListener(IOErrorEvent.IO_ERROR,ioERRORHandler);
+            Alarm.show("xml加载出错！")
+         }
+         urlloader.addEventListener(Event.COMPLETE,xmlCompleteHandler);
+         urlloader.addEventListener(IOErrorEvent.IO_ERROR,ioERRORHandler);
+         urlloader.load(new URLRequest(XML_PATH + "?" + Math.random()));
+      }
+
+      private static function initShinyXML():void
+      {
+         ShinyXMLInfo.setup(initPetXML);
+      }
+
+      private static function initPetXML():void
+      {
+         PetXMLInfo.setup(initSkillXML);
+      }
+
+      private static function initSkillXML():void
+      {
+         SkillXMLInfo.parseInfo(initItemXML);
+      }
+
+      private static function initItemXML():void
+      {
+         ItemXMLInfo.parseInfo(initGlodItemXML);
+      }
+
+      private static function initGlodItemXML():void
+      {
+         GoldProductXMLInfo.setup(initMapIntroXML);
+      }
+
+      private static function initMapIntroXML():void
+      {
+         MapIntroXMLInfo.setup(initItemTipXml);
+      }
+
+      private static function initItemTipXml():void
+      {
+         ItemTipXMLInfo.setup(initBean)
+      }
+
       private static function loaderUILib() : void
       {
          trace("Progress-1：开始加载UI资源",UI_PATH);
@@ -117,7 +194,8 @@ package com.robot.core.manager
       private static function onLoadAimat(e:MCLoadEvent) : void
       {
          AimatUIManager.setup(e.getLoader());
-         initBean();
+         loadXMLList();
+         // initBean();
       }
       
       private static function initBean() : void

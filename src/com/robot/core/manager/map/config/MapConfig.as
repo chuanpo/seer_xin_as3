@@ -13,6 +13,8 @@ package com.robot.core.manager.map.config
    import flash.geom.Point;
    import org.taomee.manager.DepthManager;
    import org.taomee.manager.ToolTipManager;
+   import com.robot.core.config.XmlConfig;
+   import org.taomee.utils.XmlLoader;
 
    public class MapConfig
    {
@@ -22,9 +24,13 @@ package com.robot.core.manager.map.config
 
       private static var clickFroWalkPoint:Point;
 
-      private static var xmlCls:Class = MapConfig_xmlCls;
+      // private static var xmlCls:Class = MapConfig_xmlCls;
 
-      public static var XML_DATA:XML = XML(new xmlCls());
+      // public static var XML_DATA:XML = XML(new xmlCls());
+
+      public static var XML_DATA:XML;
+
+      private static var _path:String = "210";
 
       private static const ENTRIES:String = "Entries";
 
@@ -37,8 +43,16 @@ package com.robot.core.manager.map.config
          super();
       }
 
-      public static function setup():void
+      public static function setup(callBack:Function):void
       {
+         var onLoad:Function = function(xml:XML):void
+         {
+            XML_DATA = xml;
+            callBack();
+            xmlLoader = null;
+         }
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
          MapManager.addEventListener(MapEvent.MAP_SWITCH_OPEN, onMapChange);
       }
 

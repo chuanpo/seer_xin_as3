@@ -10,7 +10,15 @@ package com.robot.app.quickWord
       {
          super();
       }
-      
+
+      public static function setup():void
+      {
+         if(_quickWord == null)
+         {
+            _quickWord = new QuickWord();
+         }
+      }
+
       public static function get quickWord() : QuickWord
       {
          if(_quickWord == null)

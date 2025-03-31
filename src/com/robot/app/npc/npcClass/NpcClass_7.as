@@ -12,6 +12,7 @@ package com.robot.app.npc.npcClass
    import com.robot.core.npc.NpcDialog;
    import com.robot.app.task.control.TaskController_42;
    import com.robot.core.ui.alert.Alarm;
+   import org.taomee.manager.EventManager;
    
    public class NpcClass_7 implements INpc
    {
@@ -80,6 +81,10 @@ package com.robot.app.npc.npcClass
                   NpcTipDialog.show("天！太棒了！你为什么可以制造出这样完美的机械精灵？你究竟是谁？",null,NpcTipDialog.ELDER)
                }
             })
+         }else
+         {
+            NpcDialog.show(NPC.ELDER,["我是赫尔卡星长老！"],['你知道"她"在哪里吗?',"哈哈..原来赫尔卡星长老是这个样子..."],
+            [function():void{EventManager.dispatchEvent(new NpcEvent(NpcEvent.ORIGNAL_EVENT,_curNpcModel))},null])
          }
       }
       public function get npc() : NpcModel

@@ -1,29 +1,40 @@
 package com.robot.core.config.xml
 {
    import org.taomee.ds.HashMap;
+   import org.taomee.utils.XmlLoader;
+   import com.robot.core.config.XmlConfig;
    
    public class MapIntroXMLInfo
    {
       private static var _dataMap:HashMap;
       
-      private static var xmlClass:Class = MapIntroXMLInfo_xmlClass;
+      private static var _path:String = "220";
+
+      // private static var xmlClass:Class = MapIntroXMLInfo_xmlClass;
       
-      setup();
+      // setup();
       
       public function MapIntroXMLInfo()
       {
          super();
       }
       
-      private static function setup() : void
+      public static function setup(callback:Function) : void
       {
-         var item:XML = null;
-         _dataMap = new HashMap();
-         var xl:XMLList = XML(new xmlClass()).elements("map");
-         for each(item in xl)
+         var onLoad:Function = function(xml:XML):void
          {
-            _dataMap.add(uint(item.@id),item);
+            var item:XML = null;
+            _dataMap = new HashMap();
+            var xl:XMLList = xml.elements("map");
+            for each(item in xl)
+            {
+               _dataMap.add(uint(item.@id),item);
+            }
+            xmlLoader = null;
+            callback();
          }
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
       }
       
       public static function getType(id:uint) : uint

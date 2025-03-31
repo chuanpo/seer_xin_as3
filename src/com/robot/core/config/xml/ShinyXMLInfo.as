@@ -3,29 +3,43 @@ package com.robot.core.config.xml
    import com.robot.core.manager.MainManager;
    import flash.geom.Point;
    import org.taomee.ds.HashMap;
+   import org.taomee.utils.XmlLoader;
+   import com.robot.core.config.XmlConfig;
    
    public class ShinyXMLInfo
    {
       private static var _dataMap:HashMap;
       
-      private static var xmlClass:Class = ShinyXMLInfo_xmlClass;
-      
-      setup();
-      
+      private static var _path:String = "291";
+
+      // private static var xmlClass:Class = ShinyXMLInfo_xmlClass;
+            
       public function ShinyXMLInfo()
       {
          super();
       }
       
-      private static function setup() : void
+      public static function setup(callBack:Function) : void
       {
          var item:XML = null;
          _dataMap = new HashMap();
-         var xl:XMLList = XML(new xmlClass()).elements("filter");
-         for each(item in xl)
+         var onLoad:Function = function(xml:XML):void
          {
-            _dataMap.add(uint(item.@petId),item);
+            var xl:XMLList = xml.elements("filter");
+            for each(item in xl)
+            {
+               _dataMap.add(uint(item.@petId),item);
+            }
+            callBack();
+            xmlLoader = null;
          }
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
+         // var xl:XMLList = XML(new xmlClass()).elements("filter");
+         // for each(item in xl)
+         // {
+         //    _dataMap.add(uint(item.@petId),item);
+         // }
       }
 
       public static function getShinyArray(petId:uint) : Array

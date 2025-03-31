@@ -4,12 +4,16 @@ package com.robot.core.config.xml
    import com.robot.core.manager.MapManager;
    import flash.geom.Point;
    import org.taomee.ds.HashMap;
+   import org.taomee.utils.XmlLoader;
+   import com.robot.core.config.XmlConfig;
    
    public class MapXMLInfo
    {
       private static var _dataMap:HashMap;
+
+      private static var _path:String = "210";
       
-      private static var xmlClass:Class = MapXMLInfo_xmlClass;
+      // private static var xmlClass:Class = MapXMLInfo_xmlClass;
       
       setup();
       
@@ -22,11 +26,22 @@ package com.robot.core.config.xml
       {
          var item:XML = null;
          _dataMap = new HashMap();
-         var xl:XMLList = XML(new xmlClass()).elements("map");
-         for each(item in xl)
+         var onLoad:Function = function(xml:XML):void
          {
-            _dataMap.add(uint(item.@id),item);
+            var xl:XMLList = xml.elements("map");
+            for each(item in xl)
+            {
+               _dataMap.add(uint(item.@id),item);
+            }
+            xmlLoader = null;
          }
+         var xmlLoader:XmlLoader =  new XmlLoader();
+         xmlLoader.loadXML(_path,XmlConfig.getXmlVerByPath(_path),onLoad);
+         // var xl:XMLList = XML(new xmlClass()).elements("map");
+         // for each(item in xl)
+         // {
+         //    _dataMap.add(uint(item.@id),item);
+         // }
       }
       
       public static function getIDList() : Array
