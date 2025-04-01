@@ -1,3 +1,5 @@
 bin/
 bin/RobotAppDLL.swc
 bin/catalog.xml
+.vscode/tasks.json
+.vscode/settings.json
