@@ -199,6 +199,11 @@ package com.robot.core.config
          return uint(clientXML.ipConfig.Email.@port);
       }
       
+      public static function get Email_Login_URL() : String
+      {
+         return clientXML.ipConfig.EmailLogin.@url;
+      }
+
       public static function get ID_IP() : String
       {
          return clientXML.ipConfig.DirSer.@ip;
