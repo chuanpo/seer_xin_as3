@@ -107,12 +107,18 @@ package com.robot.core.ui.skillBtn
             str += "命中率：" + accuracy + "%";
          }
 
+         //技能效果（SideEffects）
+         var pwrBindDv:Number = SkillXMLInfo.getPwrBindDv(_id);
          str += "\r";
          try
          {
             for each (i in sideEffects)
             {
-               if (i != "")
+               if (pwrBindDv == 1)
+               {
+                  str += "\r威力=自身个体值*5";
+               }
+               else if (i != "")
                {
                   num = uint(1000000 + uint(i));
                   tempNum = EffectInfoManager.getArgsNum(uint(i));
