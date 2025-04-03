@@ -90,7 +90,7 @@ package com.robot.app
          {
             sprite = Alarm.show("此次连接已经断开，请重新登陆",function():void
             {
-               navigateToURL(new URLRequest("http://www.51seer.com"),"_self");
+               navigateToURL(new URLRequest("http://seer.xin/go/game/"),"_self");
             },false,true);
             LevelManager.iconLevel.addChild(sprite);
          }
