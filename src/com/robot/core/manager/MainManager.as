@@ -30,6 +30,8 @@ package com.robot.core.manager
    import com.robot.core.config.xml.ItemTipXMLInfo;
    import com.robot.core.config.xml.GoldProductXMLInfo;
    import com.robot.core.config.xml.MapIntroXMLInfo;
+   import com.robot.core.event.XMLLoadEvent;
+   import com.robot.core.config.xml.PetBookXMLInfo;
    
    public class MainManager
    {
@@ -75,7 +77,8 @@ package com.robot.core.manager
          _actorInfo = new UserInfo();
          UserInfo.setForLoginInfo(_actorInfo,data as IDataInput);
          SocketConnection.mainSocket.userID = _actorInfo.userID;
-         loaderUILib();
+         initBean();
+         // loaderUILib();
          // loadXMLList();
          TaomeeManager.initFightSpeed();
       }
@@ -127,7 +130,12 @@ package com.robot.core.manager
 
       private static function initPetXML():void
       {
-         PetXMLInfo.setup(initSkillXML);
+         PetXMLInfo.setup(initPetBookXML);
+      }
+
+      private static function initPetBookXML():void
+      {
+         PetBookXMLInfo.setup(initSkillXML);
       }
 
       private static function initSkillXML():void
@@ -152,10 +160,12 @@ package com.robot.core.manager
 
       private static function initItemTipXml():void
       {
-         ItemTipXMLInfo.setup(initBean)
+         ItemTipXMLInfo.setup(function():void{
+            EventManager.dispatchEvent(new XMLLoadEvent(XMLLoadEvent.ON_SUCCESS,null));
+         });
       }
 
-      private static function loaderUILib() : void
+      public static function loaderUILib() : void
       {
          trace("Progress-1：开始加载UI资源",UI_PATH);
          _uiLoader = new MCLoader(UI_PATH,MainManager.getStage(),1,"正在加载星球");

@@ -604,7 +604,7 @@
         <Move ID="10581" Name="W折射波" Category="2" Type="6" Power="120" MaxPP="10" Accuracy="100" SideEffect="39" SideEffectArg="10 3" Url="steel_3" CD="958"/>
         <Move ID="10582" Name="X光线炮" Category="2" Type="6" Power="150" MaxPP="5" Accuracy="100" MustHit="1" Url="steel_3" CD="41"/>
         <Move ID="10583" Name="卷尾" Category="1" Type="8" Power="60" MaxPP="5" Accuracy="100" SideEffect="5" SideEffectArg="4 15 -1" Url="normal_2" CD="958"/>
-        <Move ID="10584" Name="震碎" Category="2" Type="7" Power="55" MaxPP="35" Accuracy="100" SideEffect="35" Url="ground_2" CD="750"/>
+        <Move ID="10584" Name="震碎" Category="2" Type="7" Power="55" MaxPP="35" Accuracy="100" SideEffect="172" Url="ground_2" CD="750"/>
         <Move ID="10585" Name="巨尾之触" Category="1" Type="7" Power="90" MaxPP="20" Accuracy="100" SideEffect="5" SideEffectArg="1 15 -1" Url="ground_2" CD="750"/>
         <Move ID="10586" Name="旋转突破" Category="1" Type="8" Power="95" MaxPP="15" Accuracy="100" MustHit="1" Url="normal_2" CD="750"/>
         <Move ID="10587" Name="晶岩裂震" Category="1" Type="7" Power="125" MaxPP="10" Accuracy="100" SideEffect="5" SideEffectArg="1 15 -2" Url="ground_3" CD="750"/>
@@ -664,7 +664,7 @@
         <Move ID="10641" Name="追尾激光" Category="2" Type="6" Power="130" MaxPP="5" Accuracy="100" MustHit="1" Url="steel_3" CD="750"/>
         <Move ID="10642" Name="大型泥块" Category="2" Type="8" Power="50" MaxPP="35" Accuracy="100" SideEffect="2" Url="normal_1" CD="750"/>
         <Move ID="10643" Name="气压波" Category="2" Type="8" Power="70" MaxPP="15" Accuracy="100" SideEffect="37" SideEffectArg="2 2" Url="normal_2" CD="916"/>
-        <Move ID="10644" Name="六芒星" Category="2" Type="8" Power="135" MaxPP="10" Accuracy="100" SideEffect="35" Url="normal_3" CD="666"/>
+        <Move ID="10644" Name="六芒星" Category="2" Type="8" Power="135" MaxPP="10" Accuracy="100" SideEffect="172" Url="normal_3" CD="666"/>
         <Move ID="10645" Name="爪刃" Category="2" Type="11" Power="50" MaxPP="40" Accuracy="95" Url="fight_1" CD="791"/>
         <Move ID="10646" Name="连刃" Category="2" Type="11" Power="30" MaxPP="30" Accuracy="95" SideEffect="31" SideEffectArg="2 3" Url="fight_1" CD="791"/>
         <Move ID="10647" Name="防守反击" Category="1" Type="8" Power="100" MaxPP="20" Accuracy="100" SideEffect="4" SideEffectArg="1 20 1" Priority="-1" Url="normal_2" CD="791"/>
@@ -724,7 +724,7 @@
         <Move ID="10701" Name="百尺沟壑" Category="1" Type="7" Power="140" MaxPP="5" Accuracy="95" SideEffect="9" SideEffectArg="20 180" Url="ground_3" CD="875"/>
         <Move ID="10702" Name="掘地穿刺" Category="1" Type="7" Power="85" MaxPP="15" Accuracy="100" SideEffect="15" SideEffectArg="5" Url="ground_2" CD="875"/>
         <Move ID="10703" Name="沙尘瀑布" Category="2" Type="7" Power="50" MaxPP="5" Accuracy="100" SideEffect="31" SideEffectArg="2 3" Url="ground_1" CD="875"/>
-        <Move ID="10704" Name="远古六芒阵" Category="2" Type="8" Power="145" MaxPP="5" Accuracy="100" SideEffect="35" Url="normal_3" CD="41"/>
+        <Move ID="10704" Name="远古六芒阵" Category="2" Type="8" Power="145" MaxPP="5" Accuracy="100" SideEffect="172" Url="normal_3" CD="41"/>
         <Move ID="10705" Name="土遁击" Category="1" Type="7" Power="70" MaxPP="20" Accuracy="100" Priority="1" Url="ground_2" CD="875"/>
         <Move ID="10706" Name="落石" Category="1" Type="7" Power="55" MaxPP="30" Accuracy="100" Url="ground_2" CD="875"/>
         <Move ID="10707" Name="浆果炸弹" Category="1" Type="8" Power="90" MaxPP="30" Accuracy="100" SideEffect="5" SideEffectArg="5 15 -1" Url="normal_2" CD="0"/>
@@ -787,7 +787,7 @@
         <Move ID="10764" Name="升龙蹴" Category="1" Type="11" Power="85" MaxPP="20" Accuracy="100" CritRate="4" Url="fight_2" CD="750"/>
         <Move ID="10765" Name="淬毒一击" Category="1" Type="8" Power="115" MaxPP="10" Accuracy="100" SideEffect="11" SideEffectArg="20" Url="normal_3" CD="708"/>
         <Move ID="10766" Name="极乐寂灭爪" Category="1" Type="11" Power="145" MaxPP="5" Accuracy="100" MustHit="1" Url="fight_3" CD="958"/>
-        <Move ID="10767" Name="强力投掷" Category="2" Type="11" Power="100" MaxPP="15" Accuracy="95" SideEffect="35" Url="fight_2" CD="833"/>
+        <Move ID="10767" Name="强力投掷" Category="2" Type="11" Power="100" MaxPP="15" Accuracy="95" SideEffect="172" Url="fight_2" CD="833"/>
         <Move ID="10768" Name="极道波动拳" Category="2" Type="11" Power="130" MaxPP="5" Accuracy="100" SideEffect="4" SideEffectArg="3 20 1" Url="fight_3" CD="0"/>
         <Move ID="10769" Name="美妙之音" Category="1" Type="10" Power="50" MaxPP="35" Accuracy="100" SideEffect="16" SideEffectArg="10" Url="super_1" CD="708"/>
         <Move ID="10770" Name="幻影突袭" Category="2" Type="12" Power="60" MaxPP="30" Accuracy="100" Priority="2" Url="light_2" CD="333"/>
@@ -820,7 +820,7 @@
         <Move ID="10798" Name="推进冲击" Category="1" Type="8" Power="90" MaxPP="20" Accuracy="100" Priority="1" Url="steel_2" CD="791"/>
         <Move ID="10799" Name="千斤扳手" Category="1" Type="6" Power="115" MaxPP="15" Accuracy="100" Priority="1" Url="steel_3" CD="791"/>
         <Move ID="10800" Name="索命绞刑台" Category="1" Type="6" Power="130" MaxPP="5" Accuracy="90" SideEffect="22" SideEffectArg="10 1" Url="steel_3" CD="333"/>
-        <Move ID="10801" Name="微核中子束" Category="2" Type="6" Power="130" MaxPP="5" Accuracy="100" SideEffect="35" Url="steel_3" CD="83"/>
+        <Move ID="10801" Name="微核中子束" Category="2" Type="6" Power="130" MaxPP="5" Accuracy="100" SideEffect="172" Url="steel_3" CD="83"/>
         <Move ID="10802" Name="双鳍连打" Category="1" Type="2" Power="40" MaxPP="25" Accuracy="100" SideEffect="31" SideEffectArg="2 2" Url="water_1" CD="791"/>
         <Move ID="10803" Name="逆流勇进" Category="1" Type="2" Power="120" MaxPP="10" Accuracy="95" SideEffect="9" SideEffectArg="20 160" Url="water_3" CD="833"/>
         <Move ID="10804" Name="律动水泡" Category="2" Type="2" Power="75" MaxPP="20" Accuracy="100" SideEffect="5" SideEffectArg="3 20 -1" Url="water_2" CD="0"/>
@@ -829,7 +829,7 @@
         <Move ID="10807" Name="山洪" Category="1" Type="7" Power="95" MaxPP="20" Accuracy="100" Url="ground_2" CD="833"/>
         <Move ID="10808" Name="地脉崩坏" Category="1" Type="7" Power="145" MaxPP="10" Accuracy="95" Url="ground_3" CD="125"/>
         <Move ID="10809" Name="塌陷" Category="2" Type="7" Power="60" MaxPP="25" Accuracy="100" SideEffect="5" SideEffectArg="4 20 -1" Url="ground_2" CD="41"/>
-        <Move ID="10810" Name="完美抛投" Category="2" Type="7" Power="130" MaxPP="10" Accuracy="95" SideEffect="35" Url="ground_3" CD="958"/>
+        <Move ID="10810" Name="完美抛投" Category="2" Type="7" Power="130" MaxPP="10" Accuracy="95" SideEffect="172" Url="ground_3" CD="958"/>
         <Move ID="10811" Name="种子机关炮" Category="1" Type="1" Power="55" MaxPP="10" Accuracy="100" SideEffect="31" SideEffectArg="2 3" Url="grass_2" CD="833"/>
         <Move ID="10812" Name="甜甜粉" Category="2" Type="1" Power="50" MaxPP="30" Accuracy="100" SideEffect="22" SideEffectArg="10 1" Url="grass_1" CD="166"/>
         <Move ID="10813" Name="酸酸粉" Category="2" Type="1" Power="75" MaxPP="25" Accuracy="100" SideEffect="10" SideEffectArg="10" Url="grass_2" CD="166"/>
@@ -873,7 +873,7 @@
         <Move ID="10851" Name="彗星勾拳" Category="1" Type="8" Power="120" MaxPP="10" Accuracy="100" Url="normal_3" CD="791"/>
         <Move ID="10852" Name="风车摔投" Category="1" Type="8" Power="140" MaxPP="5" Accuracy="95" CritRate="2" Url="normal_3" CD="458"/>
         <Move ID="10853" Name="铁钉雷" Category="2" Type="8" Power="30" MaxPP="25" Accuracy="95" SideEffect="31" SideEffectArg="2 3" Url="normal_1" CD="833"/>
-        <Move ID="10854" Name="积木陷阱" Category="2" Type="8" Power="90" MaxPP="15" Accuracy="95" SideEffect="35" Url="normal_2" CD="833"/>
+        <Move ID="10854" Name="积木陷阱" Category="2" Type="8" Power="90" MaxPP="15" Accuracy="95" SideEffect="172" Url="normal_2" CD="833"/>
         <Move ID="10855" Name="爆裂齿轮" Category="2" Type="8" Power="130" MaxPP="10" Accuracy="95" SideEffect="5" SideEffectArg="3 20 -1" Url="normal_3" CD="958"/>
         <Move ID="10856" Name="逆转碟袭" Category="1" Type="10" Power="130" MaxPP="5" Accuracy="100" MustHit="1" Url="super_3" CD="666"/>
         <Move ID="10857" Name="极效磁击" Category="2" Type="10" Power="70" MaxPP="20" Accuracy="100" Url="bolt_3" CD="750"/>
@@ -900,7 +900,7 @@
         <Move ID="10878" Name="水弹" Category="1" Type="2" Power="60" MaxPP="30" Accuracy="95" CritRate="4" Url="water_2" CD="833"/>
         <Move ID="10879" Name="涌泉" Category="1" Type="2" Power="70" MaxPP="20" Accuracy="100" SideEffect="30" Url="water_2" CD="833"/>
         <Move ID="10880" Name="激浪残卷" Category="1" Type="2" Power="100" MaxPP="15" Accuracy="100" SideEffect="14" SideEffectArg="10" Url="water_2" CD="833"/>
-        <Move ID="10881" Name="剧蚀之触" Category="1" Type="8" Power="0" MaxPP="10" Accuracy="100" PwrBindDv="2" SideEffect="11" SideEffectArg="10" Url="water_1" CD="833"/>
+        <Move ID="10881" Name="剧蚀之触" Category="1" Type="8" Power="0" MaxPP="10" Accuracy="100" PwrBindDv="2" SideEffect="171" SideEffectArg="10" Url="water_1" CD="833"/>
         <Move ID="10882" Name="混沌潮汐" Category="1" Type="2" Power="150" MaxPP="10" Accuracy="100" SideEffect="4" SideEffectArg="2 20 1" Url="water_3" CD="125"/>
         <Move ID="10883" Name="浊水泡" Category="2" Type="2" Power="50" MaxPP="30" Accuracy="100" Url="water_1" CD="208"/>
         <Move ID="10884" Name="酸雨" Category="2" Type="2" Power="120" MaxPP="10" Accuracy="100" SideEffect="5" SideEffectArg="3 20 -1" Url="water_3" CD="208"/>
@@ -937,7 +937,7 @@
         <Move ID="10915" Name="叶刃斩首剑" Category="1" Type="1" Power="130" MaxPP="5" Accuracy="100" CritRate="4" Url="grass_3" CD="416"/>
         <Move ID="10916" Name="碾压" Category="1" Type="8" Power="70" MaxPP="25" Accuracy="100" SideEffect="5" SideEffectArg="0 20 -1" Url="normal_2" CD="750"/>
         <Move ID="10917" Name="苍翠之源" Category="2" Type="1" Power="90" MaxPP="20" Accuracy="100" Url="grass_2" CD="208"/>
-        <Move ID="10918" Name="橡木贤者" Category="2" Type="1" Power="120" MaxPP="10" Accuracy="100" SideEffect="35" Url="grass_3" CD="875"/>
+        <Move ID="10918" Name="橡木贤者" Category="2" Type="1" Power="120" MaxPP="10" Accuracy="100" SideEffect="172" Url="grass_3" CD="875"/>
         <Move ID="10919" Name="噬魔活化晶" Category="2" Type="12" Power="140" MaxPP="5" Accuracy="100" SideEffect="4" SideEffectArg="2 20 1" Url="light_3" CD="666"/>
         <Move ID="10920" Name="晶凌" Category="1" Type="12" Power="90" MaxPP="20" Accuracy="100" SideEffect="14" SideEffectArg="10" Url="light_2" CD="750"/>
         <Move ID="10921" Name="镜像光波" Category="2" Type="12" Power="30" MaxPP="20" Accuracy="100" SideEffect="31" SideEffectArg="2 4" Url="light_1" CD="750"/>
@@ -949,7 +949,7 @@
         <Move ID="10927" Name="榴弹" Category="2" Type="6" Power="75" MaxPP="25" Accuracy="100" SideEffect="5" SideEffectArg="4 20 -1" Url="steel_2" CD="750"/>
         <Move ID="10928" Name="横冲直撞" Category="1" Type="8" Power="120" MaxPP="5" Accuracy="100" SideEffect="4" SideEffectArg="0 20 1" Url="normal_3" CD="875"/>
         <Move ID="10929" Name="燃油" Category="2" Type="3" Power="90" MaxPP="10" Accuracy="100" SideEffect="12" SideEffectArg="10" Url="fire_2" CD="750"/>
-        <Move ID="10930" Name="反装甲炮" Category="2" Type="6" Power="120" MaxPP="10" Accuracy="100" SideEffect="35" Url="steel_3" CD="750"/>
+        <Move ID="10930" Name="反装甲炮" Category="2" Type="6" Power="120" MaxPP="10" Accuracy="100" SideEffect="172" Url="steel_3" CD="750"/>
         <Move ID="10931" Name="后座力火炮" Category="2" Type="6" Power="150" MaxPP="5" Accuracy="100" SideEffect="20 22" SideEffectArg="10 1 10 1" Url="steel_3" CD="0"/>
         <Move ID="10932" Name="感应雷" Category="1" Type="6" Power="100" MaxPP="15" Accuracy="100" SideEffect="5" SideEffectArg="1 10 -1" AtkNum="2" Url="steel_2" CD="83"/>
         <Move ID="10933" Name="远程导弹" Category="2" Type="6" Power="80" MaxPP="20" Accuracy="100" Priority="2" Url="steel_2" CD="291"/>
@@ -957,7 +957,7 @@
         <Move ID="10935" Name="定向横扫炮" Category="2" Type="6" Power="140" MaxPP="5" Accuracy="95" SideEffect="4" SideEffectArg="5 20 1" Url="steel_3" CD="875"/>
         <Move ID="10936" Name="粘着攻击" Category="1" Type="8" Power="70" MaxPP="25" Accuracy="100" MustHit="1" Url="normal_2" CD="916"/>
         <Move ID="10937" Name="藤鞭" Category="1" Type="1" Power="50" MaxPP="20" Accuracy="100" SideEffect="2" Url="grass_1" CD="916"/>
-        <Move ID="10938" Name="本能一击" Category="1" Type="8" Power="0" MaxPP="30" Accuracy="100" PwrBindDv="1" Url="normal_1" CD="916"/>
+        <Move ID="10938" Name="本能一击" Category="1" Type="8" Power="0" MaxPP="30" Accuracy="100" PwrBindDv="1" SideEffect="170" Url="normal_1" CD="916"/>
         <Move ID="10939" Name="魔岩风暴" Category="1" Type="7" Power="35" MaxPP="10" Accuracy="100" SideEffect="31" SideEffectArg="3 5" Url="ground_1" CD="916"/>
         <Move ID="10940" Name="泥丸" Category="2" Type="7" Power="40" MaxPP="30" Accuracy="95" SideEffect="5" SideEffectArg="4 20 -1" Url="ground_1" CD="916"/>
         <Move ID="10941" Name="浮游石块" Category="2" Type="7" Power="65" MaxPP="25" Accuracy="100" Url="ground_2" CD="916"/>
@@ -1015,7 +1015,7 @@
         <Move ID="10994" Name="断空破" Category="1" Type="8" Power="90" MaxPP="20" Accuracy="100" SideEffect="29" SideEffectArg="30" Url="normal_2" CD="541"/>
         <Move ID="10995" Name="旋灭裂空阵" Category="1" Type="16" Power="135" MaxPP="10" Accuracy="100" SideEffect="60" SideEffectArg="5 30" Url="normal_2" CD="375" ordinary="1"/>
         <Move ID="10996" Name="神圣之光" Category="2" Type="16" Power="70" MaxPP="40" Accuracy="100" MustHit="1" Url="spirit_2" CD="41"/>
-        <Move ID="10997" Name="灵光之怒" Category="2" Type="16" Power="80" MaxPP="30" Accuracy="100" SideEffect="35" Url="spirit_2" CD="291"/>
+        <Move ID="10997" Name="灵光之怒" Category="2" Type="16" Power="80" MaxPP="30" Accuracy="100" SideEffect="172" Url="spirit_2" CD="291"/>
         <Move ID="10998" Name="圣堂之门" Category="2" Type="16" Power="100" MaxPP="15" Accuracy="100" SideEffect="33" Url="spirit_2" CD="250" ordinary="1"/>
         <Move ID="10999" Name="千烈虚光闪" Category="2" Type="16" Power="140" MaxPP="10" Accuracy="100" SideEffect="3" Url="spirit_3" CD="375" ordinary="1"/>
         <Move ID="11000" Name="圣灵魔闪光" Category="2" Type="16" Power="160" MaxPP="5" Accuracy="100" SideEffect="28" SideEffectArg="8" Url="spirit_3" CD="666" ordinary="1"/>
@@ -1048,7 +1048,7 @@
         <Move ID="11027" Name="幻术" Category="2" Type="14" Power="50" MaxPP="40" Accuracy="100" Url="secrect_1" CD="916"/>
         <Move ID="11028" Name="晶核术" Category="2" Type="14" Power="70" MaxPP="35" Accuracy="100" SideEffect="4" SideEffectArg="2 20 1" Url="secrect_2" CD="916"/>
         <Move ID="11029" Name="光影之爪" Category="1" Type="14" Power="120" MaxPP="10" Accuracy="100" SideEffect="5" SideEffectArg="0 15 -1" Url="secrect_3" CD="875"/>
-        <Move ID="11030" Name="异界幻象" Category="2" Type="14" Power="0" MaxPP="10" Accuracy="100" PwrBindDv="1" Url="secrect_1" CD="916"/>
+        <Move ID="11030" Name="异界幻象" Category="2" Type="14" Power="0" MaxPP="10" Accuracy="100" PwrBindDv="1" SideEffect="170" Url="secrect_1" CD="916"/>
         <Move ID="11031" Name="魔环" Category="2" Type="14" Power="90" MaxPP="20" Accuracy="100" SideEffect="5" SideEffectArg="4 15 -1" Url="secrect_2" CD="791"/>
         <Move ID="11032" Name="驱魔术" Category="2" Type="14" Power="120" MaxPP="10" Accuracy="100" SideEffect="29" SideEffectArg="30" Url="secrect_3" CD="916"/>
         <Move ID="11033" Name="超核灵光术" Category="2" Type="14" Power="150" MaxPP="5" Accuracy="100" SideEffect="4" SideEffectArg="2 20 1" Url="secrect_3" CD="166"/>
@@ -1593,7 +1593,7 @@
         <Move ID="11572" Name="必杀斩击" Category="1" Type="8" Power="135" MaxPP="5" Accuracy="95" SideEffect="15" SideEffectArg="10" Url="normal_3" CD="750"/>
         <Move ID="11573" Name="远古十字切" Category="1" Type="7" Power="150" MaxPP="5" Accuracy="95" SideEffect="5" SideEffectArg="1 10 -1" Url="ground_3" CD="750"/>
         <Move ID="11574" Name="飞射碎石" Category="2" Type="7" Power="75" MaxPP="25" Accuracy="100" Priority="1" Url="ground_2" CD="750"/>
-        <Move ID="11575" Name="晶岩沙暴" Category="2" Type="7" Power="120" MaxPP="5" Accuracy="95" SideEffect="35" Url="ground_2" CD="750"/>
+        <Move ID="11575" Name="晶岩沙暴" Category="2" Type="7" Power="120" MaxPP="5" Accuracy="95" SideEffect="172" Url="ground_2" CD="750"/>
         <Move ID="11576" Name="灭天风沙流" Category="2" Type="7" Power="140" MaxPP="5" Accuracy="95" SideEffect="5" SideEffectArg="1 15 -1" AtkNum="2" Url="ground_3" CD="750"/>
         <Move ID="11577" Name="刀叶逆袭" Category="1" Type="1" Power="75" MaxPP="25" Accuracy="100" SideEffect="40" Url="grass_2" CD="750"/>
         <Move ID="11578" Name="毒刃" Category="1" Type="22" Power="110" MaxPP="10" Accuracy="90" SideEffect="93" SideEffectArg="15 50" Url="grass_fight_2" CD="750"/>
@@ -2757,7 +2757,7 @@
         <Move ID="12737" Name="龙怒咆哮" Category="2" Type="15" Power="65" MaxPP="30" Accuracy="100" Priority="1" Url="dragon_1"/>
         <Move ID="12738" Name="龙魂气息" Category="2" Type="15" Power="95" MaxPP="10" Accuracy="100" SideEffect="5" SideEffectArg="5 20 -1" Url="dragon_2"/>
         <Move ID="12739" Name="龙炎波" Category="2" Type="15" Power="110" MaxPP="10" Accuracy="100" SideEffect="147" SideEffectArg="50 2" Url="dragon_2"/>
-        <Move ID="12740" Name="混沌惩戒" Category="2" Type="8" Power="120" MaxPP="5" Accuracy="95" SideEffect="35" Url="normal_2"/>
+        <Move ID="12740" Name="混沌惩戒" Category="2" Type="8" Power="120" MaxPP="5" Accuracy="95" SideEffect="172" Url="normal_2"/>
         <Move ID="12741" Name="龙怒乾坤" Category="2" Type="15" Power="150" MaxPP="5" Accuracy="95" SideEffect="4" SideEffectArg="2 15 1" Url="dragon_3"/>
         <Move ID="12742" Name="疾风冲刺" Category="1" Type="4" Power="120" MaxPP="5" Accuracy="95" SideEffect="107" SideEffectArg="150 4" Url="fly_2"/>
         <Move ID="12743" Name="幻刃冲撞" Category="1" Type="30" Power="140" MaxPP="5" Accuracy="95" MustHit="1" Url="fly_super_3" AtkNum="3"/>
@@ -3214,7 +3214,7 @@
         <Move ID="13194" Name="幻彩之触" Category="1" Type="8" Power="120" MaxPP="5" Accuracy="95" SideEffect="33" Url="normal_2"/>
         <Move ID="13195" Name="皓月光袭" Category="1" Type="12" Power="135" MaxPP="5" Accuracy="95" SideEffect="5" SideEffectArg="5 15 -2" Url="light_3"/>
         <Move ID="13196" Name="光棱射线" Category="2" Type="12" Power="100" MaxPP="10" Accuracy="100" SideEffect="37" SideEffectArg="4 2" Url="light_2"/>
-        <Move ID="13197" Name="银光月刃" Category="2" Type="12" Power="110" MaxPP="5" Accuracy="100" SideEffect="35" Url="light_2"/>
+        <Move ID="13197" Name="银光月刃" Category="2" Type="12" Power="110" MaxPP="5" Accuracy="100" SideEffect="172" Url="light_2"/>
         <Move ID="13198" Name="月光破碎阵" Category="2" Type="12" Power="150" MaxPP="5" Accuracy="95" SideEffect="93" SideEffectArg="10 100" Url="light_3"/>
         <Move ID="13199" Name="魔魂冲击" Category="1" Type="10" Power="120" MaxPP="5" Accuracy="95" SideEffect="50" SideEffectArg="1" Url="super_2"/>
         <Move ID="13200" Name="绝影狂击" Category="1" Type="30" Power="140" MaxPP="5" Accuracy="95" SideEffect="3" Url="fly_super_3"/>
