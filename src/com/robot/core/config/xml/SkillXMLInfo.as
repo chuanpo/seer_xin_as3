@@ -316,5 +316,12 @@ package com.robot.core.config.xml
          xml= xmllist.(@ID == id)[0];
          return xml.@MustHit;
       }
+
+      public static function getPwrBindDv(id:uint):Number
+      {
+         var xml:* = 0;
+         xml= xmllist.(@ID == id)[0];
+         return xml.@PwrBindDv;
+      }
    }
 }
