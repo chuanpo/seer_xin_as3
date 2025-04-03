@@ -31,6 +31,7 @@ package com.robot.app
    import org.taomee.manager.TickManager;
    import org.taomee.manager.ToolTipManager;
    import org.taomee.net.SocketDispatcher;
+   import com.robot.core.event.XMLLoadEvent;
    
    public class MainEntry
    {
@@ -62,9 +63,14 @@ package com.robot.app
          SocketConnection.mainSocket.ip = ip;
          SocketConnection.mainSocket.port = port;
          SocketConnection.mainSocket.addEventListener(Event.CONNECT,this.onConnect);
-         SocketConnection.mainSocket.connect(ip,port);
-         SaveUserInfo.isSave = isSave;
-         SaveUserInfo.pass = pass;
+         MainManager.loaderUILib();
+         EventManager.addEventListener(XMLLoadEvent.ON_SUCCESS,function():void
+         {
+            EventManager.removeEventListener(XMLLoadEvent.ON_SUCCESS,arguments.callee);
+            SocketConnection.mainSocket.connect(ip,port);
+            SaveUserInfo.isSave = isSave;
+            SaveUserInfo.pass = pass;
+         })
       }
       
       private function onConnect(e:Event) : void

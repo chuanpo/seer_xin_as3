@@ -30,6 +30,7 @@ package com.robot.app.mapProcess
    import org.taomee.manager.ResourceManager;
    import org.taomee.manager.ToolTipManager;
    import org.taomee.utils.DisplayUtil;
+   import com.robot.core.config.xml.PetXMLInfo;
    
    public class MapProcess_110 extends BaseMapProcess
    {
@@ -209,7 +210,7 @@ package com.robot.app.mapProcess
             this._perMc.y = this._point.y;
             this._perMc.scaleX = 1.8;
             this._perMc.scaleY = 1.8;
-            ToolTipManager.add(this._perMc,PetBookXMLInfo.getName(this._petId));
+            ToolTipManager.add(this._perMc,PetXMLInfo.getName(this._petId));
             this._perMc.addEventListener(MouseEvent.CLICK,this.onPetClickHandler);
             this._perMc.buttonMode = true;
             conLevel["monsterMc"].removeEventListener(MouseEvent.CLICK,this.onClickHandler);

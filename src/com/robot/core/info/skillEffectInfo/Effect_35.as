@@ -9,7 +9,7 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return "<惩罚>对方能力强化等级越高，此技能[威力]越大";
+			return "<惩罚>此技能会额外提升相当于对方攻击·防御强化等级合计数值*20的[威力]";
 		}
 
 	}
