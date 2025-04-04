@@ -646,6 +646,8 @@ package com.robot.core
       
       public static const XIN_CHAT:uint = 52102;
 
+      public static const XIN_CHECK:uint = 50004;
+
       public function CommandID()
       {
          super();
