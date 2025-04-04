@@ -31,6 +31,7 @@ package com.robot.core.manager
    import com.robot.core.config.xml.GoldProductXMLInfo;
    import com.robot.core.config.xml.MapIntroXMLInfo;
    import com.robot.core.event.XMLLoadEvent;
+   import com.robot.core.config.xml.PetBookXMLInfo;
    
    public class MainManager
    {
@@ -129,7 +130,12 @@ package com.robot.core.manager
 
       private static function initPetXML():void
       {
-         PetXMLInfo.setup(initSkillXML);
+         PetXMLInfo.setup(initPetBookXML);
+      }
+
+      private static function initPetBookXML():void
+      {
+         PetBookXMLInfo.setup(initSkillXML);
       }
 
       private static function initSkillXML():void

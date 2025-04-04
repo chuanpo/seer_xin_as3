@@ -8,10 +8,12 @@ package org.taomee.net
    import org.taomee.events.SocketEvent;
    import org.taomee.tmf.HeadInfo;
    import org.taomee.tmf.TMF;
+   import flash.net.SharedObject;
 
    public class SocketImpl extends Socket
    {
       public static const PACKAGE_MAX:uint = 8388608;
+      
 
       public var port:int;
 
@@ -49,7 +51,7 @@ package org.taomee.net
          var encryptedData:ByteArray = new ByteArray();
          var keyLength:uint = key.length;
          var keyPosition:uint = 0;
-
+         var originalPosition:uint = data.position;
          data.position = 0;
          while (data.bytesAvailable > 0)
          {
@@ -61,12 +63,15 @@ package org.taomee.net
                keyPosition = 0;
             }
          }
+         data.position = originalPosition; // 恢复原始位
          return encryptedData;
       }
 
       private function XORDecrypt(data:ByteArray, key:ByteArray):ByteArray
       {
-         return XOREncrypt(data, key);
+         var decryptedData:ByteArray = XOREncrypt(data, key);
+         decryptedData.position = 0;
+         return decryptedData;
       }
 
       public function send(cmdID:uint, args:Array):uint
@@ -177,16 +182,14 @@ package org.taomee.net
 
                // 创建 key
                var key:ByteArray = new ByteArray();
-               key.writeUTFBytes("1");
+               key.writeUnsignedInt(_headInfo.cmdID);
+               key.writeUnsignedInt(_headInfo.userID);
+               key.writeUTFBytes("your_secret_key");
                key.position = 0;
 
-               // 解密数据
-               // t;
-               // var decryptedData:ByteArray = XORDecrypt(data, key);
-               // 解密数据
-              // var hexString:String = "0000003c0000000000000006000000040000003c79642e736a636d632e636e00000000003e8a00000001000000030000003c6d332e6374796d632e636e00000000005e3b00000000000000020000003c62322e736a636d632e636e00000000003e8a00000001000000010000003c3132372e302e302e3100000000000000232700000000000000050000003c6d332e6374796d632e636e00000000005e3b00000000000000060000003c79642e736a636d632e636e00000000003e8a0000000100000000";
-               //var decryptedData:ByteArray = hexToByteArray(hexString);
-               var decryptedData:ByteArray =  data;
+
+               var decryptedData:ByteArray = XORDecrypt(data, key);
+
 
                tmfClass = TMF.getClass(_headInfo.cmdID);
                SocketDispatcher.getInstance().dispatchEvent(new SocketEvent(_headInfo.cmdID.toString(), _headInfo, new tmfClass(decryptedData)));
@@ -202,12 +205,16 @@ package org.taomee.net
       private function byteArrayToHex(byteArray:ByteArray):String
       {
          var hexString:String = "";
-         byteArray.position = 0;
+         var originalPosition:uint = byteArray.position; // 保存原始位置
+         byteArray.position = 0; // 设置位置为 0
+
          while (byteArray.bytesAvailable > 0)
          {
             var byte:uint = byteArray.readUnsignedByte();
             hexString += (byte < 16 ? "0" : "") + byte.toString(16);
          }
+
+         byteArray.position = originalPosition; // 恢复原始位置
          return hexString;
       }
       override public function connect(host:String, port:int):void

@@ -118,11 +118,14 @@ package com.robot.app
             case 10009:
                Alarm.show("赛尔号进入休眠巡航模式！\r系统即将关闭！",function():void
                {
-                  navigateToURL(new URLRequest("http://www.51seer.com"),"_self");
+                  navigateToURL(new URLRequest("http://seer.xin/go/game/"),"_self");
                });
                break;
             case 10001:
-               Alarm.show("对不起，你的密码不正确，请尝试刷新网页获取新链接");
+               Alarm.show("对不起，你的密码不正确，请尝试刷新网页获取新链接",function():void
+               {
+                  navigateToURL(new URLRequest("http://seer.xin/go/game/"),"_self");
+               },false,true)
                break;
             case 10002:
                MainManager.getStage().addChild(Alarm.show("系统出错"));
@@ -170,7 +173,7 @@ package com.robot.app
             case 10004:
                s = Alarm.show("你的帐号已经在别的地方登录！",function():void
                {
-                  navigateToURL(new URLRequest("http://www.51seer.com"),"_self");
+                  navigateToURL(new URLRequest("http://seer.xin/go/game/"),"_self");
                });
                MainManager.getStage().addChild(s);
                break;
@@ -1065,7 +1068,10 @@ package com.robot.app
                Alarm.show("不能注入过多能量珠");
                break;
             case 500103:
-               Alarm.show("登录服务器错误，请尝试登录上次登录的服务器进入游戏");
+               Alarm.show("登录服务器错误，请尝试登录上次登录的服务器进入游戏",function():void
+               {
+                  navigateToURL(new URLRequest("http://seer.xin/go/game/"),"_self");
+               },false,true)
                break;
 
             default:
