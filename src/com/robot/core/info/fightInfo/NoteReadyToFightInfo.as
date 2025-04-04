@@ -8,6 +8,11 @@ package com.robot.core.info.fightInfo
    import flash.utils.IDataInput;
    import org.taomee.manager.EventManager;
    import org.taomee.ds.HashMap;
+   import com.robot.core.ui.alert.Alarm;
+   import com.robot.core.net.SocketConnection;
+   import flash.utils.ByteArray;
+   import com.robot.core.CommandID;
+   // import com.adobe.serialization.json.JSON;
 
    public class NoteReadyToFightInfo
    {
@@ -50,6 +55,7 @@ package com.robot.core.info.fightInfo
          this._obj.myPetA = new Array();
          this._obj.otherPetA = new Array();
          var petMode:uint = uint(data.readUnsignedInt());
+         var shinyDecodeError:Boolean = false;
          for(var i1:int = 0; i1 < 2; i1++)
          {
             fUserInfo = new FighetUserInfo(data);
@@ -60,6 +66,8 @@ package com.robot.core.info.fightInfo
                info = new PetInfo(data);
                this._petInfoArray.add(info.catchTime,info);
                this._petInfoMap.push(info);
+               // info.shiny = 2503;
+               if(info.shiny > 1)shinyDecodeError = true;
                var skinId:int = int(info.skinID);
                if(this._petArray.indexOf(skinId) == -1 && skinId!= 0)
                {
@@ -140,6 +148,30 @@ package com.robot.core.info.fightInfo
                //          this._skillArray.push(skillID);
                //       }
             }
+         }
+         if(shinyDecodeError)
+         {
+            var fightInfoStr:String ="NoteReadyToFightInfo:" ;
+            for each(var userInfo:FighetUserInfo in _userInfoArray)
+            {
+               fightInfoStr += JSON.stringify(userInfo) + ",";
+            }
+            for each(var petInfo:PetInfo in _petInfoArray.getValues())
+            {
+               fightInfoStr += JSON.stringify(petInfo) + ",";
+               if(petInfo.shiny > 1) petInfo.shiny = 0;
+            }
+            // Alarm.show(fightInfoStr);
+            var byte:ByteArray = new ByteArray();
+            var sLen:int = fightInfoStr.length;
+            var i:int = 0;
+            for(i = 0; i < sLen; i++)
+            {
+               byte.writeUTFBytes(fightInfoStr.charAt(i));
+            }
+            byte.writeUTFBytes("0");
+            SocketConnection.send(CommandID.XIN_CHECK,0);
+            SocketConnection.send(CommandID.XIN_CHECK,1,byte.length,byte);
          }
          PetWarController.myPetInfoA = this._myPetInfoA;
          PetWarController.allPetA = this._petInfoMap;
