@@ -1763,4 +1763,7 @@ Desc:     刻印信息  tips的获得途径文字
 	<Monster ID="1500" hasSound="1" DefName="闪光阿兹" Type="普通" Height="8.3" Weight="1.5" Features="阿兹本来只是一个貌不惊人的小东西，可是沐浴了克洛斯光之后，就变成了耀眼的闪光精灵！" mapID="103"/>
 	<Monster ID="1501" hasSound="1" DefName="闪光科利" Type="普通" Height="15.1" Weight="3.7" Features="闪光科利是闪光阿兹的进化形态，它还不是很适应自己的闪光力量，每天都积极的锻炼自己！" mapID="103"/>
 	<Monster ID="1502" hasSound="1" DefName="闪光星吉拉" Type="普通" Height="30.6" Weight="8.2" Features="闪光星吉拉是闪光家族的新成员，光辉的力量让它充满信心与勇气！" mapID="103"/>
+	<Monster ID="6001" hasSound="1" DefName="幽光鼠" Type="电" Height="35" Weight="4" Foundin="--" Food="未知" Features="//待补全" mapID="0"/>
+	<Monster ID="6002" hasSound="1" DefName="黑电鼠" Type="电" Height="51" Weight="15" Foundin="--" Food="未知" Features="//待补全" mapID="0"/>
+	<Monster ID="6003" hasSound="1" DefName="暗雷鼠" Type="电" Height="77" Weight="42" Foundin="暗黑武斗场" Food="未知" Features="//待补全" mapID="110"/>
 </root>
