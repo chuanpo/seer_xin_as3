@@ -23579,7 +23579,7 @@
 	      <Move ID="13471" LearningLv="75"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="6001" DefName="幽光鼠" Type="5" GrowthType="4" HP="56" Atk="65" Def="37" SpAtk="38" SpDef="35" Spd="57" YieldingExp="70" CatchRate="0" YieldingEV="0 1 0 0 0 0" EvolvesFrom="0" EvolvesTo="6002" EvolvingLv="22" FuseMaster="0" FuseSub="0" Gender="1" PetClass="1501" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="500001" DefName="幽光鼠" Type="5" GrowthType="4" HP="56" Atk="65" Def="37" SpAtk="38" SpDef="35" Spd="57" YieldingExp="70" CatchRate="0" YieldingEV="0 1 0 0 0 0" EvolvesFrom="0" EvolvesTo="500002" EvolvingLv="22" FuseMaster="0" FuseSub="0" Gender="1" PetClass="1501" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
@@ -23587,7 +23587,7 @@
 	      <Move ID="10011" LearningLv="13"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="6002" DefName="黑电鼠" Type="5" GrowthType="4" HP="77" Atk="85" Def="52" SpAtk="57" SpDef="50" Spd="78" YieldingExp="100" CatchRate="0" YieldingEV="0 2 0 0 0 0" EvolvesFrom="6001" EvolvesTo="6003" EvolvingLv="42" FuseMaster="0" FuseSub="0" Gender="1" PetClass="1501" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="500002" DefName="黑电鼠" Type="5" GrowthType="4" HP="77" Atk="85" Def="52" SpAtk="57" SpDef="50" Spd="78" YieldingExp="100" CatchRate="0" YieldingEV="0 2 0 0 0 0" EvolvesFrom="500001" EvolvesTo="500003" EvolvingLv="42" FuseMaster="0" FuseSub="0" Gender="1" PetClass="1501" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
@@ -23598,7 +23598,7 @@
 	      <Move ID="20011" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="6003" DefName="暗雷鼠" Type="5" GrowthType="4" HP="114" Atk="120" Def="85" SpAtk="90" SpDef="80" Spd="106" YieldingExp="130" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="6002" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="1501" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="500003" DefName="暗雷鼠" Type="5" GrowthType="4" HP="114" Atk="120" Def="85" SpAtk="90" SpDef="80" Spd="106" YieldingExp="130" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="500002" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="1501" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
