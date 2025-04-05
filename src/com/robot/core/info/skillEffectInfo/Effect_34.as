@@ -10,8 +10,16 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			"将自身所受伤害的" + array[0] + "倍反弹给对方"
-		}
+			if(array[0] % 1)
+			{
+				"将自身所受伤害的" + (array[0] * 100.0) + "%反弹给对方"
+			}
 
+			else
+			{
+				"将自身所受伤害的" + array[0] + "00%反弹给对方"
+			}
+
+		}
 	}
 }

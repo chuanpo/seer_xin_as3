@@ -10,8 +10,16 @@ package com.robot.core.info.skillEffectInfo
 
 		override public function getInfo(array:Array = null) : String
 		{
-			return "自身的HP小于1/" + array[0] + "的场合，该技能[威力]增加" + array[1] + "倍";
-		}
+			if(array[1] % 1)
+			{
+				return "自身的HP小于1/" + array[0] + "的场合，该技能[威力]增加" + ((array[1] - 1) * 100.0) + "%";
+			}
 
+			else
+			{
+				return "自身的HP小于1/" + array[0] + "的场合，该技能[威力]增加" + (array[1] - 1) + "00%";
+			}
+
+		}
 	}
 }
