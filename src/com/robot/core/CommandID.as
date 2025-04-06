@@ -648,6 +648,8 @@ package com.robot.core
 
       public static const XIN_CHECK:uint = 50004;
 
+      public static const XIN_FUSION:uint = 50006;
+
       public function CommandID()
       {
          super();

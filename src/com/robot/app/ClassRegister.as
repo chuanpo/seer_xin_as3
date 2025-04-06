@@ -103,6 +103,7 @@ package com.robot.app
          TMF.registerClass(CommandID.USE_PET_ITEM_OUT_OF_FIGHT,UsePetItemOutOfFightInfo);
          TMF.registerClass(CommandID.PET_BARGE_LIST,PetBargeListInfo);
          TMF.registerClass(CommandID.PET_FUSION,PetFusionInfo);
+         TMF.registerClass(CommandID.XIN_FUSION,PetFusionInfo);
          TMF.registerClass(CommandID.ITEM_BUY,BuyItemInfo);
          TMF.registerClass(CommandID.MULTI_ITEM_BUY,BuyMultiItemInfo);
          TMF.registerClass(CommandID.NOTE_INVITE_TO_FIGHT,InviteNoteInfo);

@@ -46,6 +46,7 @@ package com.robot.app.mapProcess
    import org.taomee.manager.EventManager;
    import org.taomee.manager.ToolTipManager;
    import org.taomee.utils.DisplayUtil;
+   import com.robot.app.spriteFusion2.SpriteFusion2Controller;
    
    public class MapProcess_5 extends BaseMapProcess
    {
@@ -350,7 +351,10 @@ package com.robot.app.mapProcess
       
       public function spriteFusion() : void
       {
-         SpriteFusionController.show();
+         NpcDialog.show(NPC.DOCTOR,["精灵是赛尔的伙伴，我相信我能够发现更多的精灵秘密！"],
+            ["打开精灵融合装置","打开基因重组装置"],
+            [function():void{SpriteFusionController.show();},function():void{SpriteFusion2Controller.show();}]
+         )
       }
       
       private function initTask_95() : void

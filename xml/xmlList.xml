@@ -7,7 +7,7 @@
         <item path="220" ver="20250331" name="地图提示表"/>
         <item path="221" ver="20250330" name="道具信息表"/>
         <item path="225" ver="20250330" name="金豆道具信息表"/>
-        <item path="226" ver="20250403" name="精灵信息表"/>
+        <item path="226" ver="20250407" name="精灵信息表"/>
         <item path="227" ver="20250330" name="精灵技能信息表"/>
         <item path="291" ver="20250328" name="异色精灵信息表"/>
     </xml>
