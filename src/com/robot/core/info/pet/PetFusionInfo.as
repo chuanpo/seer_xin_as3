@@ -1,6 +1,7 @@
 package com.robot.core.info.pet
 {
    import flash.utils.IDataInput;
+   import com.robot.core.ui.alert.Alarm;
    
    public class PetFusionInfo
    {

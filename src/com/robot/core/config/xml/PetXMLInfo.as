@@ -152,6 +152,22 @@ package com.robot.core.config.xml
          var xml:XML = _dataMap.getValue(id);
          return Boolean(uint(xml.@FuseSub));
       }
+
+      public static function getPetClass(id:uint) : uint
+      {
+         var xml:XML = _dataMap.getValue(id);
+         return xml.@PetClass;
+      }
+
+      public static function isLarge(id:uint):uint
+      {
+         var xml:XML = _dataMap.getValue(id);
+         if(!xml.hasOwnProperty("@IsLarge"))
+         {
+            return false;
+         }
+         return Boolean(xml.@IsLarge);
+      }
    }
 }
 

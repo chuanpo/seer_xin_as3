@@ -63,7 +63,7 @@
 	      <Move ID="10012" LearningLv="27"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="3" DefName="布布花" Type="1" GrowthType="3" HP="95" Atk="109" Def="105" SpAtk="75" SpDef="85" Spd="56" YieldingExp="124" CatchRate="45" YieldingEV="0 2 1 0 0 0" EvolvesFrom="2" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="1" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="3" DefName="布布花" Type="1" IsLarge="1" GrowthType="3" HP="95" Atk="109" Def="105" SpAtk="75" SpDef="85" Spd="56" YieldingExp="124" CatchRate="45" YieldingEV="0 2 1 0 0 0" EvolvesFrom="2" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="1" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20001" LearningLv="4"/>
@@ -104,7 +104,7 @@
 	      <Move ID="10023" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="6" DefName="巴鲁斯" Type="2" GrowthType="3" HP="84" Atk="86" Def="88" SpAtk="111" SpDef="101" Spd="65" YieldingExp="126" CatchRate="45" YieldingEV="0 0 0 3 0 0" EvolvesFrom="5" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="2" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
+	<Monster ID="6" DefName="巴鲁斯" Type="2" IsLarge="1" GrowthType="3" HP="84" Atk="86" Def="88" SpAtk="111" SpDef="101" Spd="65" YieldingExp="126" CatchRate="45" YieldingEV="0 0 0 3 0 0" EvolvesFrom="5" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="2" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10004" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="4"/>
@@ -146,7 +146,7 @@
 	      <Move ID="20013" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="9" DefName="烈焰猩猩" Type="3" GrowthType="3" HP="76" Atk="104" Def="71" SpAtk="104" SpDef="71" Spd="108" YieldingExp="125" CatchRate="45" YieldingEV="0 1 0 1 0 1" EvolvesFrom="8" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="3" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="9" DefName="烈焰猩猩" Type="3" IsLarge="1" GrowthType="3" HP="76" Atk="104" Def="71" SpAtk="104" SpDef="71" Spd="108" YieldingExp="125" CatchRate="45" YieldingEV="0 1 0 1 0 1" EvolvesFrom="8" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="3" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10006" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="3"/>
@@ -187,7 +187,7 @@
 	      <Move ID="10038" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="12" DefName="波克尔" Type="4" GrowthType="3" HP="85" Atk="120" Def="70" SpAtk="50" SpDef="55" Spd="100" YieldingExp="116" CatchRate="45" YieldingEV="0 3 0 0 0 0" EvolvesFrom="11" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="4" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="12" DefName="波克尔" Type="4" IsLarge="1" GrowthType="3" HP="85" Atk="120" Def="70" SpAtk="50" SpDef="55" Spd="100" YieldingExp="116" CatchRate="45" YieldingEV="0 3 0 0 0 0" EvolvesFrom="11" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="4" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="3"/>
@@ -223,7 +223,7 @@
 	      <Move ID="20011" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="15" DefName="天雷鼠" Type="5" GrowthType="3" HP="80" Atk="120" Def="79" SpAtk="95" SpDef="79" Spd="70" YieldingExp="120" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="14" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="5" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0" VariationID="5">
+	<Monster ID="15" DefName="天雷鼠" Type="5" IsLarge="1" GrowthType="3" HP="80" Atk="120" Def="79" SpAtk="95" SpDef="79" Spd="70" YieldingExp="120" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="14" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="5" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0" VariationID="5">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
@@ -264,7 +264,7 @@
 	      <Move ID="10043" LearningLv="31"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="18" DefName="巨型仙人掌" Type="1" GrowthType="3" HP="80" Atk="82" Def="83" SpAtk="100" SpDef="100" Spd="80" YieldingExp="124" CatchRate="45" YieldingEV="0 0 0 2 1 0" EvolvesFrom="17" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="6" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
+	<Monster ID="18" DefName="巨型仙人掌" Type="1" IsLarge="1" GrowthType="3" HP="80" Atk="82" Def="83" SpAtk="100" SpDef="100" Spd="80" YieldingExp="124" CatchRate="45" YieldingEV="0 0 0 2 1 0" EvolvesFrom="17" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="6" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="3"/>
@@ -302,7 +302,7 @@
 	      <Move ID="10049" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="21" DefName="电击兔" Type="5" GrowthType="3" HP="90" Atk="75" Def="75" SpAtk="115" SpDef="90" Spd="55" YieldingExp="119" CatchRate="30" YieldingEV="0 0 0 3 0 0" EvolvesFrom="20" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="7" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
+	<Monster ID="21" DefName="电击兔" Type="5" IsLarge="1" GrowthType="3" HP="90" Atk="75" Def="75" SpAtk="115" SpDef="90" Spd="55" YieldingExp="119" CatchRate="30" YieldingEV="0 0 0 3 0 0" EvolvesFrom="20" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="7" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="5"/>
@@ -340,7 +340,7 @@
 	      <Move ID="20017" LearningLv="32"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="24" DefName="巴洛卡" Type="4" GrowthType="3" HP="83" Atk="80" Def="75" SpAtk="95" SpDef="70" Spd="96" YieldingExp="115" CatchRate="45" YieldingEV="0 0 0 0 0 3" EvolvesFrom="23" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="8" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="24" DefName="巴洛卡" Type="4" IsLarge="1" GrowthType="3" HP="83" Atk="80" Def="75" SpAtk="95" SpDef="70" Spd="96" YieldingExp="115" CatchRate="45" YieldingEV="0 0 0 0 0 3" EvolvesFrom="23" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="8" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20025" LearningLv="4"/>
@@ -367,7 +367,7 @@
 	      <Move ID="10037" LearningLv="18"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="26" DefName="哈尔浮" Type="4" GrowthType="2" HP="70" Atk="100" Def="70" SpAtk="56" SpDef="61" Spd="100" YieldingExp="108" CatchRate="45" YieldingEV="0 0 0 0 0 2" EvolvesFrom="25" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="9" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0" VariationID="6">
+	<Monster ID="26" DefName="哈尔浮" Type="4" IsLarge="1" GrowthType="2" HP="70" Atk="100" Def="70" SpAtk="56" SpDef="61" Spd="100" YieldingExp="108" CatchRate="45" YieldingEV="0 0 0 0 0 2" EvolvesFrom="25" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="9" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0" VariationID="6">
 	    <LearnableMoves>
 	      <Move ID="10018" LearningLv="1"/>
 	      <Move ID="20030" LearningLv="4"/>
@@ -410,7 +410,7 @@
 	      <Move ID="10065" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="29" DefName="魔花仙子" Type="1" GrowthType="3" HP="80" Atk="115" Def="65" SpAtk="100" SpDef="60" Spd="70" YieldingExp="124" CatchRate="45" YieldingEV="0 3 0 0 0 0" EvolvesFrom="28" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="10" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="0">
+	<Monster ID="29" DefName="魔花仙子" Type="1" IsLarge="1" GrowthType="3" HP="80" Atk="115" Def="65" SpAtk="100" SpDef="60" Spd="70" YieldingExp="124" CatchRate="45" YieldingEV="0 3 0 0 0 0" EvolvesFrom="28" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="10" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10042" LearningLv="1"/>
 	      <Move ID="20022" LearningLv="5"/>
@@ -456,7 +456,7 @@
 	      <Move ID="10071" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="32" DefName="巴拉龟" Type="2" GrowthType="3" HP="79" Atk="83" Def="100" SpAtk="85" SpDef="105" Spd="78" YieldingExp="126" CatchRate="45" YieldingEV="0 0 0 0 3 0" EvolvesFrom="31" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="11" FormParam="0" CharacterAttrParam="3" GradeParam="0" AddSeParam="0" VariationID="4">
+	<Monster ID="32" DefName="巴拉龟" Type="2" IsLarge="1" GrowthType="3" HP="79" Atk="83" Def="100" SpAtk="85" SpDef="105" Spd="78" YieldingExp="126" CatchRate="45" YieldingEV="0 0 0 0 3 0" EvolvesFrom="31" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="11" FormParam="0" CharacterAttrParam="3" GradeParam="0" AddSeParam="0" VariationID="4">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20035" LearningLv="4"/>
@@ -487,7 +487,7 @@
 	      <Move ID="20011" LearningLv="18"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="34" DefName="钢牙鲨" Type="2" GrowthType="4" HP="70" Atk="120" Def="50" SpAtk="95" SpDef="50" Spd="95" YieldingExp="118" CatchRate="45" YieldingEV="0 2 0 0 0 0" EvolvesFrom="33" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="12" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="34" DefName="钢牙鲨" Type="2" IsLarge="1" GrowthType="4" HP="70" Atk="120" Def="50" SpAtk="95" SpDef="50" Spd="95" YieldingExp="118" CatchRate="45" YieldingEV="0 2 0 0 0 0" EvolvesFrom="33" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="12" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10011" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="4"/>
@@ -530,7 +530,7 @@
 	      <Move ID="10077" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="37" DefName="洛吉拉斯" Type="3" GrowthType="3" HP="78" Atk="84" Def="78" SpAtk="109" SpDef="85" Spd="100" YieldingExp="125" CatchRate="45" YieldingEV="0 0 0 3 0 0" EvolvesFrom="36" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="13" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="1">
+	<Monster ID="37" DefName="洛吉拉斯" Type="3" IsLarge="1" GrowthType="3" HP="78" Atk="84" Def="78" SpAtk="109" SpDef="85" Spd="100" YieldingExp="125" CatchRate="45" YieldingEV="0 0 0 3 0 0" EvolvesFrom="36" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="13" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="1">
 	    <LearnableMoves>
 	      <Move ID="10006" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="5"/>
@@ -573,7 +573,7 @@
 	      <Move ID="10090" LearningLv="31"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="40" DefName="贝尔鲁斯" Type="3" GrowthType="2" HP="92" Atk="85" Def="93" SpAtk="85" SpDef="89" Spd="55" YieldingExp="121" CatchRate="45" YieldingEV="1 0 1 0 1 0" EvolvesFrom="39" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="14" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
+	<Monster ID="40" DefName="贝尔鲁斯" Type="3" IsLarge="1" GrowthType="2" HP="92" Atk="85" Def="93" SpAtk="85" SpDef="89" Spd="55" YieldingExp="121" CatchRate="45" YieldingEV="1 0 1 0 1 0" EvolvesFrom="39" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="14" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20045" LearningLv="5"/>
@@ -607,7 +607,7 @@
 	      <Move ID="10098" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="42" DefName="里奥斯" Type="3" GrowthType="4" HP="73" Atk="81" Def="75" SpAtk="111" SpDef="100" Spd="100" YieldingExp="113" CatchRate="45" YieldingEV="0 0 0 1 0 1" EvolvesFrom="41" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="15" FormParam="0" CharacterAttrParam="6" GradeParam="3" AddSeParam="0">
+	<Monster ID="42" DefName="里奥斯" Type="3" IsLarge="1" GrowthType="4" HP="73" Atk="81" Def="75" SpAtk="111" SpDef="100" Spd="100" YieldingExp="113" CatchRate="45" YieldingEV="0 0 0 1 0 1" EvolvesFrom="41" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="15" FormParam="0" CharacterAttrParam="6" GradeParam="3" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10008" LearningLv="1"/>
 	      <Move ID="10007" LearningLv="3"/>
@@ -650,7 +650,7 @@
 	      <Move ID="10105" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="45" DefName="西萨琉拉" Type="5" GrowthType="2" HP="70" Atk="90" Def="55" SpAtk="100" SpDef="80" Spd="100" YieldingExp="122" CatchRate="0" YieldingEV="0 0 0 0 0 3" EvolvesFrom="44" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="16" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="45" DefName="西萨琉拉" Type="5" IsLarge="1" GrowthType="2" HP="70" Atk="90" Def="55" SpAtk="100" SpDef="80" Spd="100" YieldingExp="122" CatchRate="0" YieldingEV="0 0 0 0 0 3" EvolvesFrom="44" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="16" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20023" LearningLv="5"/>
@@ -682,7 +682,7 @@
 	      <Move ID="10113" LearningLv="17"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="47" DefName="蘑菇怪" Type="1" GrowthType="4" HP="90" Atk="85" Def="90" SpAtk="85" SpDef="95" Spd="60" YieldingExp="112" CatchRate="0" YieldingEV="0 0 1 0 1 0" EvolvesFrom="46" EvolvesTo="0" FreeForbidden="1" FuseSub="0" PetClass="17" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="47" DefName="蘑菇怪" Type="1" IsLarge="1" GrowthType="4" HP="90" Atk="85" Def="90" SpAtk="85" SpDef="95" Spd="60" YieldingExp="112" CatchRate="0" YieldingEV="0 0 1 0 1 0" EvolvesFrom="46" EvolvesTo="0" FreeForbidden="1" FuseSub="0" PetClass="17" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="4"/>
@@ -724,7 +724,7 @@
 	      <Move ID="10205" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="50" DefName="阿克希亚" Type="9" GrowthType="5" HP="89" Atk="101" Def="83" SpAtk="120" SpDef="93" Spd="86" YieldingExp="130" CatchRate="45" YieldingEV="0 1 0 2 0 0" EvolvesFrom="49" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="18" FormParam="0" CharacterAttrParam="5" GradeParam="3" AddSeParam="0">
+	<Monster ID="50" DefName="阿克希亚" Type="9" IsLarge="1" GrowthType="5" HP="89" Atk="101" Def="83" SpAtk="120" SpDef="93" Spd="86" YieldingExp="130" CatchRate="45" YieldingEV="0 1 0 2 0 0" EvolvesFrom="49" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="18" FormParam="0" CharacterAttrParam="5" GradeParam="3" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10200" LearningLv="1"/>
 	      <Move ID="10201" LearningLv="5"/>
@@ -755,7 +755,7 @@
 	      <Move ID="10211" LearningLv="25"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="52" DefName="急冻兽" Type="9" GrowthType="2" HP="75" Atk="112" Def="90" SpAtk="87" SpDef="67" Spd="69" YieldingExp="111" CatchRate="45" YieldingEV="0 2 0 0 0 0" EvolvesFrom="51" EvolvesTo="0" FuseSub="1" Gender="2" PetClass="19" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0" VariationID="3">
+	<Monster ID="52" DefName="急冻兽" Type="9" IsLarge="1" GrowthType="2" HP="75" Atk="112" Def="90" SpAtk="87" SpDef="67" Spd="69" YieldingExp="111" CatchRate="45" YieldingEV="0 2 0 0 0 0" EvolvesFrom="51" EvolvesTo="0" FuseSub="1" Gender="2" PetClass="19" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0" VariationID="3">
 	    <LearnableMoves>
 	      <Move ID="10004" LearningLv="1"/>
 	      <Move ID="10202" LearningLv="5"/>
@@ -799,7 +799,7 @@
 	      <Move ID="20066" LearningLv="34"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="55" DefName="鲁加斯" Type="7" GrowthType="3" HP="88" Atk="111" Def="87" SpAtk="75" SpDef="75" Spd="68" YieldingExp="125" CatchRate="45" YieldingEV="0 3 0 0 0 0" EvolvesFrom="54" EvolvesTo="0" EvolvingLv="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="20" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" EvolvFlag="48">
+	<Monster ID="55" DefName="鲁加斯" Type="7" IsLarge="1" GrowthType="3" HP="88" Atk="111" Def="87" SpAtk="75" SpDef="75" Spd="68" YieldingExp="125" CatchRate="45" YieldingEV="0 3 0 0 0 0" EvolvesFrom="54" EvolvesTo="0" EvolvingLv="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="20" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" EvolvFlag="48">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20045" LearningLv="5"/>
@@ -838,7 +838,7 @@
 	      <Move ID="20041" LearningLv="31"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="58" DefName="塔奇拉顿" Type="7" GrowthType="3" HP="100" Atk="99" Def="90" SpAtk="50" SpDef="88" Spd="63" YieldingExp="127" CatchRate="45" YieldingEV="3 0 0 0 0 0" EvolvesFrom="57" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="21" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
+	<Monster ID="58" DefName="塔奇拉顿" Type="7" IsLarge="1" GrowthType="3" HP="100" Atk="99" Def="90" SpAtk="50" SpDef="88" Spd="63" YieldingExp="127" CatchRate="45" YieldingEV="3 0 0 0 0 0" EvolvesFrom="57" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="21" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10127" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
@@ -877,7 +877,7 @@
 	      <Move ID="10136" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="61" DefName="雷吉欧斯" Type="6" GrowthType="3" HP="89" Atk="83" Def="86" SpAtk="110" SpDef="97" Spd="80" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 2 1 0" EvolvesFrom="60" EvolvesTo="0" FuseMaster="1" FuseSub="0" PetClass="22" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="61" DefName="雷吉欧斯" Type="6" IsLarge="1" GrowthType="3" HP="89" Atk="83" Def="86" SpAtk="110" SpDef="97" Spd="80" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 2 1 0" EvolvesFrom="60" EvolvesTo="0" FuseMaster="1" FuseSub="0" PetClass="22" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20071" LearningLv="5"/>
@@ -918,7 +918,7 @@
 	      <Move ID="10144" LearningLv="32"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="64" DefName="格鲁奇高" Type="7" GrowthType="4" HP="85" Atk="83" Def="77" SpAtk="105" SpDef="81" Spd="75" YieldingExp="126" CatchRate="45" YieldingEV="0 0 0 3 0 0" EvolvesFrom="63" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="23" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="64" DefName="格鲁奇高" Type="7" IsLarge="1" GrowthType="4" HP="85" Atk="83" Def="77" SpAtk="105" SpDef="81" Spd="75" YieldingExp="126" CatchRate="45" YieldingEV="0 0 0 3 0 0" EvolvesFrom="63" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="23" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20068" LearningLv="5"/>
@@ -958,7 +958,7 @@
 	      <Move ID="10214" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="67" DefName="布林克斯" Type="9" GrowthType="4" HP="79" Atk="82" Def="78" SpAtk="105" SpDef="86" Spd="95" YieldingExp="127" CatchRate="45" YieldingEV="0 0 0 2 0 1" EvolvesFrom="66" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="24" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="0">
+	<Monster ID="67" DefName="布林克斯" Type="9" IsLarge="1" GrowthType="4" HP="79" Atk="82" Def="78" SpAtk="105" SpDef="86" Spd="95" YieldingExp="127" CatchRate="45" YieldingEV="0 0 0 2 0 1" EvolvesFrom="66" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="24" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10006" LearningLv="1"/>
 	      <Move ID="20079" LearningLv="5"/>
@@ -990,7 +990,7 @@
 	      <Move ID="10160" LearningLv="27"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="69" DefName="提亚斯" Type="4" GrowthType="4" HP="80" Atk="90" Def="75" SpAtk="100" SpDef="78" Spd="105" YieldingExp="116" CatchRate="45" YieldingEV="0 0 0 1 0 1" EvolvesFrom="68" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="25" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="69" DefName="提亚斯" Type="4" IsLarge="1" GrowthType="4" HP="80" Atk="90" Def="75" SpAtk="100" SpDef="78" Spd="105" YieldingExp="116" CatchRate="45" YieldingEV="0 0 0 1 0 1" EvolvesFrom="68" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="25" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10157" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="4"/>
@@ -1012,7 +1012,7 @@
 
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="70" DefName="雷伊" Type="5" GrowthType="4" HP="71" Atk="108" Def="70" SpAtk="101" SpDef="77" Spd="105" YieldingExp="120" CatchRate="45" YieldingEV="0 1 0 0 0 1" EvolvesFrom="0" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="26" FormParam="0" CharacterAttrParam="0" GradeParam="5" AddSeParam="1">
+	<Monster ID="70" DefName="雷伊" Type="5" IsLarge="1" GrowthType="4" HP="71" Atk="108" Def="70" SpAtk="101" SpDef="77" Spd="105" YieldingExp="120" CatchRate="45" YieldingEV="0 1 0 0 0 1" EvolvesFrom="0" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="26" FormParam="0" CharacterAttrParam="0" GradeParam="5" AddSeParam="1">
 	    <LearnableMoves>
 	      <Move ID="10006" LearningLv="1"/>
 	      <Move ID="20006" LearningLv="4"/>
@@ -1063,7 +1063,7 @@
 	      <Move ID="10179" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="73" DefName="派鲁基达" Type="6" GrowthType="3" HP="90" Atk="108" Def="95" SpAtk="85" SpDef="84" Spd="81" YieldingExp="127" CatchRate="45" YieldingEV="0 3 0 0 0 0" EvolvesFrom="72" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" PetClass="27" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="73" DefName="派鲁基达" Type="6" IsLarge="1" GrowthType="3" HP="90" Atk="108" Def="95" SpAtk="85" SpDef="84" Spd="81" YieldingExp="127" CatchRate="45" YieldingEV="0 3 0 0 0 0" EvolvesFrom="72" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" PetClass="27" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10128" LearningLv="1"/>
 	      <Move ID="20065" LearningLv="5"/>
@@ -1104,7 +1104,7 @@
 	      <Move ID="10186" LearningLv="32"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="76" DefName="水晶鸭" Type="2" GrowthType="4" HP="81" Atk="110" Def="82" SpAtk="98" SpDef="85" Spd="85" YieldingExp="125" CatchRate="40" YieldingEV="0 2 0 1 0 0" EvolvesFrom="75" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="28" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="76" DefName="水晶鸭" Type="2" IsLarge="1" GrowthType="4" HP="81" Atk="110" Def="82" SpAtk="98" SpDef="85" Spd="85" YieldingExp="125" CatchRate="40" YieldingEV="0 2 0 1 0 0" EvolvesFrom="75" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="28" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10004" LearningLv="1"/>
 	      <Move ID="20003" LearningLv="5"/>
@@ -1145,7 +1145,7 @@
 	      <Move ID="10197" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="79" DefName="艾斯菲亚" Type="10" GrowthType="4" HP="84" Atk="88" Def="73" SpAtk="115" SpDef="75" Spd="87" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="78" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="29" FormParam="0" CharacterAttrParam="5" GradeParam="1" AddSeParam="0">
+	<Monster ID="79" DefName="艾斯菲亚" Type="10" IsLarge="1" GrowthType="4" HP="84" Atk="88" Def="73" SpAtk="115" SpDef="75" Spd="87" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="78" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="29" FormParam="0" CharacterAttrParam="5" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10193" LearningLv="1"/>
 	      <Move ID="20096" LearningLv="5"/>
@@ -1186,7 +1186,7 @@
 	      <Move ID="10227" LearningLv="32"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="82" DefName="帕尔西丝" Type="6" GrowthType="4" HP="84" Atk="100" Def="82" SpAtk="106" SpDef="80" Spd="91" YieldingExp="126" CatchRate="45" YieldingEV="0 1 0 1 0 1" EvolvesFrom="81" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="30" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="82" DefName="帕尔西丝" Type="6" IsLarge="1" GrowthType="4" HP="84" Atk="100" Def="82" SpAtk="106" SpDef="80" Spd="91" YieldingExp="126" CatchRate="45" YieldingEV="0 1 0 1 0 1" EvolvesFrom="81" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="30" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10223" LearningLv="1"/>
 	      <Move ID="20102" LearningLv="5"/>
@@ -1227,7 +1227,7 @@
 	      <Move ID="10067" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="85" DefName="依卡莱恩" Type="1" GrowthType="4" HP="88" Atk="105" Def="78" SpAtk="102" SpDef="79" Spd="80" YieldingExp="125" CatchRate="25" YieldingEV="0 2 0 1 0 0" EvolvesFrom="84" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="31" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
+	<Monster ID="85" DefName="依卡莱恩" Type="1" IsLarge="1" GrowthType="4" HP="88" Atk="105" Def="78" SpAtk="102" SpDef="79" Spd="80" YieldingExp="125" CatchRate="25" YieldingEV="0 2 0 1 0 0" EvolvesFrom="84" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="31" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10234" LearningLv="1"/>
 	      <Move ID="20020" LearningLv="5"/>
@@ -1268,7 +1268,7 @@
 	      <Move ID="10242" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="88" DefName="纳多雷" Type="7" GrowthType="4" HP="110" Atk="83" Def="102" SpAtk="75" SpDef="100" Spd="58" YieldingExp="128" CatchRate="45" YieldingEV="1 0 1 0 1 0" EvolvesFrom="87" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" PetClass="32" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
+	<Monster ID="88" DefName="纳多雷" Type="7" IsLarge="1" GrowthType="4" HP="110" Atk="83" Def="102" SpAtk="75" SpDef="100" Spd="58" YieldingExp="128" CatchRate="45" YieldingEV="1 0 1 0 1 0" EvolvesFrom="87" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" PetClass="32" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10127" LearningLv="1"/>
 	      <Move ID="20045" LearningLv="5"/>
@@ -1301,7 +1301,7 @@
 	      <Move ID="10251" LearningLv="27"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="90" DefName="迪尔克" Type="3" GrowthType="2" HP="80" Atk="88" Def="95" SpAtk="77" SpDef="96" Spd="84" YieldingExp="62" CatchRate="0" YieldingEV="0 0 1 0 1 0" EvolvesFrom="89" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="33" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" VariationID="8" isRidePet="1" nameY="-40" speed="3.5">
+	<Monster ID="90" DefName="迪尔克" Type="3" IsLarge="1" GrowthType="2" HP="80" Atk="88" Def="95" SpAtk="77" SpDef="96" Spd="84" YieldingExp="62" CatchRate="0" YieldingEV="0 0 1 0 1 0" EvolvesFrom="89" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="33" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" VariationID="8" isRidePet="1" nameY="-40" speed="3.5">
 	    <LearnableMoves>
 	      <Move ID="10250" LearningLv="1"/>
 	      <Move ID="20039" LearningLv="5"/>
@@ -1334,7 +1334,7 @@
 	      <Move ID="10286" LearningLv="50"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="92" DefName="蝠迪" Type="4" GrowthType="2" HP="82" Atk="107" Def="81" SpAtk="90" SpDef="82" Spd="98" YieldingExp="110" CatchRate="40" YieldingEV="0 1 0 0 0 1" EvolvesFrom="91" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="34" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="92" DefName="蝠迪" Type="4" IsLarge="1" GrowthType="2" HP="82" Atk="107" Def="81" SpAtk="90" SpDef="82" Spd="98" YieldingExp="110" CatchRate="40" YieldingEV="0 1 0 0 0 1" EvolvesFrom="91" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="34" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="10129" LearningLv="6"/>
@@ -1353,7 +1353,7 @@
 	      <Move ID="10261" LearningLv="67"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="93" DefName="希拉" Type="5" GrowthType="2" HP="79" Atk="90" Def="80" SpAtk="103" SpDef="90" Spd="102" YieldingExp="110" CatchRate="40" YieldingEV="0 0 0 1 0 1" EvolvesFrom="91" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="34" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="93" DefName="希拉" Type="5" IsLarge="1" GrowthType="2" HP="79" Atk="90" Def="80" SpAtk="103" SpDef="90" Spd="102" YieldingExp="110" CatchRate="40" YieldingEV="0 0 0 1 0 1" EvolvesFrom="91" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="34" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="10129" LearningLv="6"/>
@@ -1372,7 +1372,7 @@
 	      <Move ID="10271" LearningLv="67"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="94" DefName="柯蓝" Type="9" GrowthType="2" HP="85" Atk="106" Def="88" SpAtk="91" SpDef="86" Spd="92" YieldingExp="110" CatchRate="40" YieldingEV="0 1 0 0 0 1" EvolvesFrom="91" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="34" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="94" DefName="柯蓝" Type="9" IsLarge="1" GrowthType="2" HP="85" Atk="106" Def="88" SpAtk="91" SpDef="86" Spd="92" YieldingExp="110" CatchRate="40" YieldingEV="0 1 0 0 0 1" EvolvesFrom="91" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="34" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="10129" LearningLv="6"/>
@@ -1403,7 +1403,7 @@
 	      <Move ID="10278" LearningLv="26"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="96" DefName="尼斯克" Type="2" GrowthType="4" HP="120" Atk="108" Def="90" SpAtk="71" SpDef="98" Spd="65" YieldingExp="119" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="95" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="35" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
+	<Monster ID="96" DefName="尼斯克" Type="2" IsLarge="1" GrowthType="4" HP="120" Atk="108" Def="90" SpAtk="71" SpDef="98" Spd="65" YieldingExp="119" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="95" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="35" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10157" LearningLv="1"/>
 	      <Move ID="10011" LearningLv="5"/>
@@ -1442,7 +1442,7 @@
 	      <Move ID="10288" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="99" DefName="卡尔加斯" Type="5" GrowthType="3" HP="100" Atk="91" Def="82" SpAtk="112" SpDef="96" Spd="65" YieldingExp="123" CatchRate="0" YieldingEV="1 0 0 2 0 0" EvolvesFrom="98" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="36" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="99" DefName="卡尔加斯" Type="5" IsLarge="1" GrowthType="3" HP="100" Atk="91" Def="82" SpAtk="112" SpDef="96" Spd="65" YieldingExp="123" CatchRate="0" YieldingEV="1 0 0 2 0 0" EvolvesFrom="98" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="36" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20006" LearningLv="5"/>
@@ -1475,7 +1475,7 @@
 	      <Move ID="10226" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="101" DefName="卡尔特" Type="6" GrowthType="3" HP="88" Atk="101" Def="93" SpAtk="90" SpDef="82" Spd="90" YieldingExp="114" CatchRate="45" YieldingEV="0 2 0 0 0 0" EvolvesFrom="100" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="37" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="101" DefName="卡尔特" Type="6" IsLarge="1" GrowthType="3" HP="88" Atk="101" Def="93" SpAtk="90" SpDef="82" Spd="90" YieldingExp="114" CatchRate="45" YieldingEV="0 2 0 0 0 0" EvolvesFrom="100" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="37" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10128" LearningLv="1"/>
 	      <Move ID="20030" LearningLv="5"/>
@@ -1516,7 +1516,7 @@
 	      <Move ID="10137" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="104" DefName="雷吉姆斯" Type="6" GrowthType="3" HP="91" Atk="111" Def="96" SpAtk="87" SpDef="80" Spd="81" YieldingExp="125" CatchRate="0" YieldingEV="0 2 1 0 0 0" EvolvesFrom="103" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="38" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="104" DefName="雷吉姆斯" Type="6" IsLarge="1" GrowthType="3" HP="91" Atk="111" Def="96" SpAtk="87" SpDef="80" Spd="81" YieldingExp="125" CatchRate="0" YieldingEV="0 2 1 0 0 0" EvolvesFrom="103" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="38" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10128" LearningLv="1"/>
 	      <Move ID="20065" LearningLv="5"/>
@@ -1557,7 +1557,7 @@
 	      <Move ID="10242" LearningLv="34"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="107" DefName="丁鲁特" Type="7" GrowthType="3" HP="116" Atk="88" Def="81" SpAtk="99" SpDef="83" Spd="73" YieldingExp="124" CatchRate="0" YieldingEV="3 0 0 0 0 0" EvolvesFrom="106" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="39" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
+	<Monster ID="107" DefName="丁鲁特" Type="7" IsLarge="1" GrowthType="3" HP="116" Atk="88" Def="81" SpAtk="99" SpDef="83" Spd="73" YieldingExp="124" CatchRate="0" YieldingEV="3 0 0 0 0 0" EvolvesFrom="106" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="39" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20045" LearningLv="6"/>
@@ -1598,7 +1598,7 @@
 	      <Move ID="10319" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="110" DefName="布鲁克克" Type="2" GrowthType="4" HP="97" Atk="84" Def="80" SpAtk="116" SpDef="96" Spd="85" YieldingExp="127" CatchRate="0" YieldingEV="1 0 0 2 0 0" EvolvesFrom="109" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="40" FormParam="0" CharacterAttrParam="6" GradeParam="3" AddSeParam="0">
+	<Monster ID="110" DefName="布鲁克克" Type="2" IsLarge="1" GrowthType="4" HP="97" Atk="84" Def="80" SpAtk="116" SpDef="96" Spd="85" YieldingExp="127" CatchRate="0" YieldingEV="1 0 0 2 0 0" EvolvesFrom="109" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="40" FormParam="0" CharacterAttrParam="6" GradeParam="3" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="6"/>
@@ -1639,7 +1639,7 @@
 	      <Move ID="10329" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="113" DefName="雷纳多" Type="6" GrowthType="4" HP="106" Atk="82" Def="95" SpAtk="100" SpDef="85" Spd="80" YieldingExp="128" CatchRate="45" YieldingEV="2 0 0 1 0 0" EvolvesFrom="112" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" PetClass="41" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
+	<Monster ID="113" DefName="雷纳多" Type="6" IsLarge="1" GrowthType="4" HP="106" Atk="82" Def="95" SpAtk="100" SpDef="85" Spd="80" YieldingExp="128" CatchRate="45" YieldingEV="2 0 0 1 0 0" EvolvesFrom="112" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" PetClass="41" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10127" LearningLv="1"/>
 	      <Move ID="20045" LearningLv="5"/>
@@ -1672,7 +1672,7 @@
 	      <Move ID="20146" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="115" DefName="巨型树妖" Type="1" GrowthType="2" HP="100" Atk="85" Def="89" SpAtk="112" SpDef="92" Spd="55" YieldingExp="116" CatchRate="45" YieldingEV="1 0 0 1 0 0" EvolvesFrom="114" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="42" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
+	<Monster ID="115" DefName="巨型树妖" Type="1" IsLarge="1" GrowthType="2" HP="100" Atk="85" Def="89" SpAtk="112" SpDef="92" Spd="55" YieldingExp="116" CatchRate="45" YieldingEV="1 0 0 1 0 0" EvolvesFrom="114" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="42" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10047" LearningLv="1"/>
 	      <Move ID="20020" LearningLv="4"/>
@@ -1713,7 +1713,7 @@
 	      <Move ID="10345" LearningLv="34"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="118" DefName="克洛亚" Type="9" GrowthType="3" HP="86" Atk="106" Def="82" SpAtk="94" SpDef="83" Spd="95" YieldingExp="126" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="117" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="43" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="118" DefName="克洛亚" Type="9" IsLarge="1" GrowthType="3" HP="86" Atk="106" Def="82" SpAtk="94" SpDef="83" Spd="95" YieldingExp="126" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="117" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="43" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10250" LearningLv="1"/>
 	      <Move ID="20057" LearningLv="5"/>
@@ -1754,7 +1754,7 @@
 	      <Move ID="10354" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="121" DefName="伊卡罗尼" Type="8" GrowthType="3" HP="85" Atk="103" Def="84" SpAtk="97" SpDef="82" Spd="83" YieldingExp="125" CatchRate="0" YieldingEV="0 2 0 1 0 0" EvolvesFrom="120" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="44" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0" VariationID="1">
+	<Monster ID="121" DefName="伊卡罗尼" Type="8" IsLarge="1" GrowthType="3" HP="85" Atk="103" Def="84" SpAtk="97" SpDef="82" Spd="83" YieldingExp="125" CatchRate="0" YieldingEV="0 2 0 1 0 0" EvolvesFrom="120" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="44" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0" VariationID="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20152" LearningLv="6"/>
@@ -1795,7 +1795,7 @@
 	      <Move ID="10356" LearningLv="38"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="124" DefName="英卡洛斯" Type="11" GrowthType="5" HP="110" Atk="125" Def="85" SpAtk="115" SpDef="85" Spd="115" YieldingExp="130" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="123" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="45" FormParam="0" CharacterAttrParam="0" GradeParam="5" AddSeParam="0">
+	<Monster ID="124" DefName="英卡洛斯" Type="11" IsLarge="1" GrowthType="5" HP="110" Atk="125" Def="85" SpAtk="115" SpDef="85" Spd="115" YieldingExp="130" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="123" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="45" FormParam="0" CharacterAttrParam="0" GradeParam="5" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10361" LearningLv="1"/>
 	      <Move ID="20156" LearningLv="7"/>
@@ -1821,7 +1821,7 @@
 	    </LearnableMoves>
 	</Monster>
 
-	<Monster ID="125" DefName="萨格罗斯" Type="11" GrowthType="4" HP="132" Atk="122" Def="100" SpAtk="75" SpDef="98" Spd="113" YieldingExp="130" CatchRate="0" YieldingEV="0 1 1 0 0 0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="45" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="125" DefName="萨格罗斯" Type="11" IsLarge="1" GrowthType="4" HP="132" Atk="122" Def="100" SpAtk="75" SpDef="98" Spd="113" YieldingExp="130" CatchRate="0" YieldingEV="0 1 1 0 0 0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="45" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10361" LearningLv="1"/>
 	      <Move ID="20156" LearningLv="7"/>
@@ -1855,7 +1855,7 @@
 	      <Move ID="10046" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="127" DefName="库博" Type="11" GrowthType="3" HP="93" Atk="106" Def="84" SpAtk="89" SpDef="77" Spd="90" YieldingExp="115" CatchRate="0" YieldingEV="0 2 0 0 0 0" EvolvesFrom="126" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="46" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="127" DefName="库博" Type="11" IsLarge="1" GrowthType="3" HP="93" Atk="106" Def="84" SpAtk="89" SpDef="77" Spd="90" YieldingExp="115" CatchRate="0" YieldingEV="0 2 0 0 0 0" EvolvesFrom="126" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="46" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10379" LearningLv="1"/>
 	      <Move ID="10022" LearningLv="5"/>
@@ -1896,7 +1896,7 @@
 	      <Move ID="10393" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="130" DefName="吉古拉" Type="13" GrowthType="3" HP="84" Atk="88" Def="75" SpAtk="110" SpDef="77" Spd="91" YieldingExp="126" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="129" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="47" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="130" DefName="吉古拉" Type="13" IsLarge="1" GrowthType="3" HP="84" Atk="88" Def="75" SpAtk="110" SpDef="77" Spd="91" YieldingExp="126" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="129" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="47" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="10389" LearningLv="5"/>
@@ -1929,7 +1929,7 @@
 	      <Move ID="10404" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="132" DefName="尤纳斯" Type="13" GrowthType="4" HP="95" Atk="91" Def="76" SpAtk="115" SpDef="83" Spd="90" YieldingExp="119" CatchRate="45" YieldingEV="0 0 0 1 0 0" EvolvesFrom="131" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" PetClass="48" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="132" DefName="尤纳斯" Type="13" IsLarge="1" GrowthType="4" HP="95" Atk="91" Def="76" SpAtk="115" SpDef="83" Spd="90" YieldingExp="119" CatchRate="45" YieldingEV="0 0 0 1 0 0" EvolvesFrom="131" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" PetClass="48" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10250" LearningLv="1"/>
 	      <Move ID="10401" LearningLv="4"/>
@@ -1970,7 +1970,7 @@
 	      <Move ID="10413" LearningLv="34"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="135" DefName="巴法尔" Type="3" GrowthType="4" HP="87" Atk="101" Def="79" SpAtk="83" SpDef="78" Spd="84" YieldingExp="124" CatchRate="45" YieldingEV="1 2 0 0 0 0" EvolvesFrom="134" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="49" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="135" DefName="巴法尔" Type="3" IsLarge="1" GrowthType="4" HP="87" Atk="101" Def="79" SpAtk="83" SpDef="78" Spd="84" YieldingExp="124" CatchRate="45" YieldingEV="1 2 0 0 0 0" EvolvesFrom="134" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="49" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10047" LearningLv="1"/>
 	      <Move ID="10087" LearningLv="6"/>
@@ -2011,7 +2011,7 @@
 	      <Move ID="10421" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="138" DefName="洛比特" Type="13" GrowthType="2" HP="81" Atk="106" Def="73" SpAtk="103" SpDef="75" Spd="95" YieldingExp="127" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="137" EvolvesTo="0" FuseMaster="1" FuseSub="0" PetClass="50" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="138" DefName="洛比特" Type="13" IsLarge="1" GrowthType="2" HP="81" Atk="106" Def="73" SpAtk="103" SpDef="75" Spd="95" YieldingExp="127" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="137" EvolvesTo="0" FuseMaster="1" FuseSub="0" PetClass="50" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10223" LearningLv="1"/>
 	      <Move ID="10141" LearningLv="6"/>
@@ -2044,7 +2044,7 @@
 	      <Move ID="10428" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="140" DefName="艾迪希洛" Type="10" GrowthType="3" HP="82" Atk="95" Def="77" SpAtk="110" SpDef="76" Spd="85" YieldingExp="117" CatchRate="45" YieldingEV="0 1 0 1 0 0" EvolvesFrom="139" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="2" PetClass="51" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="140" DefName="艾迪希洛" Type="10" IsLarge="1" GrowthType="3" HP="82" Atk="95" Def="77" SpAtk="110" SpDef="76" Spd="85" YieldingExp="117" CatchRate="45" YieldingEV="0 1 0 1 0 0" EvolvesFrom="139" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="2" PetClass="51" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10004" LearningLv="1"/>
 	      <Move ID="10076" LearningLv="4"/>
@@ -2077,7 +2077,7 @@
 	      <Move ID="20188" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="142" DefName="肯扎特" Type="11" GrowthType="4" HP="89" Atk="110" Def="85" SpAtk="81" SpDef="75" Spd="95" YieldingExp="117" CatchRate="45" YieldingEV="0 1 0 0 0 1" EvolvesFrom="141" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="52" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="142" DefName="肯扎特" Type="11" IsLarge="1" GrowthType="4" HP="89" Atk="110" Def="85" SpAtk="81" SpDef="75" Spd="95" YieldingExp="117" CatchRate="45" YieldingEV="0 1 0 0 0 1" EvolvesFrom="141" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="52" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10437" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="5"/>
@@ -2110,7 +2110,7 @@
 	      <Move ID="10105" LearningLv="27"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="144" DefName="赫卡特" Type="6" GrowthType="2" HP="96" Atk="88" Def="108" SpAtk="86" SpDef="104" Spd="74" YieldingExp="113" CatchRate="0" YieldingEV="0 0 1 0 1 0" EvolvesFrom="143" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" PetClass="53" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
+	<Monster ID="144" DefName="赫卡特" Type="6" IsLarge="1" GrowthType="2" HP="96" Atk="88" Def="108" SpAtk="86" SpDef="104" Spd="74" YieldingExp="113" CatchRate="0" YieldingEV="0 0 1 0 1 0" EvolvesFrom="143" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" PetClass="53" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="10047" LearningLv="5"/>
@@ -2151,7 +2151,7 @@
 	      <Move ID="10106" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="147" DefName="吉尼亚斯" Type="5" GrowthType="3" HP="89" Atk="110" Def="90" SpAtk="80" SpDef="78" Spd="95" YieldingExp="124" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="146" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="54" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="147" DefName="吉尼亚斯" Type="5" IsLarge="1" GrowthType="3" HP="89" Atk="110" Def="90" SpAtk="80" SpDef="78" Spd="95" YieldingExp="124" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="146" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="54" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20196" LearningLv="6"/>
@@ -2184,7 +2184,7 @@
 	      <Move ID="20200" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="149" DefName="贝特卡恩" Type="11" GrowthType="4" HP="91" Atk="113" Def="80" SpAtk="79" SpDef="82" Spd="93" YieldingExp="117" CatchRate="45" YieldingEV="0 2 0 0 0 0" EvolvesFrom="148" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="55" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="149" DefName="贝特卡恩" Type="11" IsLarge="1" GrowthType="4" HP="91" Atk="113" Def="80" SpAtk="79" SpDef="82" Spd="93" YieldingExp="117" CatchRate="45" YieldingEV="0 2 0 0 0 0" EvolvesFrom="148" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="55" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10379" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="5"/>
@@ -2225,7 +2225,7 @@
 	      <Move ID="10524" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="152" DefName="查理几斯" Type="8" GrowthType="3" HP="84" Atk="80" Def="81" SpAtk="100" SpDef="82" Spd="80" YieldingExp="122" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="151" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="56" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="152" DefName="查理几斯" Type="8" IsLarge="1" GrowthType="3" HP="84" Atk="80" Def="81" SpAtk="100" SpDef="82" Spd="80" YieldingExp="122" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="151" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="56" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20152" LearningLv="5"/>
@@ -2266,7 +2266,7 @@
 	      <Move ID="20204" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="155" DefName="灵翼蜂" Type="4" GrowthType="4" HP="74" Atk="85" Def="73" SpAtk="98" SpDef="85" Spd="107" YieldingExp="120" CatchRate="0" YieldingEV="0 0 0 0 0 3" EvolvesFrom="154" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="57" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="155" DefName="灵翼蜂" Type="4" IsLarge="1" GrowthType="4" HP="74" Atk="85" Def="73" SpAtk="98" SpDef="85" Spd="107" YieldingExp="120" CatchRate="0" YieldingEV="0 0 0 0 0 3" EvolvesFrom="154" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="57" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10018" LearningLv="1"/>
 	      <Move ID="20017" LearningLv="5"/>
@@ -2299,7 +2299,7 @@
 	      <Move ID="20065" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="157" DefName="巴尔克" Type="9" GrowthType="2" HP="90" Atk="96" Def="90" SpAtk="83" SpDef="88" Spd="68" YieldingExp="114" CatchRate="15" YieldingEV="1 1 0 0 0 0" EvolvesFrom="156" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="58" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
+	<Monster ID="157" DefName="巴尔克" Type="9" IsLarge="1" GrowthType="2" HP="90" Atk="96" Def="90" SpAtk="83" SpDef="88" Spd="68" YieldingExp="114" CatchRate="15" YieldingEV="1 1 0 0 0 0" EvolvesFrom="156" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="58" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="5"/>
@@ -2340,7 +2340,7 @@
 	      <Move ID="20216" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="160" DefName="斯托利亚" Type="9" GrowthType="4" HP="75" Atk="89" Def="85" SpAtk="110" SpDef="92" Spd="96" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="159" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="59" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
+	<Monster ID="160" DefName="斯托利亚" Type="9" IsLarge="1" GrowthType="4" HP="75" Atk="89" Def="85" SpAtk="110" SpDef="92" Spd="96" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="159" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="59" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20062" LearningLv="6"/>
@@ -2381,7 +2381,7 @@
 	      <Move ID="10565" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="163" DefName="达鲁切尔" Type="9" GrowthType="2" HP="86" Atk="94" Def="80" SpAtk="112" SpDef="83" Spd="97" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 2 0 1" EvolvesFrom="162" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="60" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="163" DefName="达鲁切尔" Type="9" IsLarge="1" GrowthType="2" HP="86" Atk="94" Def="80" SpAtk="112" SpDef="83" Spd="97" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 2 0 1" EvolvesFrom="162" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="60" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20244" LearningLv="6"/>
@@ -2428,7 +2428,7 @@
 	      <Move ID="10038" LearningLv="38"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="166" DefName="闪光波克尔" Type="4" GrowthType="4" HP="90" Atk="120" Def="75" SpAtk="50" SpDef="70" Spd="105" YieldingExp="120" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="165" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="61" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="1">
+	<Monster ID="166" DefName="闪光波克尔" Type="4" IsLarge="1" GrowthType="4" HP="90" Atk="120" Def="75" SpAtk="50" SpDef="70" Spd="105" YieldingExp="120" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="165" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="61" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="5"/>
@@ -2480,7 +2480,7 @@
 	      <Move ID="20211" LearningLv="44"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="169" DefName="卡特斯" Type="1" GrowthType="4" HP="85" Atk="100" Def="100" SpAtk="84" SpDef="84" Spd="80" YieldingExp="129" CatchRate="0" YieldingEV="0 2 1 0 0 0" EvolvesFrom="168" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="62" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="169" DefName="卡特斯" Type="1" IsLarge="1" GrowthType="4" HP="85" Atk="100" Def="100" SpAtk="84" SpDef="84" Spd="80" YieldingExp="129" CatchRate="0" YieldingEV="0 2 1 0 0 0" EvolvesFrom="168" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="62" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="5"/>
@@ -2517,7 +2517,7 @@
 	      <Move ID="20011" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="171" DefName="魔牙鲨" Type="2" GrowthType="4" HP="75" Atk="95" Def="60" SpAtk="120" SpDef="60" Spd="95" YieldingExp="119" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="170" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="63" FormParam="0" CharacterAttrParam="4" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="171" DefName="魔牙鲨" Type="2" IsLarge="1" GrowthType="4" HP="75" Atk="95" Def="60" SpAtk="120" SpDef="60" Spd="95" YieldingExp="119" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="170" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="63" FormParam="0" CharacterAttrParam="4" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10011" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
@@ -2569,7 +2569,7 @@
 	      <Move ID="10090" LearningLv="38"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="174" DefName="贝鲁基德" Type="3" GrowthType="4" HP="97" Atk="90" Def="89" SpAtk="80" SpDef="93" Spd="63" YieldingExp="126" CatchRate="0" YieldingEV="2 0 0 0 1 0" EvolvesFrom="173" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="64" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="174" DefName="贝鲁基德" Type="3" IsLarge="1" GrowthType="4" HP="97" Atk="90" Def="89" SpAtk="80" SpDef="93" Spd="63" YieldingExp="126" CatchRate="0" YieldingEV="2 0 0 0 1 0" EvolvesFrom="173" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="64" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20045" LearningLv="5"/>
@@ -2617,7 +2617,7 @@
 	      <Move ID="20017" LearningLv="38"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="177" DefName="巴弗洛" Type="4" GrowthType="4" HP="91" Atk="95" Def="75" SpAtk="80" SpDef="80" Spd="99" YieldingExp="121" CatchRate="0" YieldingEV="1 1 0 0 0 1" EvolvesFrom="176" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="65" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="177" DefName="巴弗洛" Type="4" IsLarge="1" GrowthType="4" HP="91" Atk="95" Def="75" SpAtk="80" SpDef="80" Spd="99" YieldingExp="121" CatchRate="0" YieldingEV="1 1 0 0 0 1" EvolvesFrom="176" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="65" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20025" LearningLv="3"/>
@@ -2659,7 +2659,7 @@
 	      <Move ID="10512" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="180" DefName="卡斯达克" Type="7" GrowthType="4" HP="94" Atk="105" Def="81" SpAtk="72" SpDef="77" Spd="95" YieldingExp="127" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="179" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="66" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VariationID="2">
+	<Monster ID="180" DefName="卡斯达克" Type="7" IsLarge="1" GrowthType="4" HP="94" Atk="105" Def="81" SpAtk="72" SpDef="77" Spd="95" YieldingExp="127" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="179" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="66" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VariationID="2">
 	    <LearnableMoves>
 	      <Move ID="10127" LearningLv="1"/>
 	      <Move ID="20220" LearningLv="6"/>
@@ -2703,7 +2703,7 @@
 	      <Move ID="20041" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="183" DefName="奇拉塔顿" Type="7" GrowthType="4" HP="105" Atk="80" Def="88" SpAtk="94" SpDef="90" Spd="65" YieldingExp="128" CatchRate="0" YieldingEV="2 0 0 1 0 0" EvolvesFrom="182" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="67" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="183" DefName="奇拉塔顿" Type="7" IsLarge="1" GrowthType="4" HP="105" Atk="80" Def="88" SpAtk="94" SpDef="90" Spd="65" YieldingExp="128" CatchRate="0" YieldingEV="2 0 0 1 0 0" EvolvesFrom="182" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="67" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10127" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
@@ -2738,7 +2738,7 @@
 	      <Move ID="10524" LearningLv="26"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="185" DefName="梅鲁" Type="8" GrowthType="2" HP="81" Atk="85" Def="78" SpAtk="105" SpDef="79" Spd="85" YieldingExp="113" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="184" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="68" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="185" DefName="梅鲁" Type="8" IsLarge="1" GrowthType="2" HP="81" Atk="85" Def="78" SpAtk="105" SpDef="79" Spd="85" YieldingExp="113" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="184" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="68" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
@@ -2771,7 +2771,7 @@
 	      <Move ID="10539" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="187" DefName="魔狮迪露" Type="8" GrowthType="4" HP="135" Atk="80" Def="70" SpAtk="75" SpDef="70" Spd="88" YieldingExp="116" CatchRate="0" YieldingEV="2 0 0 0 0 0" EvolvesFrom="186" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="69" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="187" DefName="魔狮迪露" Type="8" IsLarge="1" GrowthType="4" HP="135" Atk="80" Def="70" SpAtk="75" SpDef="70" Spd="88" YieldingExp="116" CatchRate="0" YieldingEV="2 0 0 0 0 0" EvolvesFrom="186" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="69" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10535" LearningLv="1"/>
 	      <Move ID="20230" LearningLv="5"/>
@@ -2804,7 +2804,7 @@
 	      <Move ID="20039" LearningLv="27"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="189" DefName="加格尔" Type="11" GrowthType="3" HP="94" Atk="107" Def="94" SpAtk="73" SpDef="72" Spd="90" YieldingExp="114" CatchRate="0" YieldingEV="0 1 1 0 0 0" EvolvesFrom="188" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="70" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0" VariationID="9">
+	<Monster ID="189" DefName="加格尔" Type="11" IsLarge="1" GrowthType="3" HP="94" Atk="107" Def="94" SpAtk="73" SpDef="72" Spd="90" YieldingExp="114" CatchRate="0" YieldingEV="0 1 1 0 0 0" EvolvesFrom="188" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="70" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0" VariationID="9">
 	    <LearnableMoves>
 	      <Move ID="10499" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="5"/>
@@ -2849,7 +2849,7 @@
 	      <Move ID="10214" LearningLv="39"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="192" DefName="克林卡修" Type="9" GrowthType="4" HP="83" Atk="110" Def="86" SpAtk="87" SpDef="78" Spd="95" YieldingExp="128" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="191" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="71" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="192" DefName="克林卡修" Type="9" IsLarge="1" GrowthType="4" HP="83" Atk="110" Def="86" SpAtk="87" SpDef="78" Spd="95" YieldingExp="128" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="191" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="71" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10006" LearningLv="1"/>
 	      <Move ID="10150" LearningLv="5"/>
@@ -2899,7 +2899,7 @@
 	      <Move ID="10557" LearningLv="38"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="195" DefName="西萨拉斯" Type="5" GrowthType="4" HP="80" Atk="105" Def="80" SpAtk="85" SpDef="60" Spd="100" YieldingExp="123" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="194" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" PetClass="72" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="195" DefName="西萨拉斯" Type="5" IsLarge="1" GrowthType="4" HP="80" Atk="105" Def="80" SpAtk="85" SpDef="60" Spd="100" YieldingExp="123" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="194" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" PetClass="72" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20023" LearningLv="5"/>
@@ -2937,7 +2937,7 @@
 	      <Move ID="10430" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="197" DefName="亚梅丝" Type="10" GrowthType="3" HP="92" Atk="93" Def="72" SpAtk="108" SpDef="79" Spd="91" YieldingExp="116" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="196" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" PetClass="73" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="197" DefName="亚梅丝" Type="10" IsLarge="1" GrowthType="3" HP="92" Atk="93" Def="72" SpAtk="108" SpDef="79" Spd="91" YieldingExp="116" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="196" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" PetClass="73" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10559" LearningLv="1"/>
 	      <Move ID="20099" LearningLv="5"/>
@@ -2978,7 +2978,7 @@
 	      <Move ID="10071" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="200" DefName="鳞甲龙鱼" Type="2" GrowthType="3" HP="105" Atk="88" Def="79" SpAtk="113" SpDef="89" Spd="83" YieldingExp="126" CatchRate="0" YieldingEV="1 0 0 2 0 0" EvolvesFrom="199" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="74" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
+	<Monster ID="200" DefName="鳞甲龙鱼" Type="2" IsLarge="1" GrowthType="3" HP="105" Atk="88" Def="79" SpAtk="113" SpDef="89" Spd="83" YieldingExp="126" CatchRate="0" YieldingEV="1 0 0 2 0 0" EvolvesFrom="199" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="74" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10201" LearningLv="1"/>
 	      <Move ID="20249" LearningLv="5"/>
@@ -3011,7 +3011,7 @@
 	      <Move ID="10576" LearningLv="26"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="202" DefName="SRX" Type="6" GrowthType="4" HP="100" Atk="85" Def="85" SpAtk="115" SpDef="95" Spd="80" YieldingExp="117" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="201" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="75" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="202" DefName="SRX" Type="6" IsLarge="1" GrowthType="4" HP="100" Atk="85" Def="85" SpAtk="115" SpDef="95" Spd="80" YieldingExp="117" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="201" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="75" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20071" LearningLv="5"/>
@@ -3044,7 +3044,7 @@
 	      <Move ID="20220" LearningLv="26"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="204" DefName="塔姆拉" Type="7" GrowthType="2" HP="105" Atk="94" Def="100" SpAtk="81" SpDef="90" Spd="70" YieldingExp="113" CatchRate="0" YieldingEV="1 0 1 0 0 0" EvolvesFrom="203" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="76" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
+	<Monster ID="204" DefName="塔姆拉" Type="7" IsLarge="1" GrowthType="2" HP="105" Atk="94" Def="100" SpAtk="81" SpDef="90" Spd="70" YieldingExp="113" CatchRate="0" YieldingEV="1 0 1 0 0 0" EvolvesFrom="203" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="76" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10201" LearningLv="1"/>
 	      <Move ID="20068" LearningLv="5"/>
@@ -3085,7 +3085,7 @@
 	      <Move ID="10038" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="207" DefName="星吉拉" Type="8" GrowthType="3" HP="85" Atk="81" Def="83" SpAtk="106" SpDef="82" Spd="87" YieldingExp="124" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="206" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="77" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="207" DefName="星吉拉" Type="8" IsLarge="1" GrowthType="3" HP="85" Atk="81" Def="83" SpAtk="106" SpDef="82" Spd="87" YieldingExp="124" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="206" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="77" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20241" LearningLv="6"/>
@@ -3126,7 +3126,7 @@
 	      <Move ID="10058" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="210" DefName="多鲁姆" Type="3" GrowthType="3" HP="100" Atk="84" Def="95" SpAtk="98" SpDef="99" Spd="82" YieldingExp="125" CatchRate="0" YieldingEV="1 0 1 0 1 0" EvolvesFrom="209" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="78" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="210" DefName="多鲁姆" Type="3" IsLarge="1" GrowthType="3" HP="100" Atk="84" Def="95" SpAtk="98" SpDef="99" Spd="82" YieldingExp="125" CatchRate="0" YieldingEV="1 0 1 0 1 0" EvolvesFrom="209" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="78" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20046" LearningLv="6"/>
@@ -3159,7 +3159,7 @@
 	      <Move ID="10237" LearningLv="27"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="212" DefName="卡其沙" Type="1" GrowthType="3" HP="99" Atk="80" Def="88" SpAtk="100" SpDef="94" Spd="87" YieldingExp="115" CatchRate="0" YieldingEV="0 0 0 1 1 0" EvolvesFrom="211" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="79" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="212" DefName="卡其沙" Type="1" IsLarge="1" GrowthType="3" HP="99" Atk="80" Def="88" SpAtk="100" SpDef="94" Spd="87" YieldingExp="115" CatchRate="0" YieldingEV="0 0 0 1 1 0" EvolvesFrom="211" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="79" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="6"/>
@@ -3192,7 +3192,7 @@
 	      <Move ID="10182" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="214" DefName="TOH" Type="6" GrowthType="3" HP="120" Atk="75" Def="100" SpAtk="90" SpDef="95" Spd="75" YieldingExp="116" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="213" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="80" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
+	<Monster ID="214" DefName="TOH" Type="6" IsLarge="1" GrowthType="3" HP="120" Atk="75" Def="100" SpAtk="90" SpDef="95" Spd="75" YieldingExp="116" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="213" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="80" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20071" LearningLv="6"/>
@@ -3225,7 +3225,7 @@
 	      <Move ID="20267" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="216" DefName="哈莫雷特" Type="15" GrowthType="5" HP="125" Atk="120" Def="95" SpAtk="95" SpDef="90" Spd="101" YieldingExp="120" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="215" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="81" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="0">
+	<Monster ID="216" DefName="哈莫雷特" Type="15" IsLarge="1" GrowthType="5" HP="125" Atk="120" Def="95" SpAtk="95" SpDef="90" Spd="101" YieldingExp="120" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="215" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="81" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10611" LearningLv="1"/>
 	      <Move ID="20265" LearningLv="6"/>
@@ -3258,7 +3258,7 @@
 	      <Move ID="10404" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="218" DefName="扎夫特" Type="13" GrowthType="4" HP="100" Atk="88" Def="75" SpAtk="120" SpDef="90" Spd="87" YieldingExp="115" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="217" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="82" FormParam="0" CharacterAttrParam="5" GradeParam="1" AddSeParam="0">
+	<Monster ID="218" DefName="扎夫特" Type="13" IsLarge="1" GrowthType="4" HP="100" Atk="88" Def="75" SpAtk="120" SpDef="90" Spd="87" YieldingExp="115" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="217" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="82" FormParam="0" CharacterAttrParam="5" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10250" LearningLv="1"/>
 	      <Move ID="20169" LearningLv="6"/>
@@ -3291,7 +3291,7 @@
 	      <Move ID="10152" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="220" DefName="依希亚" Type="12" GrowthType="4" HP="101" Atk="90" Def="73" SpAtk="120" SpDef="81" Spd="105" YieldingExp="116" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="219" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="83" FormParam="0" CharacterAttrParam="4" GradeParam="1" AddSeParam="0">
+	<Monster ID="220" DefName="依希亚" Type="12" IsLarge="1" GrowthType="4" HP="101" Atk="90" Def="73" SpAtk="120" SpDef="81" Spd="105" YieldingExp="116" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="219" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="83" FormParam="0" CharacterAttrParam="4" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20132" LearningLv="6"/>
@@ -3326,7 +3326,7 @@
 	      <Move ID="10046" LearningLv="30"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="222" DefName="卡库" Type="11" GrowthType="4" HP="103" Atk="89" Def="82" SpAtk="106" SpDef="84" Spd="91" YieldingExp="116" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="221" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="84" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="222" DefName="卡库" Type="11" IsLarge="1" GrowthType="4" HP="103" Atk="89" Def="82" SpAtk="106" SpDef="84" Spd="91" YieldingExp="116" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="221" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="1" PetClass="84" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10379" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="5"/>
@@ -3366,7 +3366,7 @@
 	      <Move ID="10639" LearningLv="30"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="224" DefName="赫德卡" Type="6" GrowthType="4" HP="101" Atk="108" Def="88" SpAtk="104" SpDef="86" Spd="75" YieldingExp="117" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="223" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" PetClass="85" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="224" DefName="赫德卡" Type="6" IsLarge="1" GrowthType="4" HP="101" Atk="108" Def="88" SpAtk="104" SpDef="86" Spd="75" YieldingExp="117" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="223" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" PetClass="85" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20038" LearningLv="5"/>
@@ -3415,7 +3415,7 @@
 	      <Move ID="20280" LearningLv="38"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="227" DefName="伊兰罗尼" Type="8" GrowthType="4" HP="100" Atk="97" Def="87" SpAtk="110" SpDef="86" Spd="85" YieldingExp="127" CatchRate="0" YieldingEV="1 0 0 2 0 0" EvolvesFrom="226" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="86" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="227" DefName="伊兰罗尼" Type="8" IsLarge="1" GrowthType="4" HP="100" Atk="97" Def="87" SpAtk="110" SpDef="86" Spd="85" YieldingExp="127" CatchRate="0" YieldingEV="1 0 0 2 0 0" EvolvesFrom="226" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="0" Gender="2" PetClass="86" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="10353" LearningLv="5"/>
@@ -3453,7 +3453,7 @@
 	      <Move ID="20041" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="229" DefName="查尔顿" Type="11" GrowthType="3" HP="110" Atk="90" Def="120" SpAtk="75" SpDef="95" Spd="85" YieldingExp="118" CatchRate="0" YieldingEV="0 0 2 0 0 0" EvolvesFrom="228" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="87" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
+	<Monster ID="229" DefName="查尔顿" Type="11" IsLarge="1" GrowthType="3" HP="110" Atk="90" Def="120" SpAtk="75" SpDef="95" Spd="85" YieldingExp="118" CatchRate="0" YieldingEV="0 0 2 0 0 0" EvolvesFrom="228" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="87" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10128" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="4"/>
@@ -3486,7 +3486,7 @@
 	      <Move ID="20036" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="231" DefName="刺爪蟹" Type="8" GrowthType="4" HP="105" Atk="106" Def="94" SpAtk="90" SpDef="93" Spd="75" YieldingExp="115" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="230" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="88" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="231" DefName="刺爪蟹" Type="8" IsLarge="1" GrowthType="4" HP="105" Atk="106" Def="94" SpAtk="90" SpDef="93" Spd="75" YieldingExp="115" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="230" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="88" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20001" LearningLv="4"/>
@@ -3527,7 +3527,7 @@
 	      <Move ID="10197" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="234" DefName="伊娅丝" Type="10" GrowthType="3" HP="100" Atk="78" Def="84" SpAtk="100" SpDef="120" Spd="80" YieldingExp="127" CatchRate="0" YieldingEV="0 0 0 0 3 0" EvolvesFrom="233" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="89" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
+	<Monster ID="234" DefName="伊娅丝" Type="10" IsLarge="1" GrowthType="3" HP="100" Atk="78" Def="84" SpAtk="100" SpDef="120" Spd="80" YieldingExp="127" CatchRate="0" YieldingEV="0 0 0 0 3 0" EvolvesFrom="233" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="89" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20144" LearningLv="6"/>
@@ -3560,7 +3560,7 @@
 	      <Move ID="10519" LearningLv="24"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="236" DefName="米洛尼" Type="7" GrowthType="3" HP="110" Atk="82" Def="85" SpAtk="112" SpDef="91" Spd="83" YieldingExp="112" CatchRate="0" YieldingEV="1 0 0 1 0 0" EvolvesFrom="235" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="90" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
+	<Monster ID="236" DefName="米洛尼" Type="7" IsLarge="1" GrowthType="3" HP="110" Atk="82" Def="85" SpAtk="112" SpDef="91" Spd="83" YieldingExp="112" CatchRate="0" YieldingEV="1 0 0 1 0 0" EvolvesFrom="235" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="90" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10250" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="4"/>
@@ -3601,7 +3601,7 @@
 	      <Move ID="20049" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="239" DefName="吉娜斯" Type="12" GrowthType="4" HP="103" Atk="79" Def="77" SpAtk="107" SpDef="97" Spd="105" YieldingExp="126" CatchRate="0" YieldingEV="0 0 0 1 0 2" EvolvesFrom="238" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="91" FormParam="0" CharacterAttrParam="0" GradeParam="3" AddSeParam="0">
+	<Monster ID="239" DefName="吉娜斯" Type="12" IsLarge="1" GrowthType="4" HP="103" Atk="79" Def="77" SpAtk="107" SpDef="97" Spd="105" YieldingExp="126" CatchRate="0" YieldingEV="0 0 0 1 0 2" EvolvesFrom="238" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="91" FormParam="0" CharacterAttrParam="0" GradeParam="3" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10004" LearningLv="1"/>
 	      <Move ID="10669" LearningLv="6"/>
@@ -3642,7 +3642,7 @@
 	      <Move ID="20032" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="242" DefName="海德拉" Type="13" GrowthType="4" HP="113" Atk="77" Def="85" SpAtk="101" SpDef="108" Spd="86" YieldingExp="126" CatchRate="0" YieldingEV="2 0 0 0 1 0" EvolvesFrom="241" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="92" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
+	<Monster ID="242" DefName="海德拉" Type="13" IsLarge="1" GrowthType="4" HP="113" Atk="77" Def="85" SpAtk="101" SpDef="108" Spd="86" YieldingExp="126" CatchRate="0" YieldingEV="2 0 0 0 1 0" EvolvesFrom="241" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="92" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20290" LearningLv="6"/>
@@ -3683,7 +3683,7 @@
 	      <Move ID="10673" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="245" DefName="宾尼纳拉" Type="1" GrowthType="4" HP="108" Atk="112" Def="86" SpAtk="84" SpDef="74" Spd="93" YieldingExp="120" CatchRate="0" YieldingEV="1 2 0 0 0 0" EvolvesFrom="244" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="93" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
+	<Monster ID="245" DefName="宾尼纳拉" Type="1" IsLarge="1" GrowthType="4" HP="108" Atk="112" Def="86" SpAtk="84" SpDef="74" Spd="93" YieldingExp="120" CatchRate="0" YieldingEV="1 2 0 0 0 0" EvolvesFrom="244" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="93" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="6"/>
@@ -3724,7 +3724,7 @@
 	      <Move ID="10680" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="248" DefName="艾贝多芬" Type="10" GrowthType="4" HP="115" Atk="109" Def="105" SpAtk="77" SpDef="93" Spd="70" YieldingExp="126" CatchRate="0" YieldingEV="1 1 1 0 0 0" EvolvesFrom="247" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="94" FormParam="0" CharacterAttrParam="3" GradeParam="0" AddSeParam="0">
+	<Monster ID="248" DefName="艾贝多芬" Type="10" IsLarge="1" GrowthType="4" HP="115" Atk="109" Def="105" SpAtk="77" SpDef="93" Spd="70" YieldingExp="126" CatchRate="0" YieldingEV="1 1 1 0 0 0" EvolvesFrom="247" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="94" FormParam="0" CharacterAttrParam="3" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10127" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="6"/>
@@ -3765,7 +3765,7 @@
 	      <Move ID="20004" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="251" DefName="萨洛姆斯" Type="4" GrowthType="3" HP="90" Atk="74" Def="75" SpAtk="107" SpDef="75" Spd="100" YieldingExp="119" CatchRate="0" YieldingEV="0 0 0 2 0 1" EvolvesFrom="250" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="95" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="251" DefName="萨洛姆斯" Type="4" IsLarge="1" GrowthType="3" HP="90" Atk="74" Def="75" SpAtk="107" SpDef="75" Spd="100" YieldingExp="119" CatchRate="0" YieldingEV="0 0 0 2 0 1" EvolvesFrom="250" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="95" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20016" LearningLv="6"/>
@@ -3798,7 +3798,7 @@
 	      <Move ID="10477" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="253" DefName="嘟噜噜王" Type="8" GrowthType="3" HP="95" Atk="110" Def="86" SpAtk="100" SpDef="84" Spd="95" YieldingExp="110" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="252" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="96" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="253" DefName="嘟噜噜王" Type="8" IsLarge="1" GrowthType="3" HP="95" Atk="110" Def="86" SpAtk="100" SpDef="84" Spd="95" YieldingExp="110" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="252" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="96" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
@@ -3840,7 +3840,7 @@
 	      <Move ID="10697" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="256" DefName="嘟咕噜王" Type="8" GrowthType="4" HP="100" Atk="94" Def="88" SpAtk="115" SpDef="90" Spd="102" YieldingExp="125" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="255" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="97" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="256" DefName="嘟咕噜王" Type="8" IsLarge="1" GrowthType="4" HP="100" Atk="94" Def="88" SpAtk="115" SpDef="90" Spd="102" YieldingExp="125" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="255" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="97" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20015" LearningLv="7"/>
@@ -3881,7 +3881,7 @@
 	      <Move ID="10705" LearningLv="39"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="259" DefName="埃里克斯" Type="7" GrowthType="4" HP="120" Atk="107" Def="107" SpAtk="76" SpDef="86" Spd="80" YieldingExp="126" CatchRate="0" YieldingEV="1 1 1 0 0 0" EvolvesFrom="258" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="98" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
+	<Monster ID="259" DefName="埃里克斯" Type="7" IsLarge="1" GrowthType="4" HP="120" Atk="107" Def="107" SpAtk="76" SpDef="86" Spd="80" YieldingExp="126" CatchRate="0" YieldingEV="1 1 1 0 0 0" EvolvesFrom="258" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="98" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10006" LearningLv="1"/>
 	      <Move ID="20041" LearningLv="7"/>
@@ -3915,7 +3915,7 @@
 	      <Move ID="10712" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="261" DefName="盖亚" Type="11" GrowthType="5" HP="105" Atk="119" Def="87" SpAtk="96" SpDef="78" Spd="105" YieldingExp="120" CatchRate="0" YieldingEV="0 1 0 0 0 1" EvolvesFrom="260" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="99" FormParam="0" CharacterAttrParam="0" GradeParam="5" AddSeParam="1" NaturalEnemy="70">
+	<Monster ID="261" DefName="盖亚" Type="11" IsLarge="1" GrowthType="5" HP="105" Atk="119" Def="87" SpAtk="96" SpDef="78" Spd="105" YieldingExp="120" CatchRate="0" YieldingEV="0 1 0 0 0 1" EvolvesFrom="260" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="99" FormParam="0" CharacterAttrParam="0" GradeParam="5" AddSeParam="1" NaturalEnemy="70">
 	    <LearnableMoves>
 	      <Move ID="10127" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="5"/>
@@ -3962,7 +3962,7 @@
 	      <Move ID="10220" LearningLv="39"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="264" DefName="奈尼芬多" Type="10" GrowthType="4" HP="110" Atk="105" Def="80" SpAtk="120" SpDef="85" Spd="90" YieldingExp="130" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="263" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="100" FormParam="0" CharacterAttrParam="5" GradeParam="1" AddSeParam="0">
+	<Monster ID="264" DefName="奈尼芬多" Type="10" IsLarge="1" GrowthType="4" HP="110" Atk="105" Def="80" SpAtk="120" SpDef="85" Spd="90" YieldingExp="130" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="263" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="100" FormParam="0" CharacterAttrParam="5" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20249" LearningLv="7"/>
@@ -3995,7 +3995,7 @@
 	      <Move ID="10731" LearningLv="27"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="266" DefName="帕格尼尼" Type="8" GrowthType="3" HP="107" Atk="108" Def="92" SpAtk="86" SpDef="84" Spd="99" YieldingExp="108" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="265" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="101" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
+	<Monster ID="266" DefName="帕格尼尼" Type="8" IsLarge="1" GrowthType="3" HP="107" Atk="108" Def="92" SpAtk="86" SpDef="84" Spd="99" YieldingExp="108" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="265" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="101" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
@@ -4028,7 +4028,7 @@
 	      <Move ID="10220" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="268" DefName="乌力朴" Type="4" GrowthType="3" HP="105" Atk="98" Def="73" SpAtk="108" SpDef="84" Spd="104" YieldingExp="110" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="267" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="102" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="268" DefName="乌力朴" Type="4" IsLarge="1" GrowthType="3" HP="105" Atk="98" Def="73" SpAtk="108" SpDef="84" Spd="104" YieldingExp="110" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="267" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="102" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10004" LearningLv="1"/>
 	      <Move ID="20015" LearningLv="5"/>
@@ -4069,7 +4069,7 @@
 	      <Move ID="10741" LearningLv="61"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="270" DefName="刹洛眼" Type="10" GrowthType="4" HP="105" Atk="90" Def="80" SpAtk="110" SpDef="95" Spd="100" YieldingExp="115" CatchRate="10" YieldingEV="0 0 0 1 1 0" EvolvesFrom="269" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="103" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="270" DefName="刹洛眼" Type="10" IsLarge="1" GrowthType="4" HP="105" Atk="90" Def="80" SpAtk="110" SpDef="95" Spd="100" YieldingExp="115" CatchRate="10" YieldingEV="0 0 0 1 1 0" EvolvesFrom="269" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="103" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10737" LearningLv="1"/>
 	      <Move ID="20283" LearningLv="5"/>
@@ -4089,7 +4089,7 @@
 	      <Move ID="10748" LearningLv="62"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="271" DefName="迪修眼" Type="7" GrowthType="4" HP="120" Atk="110" Def="105" SpAtk="75" SpDef="90" Spd="85" YieldingExp="115" CatchRate="0" YieldingEV="1 0 1 0 0 0" EvolvesFrom="269" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="103" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="271" DefName="迪修眼" Type="7" IsLarge="1" GrowthType="4" HP="120" Atk="110" Def="105" SpAtk="75" SpDef="90" Spd="85" YieldingExp="115" CatchRate="0" YieldingEV="1 0 1 0 0 0" EvolvesFrom="269" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="103" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10737" LearningLv="1"/>
 	      <Move ID="20283" LearningLv="5"/>
@@ -4109,7 +4109,7 @@
 	      <Move ID="10751" LearningLv="62"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="272" DefName="詹士眼" Type="11" GrowthType="4" HP="115" Atk="115" Def="90" SpAtk="85" SpDef="72" Spd="103" YieldingExp="115" CatchRate="0" YieldingEV="0 1 0 0 0 1" EvolvesFrom="269" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="103" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="272" DefName="詹士眼" Type="11" IsLarge="1" GrowthType="4" HP="115" Atk="115" Def="90" SpAtk="85" SpDef="72" Spd="103" YieldingExp="115" CatchRate="0" YieldingEV="0 1 0 0 0 1" EvolvesFrom="269" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="103" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10737" LearningLv="1"/>
 	      <Move ID="20283" LearningLv="5"/>
@@ -4141,7 +4141,7 @@
 	      <Move ID="20139" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="274" DefName="塔克林" Type="15" GrowthType="5" HP="130" Atk="120" Def="100" SpAtk="95" SpDef="80" Spd="86" YieldingExp="112" CatchRate="0" YieldingEV="1 0 1 0 0 0" EvolvesFrom="273" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="104" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="274" DefName="塔克林" Type="15" IsLarge="1" GrowthType="5" HP="130" Atk="120" Def="100" SpAtk="95" SpDef="80" Spd="86" YieldingExp="112" CatchRate="0" YieldingEV="1 0 1 0 0 0" EvolvesFrom="273" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="104" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10611" LearningLv="1"/>
 	      <Move ID="20299" LearningLv="5"/>
@@ -4181,7 +4181,7 @@
 	      <Move ID="20315" LearningLv="32"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="277" DefName="尹泰拉多" Type="11" GrowthType="4" HP="93" Atk="107" Def="79" SpAtk="91" SpDef="95" Spd="102" YieldingExp="125" CatchRate="0" YieldingEV="0 1 0 0 1 1" EvolvesFrom="276" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="105" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="277" DefName="尹泰拉多" Type="11" IsLarge="1" GrowthType="4" HP="93" Atk="107" Def="79" SpAtk="91" SpDef="95" Spd="102" YieldingExp="125" CatchRate="0" YieldingEV="0 1 0 0 1 1" EvolvesFrom="276" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="105" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10763" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="6"/>
@@ -4221,7 +4221,7 @@
 	      <Move ID="10782" LearningLv="32"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="280" DefName="沙罗希瓦" Type="13" GrowthType="3" HP="99" Atk="97" Def="84" SpAtk="106" SpDef="91" Spd="98" YieldingExp="128" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="279" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="106" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
+	<Monster ID="280" DefName="沙罗希瓦" Type="13" IsLarge="1" GrowthType="3" HP="99" Atk="97" Def="84" SpAtk="106" SpDef="91" Spd="98" YieldingExp="128" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="279" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="106" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10780" LearningLv="1"/>
 	      <Move ID="20270" LearningLv="6"/>
@@ -4261,7 +4261,7 @@
 	      <Move ID="20157" LearningLv="32"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="283" DefName="伶俐雕" Type="12" GrowthType="4" HP="106" Atk="101" Def="77" SpAtk="101" SpDef="85" Spd="106" YieldingExp="128" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="282" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="107" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="283" DefName="伶俐雕" Type="12" IsLarge="1" GrowthType="4" HP="106" Atk="101" Def="77" SpAtk="101" SpDef="85" Spd="106" YieldingExp="128" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="282" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="107" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10535" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="6"/>
@@ -4301,7 +4301,7 @@
 	      <Move ID="10051" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="286" DefName="闪光电击兔" Type="5" GrowthType="4" HP="105" Atk="80" Def="80" SpAtk="120" SpDef="95" Spd="60" YieldingExp="124" CatchRate="30" YieldingEV="0 0 0 2 1 0" EvolvesFrom="285" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="108" FormParam="0" CharacterAttrParam="5" GradeParam="1" AddSeParam="0" VipBtlAdj="1">
+	<Monster ID="286" DefName="闪光电击兔" Type="5" IsLarge="1" GrowthType="4" HP="105" Atk="80" Def="80" SpAtk="120" SpDef="95" Spd="60" YieldingExp="124" CatchRate="30" YieldingEV="0 0 0 2 1 0" EvolvesFrom="285" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="108" FormParam="0" CharacterAttrParam="5" GradeParam="1" AddSeParam="0" VipBtlAdj="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20023" LearningLv="7"/>
@@ -4336,7 +4336,7 @@
 	      <Move ID="20103" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="288" DefName="厄斯沃姆" Type="6" GrowthType="3" HP="95" Atk="115" Def="80" SpAtk="85" SpDef="80" Spd="98" YieldingExp="117" CatchRate="0" YieldingEV="0 1 0 0 0 1" EvolvesFrom="287" FuseMaster="1" FuseSub="1" PetClass="109" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="288" DefName="厄斯沃姆" Type="6" IsLarge="1" GrowthType="3" HP="95" Atk="115" Def="80" SpAtk="85" SpDef="80" Spd="98" YieldingExp="117" CatchRate="0" YieldingEV="0 1 0 0 0 1" EvolvesFrom="287" FuseMaster="1" FuseSub="1" PetClass="109" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20005" LearningLv="5"/>
@@ -4368,7 +4368,7 @@
 	      <Move ID="10804" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="290" DefName="约凡撒" Type="2" GrowthType="4" HP="100" Atk="86" Def="78" SpAtk="108" SpDef="98" Spd="90" YieldingExp="119" CatchRate="0" YieldingEV="0 0 0 1 1 0" EvolvesFrom="289" EvolvesTo="0" EvolvingLv="0" FuseMaster="0" FuseSub="0" Gender="2" PetClass="110" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="290" DefName="约凡撒" Type="2" IsLarge="1" GrowthType="4" HP="100" Atk="86" Def="78" SpAtk="108" SpDef="98" Spd="90" YieldingExp="119" CatchRate="0" YieldingEV="0 0 0 1 1 0" EvolvesFrom="289" EvolvesTo="0" EvolvingLv="0" FuseMaster="0" FuseSub="0" Gender="2" PetClass="110" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20125" LearningLv="5"/>
@@ -4400,7 +4400,7 @@
 	      <Move ID="20356" LearningLv="27"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="292" DefName="弗里昂" Type="7" GrowthType="3" HP="130" Atk="101" Def="82" SpAtk="98" SpDef="82" Spd="85" YieldingExp="111" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="291" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="111" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
+	<Monster ID="292" DefName="弗里昂" Type="7" IsLarge="1" GrowthType="3" HP="130" Atk="101" Def="82" SpAtk="98" SpDef="82" Spd="85" YieldingExp="111" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="291" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="111" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20041" LearningLv="4"/>
@@ -4440,7 +4440,7 @@
 	      <Move ID="10813" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="295" DefName="迷你果" Type="1" GrowthType="3" HP="110" Atk="100" Def="85" SpAtk="103" SpDef="101" Spd="75" YieldingExp="125" CatchRate="0" YieldingEV="0 1 0 1 1 0" EvolvesFrom="294" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="112" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0" VariationID="7">
+	<Monster ID="295" DefName="迷你果" Type="1" IsLarge="1" GrowthType="3" HP="110" Atk="100" Def="85" SpAtk="103" SpDef="101" Spd="75" YieldingExp="125" CatchRate="0" YieldingEV="0 1 0 1 1 0" EvolvesFrom="294" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="112" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0" VariationID="7">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20502" LearningLv="6"/>
@@ -4472,7 +4472,7 @@
 	      <Move ID="20384" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="297" DefName="艾尔伊洛" Type="10" GrowthType="4" HP="106" Atk="110" Def="86" SpAtk="106" SpDef="80" Spd="100" YieldingExp="120" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="296" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="113" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="297" DefName="艾尔伊洛" Type="10" IsLarge="1" GrowthType="4" HP="106" Atk="110" Def="86" SpAtk="106" SpDef="80" Spd="100" YieldingExp="120" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="296" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="113" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10004" LearningLv="1"/>
 	      <Move ID="20098" LearningLv="5"/>
@@ -4505,7 +4505,7 @@
 	      <Move ID="20495" LearningLv="30"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="299" DefName="猛虎王" Type="7" GrowthType="5" HP="130" Atk="120" Def="100" SpAtk="70" SpDef="90" Spd="90" YieldingExp="120" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="298" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="114" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="0" isRidePet="1" nameY="-40" speed="3.5" scale="1.3">
+	<Monster ID="299" DefName="猛虎王" Type="7" IsLarge="1" GrowthType="5" HP="130" Atk="120" Def="100" SpAtk="70" SpDef="90" Spd="90" YieldingExp="120" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="298" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="114" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="0" isRidePet="1" nameY="-40" speed="3.5" scale="1.3">
 	    <LearnableMoves>
 	      <Move ID="10987" LearningLv="1"/>
 	      <Move ID="20493" LearningLv="8"/>
@@ -4520,7 +4520,7 @@
 	      <Move ID="10992" LearningLv="80"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="300" DefName="谱尼" Type="16" GrowthType="5" HP="120" Atk="110" Def="100" SpAtk="120" SpDef="100" Spd="110" YieldingExp="150" CatchRate="0" YieldingEV="1 0 0 1 0 0" EvolvesFrom="0" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" PetClass="115" FormParam="0" CharacterAttrParam="4" GradeParam="5" AddSeParam="0">
+	<Monster ID="300" DefName="谱尼" Type="16" IsLarge="1" GrowthType="5" HP="120" Atk="110" Def="100" SpAtk="120" SpDef="100" Spd="110" YieldingExp="150" CatchRate="0" YieldingEV="1 0 0 1 0 0" EvolvesFrom="0" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" PetClass="115" FormParam="0" CharacterAttrParam="4" GradeParam="5" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10993" LearningLv="1"/>
 	      <Move ID="20498" LearningLv="5"/>
@@ -4570,7 +4570,7 @@
 	      <Move ID="10016" LearningLv="41"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="303" DefName="丽莎布布" Type="1" GrowthType="4" HP="130" Atk="81" Def="106" SpAtk="109" SpDef="112" Spd="76" YieldingExp="131" CatchRate="0" YieldingEV="2 0 0 0 1 0" EvolvesFrom="302" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="116" FormParam="0" CharacterAttrParam="3" GradeParam="2" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="303" DefName="丽莎布布" Type="1"  IsLarge="1" GrowthType="4" HP="130" Atk="81" Def="106" SpAtk="109" SpDef="112" Spd="76" YieldingExp="131" CatchRate="0" YieldingEV="2 0 0 0 1 0" EvolvesFrom="302" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="116" FormParam="0" CharacterAttrParam="3" GradeParam="2" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10003" LearningLv="1"/>
 	      <Move ID="20001" LearningLv="6"/>
@@ -4615,7 +4615,7 @@
 	      <Move ID="10025" LearningLv="43"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="306" DefName="鲁斯王" Type="2" GrowthType="4" HP="124" Atk="120" Def="93" SpAtk="95" SpDef="92" Spd="86" YieldingExp="132" CatchRate="0" YieldingEV="1 2 0 0 0 0" EvolvesFrom="305" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="117" FormParam="0" CharacterAttrParam="1" GradeParam="2" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="306" DefName="鲁斯王" Type="2" IsLarge="1" GrowthType="4" HP="124" Atk="120" Def="93" SpAtk="95" SpDef="92" Spd="86" YieldingExp="132" CatchRate="0" YieldingEV="1 2 0 0 0 0" EvolvesFrom="305" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="117" FormParam="0" CharacterAttrParam="1" GradeParam="2" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="11008" LearningLv="1"/>
 	      <Move ID="20003" LearningLv="6"/>
@@ -4660,7 +4660,7 @@
 	      <Move ID="10034" LearningLv="39"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="309" DefName="魔焰猩猩" Type="3" GrowthType="4" HP="120" Atk="112" Def="80" SpAtk="112" SpDef="80" Spd="114" YieldingExp="133" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="308" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="118" FormParam="0" CharacterAttrParam="0" GradeParam="2" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="309" DefName="魔焰猩猩" Type="3" IsLarge="1" GrowthType="4" HP="120" Atk="112" Def="80" SpAtk="112" SpDef="80" Spd="114" YieldingExp="133" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="308" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="118" FormParam="0" CharacterAttrParam="0" GradeParam="2" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10029" LearningLv="1"/>
 	      <Move ID="20005" LearningLv="5"/>
@@ -4706,7 +4706,7 @@
 	      <Move ID="11025" LearningLv="40"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="312" DefName="闪光艾菲亚" Type="10" GrowthType="4" HP="91" Atk="88" Def="78" SpAtk="118" SpDef="80" Spd="92" YieldingExp="129" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="311" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="119" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="1" IsFuseMon="1">
+	<Monster ID="312" DefName="闪光艾菲亚" Type="10" IsLarge="1" GrowthType="4" HP="91" Atk="88" Def="78" SpAtk="118" SpDef="80" Spd="92" YieldingExp="129" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="311" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="119" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="1" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10193" LearningLv="1"/>
 	      <Move ID="20096" LearningLv="5"/>
@@ -4752,7 +4752,7 @@
 	      <Move ID="10059" LearningLv="38"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="315" DefName="卡鲁耶克" Type="14" GrowthType="4" HP="105" Atk="90" Def="84" SpAtk="120" SpDef="95" Spd="96" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="314" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="120" FormParam="0" CharacterAttrParam="5" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="315" DefName="卡鲁耶克" Type="14" IsLarge="1" GrowthType="4" HP="105" Atk="90" Def="84" SpAtk="120" SpDef="95" Spd="96" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="314" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="120" FormParam="0" CharacterAttrParam="5" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10018" LearningLv="1"/>
 	      <Move ID="20077" LearningLv="6"/>
@@ -4796,7 +4796,7 @@
 	      <Move ID="10516" LearningLv="40"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="318" DefName="卡鲁克斯" Type="7" GrowthType="4" HP="115" Atk="117" Def="100" SpAtk="75" SpDef="80" Spd="95" YieldingExp="129" CatchRate="0" YieldingEV="1 2 0 0 0 0" EvolvesFrom="317" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="121" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="318" DefName="卡鲁克斯" Type="7" IsLarge="1" GrowthType="4" HP="115" Atk="117" Def="100" SpAtk="75" SpDef="80" Spd="95" YieldingExp="129" CatchRate="0" YieldingEV="1 2 0 0 0 0" EvolvesFrom="317" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="121" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10127" LearningLv="1"/>
 	      <Move ID="20065" LearningLv="5"/>
@@ -4845,7 +4845,7 @@
 	      <Move ID="20029" LearningLv="39"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="321" DefName="哈尔翼蜂" Type="4" GrowthType="4" HP="100" Atk="100" Def="83" SpAtk="105" SpDef="72" Spd="108" YieldingExp="123" CatchRate="0" YieldingEV="0 0 0 0 0 3" EvolvesFrom="320" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="2" PetClass="122" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="321" DefName="哈尔翼蜂" Type="4" IsLarge="1" GrowthType="4" HP="100" Atk="100" Def="83" SpAtk="105" SpDef="72" Spd="108" YieldingExp="123" CatchRate="0" YieldingEV="0 0 0 0 0 3" EvolvesFrom="320" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="2" PetClass="122" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10018" LearningLv="1"/>
 	      <Move ID="20017" LearningLv="5"/>
@@ -4894,7 +4894,7 @@
 	      <Move ID="20518" LearningLv="39"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="324" DefName="古雷亚" Type="9" GrowthType="4" HP="101" Atk="94" Def="88" SpAtk="111" SpDef="87" Spd="100" YieldingExp="130" CatchRate="0" YieldingEV="1 0 0 1 0 1" EvolvesFrom="323" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="123" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1" IsFuseMon="1">
+	<Monster ID="324" DefName="古雷亚" Type="9" IsLarge="1" GrowthType="4" HP="101" Atk="94" Def="88" SpAtk="111" SpDef="87" Spd="100" YieldingExp="130" CatchRate="0" YieldingEV="1 0 0 1 0 1" EvolvesFrom="323" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="123" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10250" LearningLv="1"/>
 	      <Move ID="20057" LearningLv="5"/>
@@ -4940,7 +4940,7 @@
 	      <Move ID="10524" LearningLv="38"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="327" DefName="塞拉兔" Type="8" GrowthType="3" HP="101" Atk="80" Def="86" SpAtk="110" SpDef="81" Spd="85" YieldingExp="127" CatchRate="0" YieldingEV="1 0 0 2 0 0" EvolvesFrom="326" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="124" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="327" DefName="塞拉兔" Type="8" IsLarge="1" GrowthType="3" HP="101" Atk="80" Def="86" SpAtk="110" SpDef="81" Spd="85" YieldingExp="127" CatchRate="0" YieldingEV="1 0 0 2 0 0" EvolvesFrom="326" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="124" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10157" LearningLv="1"/>
 	      <Move ID="20520" LearningLv="6"/>
@@ -4977,7 +4977,7 @@
 	      <Move ID="10285" LearningLv="27"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="329" DefName="辛娜斯" Type="8" GrowthType="3" HP="95" Atk="72" Def="71" SpAtk="95" SpDef="104" Spd="95" YieldingExp="115" CatchRate="0" YieldingEV="0 0 0 0 2 0" EvolvesFrom="328" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="125" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="329" DefName="辛娜斯" Type="8" IsLarge="1" GrowthType="3" HP="95" Atk="72" Def="71" SpAtk="95" SpDef="104" Spd="95" YieldingExp="115" CatchRate="0" YieldingEV="0 0 0 0 2 0" EvolvesFrom="328" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="125" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20028" LearningLv="5"/>
@@ -5012,7 +5012,7 @@
 	      <Move ID="10358" LearningLv="26"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="331" DefName="哈伊卡" Type="8" GrowthType="3" HP="90" Atk="94" Def="105" SpAtk="82" SpDef="74" Spd="69" YieldingExp="114" CatchRate="0" YieldingEV="0 0 2 0 0 0" EvolvesFrom="330" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="126" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="331" DefName="哈伊卡" Type="8" IsLarge="1" GrowthType="3" HP="90" Atk="94" Def="105" SpAtk="82" SpDef="74" Spd="69" YieldingExp="114" CatchRate="0" YieldingEV="0 0 2 0 0 0" EvolvesFrom="330" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="126" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10127" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="4"/>
@@ -5057,7 +5057,7 @@
 	      <Move ID="10595" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="334" DefName="多鲁鲁斯" Type="3" GrowthType="3" HP="113" Atk="87" Def="98" SpAtk="102" SpDef="100" Spd="71" YieldingExp="131" CatchRate="0" YieldingEV="0 0 1 1 1 0" EvolvesFrom="333" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="127" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="334" DefName="多鲁鲁斯" Type="3" IsLarge="1" GrowthType="3" HP="113" Atk="87" Def="98" SpAtk="102" SpDef="100" Spd="71" YieldingExp="131" CatchRate="0" YieldingEV="0 0 1 1 1 0" EvolvesFrom="333" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="127" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20046" LearningLv="5"/>
@@ -5100,7 +5100,7 @@
 	      <Move ID="20043" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="337" DefName="赤西西比" Type="3" GrowthType="3" HP="107" Atk="106" Def="78" SpAtk="77" SpDef="99" Spd="91" YieldingExp="126" CatchRate="0" YieldingEV="1 1 0 0 1 0" EvolvesFrom="336" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="128" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
+	<Monster ID="337" DefName="赤西西比" Type="3" IsLarge="1" GrowthType="3" HP="107" Atk="106" Def="78" SpAtk="77" SpDef="99" Spd="91" YieldingExp="126" CatchRate="0" YieldingEV="1 1 0 0 1 0" EvolvesFrom="336" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="128" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20001" LearningLv="6"/>
@@ -5143,7 +5143,7 @@
 	      <Move ID="10306" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="340" DefName="托雷塔斯" Type="6" GrowthType="4" HP="110" Atk="110" Def="90" SpAtk="110" SpDef="90" Spd="85" YieldingExp="130" CatchRate="0" YieldingEV="1 1 0 1 0 0" EvolvesFrom="339" FuseMaster="0" FuseSub="0" PetClass="129" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="340" DefName="托雷塔斯" Type="6" IsLarge="1" GrowthType="4" HP="110" Atk="110" Def="90" SpAtk="110" SpDef="90" Spd="85" YieldingExp="130" CatchRate="0" YieldingEV="1 1 0 1 0 0" EvolvesFrom="339" FuseMaster="0" FuseSub="0" PetClass="129" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10128" LearningLv="1"/>
 	      <Move ID="20071" LearningLv="5"/>
@@ -5189,7 +5189,7 @@
 	      <Move ID="10424" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="343" DefName="索比拉特" Type="13" GrowthType="4" HP="105" Atk="101" Def="82" SpAtk="110" SpDef="88" Spd="100" YieldingExp="130" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="342" EvolvesTo="0" FuseMaster="0" FuseSub="0" PetClass="130" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="343" DefName="索比拉特" Type="13" IsLarge="1" GrowthType="4" HP="105" Atk="101" Def="82" SpAtk="110" SpDef="88" Spd="100" YieldingExp="130" CatchRate="0" YieldingEV="0 1 0 1 0 1" EvolvesFrom="342" EvolvesTo="0" FuseMaster="0" FuseSub="0" PetClass="130" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10223" LearningLv="1"/>
 	      <Move ID="20168" LearningLv="5"/>
@@ -5224,7 +5224,7 @@
 	      <Move ID="20369" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="345" DefName="巨镰鸟" Type="4" GrowthType="3" HP="102" Atk="108" Def="82" SpAtk="89" SpDef="76" Spd="103" YieldingExp="115" CatchRate="0" YieldingEV="0 1 0 0 0 1" EvolvesFrom="344" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="131" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="345" DefName="巨镰鸟" Type="4" IsLarge="1" GrowthType="3" HP="102" Atk="108" Def="82" SpAtk="89" SpDef="76" Spd="103" YieldingExp="115" CatchRate="0" YieldingEV="0 1 0 0 0 1" EvolvesFrom="344" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="131" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10018" LearningLv="1"/>
 	      <Move ID="20001" LearningLv="5"/>
@@ -5256,7 +5256,7 @@
 	      <Move ID="10845" LearningLv="34"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="347" DefName="远古鱼龙" Type="2" GrowthType="5" HP="125" Atk="100" Def="73" SpAtk="117" SpDef="95" Spd="90" YieldingExp="120" CatchRate="0" YieldingEV="1 0 0 1 0 0" EvolvesFrom="346" EvolvesTo="0" EvolvingLv="1" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="132" FormParam="0" CharacterAttrParam="5" GradeParam="3" AddSeParam="0" EvolvFlag="39">
+	<Monster ID="347" DefName="远古鱼龙" Type="2" IsLarge="1" GrowthType="5" HP="125" Atk="100" Def="73" SpAtk="117" SpDef="95" Spd="90" YieldingExp="120" CatchRate="0" YieldingEV="1 0 0 1 0 0" EvolvesFrom="346" EvolvesTo="0" EvolvingLv="1" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="132" FormParam="0" CharacterAttrParam="5" GradeParam="3" AddSeParam="0" EvolvFlag="39">
 	    <LearnableMoves>
 	      <Move ID="10127" LearningLv="1"/>
 	      <Move ID="20372" LearningLv="4"/>
@@ -5296,7 +5296,7 @@
 	      <Move ID="20376" LearningLv="36"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="350" DefName="夏洛犬" Type="8" GrowthType="4" HP="110" Atk="118" Def="91" SpAtk="95" SpDef="85" Spd="91" YieldingExp="125" CatchRate="0" YieldingEV="0 1 1 0 0 1" EvolvesFrom="349" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="133" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
+	<Monster ID="350" DefName="夏洛犬" Type="8" IsLarge="1" GrowthType="4" HP="110" Atk="118" Def="91" SpAtk="95" SpDef="85" Spd="91" YieldingExp="125" CatchRate="0" YieldingEV="0 1 1 0 0 1" EvolvesFrom="349" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="133" FormParam="0" CharacterAttrParam="1" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="7"/>
@@ -5336,7 +5336,7 @@
 	      <Move ID="10858" LearningLv="32"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="353" DefName="迪斯凯特" Type="10" GrowthType="4" HP="108" Atk="88" Def="104" SpAtk="84" SpDef="104" Spd="95" YieldingExp="125" CatchRate="0" YieldingEV="0 0 1 0 1 1" EvolvesFrom="352" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" PetClass="134" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
+	<Monster ID="353" DefName="迪斯凯特" Type="10" IsLarge="1" GrowthType="4" HP="108" Atk="88" Def="104" SpAtk="84" SpDef="104" Spd="95" YieldingExp="125" CatchRate="0" YieldingEV="0 0 1 0 1 1" EvolvesFrom="352" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" PetClass="134" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20280" LearningLv="6"/>
@@ -5376,7 +5376,7 @@
 	      <Move ID="20127" LearningLv="32"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="356" DefName="斯加尔卡" Type="5" GrowthType="4" HP="111" Atk="115" Def="102" SpAtk="90" SpDef="84" Spd="73" YieldingExp="130" CatchRate="0" YieldingEV="1 1 1 0 0 0" EvolvesFrom="355" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="135" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="356" DefName="斯加尔卡" Type="5" IsLarge="1" GrowthType="4" HP="111" Atk="115" Def="102" SpAtk="90" SpDef="84" Spd="73" YieldingExp="130" CatchRate="0" YieldingEV="1 1 1 0 0 0" EvolvesFrom="355" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="135" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20006" LearningLv="6"/>
@@ -5419,7 +5419,7 @@
 	      <Move ID="20395" LearningLv="35"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="359" DefName="布林克克" Type="2" GrowthType="4" HP="110" Atk="118" Def="94" SpAtk="98" SpDef="82" Spd="90" YieldingExp="130" CatchRate="0" YieldingEV="1 1 0 1 0 0" EvolvesFrom="358" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="136" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="359" DefName="布林克克" Type="2" IsLarge="1" GrowthType="4" HP="110" Atk="118" Def="94" SpAtk="98" SpDef="82" Spd="90" YieldingExp="130" CatchRate="0" YieldingEV="1 1 0 1 0 0" EvolvesFrom="358" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="136" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10006" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="6"/>
@@ -5455,7 +5455,7 @@
 	      <Move ID="10870" LearningLv="28"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="361" DefName="艾丝柏" Type="5" GrowthType="3" HP="110" Atk="95" Def="90" SpAtk="100" SpDef="90" Spd="72" YieldingExp="115" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="360" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="137" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
+	<Monster ID="361" DefName="艾丝柏" Type="5" IsLarge="1" GrowthType="3" HP="110" Atk="95" Def="90" SpAtk="100" SpDef="90" Spd="72" YieldingExp="115" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="360" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="137" FormParam="0" CharacterAttrParam="6" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20388" LearningLv="4"/>
@@ -5487,7 +5487,7 @@
 	      <Move ID="10333" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="363" DefName="鲁比克" Type="6" GrowthType="3" HP="105" Atk="85" Def="87" SpAtk="102" SpDef="83" Spd="91" YieldingExp="112" CatchRate="0" YieldingEV="1 0 0 1 0 0" EvolvesFrom="362" FuseMaster="1" FuseSub="1" PetClass="138" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="363" DefName="鲁比克" Type="6" IsLarge="1" GrowthType="3" HP="105" Atk="85" Def="87" SpAtk="102" SpDef="83" Spd="91" YieldingExp="112" CatchRate="0" YieldingEV="1 0 0 1 0 0" EvolvesFrom="362" FuseMaster="1" FuseSub="1" PetClass="138" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20111" LearningLv="5"/>
@@ -5519,7 +5519,7 @@
 	      <Move ID="20402" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="365" DefName="火爆鼠" Type="3" GrowthType="4" HP="95" Atk="108" Def="85" SpAtk="85" SpDef="87" Spd="100" YieldingExp="119" CatchRate="0" YieldingEV="0 1 0 0 0 1" EvolvesFrom="364" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="139" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="365" DefName="火爆鼠" Type="3" IsLarge="1" GrowthType="4" HP="95" Atk="108" Def="85" SpAtk="85" SpDef="87" Spd="100" YieldingExp="119" CatchRate="0" YieldingEV="0 1 0 0 0 1" EvolvesFrom="364" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="139" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10892" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="5"/>
@@ -5559,7 +5559,7 @@
 	      <Move ID="10898" LearningLv="73"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="367" DefName="海纹蝶" Type="2" GrowthType="4" HP="118" Atk="82" Def="85" SpAtk="102" SpDef="90" Spd="88" YieldingExp="118" CatchRate="0" YieldingEV="0 0 1 0 1 0" EvolvesFrom="366" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="2" PetClass="140" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="367" DefName="海纹蝶" Type="2" IsLarge="1" GrowthType="4" HP="118" Atk="82" Def="85" SpAtk="102" SpDef="90" Spd="88" YieldingExp="118" CatchRate="0" YieldingEV="0 0 1 0 1 0" EvolvesFrom="366" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="2" PetClass="140" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20045" LearningLv="8"/>
@@ -5579,7 +5579,7 @@
 	      <Move ID="10906" LearningLv="73"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="368" DefName="炽翼蝶" Type="3" GrowthType="4" HP="102" Atk="88" Def="75" SpAtk="115" SpDef="75" Spd="105" YieldingExp="118" CatchRate="0" YieldingEV="0 0 0 1 0 1" EvolvesFrom="366" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="2" PetClass="140" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="368" DefName="炽翼蝶" Type="3" IsLarge="1" GrowthType="4" HP="102" Atk="88" Def="75" SpAtk="115" SpDef="75" Spd="105" YieldingExp="118" CatchRate="0" YieldingEV="0 0 0 1 0 1" EvolvesFrom="366" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="2" PetClass="140" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20045" LearningLv="8"/>
@@ -5599,7 +5599,7 @@
 	      <Move ID="10911" LearningLv="73"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="369" DefName="橡木蝶" Type="1" GrowthType="4" HP="110" Atk="80" Def="99" SpAtk="80" SpDef="115" Spd="76" YieldingExp="118" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="366" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="2" PetClass="140" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="369" DefName="橡木蝶" Type="1" IsLarge="1" GrowthType="4" HP="110" Atk="80" Def="99" SpAtk="80" SpDef="115" Spd="76" YieldingExp="118" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="366" EvolvesTo="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="2" PetClass="140" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20045" LearningLv="8"/>
@@ -5639,7 +5639,7 @@
 	      <Move ID="10924" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="372" DefName="奎比历斯" Type="12" GrowthType="4" HP="115" Atk="90" Def="92" SpAtk="102" SpDef="84" Spd="88" YieldingExp="128" CatchRate="0" YieldingEV="1 1 0 1 0 0" EvolvesFrom="371" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="141" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="372" DefName="奎比历斯" Type="12" IsLarge="1" GrowthType="4" HP="115" Atk="90" Def="92" SpAtk="102" SpDef="84" Spd="88" YieldingExp="128" CatchRate="0" YieldingEV="1 1 0 1 0 0" EvolvesFrom="371" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="141" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10234" LearningLv="1"/>
 	      <Move ID="20273" LearningLv="7"/>
@@ -5691,7 +5691,7 @@
 	      <Move ID="10931" LearningLv="61"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="375" DefName="隆米尔" Type="6" GrowthType="3" HP="112" Atk="84" Def="95" SpAtk="98" SpDef="112" Spd="70" YieldingExp="118" CatchRate="0" YieldingEV="0 0 1 0 1 0" EvolvesFrom="373" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="142" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="375" DefName="隆米尔" Type="6" IsLarge="1" GrowthType="3" HP="112" Atk="84" Def="95" SpAtk="98" SpDef="112" Spd="70" YieldingExp="118" CatchRate="0" YieldingEV="0 0 1 0 1 0" EvolvesFrom="373" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="142" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20065" LearningLv="5"/>
@@ -5723,7 +5723,7 @@
 	      <Move ID="20451" LearningLv="27"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="377" DefName="宿主岩" Type="7" GrowthType="4" HP="130" Atk="91" Def="120" SpAtk="75" SpDef="85" Spd="70" YieldingExp="110" CatchRate="0" YieldingEV="1 0 1 0 0 0" EvolvesFrom="376" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="143" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
+	<Monster ID="377" DefName="宿主岩" Type="7" IsLarge="1" GrowthType="4" HP="130" Atk="91" Def="120" SpAtk="75" SpDef="85" Spd="70" YieldingExp="110" CatchRate="0" YieldingEV="1 0 1 0 0 0" EvolvesFrom="376" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="143" FormParam="0" CharacterAttrParam="2" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20353" LearningLv="4"/>
@@ -5763,7 +5763,7 @@
 	      <Move ID="10947" LearningLv="32"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="380" DefName="凯凯西朴" Type="9" GrowthType="4" HP="105" Atk="85" Def="80" SpAtk="108" SpDef="90" Spd="105" YieldingExp="130" CatchRate="0" YieldingEV="0 0 0 1 1 1" EvolvesFrom="379" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="144" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="380" DefName="凯凯西朴" Type="9" IsLarge="1" GrowthType="4" HP="105" Atk="85" Def="80" SpAtk="108" SpDef="90" Spd="105" YieldingExp="130" CatchRate="0" YieldingEV="0 0 0 1 1 1" EvolvesFrom="379" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="144" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20035" LearningLv="6"/>
@@ -5795,7 +5795,7 @@
 	      <Move ID="10955" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="382" DefName="史拉达" Type="10" GrowthType="3" HP="106" Atk="84" Def="82" SpAtk="100" SpDef="112" Spd="85" YieldingExp="118" CatchRate="0" YieldingEV="1 0 0 0 1 0" EvolvesFrom="381" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" PetClass="145" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="382" DefName="史拉达" Type="10" IsLarge="1" GrowthType="3" HP="106" Atk="84" Def="82" SpAtk="100" SpDef="112" Spd="85" YieldingExp="118" CatchRate="0" YieldingEV="1 0 0 0 1 0" EvolvesFrom="381" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" PetClass="145" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20353" LearningLv="6"/>
@@ -5827,7 +5827,7 @@
 	      <Move ID="20437" LearningLv="30"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="384" DefName="波戈" Type="8" GrowthType="4" HP="120" Atk="102" Def="102" SpAtk="85" SpDef="85" Spd="86" YieldingExp="120" CatchRate="0" YieldingEV="0 1 1 0 0 0" EvolvesFrom="383" EvolvesTo="0" EvolvingLv="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="146" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="384" DefName="波戈" Type="8" IsLarge="1" GrowthType="4" HP="120" Atk="102" Def="102" SpAtk="85" SpDef="85" Spd="86" YieldingExp="120" CatchRate="0" YieldingEV="0 1 1 0 0 0" EvolvesFrom="383" EvolvesTo="0" EvolvingLv="0" FreeForbidden="1" FuseMaster="1" FuseSub="1" Gender="1" PetClass="146" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10250" LearningLv="1"/>
 	      <Move ID="20039" LearningLv="6"/>
@@ -5859,7 +5859,7 @@
 	      <Move ID="20439" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="386" DefName="基维奥拉" Type="9" GrowthType="4" HP="115" Atk="115" Def="90" SpAtk="90" SpDef="75" Spd="90" YieldingExp="115" CatchRate="0" YieldingEV="0 2 0 0 0 0" EvolvesFrom="385" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="147" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="386" DefName="基维奥拉" Type="9" IsLarge="1" GrowthType="4" HP="115" Atk="115" Def="90" SpAtk="90" SpDef="75" Spd="90" YieldingExp="115" CatchRate="0" YieldingEV="0 2 0 0 0 0" EvolvesFrom="385" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="147" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
@@ -5900,7 +5900,7 @@
 	      <Move ID="20442" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="389" DefName="辛奇帕克" Type="1" GrowthType="4" HP="125" Atk="75" Def="110" SpAtk="90" SpDef="117" Spd="53" YieldingExp="120" CatchRate="0" YieldingEV="1 1 1 0 0 0" EvolvesFrom="388" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="148" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
+	<Monster ID="389" DefName="辛奇帕克" Type="1" IsLarge="1" GrowthType="4" HP="125" Atk="75" Def="110" SpAtk="90" SpDef="117" Spd="53" YieldingExp="120" CatchRate="0" YieldingEV="1 1 1 0 0 0" EvolvesFrom="388" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="148" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10535" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="5"/>
@@ -5932,7 +5932,7 @@
 	      <Move ID="10761" LearningLv="30"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="391" DefName="塔西亚" Type="15" GrowthType="5" HP="120" Atk="95" Def="80" SpAtk="118" SpDef="110" Spd="82" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 1 1 0" EvolvesFrom="390" EvolvesTo="0" EvolvingLv="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="149" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="391" DefName="塔西亚" Type="15" IsLarge="1" GrowthType="5" HP="120" Atk="95" Def="80" SpAtk="118" SpDef="110" Spd="82" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 1 1 0" EvolvesFrom="390" EvolvesTo="0" EvolvingLv="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="149" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10611" LearningLv="1"/>
 	      <Move ID="20369" LearningLv="6"/>
@@ -5964,7 +5964,7 @@
 	      <Move ID="20225" LearningLv="34"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="393" DefName="上古炎兽" Type="3" GrowthType="5" HP="120" Atk="118" Def="95" SpAtk="102" SpDef="75" Spd="90" YieldingExp="120" CatchRate="0" YieldingEV="0 1 1 0 0 0" EvolvesFrom="392" EvolvesTo="0" EvolvingLv="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="150" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="0">
+	<Monster ID="393" DefName="上古炎兽" Type="3" IsLarge="1" GrowthType="5" HP="120" Atk="118" Def="95" SpAtk="102" SpDef="75" Spd="90" YieldingExp="120" CatchRate="0" YieldingEV="0 1 1 0 0 0" EvolvesFrom="392" EvolvesTo="0" EvolvingLv="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="150" FormParam="0" CharacterAttrParam="1" GradeParam="3" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10980" LearningLv="1"/>
 	      <Move ID="20449" LearningLv="4"/>
@@ -6004,7 +6004,7 @@
 	      <Move ID="20530" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="396" DefName="龙须蝴" Type="4" GrowthType="3" HP="108" Atk="106" Def="79" SpAtk="96" SpDef="80" Spd="101" YieldingExp="120" CatchRate="0" YieldingEV="1 1 0 0 0 1" EvolvesFrom="395" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="151" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="396" DefName="龙须蝴" Type="4" IsLarge="1" GrowthType="3" HP="108" Atk="106" Def="79" SpAtk="96" SpDef="80" Spd="101" YieldingExp="120" CatchRate="0" YieldingEV="1 1 0 0 0 1" EvolvesFrom="395" EvolvesTo="0" EvolvingLv="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="151" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10234" LearningLv="1"/>
 	      <Move ID="20045" LearningLv="5"/>
@@ -6036,7 +6036,7 @@
 	      <Move ID="20234" LearningLv="30"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="398" DefName="杰拉德" Type="11" GrowthType="0" HP="112" Atk="118" Def="102" SpAtk="86" SpDef="86" Spd="76" YieldingExp="118" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="397" EvolvesTo="0" EvolvingLv="63" FuseMaster="0" FuseSub="0" Gender="1" PetClass="152" FormParam="0" CharacterAttrParam="2" GradeParam="2" AddSeParam="0" EvolvFlag="25">
+	<Monster ID="398" DefName="杰拉德" Type="11" IsLarge="1" GrowthType="0" HP="112" Atk="118" Def="102" SpAtk="86" SpDef="86" Spd="76" YieldingExp="118" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="397" EvolvesTo="0" EvolvingLv="63" FuseMaster="0" FuseSub="0" Gender="1" PetClass="152" FormParam="0" CharacterAttrParam="2" GradeParam="2" AddSeParam="0" EvolvFlag="25">
 	    <LearnableMoves>
 	      <Move ID="10499" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="6"/>
@@ -6068,7 +6068,7 @@
 	      <Move ID="10615" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="400" DefName="萨帕克" Type="15" GrowthType="3" HP="110" Atk="89" Def="79" SpAtk="114" SpDef="101" Spd="97" YieldingExp="119" CatchRate="0" YieldingEV="1 0 0 1 0 0" EvolvesFrom="399" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="153" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="400" DefName="萨帕克" Type="15" IsLarge="1" GrowthType="3" HP="110" Atk="89" Def="79" SpAtk="114" SpDef="101" Spd="97" YieldingExp="119" CatchRate="0" YieldingEV="1 0 0 1 0 0" EvolvesFrom="399" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="2" PetClass="153" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10006" LearningLv="1"/>
 	      <Move ID="20373" LearningLv="5"/>
@@ -6111,7 +6111,7 @@
 	      <Move ID="11092" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="403" DefName="泰瑞" Type="5" GrowthType="4" HP="125" Atk="120" Def="95" SpAtk="77" SpDef="77" Spd="90" YieldingExp="130" CatchRate="0" YieldingEV="0 2 0 1 0 0" EvolvesFrom="402" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="154" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="403" DefName="泰瑞" Type="5" IsLarge="1" GrowthType="4" HP="125" Atk="120" Def="95" SpAtk="77" SpDef="77" Spd="90" YieldingExp="130" CatchRate="0" YieldingEV="0 2 0 1 0 0" EvolvesFrom="402" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="154" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20004" LearningLv="5"/>
@@ -6147,7 +6147,7 @@
 	      <Move ID="10382" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="405" DefName="提姆提姆" Type="11" GrowthType="4" HP="130" Atk="100" Def="120" SpAtk="77" SpDef="80" Spd="80" YieldingExp="120" CatchRate="0" YieldingEV="1 0 1 0 0 0" EvolvesFrom="404" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="155" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="405" DefName="提姆提姆" Type="11" IsLarge="1" GrowthType="4" HP="130" Atk="100" Def="120" SpAtk="77" SpDef="80" Spd="80" YieldingExp="120" CatchRate="0" YieldingEV="1 0 1 0 0 0" EvolvesFrom="404" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="155" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10499" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="5"/>
@@ -6191,7 +6191,7 @@
 	      <Move ID="11103" LearningLv="34"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="408" DefName="沙恩克" Type="7" GrowthType="4" HP="120" Atk="110" Def="85" SpAtk="75" SpDef="80" Spd="92" YieldingExp="129" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="407" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="156" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="408" DefName="沙恩克" Type="7" IsLarge="1" GrowthType="4" HP="120" Atk="110" Def="85" SpAtk="75" SpDef="80" Spd="92" YieldingExp="129" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="407" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="156" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="5"/>
@@ -6234,7 +6234,7 @@
 	      <Move ID="20077" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="411" DefName="闪光格鲁高" Type="7" GrowthType="4" HP="105" Atk="86" Def="84" SpAtk="110" SpDef="90" Spd="80" YieldingExp="120" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="410" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="157" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="1">
+	<Monster ID="411" DefName="闪光格鲁高" Type="7" IsLarge="1" GrowthType="4" HP="105" Atk="86" Def="84" SpAtk="110" SpDef="90" Spd="80" YieldingExp="120" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="410" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="157" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="1">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20068" LearningLv="5"/>
@@ -6270,7 +6270,7 @@
 	      <Move ID="11112" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="413" DefName="塞维尔" Type="15" GrowthType="5" HP="120" Atk="116" Def="96" SpAtk="95" SpDef="90" Spd="102" YieldingExp="120" CatchRate="0" YieldingEV="0 1 0 0 0 0" EvolvesFrom="412" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="158" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="413" DefName="塞维尔" Type="15" IsLarge="1" GrowthType="5" HP="120" Atk="116" Def="96" SpAtk="95" SpDef="90" Spd="102" YieldingExp="120" CatchRate="0" YieldingEV="0 1 0 0 0 0" EvolvesFrom="412" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="158" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10611" LearningLv="1"/>
 	      <Move ID="20265" LearningLv="5"/>
@@ -6303,7 +6303,7 @@
 	      <Move ID="11122" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="415" DefName="乌鲁卡" Type="15" GrowthType="3" HP="102" Atk="75" Def="75" SpAtk="110" SpDef="95" Spd="105" YieldingExp="118" CatchRate="0" YieldingEV="0 0 0 1 0 1" EvolvesFrom="414" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="159" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
+	<Monster ID="415" DefName="乌鲁卡" Type="15" IsLarge="1" GrowthType="3" HP="102" Atk="75" Def="75" SpAtk="110" SpDef="95" Spd="105" YieldingExp="118" CatchRate="0" YieldingEV="0 0 0 1 0 1" EvolvesFrom="414" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="159" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20265" LearningLv="5"/>
@@ -6345,7 +6345,7 @@
 	      <Move ID="20558" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="418" DefName="艾斯菲格" Type="10" GrowthType="4" HP="95" Atk="80" Def="77" SpAtk="118" SpDef="90" Spd="100" YieldingExp="130" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="417" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="160" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="418" DefName="艾斯菲格" Type="10" IsLarge="1" GrowthType="4" HP="95" Atk="80" Def="77" SpAtk="118" SpDef="90" Spd="100" YieldingExp="130" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="417" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="160" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20096" LearningLv="5"/>
@@ -6387,7 +6387,7 @@
 	      <Move ID="11135" LearningLv="34"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="421" DefName="厄尔塞拉" Type="12" GrowthType="5" HP="102" Atk="79" Def="91" SpAtk="112" SpDef="94" Spd="103" YieldingExp="130" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="420" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="161" FormParam="0" CharacterAttrParam="6" GradeParam="2" AddSeParam="0">
+	<Monster ID="421" DefName="厄尔塞拉" Type="12" IsLarge="1" GrowthType="5" HP="102" Atk="79" Def="91" SpAtk="112" SpDef="94" Spd="103" YieldingExp="130" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="420" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="161" FormParam="0" CharacterAttrParam="6" GradeParam="2" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10058" LearningLv="1"/>
 	      <Move ID="20049" LearningLv="6"/>
@@ -6431,7 +6431,7 @@
 	      <Move ID="11151" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="424" DefName="克尔加德" Type="21" GrowthType="4" HP="122" Atk="75" Def="99" SpAtk="108" SpDef="103" Spd="85" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="423" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="162" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
+	<Monster ID="424" DefName="克尔加德" Type="21" IsLarge="1" GrowthType="4" HP="122" Atk="75" Def="99" SpAtk="108" SpDef="103" Spd="85" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="423" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="162" FormParam="0" CharacterAttrParam="3" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20020" LearningLv="5"/>
@@ -6464,7 +6464,7 @@
 	      <Move ID="11167" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="426" DefName="迪尔科特" Type="47" GrowthType="5" HP="105" Atk="72" Def="84" SpAtk="106" SpDef="88" Spd="105" YieldingExp="130" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="425" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="163" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="426" DefName="迪尔科特" Type="47" IsLarge="1" GrowthType="5" HP="105" Atk="72" Def="84" SpAtk="106" SpDef="88" Spd="105" YieldingExp="130" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="425" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="163" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20013" LearningLv="5"/>
@@ -6507,7 +6507,7 @@
 	      <Move ID="11157" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="429" DefName="艾克里桑" Type="30" GrowthType="4" HP="112" Atk="75" Def="86" SpAtk="106" SpDef="91" Spd="105" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 2 0 1" EvolvesFrom="428" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="2" PetClass="164" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" IsFuseMon="1">
+	<Monster ID="429" DefName="艾克里桑" Type="30" IsLarge="1" GrowthType="4" HP="112" Atk="75" Def="86" SpAtk="106" SpDef="91" Spd="105" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 2 0 1" EvolvesFrom="428" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="2" PetClass="164" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0" IsFuseMon="1">
 	    <LearnableMoves>
 	      <Move ID="10683" LearningLv="1"/>
 	      <Move ID="10054" LearningLv="5"/>
@@ -6542,7 +6542,7 @@
 	      <Move ID="10323" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="431" DefName="鲁尔蒂尼" Type="25" GrowthType="4" HP="105" Atk="75" Def="80" SpAtk="112" SpDef="94" Spd="104" YieldingExp="130" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="430" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="165" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="431" DefName="鲁尔蒂尼" Type="25" IsLarge="1" GrowthType="4" HP="105" Atk="75" Def="80" SpAtk="112" SpDef="94" Spd="104" YieldingExp="130" CatchRate="0" YieldingEV="0 0 0 2 0 0" EvolvesFrom="430" EvolvesTo="0" FuseMaster="1" FuseSub="1" PetClass="165" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10391" LearningLv="1"/>
 	      <Move ID="20250" LearningLv="5"/>
@@ -6562,7 +6562,7 @@
 	      <Move ID="11164" LearningLv="61"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="432" DefName="杰西卡" Type="11" GrowthType="0" HP="114" Atk="118" Def="103" SpAtk="87" SpDef="87" Spd="81" YieldingExp="138" CatchRate="0" YieldingEV="1 2 0 0 0 0" EvolvesFrom="398" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="152" FormParam="0" CharacterAttrParam="2" GradeParam="2" AddSeParam="0" SuperMon="1">
+	<Monster ID="432" DefName="杰西卡" Type="11" IsLarge="1" GrowthType="0" HP="114" Atk="118" Def="103" SpAtk="87" SpDef="87" Spd="81" YieldingExp="138" CatchRate="0" YieldingEV="1 2 0 0 0 0" EvolvesFrom="398" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="152" FormParam="0" CharacterAttrParam="2" GradeParam="2" AddSeParam="0" SuperMon="1">
 	    <LearnableMoves>
 	      <Move ID="10499" LearningLv="1"/>
 	      <Move ID="20117" LearningLv="6"/>
@@ -6610,7 +6610,7 @@
 	      <Move ID="11171" LearningLv="38"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="435" DefName="萨诺拉斯" Type="3" GrowthType="4" HP="100" Atk="110" Def="85" SpAtk="80" SpDef="80" Spd="102" YieldingExp="128" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="434" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="166" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="435" DefName="萨诺拉斯" Type="3" IsLarge="1" GrowthType="4" HP="100" Atk="110" Def="85" SpAtk="80" SpDef="80" Spd="102" YieldingExp="128" CatchRate="0" YieldingEV="0 2 0 0 0 1" EvolvesFrom="434" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="166" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10006" LearningLv="1"/>
 	      <Move ID="20002" LearningLv="5"/>
@@ -6666,7 +6666,7 @@
 	      <Move ID="10065" LearningLv="41"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="438" DefName="魔花使者" Type="1" GrowthType="4" HP="99" Atk="98" Def="75" SpAtk="116" SpDef="80" Spd="93" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="437" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="167" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="438" DefName="魔花使者" Type="1" IsLarge="1" GrowthType="4" HP="99" Atk="98" Def="75" SpAtk="116" SpDef="80" Spd="93" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="437" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="2" PetClass="167" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10042" LearningLv="1"/>
 	      <Move ID="20022" LearningLv="4"/>
@@ -6716,7 +6716,7 @@
 	      <Move ID="10122" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="441" DefName="莫尔加斯" Type="7" GrowthType="4" HP="110" Atk="85" Def="85" SpAtk="114" SpDef="93" Spd="73" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="440" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="168" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	<Monster ID="441" DefName="莫尔加斯" Type="7" IsLarge="1" GrowthType="4" HP="110" Atk="85" Def="85" SpAtk="114" SpDef="93" Spd="73" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="440" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="168" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0" VipBtlAdj="2" IsDark="1">
 	    <LearnableMoves>
 	      <Move ID="10086" LearningLv="1"/>
 	      <Move ID="20045" LearningLv="5"/>
@@ -6764,7 +6764,7 @@
 	      <Move ID="10038" LearningLv="41"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="444" DefName="闪光依莱恩" Type="1" GrowthType="4" HP="100" Atk="110" Def="83" SpAtk="107" SpDef="84" Spd="94" YieldingExp="130" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="443" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="169" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="1">
+	<Monster ID="444" DefName="闪光依莱恩" Type="1" IsLarge="1" GrowthType="4" HP="100" Atk="110" Def="83" SpAtk="107" SpDef="84" Spd="94" YieldingExp="130" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="443" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="169" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0" VipBtlAdj="1">
 	    <LearnableMoves>
 	      <Move ID="10234" LearningLv="1"/>
 	      <Move ID="20020" LearningLv="5"/>
@@ -6811,7 +6811,7 @@
 	      <Move ID="20186" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="447" DefName="格兰诺" Type="44" GrowthType="4" HP="103" Atk="80" Def="76" SpAtk="115" SpDef="88" Spd="98" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="446" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="2" PetClass="170" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="447" DefName="格兰诺" Type="44" IsLarge="1" GrowthType="4" HP="103" Atk="80" Def="76" SpAtk="115" SpDef="88" Spd="98" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="446" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="2" PetClass="170" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20234" LearningLv="5"/>
@@ -6852,7 +6852,7 @@
 	      <Move ID="20172" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="450" DefName="格拉诺" Type="45" GrowthType="4" HP="105" Atk="80" Def="80" SpAtk="105" SpDef="85" Spd="99" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="449" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="171" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
+	<Monster ID="450" DefName="格拉诺" Type="45" IsLarge="1" GrowthType="4" HP="105" Atk="80" Def="80" SpAtk="105" SpDef="85" Spd="99" YieldingExp="128" CatchRate="0" YieldingEV="0 0 0 3 0 0" EvolvesFrom="449" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="171" FormParam="0" CharacterAttrParam="0" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20216" LearningLv="5"/>
@@ -6895,7 +6895,7 @@
 	      <Move ID="10144" LearningLv="37"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="453" DefName="菲拉斯特" Type="41" GrowthType="4" HP="105" Atk="110" Def="87" SpAtk="80" SpDef="83" Spd="95" YieldingExp="130" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="452" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="172" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
+	<Monster ID="453" DefName="菲拉斯特" Type="41" IsLarge="1" GrowthType="4" HP="105" Atk="110" Def="87" SpAtk="80" SpDef="83" Spd="95" YieldingExp="130" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="452" EvolvesTo="0" FreeForbidden="1" FuseMaster="0" FuseSub="0" Gender="1" PetClass="172" FormParam="0" CharacterAttrParam="1" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20068" LearningLv="5"/>
@@ -6928,7 +6928,7 @@
 	      <Move ID="20474" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="455" DefName="雷光兽" Type="5" GrowthType="3" HP="102" Atk="78" Def="85" SpAtk="102" SpDef="88" Spd="96" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 1 0 1" EvolvesFrom="454" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="173" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="455" DefName="雷光兽" Type="5" IsLarge="1" GrowthType="3" HP="102" Atk="78" Def="85" SpAtk="102" SpDef="88" Spd="96" YieldingExp="125" CatchRate="0" YieldingEV="0 0 0 1 0 1" EvolvesFrom="454" EvolvesTo="0" FuseMaster="1" FuseSub="1" Gender="1" PetClass="173" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10074" LearningLv="1"/>
 	      <Move ID="20041" LearningLv="5"/>
@@ -6970,7 +6970,7 @@
 	      <Move ID="20478" LearningLv="33"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="458" DefName="奥利贡" Type="8" GrowthType="4" HP="115" Atk="80" Def="91" SpAtk="102" SpDef="92" Spd="85" YieldingExp="125" CatchRate="0" YieldingEV="3 0 0 0 0 0" EvolvesFrom="457" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="2" PetClass="174" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
+	<Monster ID="458" DefName="奥利贡" Type="8" IsLarge="1" GrowthType="4" HP="115" Atk="80" Def="91" SpAtk="102" SpDef="92" Spd="85" YieldingExp="125" CatchRate="0" YieldingEV="3 0 0 0 0 0" EvolvesFrom="457" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="2" PetClass="174" FormParam="0" CharacterAttrParam="6" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10001" LearningLv="1"/>
 	      <Move ID="20477" LearningLv="5"/>
@@ -7002,7 +7002,7 @@
 	      <Move ID="20298" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="460" DefName="尤达里克" Type="6" GrowthType="4" HP="108" Atk="108" Def="87" SpAtk="80" SpDef="85" Spd="82" YieldingExp="118" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="459" EvolvesTo="0" FuseMaster="0" FuseSub="0" PetClass="175" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
+	<Monster ID="460" DefName="尤达里克" Type="6" IsLarge="1" GrowthType="4" HP="108" Atk="108" Def="87" SpAtk="80" SpDef="85" Spd="82" YieldingExp="118" CatchRate="0" YieldingEV="1 1 0 0 0 0" EvolvesFrom="459" EvolvesTo="0" FuseMaster="0" FuseSub="0" PetClass="175" FormParam="0" CharacterAttrParam="2" GradeParam="1" AddSeParam="0">
 	    <LearnableMoves>
 	      <Move ID="10019" LearningLv="1"/>
 	      <Move ID="20156" LearningLv="5"/>
@@ -7034,7 +7034,7 @@
 	      <Move ID="11228" LearningLv="29"/>
 	    </LearnableMoves>
 	</Monster>
-	<Monster ID="462" DefName="阿尔达拉" Type="31" GrowthType="5" HP="109" Atk="110" Def="82" SpAtk="111" SpDef="83" Spd="95" YieldingExp="130" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="461" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="176" FormParam="0" CharacterAttrParam="1" GradeParam="2" AddSeParam="0" Vip="1">
+	<Monster ID="462" DefName="阿尔达拉" Type="31" IsLarge="1" GrowthType="5" HP="109" Atk="110" Def="82" SpAtk="111" SpDef="83" Spd="95" YieldingExp="130" CatchRate="0" YieldingEV="0 1 0 1 0 0" EvolvesFrom="461" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="176" FormParam="0" CharacterAttrParam="1" GradeParam="2" AddSeParam="0" Vip="1">
 	    <LearnableMoves>
 	      <Move ID="10018" LearningLv="1"/>
 	      <Move ID="20328" LearningLv="5"/>
