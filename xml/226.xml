@@ -23579,6 +23579,41 @@
 	      <Move ID="13471" LearningLv="75"/>
 	    </LearnableMoves>
 	</Monster>
+	<Monster ID="500001" DefName="幽光鼠" Type="5" GrowthType="4" HP="56" Atk="65" Def="37" SpAtk="38" SpDef="35" Spd="57" YieldingExp="70" CatchRate="0" YieldingEV="0 1 0 0 0 0" EvolvesFrom="0" EvolvesTo="500002" EvolvingLv="22" FuseMaster="0" FuseSub="0" Gender="1" PetClass="1501" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	    <LearnableMoves>
+	      <Move ID="10001" LearningLv="1"/>
+	      <Move ID="20004" LearningLv="5"/>
+	      <Move ID="20006" LearningLv="9"/>
+	      <Move ID="10011" LearningLv="13"/>
+	    </LearnableMoves>
+	</Monster>
+	<Monster ID="500002" DefName="黑电鼠" Type="5" GrowthType="4" HP="77" Atk="85" Def="52" SpAtk="57" SpDef="50" Spd="78" YieldingExp="100" CatchRate="0" YieldingEV="0 2 0 0 0 0" EvolvesFrom="500001" EvolvesTo="500003" EvolvingLv="42" FuseMaster="0" FuseSub="0" Gender="1" PetClass="1501" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	    <LearnableMoves>
+	      <Move ID="10001" LearningLv="1"/>
+	      <Move ID="20004" LearningLv="5"/>
+	      <Move ID="20006" LearningLv="9"/>
+	      <Move ID="10011" LearningLv="13"/>
+	      <Move ID="10040" LearningLv="18"/>
+	      <Move ID="20016" LearningLv="23"/>
+	      <Move ID="20011" LearningLv="28"/>
+	    </LearnableMoves>
+	</Monster>
+	<Monster ID="500003" DefName="暗雷鼠" Type="5" IsLarge="1" GrowthType="4" HP="114" Atk="120" Def="85" SpAtk="90" SpDef="80" Spd="106" YieldingExp="130" CatchRate="0" YieldingEV="0 3 0 0 0 0" EvolvesFrom="500002" EvolvesTo="0" FuseMaster="0" FuseSub="0" Gender="1" PetClass="1501" FormParam="0" CharacterAttrParam="0" GradeParam="0" AddSeParam="0" VipBtlAdj="2" IsDark="1">
+	    <LearnableMoves>
+	      <Move ID="10001" LearningLv="1"/>
+	      <Move ID="20004" LearningLv="5"/>
+	      <Move ID="20006" LearningLv="9"/>
+	      <Move ID="10011" LearningLv="13"/>
+	      <Move ID="10040" LearningLv="18"/>
+	      <Move ID="20016" LearningLv="23"/>
+	      <Move ID="20011" LearningLv="28"/>
+	      <Move ID="10041" LearningLv="35"/>
+	      <Move ID="10015" LearningLv="42"/>
+	      <Move ID="20018" LearningLv="49"/>
+	      <Move ID="10010" LearningLv="56"/>
+	    </LearnableMoves>
+	</Monster>
+
   <Monster ID="1300067" DefName="红色闪电" nameY="-50" scale="1.5" speed="10" isMount="1"/>
   <Monster ID="1300068" DefName="战队荣耀机甲" nameY="-50" scale="1.5" speed="10" isMount="1"/>
   <Monster ID="1300081" DefName="闪光红色闪电" nameY="-50" scale="1.5" speed="10" isMount="1"/>
@@ -24257,10 +24292,4 @@
   <Monster ID="1400641" DefName="皓月流光·波西利亚" RealId=""/>
   <Monster ID="1400642" DefName="都市漫游·蒂小朵" RealId=""/>
   <Monster ID="1400643" DefName="莫伊莱" RealId="4210"/>
-
-
-
-
-
 </Monsters>
-
